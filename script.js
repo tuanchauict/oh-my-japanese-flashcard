@@ -379,7 +379,7 @@ class FlashCardApp {
       const categoryName = this.currentCategory?.name || 'Flashcard';
       
       navigator.mediaSession.metadata = new MediaMetadata({
-        title: word.japanese,
+        title: `${word.japanese} (${word.romaji})`,
         artist: word.vietnamese,
         album: `${categoryName} (${cardNumber})`,
         artwork: [
