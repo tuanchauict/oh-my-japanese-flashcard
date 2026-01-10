@@ -12,6 +12,7 @@ class FlashCardApp {
     this.currentAudio = null;
     this.autoPlay = false;
     this.autoPlayDelay = 3000; // 3 seconds
+    this.wakeLock = null;
     
     this.init();
   }
@@ -363,13 +364,39 @@ class FlashCardApp {
     this.updateProgress();
   }
   
-  toggleAutoPlay() {
+  async toggleAutoPlay() {
     this.autoPlay = !this.autoPlay;
     this.elements.autoPlayBtn.classList.toggle('active', this.autoPlay);
     this.elements.autoPlayBtn.textContent = this.autoPlay ? '❙❙' : '▶';
     
     if (this.autoPlay) {
+      await this.requestWakeLock();
       this.scheduleAutoNext();
+    } else {
+      this.releaseWakeLock();
+    }
+  }
+  
+  async requestWakeLock() {
+    if ('wakeLock' in navigator) {
+      try {
+        this.wakeLock = await navigator.wakeLock.request('screen');
+        console.log('Wake lock acquired');
+        
+        // Re-acquire wake lock if page becomes visible again
+        this.wakeLock.addEventListener('release', () => {
+          console.log('Wake lock released');
+        });
+      } catch (err) {
+        console.warn('Wake lock request failed:', err);
+      }
+    }
+  }
+  
+  releaseWakeLock() {
+    if (this.wakeLock) {
+      this.wakeLock.release();
+      this.wakeLock = null;
     }
   }
   
