@@ -13,6 +13,7 @@ class FlashCardApp {
     this.autoPlay = false;
     this.autoPlayDelay = 3000; // 3 seconds
     this.wakeLock = null;
+    this.readBothLanguages = false; // Read Vietnamese after Japanese
     
     this.init();
   }
@@ -37,11 +38,12 @@ class FlashCardApp {
     }
   }
   
-  speakJapanese(text) {
+  speakText(text, onEnded = null) {
     // Get audio file path from mapping
     const audioPath = this.audioMapping[text];
     if (!audioPath) {
       console.warn('No audio file for:', text);
+      if (onEnded) onEnded();
       return;
     }
     
@@ -62,17 +64,24 @@ class FlashCardApp {
     
     this.currentAudio.onended = () => {
       speakBtn.classList.remove('speaking');
+      if (onEnded) onEnded();
     };
     
     this.currentAudio.onerror = () => {
       speakBtn.classList.remove('speaking');
       console.error('Error playing audio for:', text);
+      if (onEnded) onEnded();
     };
     
     this.currentAudio.play().catch(err => {
       speakBtn.classList.remove('speaking');
       console.error('Failed to play audio:', err);
+      if (onEnded) onEnded();
     });
+  }
+  
+  speakJapanese(text) {
+    this.speakText(text);
   }
   
   async loadDictionary() {
@@ -101,7 +110,8 @@ class FlashCardApp {
       modeVnJp: document.getElementById('mode-vn-jp'),
       speakBtn: document.getElementById('speak-btn'),
       speakBtnBack: document.getElementById('speak-btn-back'),
-      autoPlayBtn: document.getElementById('auto-play-btn')
+      autoPlayBtn: document.getElementById('auto-play-btn'),
+      readBothToggle: document.getElementById('read-both-toggle')
     };
   }
   
@@ -154,6 +164,16 @@ class FlashCardApp {
     this.elements.autoPlayBtn.addEventListener('click', () => {
       this.toggleAutoPlay();
     });
+    
+    // Read both languages toggle
+    this.elements.readBothToggle.addEventListener('change', (e) => {
+      this.readBothLanguages = e.target.checked;
+      localStorage.setItem('flashcard-read-both', this.readBothLanguages);
+    });
+    
+    // Load saved read-both preference
+    this.readBothLanguages = localStorage.getItem('flashcard-read-both') === 'true';
+    this.elements.readBothToggle.checked = this.readBothLanguages;
     
     // Keyboard shortcuts
     document.addEventListener('keydown', (e) => {
@@ -222,7 +242,17 @@ class FlashCardApp {
   speakCurrentWord() {
     if (this.currentWords.length === 0) return;
     const word = this.currentWords[this.currentIndex];
-    this.speakJapanese(word.japanese);
+    
+    if (this.readBothLanguages) {
+      // Play Japanese first, then Vietnamese after a short pause
+      this.speakText(word.japanese, () => {
+        setTimeout(() => {
+          this.speakText(word.vietnamese);
+        }, 500); // 500ms pause between languages
+      });
+    } else {
+      this.speakText(word.japanese);
+    }
   }
   
   populateCategories() {
