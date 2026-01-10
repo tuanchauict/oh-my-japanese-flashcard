@@ -240,10 +240,14 @@ class FlashCardApp {
   }
   
   loadFirstCategory() {
-    this.selectCategory('all');
+    const savedCategory = localStorage.getItem('flashcard-category') || 'all';
+    const savedIndex = parseInt(localStorage.getItem('flashcard-index') || '0', 10);
+    
+    this.elements.categorySelect.value = savedCategory;
+    this.selectCategory(savedCategory, savedIndex);
   }
   
-  selectCategory(categoryId) {
+  selectCategory(categoryId, startIndex = 0) {
     if (categoryId === 'all') {
       // Combine all words from all categories
       this.currentWords = this.dictionary.categories.flatMap(cat => cat.words);
@@ -256,10 +260,16 @@ class FlashCardApp {
       }
     }
     
-    this.currentIndex = 0;
+    this.currentIndex = Math.min(startIndex, this.currentWords.length - 1);
     this.isFlipped = false;
+    this.saveState();
     this.updateCard();
     this.updateProgress();
+  }
+  
+  saveState() {
+    localStorage.setItem('flashcard-category', this.currentCategory.id);
+    localStorage.setItem('flashcard-index', this.currentIndex.toString());
   }
   
   setMode(mode) {
@@ -317,6 +327,7 @@ class FlashCardApp {
       this.currentIndex--;
       this.isFlipped = false;
       this.elements.flashcard.classList.remove('flipped');
+      this.saveState();
       this.updateCard();
       this.updateProgress();
     }
@@ -327,6 +338,7 @@ class FlashCardApp {
       this.currentIndex++;
       this.isFlipped = false;
       this.elements.flashcard.classList.remove('flipped');
+      this.saveState();
       this.updateCard();
       this.updateProgress();
     }
