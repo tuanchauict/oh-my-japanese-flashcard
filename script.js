@@ -358,7 +358,7 @@ class FlashCardApp {
   toggleAutoPlay() {
     this.autoPlay = !this.autoPlay;
     this.elements.autoPlayBtn.classList.toggle('active', this.autoPlay);
-    this.elements.autoPlayBtn.textContent = this.autoPlay ? '⏸️ Dừng' : '▶️ Tự động';
+    this.elements.autoPlayBtn.textContent = this.autoPlay ? '❙❙' : '▶';
     
     if (this.autoPlay) {
       this.scheduleAutoNext();
