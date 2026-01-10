@@ -312,6 +312,7 @@ class FlashCardApp {
       this.elements.frontMain.textContent = word.japanese;
       this.elements.frontSub.textContent = word.romaji;
       this.elements.backMain.textContent = word.vietnamese;
+      document.title = `${word.japanese} - Oh! My Japanese Flashcard`;
     } else {
       // Front: Vietnamese, Back: Japanese
       this.elements.frontMain.textContent = word.vietnamese;
@@ -321,6 +322,7 @@ class FlashCardApp {
         <br><br>
         <span style="font-size: 1.2rem; opacity: 0.9;">${word.romaji}</span>
       `;
+      document.title = `${word.vietnamese} - Oh! My Japanese Flashcard`;
     }
     
     // Add animation
