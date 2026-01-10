@@ -10,6 +10,8 @@ class FlashCardApp {
     this.isFlipped = false;
     this.mode = 'jp-vn'; // 'jp-vn' or 'vn-jp'
     this.currentAudio = null;
+    this.autoPlay = false;
+    this.autoPlayDelay = 3000; // 3 seconds
     
     this.init();
   }
@@ -95,7 +97,8 @@ class FlashCardApp {
       modeJpVn: document.getElementById('mode-jp-vn'),
       modeVnJp: document.getElementById('mode-vn-jp'),
       speakBtn: document.getElementById('speak-btn'),
-      speakBtnBack: document.getElementById('speak-btn-back')
+      speakBtnBack: document.getElementById('speak-btn-back'),
+      autoPlayBtn: document.getElementById('auto-play-btn')
     };
   }
   
@@ -142,6 +145,11 @@ class FlashCardApp {
     this.elements.speakBtnBack.addEventListener('click', (e) => {
       e.stopPropagation(); // Prevent card flip
       this.speakCurrentWord();
+    });
+    
+    // Auto-play button
+    this.elements.autoPlayBtn.addEventListener('click', () => {
+      this.toggleAutoPlay();
     });
     
     // Keyboard shortcuts
@@ -336,12 +344,49 @@ class FlashCardApp {
   nextCard() {
     if (this.currentIndex < this.currentWords.length - 1) {
       this.currentIndex++;
-      this.isFlipped = false;
-      this.elements.flashcard.classList.remove('flipped');
-      this.saveState();
-      this.updateCard();
-      this.updateProgress();
+    } else {
+      // Loop back to first card
+      this.currentIndex = 0;
     }
+    this.isFlipped = false;
+    this.elements.flashcard.classList.remove('flipped');
+    this.saveState();
+    this.updateCard();
+    this.updateProgress();
+  }
+  
+  toggleAutoPlay() {
+    this.autoPlay = !this.autoPlay;
+    this.elements.autoPlayBtn.classList.toggle('active', this.autoPlay);
+    this.elements.autoPlayBtn.textContent = this.autoPlay ? '⏸️ Dừng' : '▶️ Tự động';
+    
+    if (this.autoPlay) {
+      this.scheduleAutoNext();
+    }
+  }
+  
+  scheduleAutoNext() {
+    if (!this.autoPlay) return;
+    
+    // Wait for audio to finish, then wait delay, then next
+    const checkAndNext = () => {
+      if (!this.autoPlay) return;
+      
+      if (this.currentAudio && !this.currentAudio.paused) {
+        // Audio still playing, check again later
+        setTimeout(checkAndNext, 500);
+      } else {
+        // Audio done, wait delay then go next
+        setTimeout(() => {
+          if (this.autoPlay) {
+            this.nextCard();
+            this.scheduleAutoNext();
+          }
+        }, this.autoPlayDelay);
+      }
+    };
+    
+    checkAndNext();
   }
   
   shuffleCards() {
@@ -372,9 +417,9 @@ class FlashCardApp {
     this.elements.progressText.textContent = `Thẻ ${current} / ${total}`;
     this.elements.progressFill.style.width = `${percentage}%`;
     
-    // Update button states
+    // Update button states (prev disabled at start, next always enabled for loop)
     this.elements.prevBtn.disabled = this.currentIndex === 0;
-    this.elements.nextBtn.disabled = this.currentIndex === this.currentWords.length - 1;
+    this.elements.nextBtn.disabled = false;
   }
 }
 

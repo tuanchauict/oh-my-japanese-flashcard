@@ -234,6 +234,23 @@ h1 {
   color: #667eea;
 }
 
+.btn-auto {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 2px solid white;
+}
+
+.btn-auto:hover {
+  background: white;
+  color: #667eea;
+}
+
+.btn-auto.active {
+  background: #4CAF50;
+  border-color: #4CAF50;
+  color: white;
+}
+
 .btn:disabled {
   opacity: 0.5;
   cursor: not-allowed;
