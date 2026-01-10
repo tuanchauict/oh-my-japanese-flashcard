@@ -202,6 +202,7 @@ class FlashCardApp {
         break;
       case 'p':
       case 'P':
+      case 'Enter':
         this.speakCurrentWord();
         break;
     }
@@ -308,6 +309,7 @@ class FlashCardApp {
   flipCard() {
     this.isFlipped = !this.isFlipped;
     this.elements.flashcard.classList.toggle('flipped', this.isFlipped);
+    this.speakCurrentWord();
   }
   
   previousCard() {
