@@ -37,12 +37,6 @@ class FlashCardApp {
   }
   
   speakJapanese(text) {
-    // Stop any currently playing audio
-    if (this.currentAudio) {
-      this.currentAudio.pause();
-      this.currentAudio.currentTime = 0;
-    }
-    
     // Get audio file path from mapping
     const audioPath = this.audioMapping[text];
     if (!audioPath) {
@@ -54,8 +48,16 @@ class FlashCardApp {
     const speakBtn = this.isFlipped ? this.elements.speakBtnBack : this.elements.speakBtn;
     speakBtn.classList.add('speaking');
     
-    // Play audio
-    this.currentAudio = new Audio(audioPath);
+    // Reuse existing Audio element for mobile compatibility
+    // Mobile browsers block audio unless initiated by user gesture
+    // By reusing the same Audio element, we keep the "unlocked" state
+    if (!this.currentAudio) {
+      this.currentAudio = new Audio();
+    } else {
+      this.currentAudio.pause();
+    }
+    
+    this.currentAudio.src = audioPath;
     
     this.currentAudio.onended = () => {
       speakBtn.classList.remove('speaking');
