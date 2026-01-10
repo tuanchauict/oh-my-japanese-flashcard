@@ -250,8 +250,10 @@ class FlashCardApp {
   loadFirstCategory() {
     const savedCategory = localStorage.getItem('flashcard-category') || 'all';
     const savedIndex = parseInt(localStorage.getItem('flashcard-index') || '0', 10);
+    const savedMode = localStorage.getItem('flashcard-mode') || 'jp-vn';
     
     this.elements.categorySelect.value = savedCategory;
+    this.setMode(savedMode);
     this.selectCategory(savedCategory, savedIndex);
   }
   
@@ -278,6 +280,7 @@ class FlashCardApp {
   saveState() {
     localStorage.setItem('flashcard-category', this.currentCategory.id);
     localStorage.setItem('flashcard-index', this.currentIndex.toString());
+    localStorage.setItem('flashcard-mode', this.mode);
   }
   
   setMode(mode) {
@@ -286,6 +289,9 @@ class FlashCardApp {
     // Update button states
     this.elements.modeJpVn.classList.toggle('active', mode === 'jp-vn');
     this.elements.modeVnJp.classList.toggle('active', mode === 'vn-jp');
+    
+    // Save mode
+    localStorage.setItem('flashcard-mode', mode);
     
     // Reset flip state and update card
     this.isFlipped = false;
