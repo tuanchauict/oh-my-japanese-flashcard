@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flash Card - Tiếng Nhật Lái Xe</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🚗 Từ Vựng Lái Xe Nhật Bản</h1>
+    <p class="subtitle">Bộ khẩu lệnh đầy đủ trong lớp học lái xe</p>
+    
+    <!-- Category Selector -->
+    <div class="category-selector">
+      <label for="category-select">Chọn chủ đề:</label>
+      <select id="category-select">
+        <!-- Options will be populated by JavaScript -->
+      </select>
+    </div>
+    
+    <!-- Mode Toggle -->
+    <div class="mode-toggle">
+      <button id="mode-jp-vn" class="mode-btn active">🇯🇵 → 🇻🇳</button>
+      <button id="mode-vn-jp" class="mode-btn">🇻🇳 → 🇯🇵</button>
+    </div>
+    
+    <!-- Flash Card -->
+    <div class="flashcard-container">
+      <div class="flashcard" id="flashcard">
+        <div class="flashcard-front">
+          <div class="japanese" id="front-main"></div>
+          <div class="romaji" id="front-sub"></div>
+          <button class="speak-btn" id="speak-btn" title="Nghe phát âm">🔊</button>
+          <div class="hint">Nhấn để xem nghĩa</div>
+        </div>
+        <div class="flashcard-back">
+          <div class="vietnamese" id="back-main"></div>
+          <button class="speak-btn speak-btn-back" id="speak-btn-back" title="Nghe phát âm">🔊</button>
+          <div class="hint">Nhấn để quay lại</div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Controls -->
+    <div class="controls">
+      <button class="btn btn-prev" id="prev-btn">
+        ← Trước
+      </button>
+      <button class="btn btn-shuffle" id="shuffle-btn">
+        🔀 Trộn bài
+      </button>
+      <button class="btn btn-next" id="next-btn">
+        Sau →
+      </button>
+    </div>
+    
+    <!-- Progress -->
+    <div class="progress-container">
+      <div class="progress-text" id="progress-text">Thẻ 1 / 10</div>
+      <div class="progress-bar">
+        <div class="progress-fill" id="progress-fill"></div>
+      </div>
+    </div>
+    
+    <!-- Keyboard Shortcuts -->
+    <div class="shortcuts">
+      <kbd>←</kbd> <kbd>→</kbd> Di chuyển &nbsp;|&nbsp;
+      <kbd>Space</kbd> Lật thẻ &nbsp;|&nbsp;
+      <kbd>S</kbd> Trộn bài &nbsp;|&nbsp;
+      <kbd>P</kbd> Phát âm
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>

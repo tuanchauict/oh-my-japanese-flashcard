@@ -1,0 +1,511 @@
+{
+  "categories": [
+    {
+      "id": "before-boarding",
+      "name": "Trước khi lên xe",
+      "words": [
+        {
+          "japanese": "乗車します",
+          "romaji": "Jousha shimasu",
+          "vietnamese": "Xin phép lên xe"
+        },
+        {
+          "japanese": "車の周りを確認",
+          "romaji": "Kuruma no mawari wo kakunin",
+          "vietnamese": "Kiểm tra xung quanh xe"
+        }
+      ]
+    },
+    {
+      "id": "after-boarding",
+      "name": "Sau khi lên xe",
+      "words": [
+        {
+          "japanese": "座席調整",
+          "romaji": "Zaseki chōsei",
+          "vietnamese": "Điều chỉnh ghế ngồi"
+        },
+        {
+          "japanese": "ハンドル調整",
+          "romaji": "Handoru chōsei",
+          "vietnamese": "Điều chỉnh vô lăng"
+        },
+        {
+          "japanese": "ミラー調整",
+          "romaji": "Mirā chōsei",
+          "vietnamese": "Điều chỉnh gương"
+        },
+        {
+          "japanese": "シートベルト締めて",
+          "romaji": "Shīto beruto shimete",
+          "vietnamese": "Thắt dây an toàn"
+        },
+        {
+          "japanese": "ドア閉めて",
+          "romaji": "Doa shimete",
+          "vietnamese": "Đóng cửa"
+        },
+        {
+          "japanese": "サイドブレーキ確認",
+          "romaji": "Saido burēki kakunin",
+          "vietnamese": "Kiểm tra phanh tay"
+        }
+      ]
+    },
+    {
+      "id": "starting-engine",
+      "name": "Khởi động xe",
+      "words": [
+        {
+          "japanese": "エンジンかけて",
+          "romaji": "Enjin kakete",
+          "vietnamese": "Nổ máy"
+        },
+        {
+          "japanese": "ギア入れて",
+          "romaji": "Gia irete",
+          "vietnamese": "Vào số"
+        },
+        {
+          "japanese": "ドライブに入れて",
+          "romaji": "Doraibu ni irete",
+          "vietnamese": "Vào số D (Drive)"
+        },
+        {
+          "japanese": "パーキング",
+          "romaji": "Pākingu",
+          "vietnamese": "Số P (Parking)"
+        },
+        {
+          "japanese": "ニュートラル",
+          "romaji": "Nyūtoraru",
+          "vietnamese": "Số N (Neutral)"
+        },
+        {
+          "japanese": "リバース",
+          "romaji": "Ribāsu",
+          "vietnamese": "Số R (Reverse/Lùi)"
+        }
+      ]
+    },
+    {
+      "id": "departure",
+      "name": "Khởi hành",
+      "words": [
+        {
+          "japanese": "発進準備",
+          "romaji": "Hasshin junbi",
+          "vietnamese": "Chuẩn bị khởi hành"
+        },
+        {
+          "japanese": "サイドブレーキ下ろして",
+          "romaji": "Saido burēki oroshite",
+          "vietnamese": "Nhả phanh tay"
+        },
+        {
+          "japanese": "右ウインカー",
+          "romaji": "Migi uinkā",
+          "vietnamese": "Bật xi-nhan phải"
+        },
+        {
+          "japanese": "左ウインカー",
+          "romaji": "Hidari uinkā",
+          "vietnamese": "Bật xi-nhan trái"
+        },
+        {
+          "japanese": "発進",
+          "romaji": "Hasshin",
+          "vietnamese": "Xuất phát"
+        },
+        {
+          "japanese": "ゆっくり発進",
+          "romaji": "Yukkuri hasshin",
+          "vietnamese": "Khởi hành từ từ"
+        },
+        {
+          "japanese": "アクセル踏んで",
+          "romaji": "Akuseru funde",
+          "vietnamese": "Đạp ga"
+        },
+        {
+          "japanese": "ブレーキ踏んで",
+          "romaji": "Burēki funde",
+          "vietnamese": "Đạp phanh"
+        }
+      ]
+    },
+    {
+      "id": "while-driving",
+      "name": "Trong khi lái",
+      "words": [
+        {
+          "japanese": "速度上げて",
+          "romaji": "Sokudo agete",
+          "vietnamese": "Tăng tốc"
+        },
+        {
+          "japanese": "速度落として",
+          "romaji": "Sokudo otoshite",
+          "vietnamese": "Giảm tốc"
+        },
+        {
+          "japanese": "もっと速く",
+          "romaji": "Motto hayaku",
+          "vietnamese": "Nhanh hơn nữa"
+        },
+        {
+          "japanese": "もっとゆっくり",
+          "romaji": "Motto yukkuri",
+          "vietnamese": "Chậm hơn nữa"
+        },
+        {
+          "japanese": "このまま",
+          "romaji": "Kono mama",
+          "vietnamese": "Giữ nguyên tốc độ"
+        },
+        {
+          "japanese": "まっすぐ行って",
+          "romaji": "Massugu itte",
+          "vietnamese": "Đi thẳng"
+        },
+        {
+          "japanese": "右に曲がって",
+          "romaji": "Migi ni magatte",
+          "vietnamese": "Rẽ phải"
+        },
+        {
+          "japanese": "左に曲がって",
+          "romaji": "Hidari ni magatte",
+          "vietnamese": "Rẽ trái"
+        },
+        {
+          "japanese": "次の角",
+          "romaji": "Tsugi no kado",
+          "vietnamese": "Góc tiếp theo"
+        },
+        {
+          "japanese": "次の信号",
+          "romaji": "Tsugi no shingō",
+          "vietnamese": "Đèn tín hiệu tiếp theo"
+        },
+        {
+          "japanese": "二つ目の信号",
+          "romaji": "Futatsu me no shingō",
+          "vietnamese": "Đèn tín hiệu thứ hai"
+        },
+        {
+          "japanese": "車線変更",
+          "romaji": "Shasen henkō",
+          "vietnamese": "Chuyển làn"
+        },
+        {
+          "japanese": "右の車線",
+          "romaji": "Migi no shasen",
+          "vietnamese": "Làn bên phải"
+        },
+        {
+          "japanese": "左の車線",
+          "romaji": "Hidari no shasen",
+          "vietnamese": "Làn bên trái"
+        },
+        {
+          "japanese": "追い越し",
+          "romaji": "Oikoshi",
+          "vietnamese": "Vượt xe"
+        }
+      ]
+    },
+    {
+      "id": "stopping",
+      "name": "Dừng xe",
+      "words": [
+        {
+          "japanese": "止まって",
+          "romaji": "Tomatte",
+          "vietnamese": "Dừng lại"
+        },
+        {
+          "japanese": "ここで止まって",
+          "romaji": "Koko de tomatte",
+          "vietnamese": "Dừng ở đây"
+        },
+        {
+          "japanese": "ゆっくり止まって",
+          "romaji": "Yukkuri tomatte",
+          "vietnamese": "Dừng từ từ"
+        },
+        {
+          "japanese": "完全に止まって",
+          "romaji": "Kanzen ni tomatte",
+          "vietnamese": "Dừng hoàn toàn"
+        },
+        {
+          "japanese": "一時停止",
+          "romaji": "Ichiji teishi",
+          "vietnamese": "Dừng tạm thời"
+        }
+      ]
+    },
+    {
+      "id": "parking",
+      "name": "Đỗ xe",
+      "words": [
+        {
+          "japanese": "縦列駐車",
+          "romaji": "Jūretsu chūsha",
+          "vietnamese": "Đỗ xe song song"
+        },
+        {
+          "japanese": "車庫入れ",
+          "romaji": "Shakoire",
+          "vietnamese": "Đỗ vào gara/Lùi vào chỗ đỗ"
+        },
+        {
+          "japanese": "方向転換",
+          "romaji": "Hōkō tenkan",
+          "vietnamese": "Quay đầu xe"
+        },
+        {
+          "japanese": "バックして",
+          "romaji": "Bakku shite",
+          "vietnamese": "Lùi xe"
+        },
+        {
+          "japanese": "ハンドル右に切って",
+          "romaji": "Handoru migi ni kitte",
+          "vietnamese": "Đánh lái phải"
+        },
+        {
+          "japanese": "ハンドル左に切って",
+          "romaji": "Handoru hidari ni kitte",
+          "vietnamese": "Đánh lái trái"
+        },
+        {
+          "japanese": "ハンドル戻して",
+          "romaji": "Handoru modoshite",
+          "vietnamese": "Trả lái về giữa"
+        },
+        {
+          "japanese": "ハンドルいっぱい切って",
+          "romaji": "Handoru ippai kitte",
+          "vietnamese": "Đánh lái hết cỡ"
+        }
+      ]
+    },
+    {
+      "id": "engine-off",
+      "name": "Tắt máy và xuống xe",
+      "words": [
+        {
+          "japanese": "エンジン切って",
+          "romaji": "Enjin kitte",
+          "vietnamese": "Tắt máy"
+        },
+        {
+          "japanese": "ギアをパーキングに",
+          "romaji": "Gia wo pākingu ni",
+          "vietnamese": "Về số P"
+        },
+        {
+          "japanese": "サイドブレーキ引いて",
+          "romaji": "Saido burēki hiite",
+          "vietnamese": "Kéo phanh tay"
+        },
+        {
+          "japanese": "ウインカー消して",
+          "romaji": "Uinkā keshite",
+          "vietnamese": "Tắt xi-nhan"
+        },
+        {
+          "japanese": "降車",
+          "romaji": "Kōsha",
+          "vietnamese": "Xuống xe"
+        }
+      ]
+    },
+    {
+      "id": "special-situations",
+      "name": "Tình huống đặc biệt",
+      "words": [
+        {
+          "japanese": "交差点",
+          "romaji": "Kōsaten",
+          "vietnamese": "Ngã tư"
+        },
+        {
+          "japanese": "右折レーン",
+          "romaji": "Usetsu rēn",
+          "vietnamese": "Làn rẽ phải"
+        },
+        {
+          "japanese": "左折レーン",
+          "romaji": "Sasetsu rēn",
+          "vietnamese": "Làn rẽ trái"
+        },
+        {
+          "japanese": "直進レーン",
+          "romaji": "Chokushin rēn",
+          "vietnamese": "Làn đi thẳng"
+        },
+        {
+          "japanese": "高速道路",
+          "romaji": "Kōsoku dōro",
+          "vietnamese": "Đường cao tốc"
+        },
+        {
+          "japanese": "合流",
+          "romaji": "Gōryū",
+          "vietnamese": "Nhập làn (vào cao tốc)"
+        },
+        {
+          "japanese": "出口",
+          "romaji": "Deguchi",
+          "vietnamese": "Lối ra"
+        },
+        {
+          "japanese": "坂道発進",
+          "romaji": "Sakamichi hasshin",
+          "vietnamese": "Khởi hành trên dốc"
+        },
+        {
+          "japanese": "上り坂",
+          "romaji": "Noborizaka",
+          "vietnamese": "Dốc lên"
+        },
+        {
+          "japanese": "下り坂",
+          "romaji": "Kudarizaka",
+          "vietnamese": "Dốc xuống"
+        }
+      ]
+    },
+    {
+      "id": "teacher-feedback",
+      "name": "Phản hồi của giáo viên",
+      "words": [
+        {
+          "japanese": "いいですよ",
+          "romaji": "Ii desu yo",
+          "vietnamese": "Tốt đấy"
+        },
+        {
+          "japanese": "上手",
+          "romaji": "Jōzu",
+          "vietnamese": "Giỏi lắm"
+        },
+        {
+          "japanese": "そうそう",
+          "romaji": "Sō sō",
+          "vietnamese": "Đúng rồi đúng rồi"
+        },
+        {
+          "japanese": "完璧",
+          "romaji": "Kanpeki",
+          "vietnamese": "Hoàn hảo"
+        },
+        {
+          "japanese": "違います",
+          "romaji": "Chigaimasu",
+          "vietnamese": "Sai rồi"
+        },
+        {
+          "japanese": "危ない",
+          "romaji": "Abunai",
+          "vietnamese": "Nguy hiểm"
+        },
+        {
+          "japanese": "ダメ",
+          "romaji": "Dame",
+          "vietnamese": "Không được"
+        },
+        {
+          "japanese": "もう一回",
+          "romaji": "Mō ikkai",
+          "vietnamese": "Làm lại một lần nữa"
+        }
+      ]
+    },
+    {
+      "id": "useful-phrases",
+      "name": "Câu hỏi hữu ích",
+      "words": [
+        {
+          "japanese": "分かりません",
+          "romaji": "Wakarimasen",
+          "vietnamese": "Tôi không hiểu"
+        },
+        {
+          "japanese": "もう一度お願いします",
+          "romaji": "Mō ichido onegai shimasu",
+          "vietnamese": "Làm ơn nói lại một lần nữa"
+        },
+        {
+          "japanese": "ゆっくり話してください",
+          "romaji": "Yukkuri hanashite kudasai",
+          "vietnamese": "Xin hãy nói chậm"
+        },
+        {
+          "japanese": "日本語が分かりません",
+          "romaji": "Nihongo ga wakarimasen",
+          "vietnamese": "Tôi không biết tiếng Nhật"
+        }
+      ]
+    },
+    {
+      "id": "top-10",
+      "name": "Top 10 từ quan trọng nhất",
+      "words": [
+        {
+          "japanese": "止まって",
+          "romaji": "Tomatte",
+          "vietnamese": "Dừng"
+        },
+        {
+          "japanese": "右",
+          "romaji": "Migi",
+          "vietnamese": "Phải"
+        },
+        {
+          "japanese": "左",
+          "romaji": "Hidari",
+          "vietnamese": "Trái"
+        },
+        {
+          "japanese": "まっすぐ",
+          "romaji": "Massugu",
+          "vietnamese": "Thẳng"
+        },
+        {
+          "japanese": "バック",
+          "romaji": "Bakku",
+          "vietnamese": "Lùi"
+        },
+        {
+          "japanese": "ゆっくり",
+          "romaji": "Yukkuri",
+          "vietnamese": "Chậm"
+        },
+        {
+          "japanese": "ハンドル",
+          "romaji": "Handoru",
+          "vietnamese": "Vô lăng"
+        },
+        {
+          "japanese": "ブレーキ",
+          "romaji": "Burēki",
+          "vietnamese": "Phanh"
+        },
+        {
+          "japanese": "アクセル",
+          "romaji": "Akuseru",
+          "vietnamese": "Ga"
+        },
+        {
+          "japanese": "危ない",
+          "romaji": "Abunai",
+          "vietnamese": "Nguy hiểm"
+        }
+      ]
+    }
+  ]
+}
