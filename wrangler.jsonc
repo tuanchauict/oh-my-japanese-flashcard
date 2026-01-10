@@ -1,7 +1,5 @@
 {
   "name": "oh-my-japanese-flashcard",
   "compatibility_date": "2026-01-10",
-  "assets": {
-    "directory": "./"
-  }
+  "pages_build_output_dir": "./"
 }
