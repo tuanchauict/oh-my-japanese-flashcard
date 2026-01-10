@@ -360,6 +360,9 @@ class FlashCardApp {
       document.title = this.mode === 'jp-vn' ? word.japanese : word.vietnamese;
     }
     
+    // Update Media Session metadata for lock screen / control center
+    this.updateMediaSession(word);
+    
     // Add animation
     this.elements.flashcard.classList.add('animate');
     setTimeout(() => {
@@ -368,6 +371,41 @@ class FlashCardApp {
     
     // Auto-play audio when card is shown
     this.speakCurrentWord();
+  }
+  
+  updateMediaSession(word) {
+    if ('mediaSession' in navigator) {
+      const cardNumber = `${this.currentIndex + 1}/${this.currentWords.length}`;
+      const categoryName = this.currentCategory?.name || 'Flashcard';
+      
+      navigator.mediaSession.metadata = new MediaMetadata({
+        title: word.japanese,
+        artist: word.vietnamese,
+        album: `${categoryName} (${cardNumber})`,
+        artwork: [
+          { src: 'favicon.svg', sizes: '512x512', type: 'image/svg+xml' }
+        ]
+      });
+      
+      // Set up media session action handlers
+      navigator.mediaSession.setActionHandler('previoustrack', () => {
+        this.previousCard();
+      });
+      
+      navigator.mediaSession.setActionHandler('nexttrack', () => {
+        this.nextCard();
+      });
+      
+      navigator.mediaSession.setActionHandler('play', () => {
+        this.speakCurrentWord();
+      });
+      
+      navigator.mediaSession.setActionHandler('pause', () => {
+        if (this.currentAudio) {
+          this.currentAudio.pause();
+        }
+      });
+    }
   }
   
   flipCard() {
