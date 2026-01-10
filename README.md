@@ -8,7 +8,7 @@
 
 ## 🌐 Demo
 
-[https://oh-my-japanese-flashcard.pages.dev](https://oh-my-japanese-flashcard.pages.dev)
+[https://japanese.iamtuna.org/](https://japanese.iamtuna.org/)
 
 ## ✨ Tính năng
 
