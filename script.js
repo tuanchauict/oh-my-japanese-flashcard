@@ -409,9 +409,9 @@ class FlashCardApp {
     this.updateProgress();
     
     // Visual feedback
-    this.elements.shuffleBtn.textContent = '✓ Đã trộn!';
+    this.elements.shuffleBtn.textContent = '✓';
     setTimeout(() => {
-      this.elements.shuffleBtn.textContent = '🔀 Trộn bài';
+      this.elements.shuffleBtn.textContent = '↻';
     }, 1000);
   }
   
