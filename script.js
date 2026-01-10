@@ -300,6 +300,9 @@ class FlashCardApp {
     setTimeout(() => {
       this.elements.flashcard.classList.remove('animate');
     }, 300);
+    
+    // Auto-play audio when card is shown
+    this.speakCurrentWord();
   }
   
   flipCard() {
