@@ -398,9 +398,11 @@ class FlashCardApp {
     const words = this.cards.words.filter((_, i) => i !== currentIndex);
     
     if (words.length === 0) {
+      this.cards.setWords([]);
       this.cards.showEmpty();
       this.elements.progressText.textContent = 'Hoàn thành!';
       this.elements.progressFill.style.width = '100%';
+      this.updateRememberedList();
       return;
     }
 
@@ -440,14 +442,8 @@ class FlashCardApp {
   }
 
   updateRememberedList() {
-    // Get words for current category
-    let allWords;
-    if (this.currentCategory?.id === 'all') {
-      allWords = this.dictionary.categories.flatMap(cat => cat.words);
-    } else {
-      const category = this.dictionary.categories.find(c => c.id === this.currentCategory?.id);
-      allWords = category ? category.words : [];
-    }
+    // Get all words for current category (unfiltered)
+    const allWords = this.getAllCategoryWords();
 
     // Filter to remembered words only
     const rememberedWords = allWords.filter(w => this.remembered.isRemembered(w.japanese));
@@ -491,7 +487,8 @@ class FlashCardApp {
   // Progress
   updateProgress() {
     const progress = this.cards.getProgress();
-    const rememberedCount = this.remembered.getCountIn(this.cards.words);
+    const allCategoryWords = this.getAllCategoryWords();
+    const rememberedCount = this.remembered.getCountIn(allCategoryWords);
     const rememberedText = rememberedCount > 0 ? ` (${rememberedCount} đã thuộc)` : '';
 
     this.elements.progressText.textContent = `Thẻ ${progress.current} / ${progress.total}${rememberedText}`;
@@ -499,6 +496,15 @@ class FlashCardApp {
 
     this.elements.prevBtn.disabled = this.cards.currentIndex === 0;
     this.elements.nextBtn.disabled = false;
+  }
+
+  // Helper to get all words in current category (unfiltered)
+  getAllCategoryWords() {
+    if (this.currentCategory?.id === 'all') {
+      return this.dictionary.categories.flatMap(cat => cat.words);
+    }
+    const category = this.dictionary.categories.find(c => c.id === this.currentCategory?.id);
+    return category ? category.words : [];
   }
 
   // State persistence
