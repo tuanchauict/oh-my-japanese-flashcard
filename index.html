@@ -23,77 +23,179 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   
-  <link rel="stylesheet" href="styles.css?v=5">
+  <link rel="stylesheet" href="styles.css?v=6">
+  
+  <!-- Alpine.js -->
+  <script src="js/alpine-store.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
-<body>
+<body x-data x-init="$store.app.init()">
   <div class="container">
     <h1>🚗 Từ Vựng Lái Xe Nhật Bản</h1>
     <p class="subtitle">Bộ khẩu lệnh đầy đủ trong lớp học lái xe</p>
     
     <!-- Mode Toggle -->
     <div class="mode-toggle">
-      <button id="mode-jp-vn" class="mode-btn active">🇯🇵 → 🇻🇳</button>
-      <button id="mode-vn-jp" class="mode-btn">🇻🇳 → 🇯🇵</button>
+      <button 
+        class="mode-btn" 
+        :class="{ active: $store.app.mode === 'jp-vn' }"
+        @click="$store.app.setMode('jp-vn')">
+        🇯🇵 → 🇻🇳
+      </button>
+      <button 
+        class="mode-btn" 
+        :class="{ active: $store.app.mode === 'vn-jp' }"
+        @click="$store.app.setMode('vn-jp')">
+        🇻🇳 → 🇯🇵
+      </button>
     </div>
     
     <!-- Flash Card -->
     <div class="flashcard-container">
-      <div class="flashcard" id="flashcard">
+      <div 
+        class="flashcard" 
+        :class="{ flipped: $store.app.isFlipped }"
+        @click="$store.app.flip()"
+        x-show="$store.app.words.length > 0">
         <div class="flashcard-front">
-          <div class="japanese" id="front-main"></div>
-          <div class="romaji" id="front-sub"></div>
-          <button class="speak-btn" id="speak-btn" title="Nghe phát âm">🔊</button>
-          <button class="mark-btn" id="mark-remembered-btn" title="Đánh dấu đã thuộc">☆</button>
+          <div class="japanese" x-text="$store.app.frontMain"></div>
+          <div class="romaji" x-text="$store.app.frontSub"></div>
+          <button 
+            class="speak-btn" 
+            :class="{ speaking: $store.app.speaking }"
+            @click.stop="$store.app.speak()" 
+            title="Nghe phát âm">
+            🔊
+          </button>
+          <button 
+            class="mark-btn" 
+            :class="{ remembered: $store.app.isCurrentRemembered }"
+            @click.stop="$store.app.toggleRemembered()" 
+            title="Đánh dấu đã thuộc"
+            x-text="$store.app.isCurrentRemembered ? '★' : '☆'">
+          </button>
           <div class="hint">Nhấn để xem nghĩa</div>
         </div>
         <div class="flashcard-back">
-          <div class="vietnamese" id="back-main"></div>
-          <button class="speak-btn speak-btn-back" id="speak-btn-back" title="Nghe phát âm">🔊</button>
-          <button class="mark-btn mark-btn-back" id="mark-remembered-btn-back" title="Đánh dấu đã thuộc">☆</button>
+          <div class="vietnamese" x-html="$store.app.backMain"></div>
+          <button 
+            class="speak-btn speak-btn-back" 
+            :class="{ speaking: $store.app.speaking }"
+            @click.stop="$store.app.speak()" 
+            title="Nghe phát âm">
+            🔊
+          </button>
+          <button 
+            class="mark-btn mark-btn-back" 
+            :class="{ remembered: $store.app.isCurrentRemembered }"
+            @click.stop="$store.app.toggleRemembered()" 
+            title="Đánh dấu đã thuộc"
+            x-text="$store.app.isCurrentRemembered ? '★' : '☆'">
+          </button>
           <div class="hint">Nhấn để quay lại</div>
+        </div>
+      </div>
+      
+      <!-- Empty state -->
+      <div class="flashcard" x-show="$store.app.words.length === 0">
+        <div class="flashcard-front">
+          <div class="japanese">🎉</div>
+          <div class="romaji">Đã thuộc hết!</div>
+          <div class="hint"></div>
         </div>
       </div>
     </div>
     
     <!-- Controls -->
     <div class="controls">
-      <button class="btn btn-prev" id="prev-btn" title="Trước">
+      <button 
+        class="btn btn-prev" 
+        :disabled="$store.app.currentIndex === 0"
+        @click="$store.app.prev()" 
+        title="Trước">
         ❮
       </button>
-      <button class="btn btn-auto" id="auto-play-btn" title="Tự động phát">
-        ▶
+      <button 
+        class="btn btn-auto" 
+        :class="{ active: $store.app.autoPlaying }"
+        @click="$store.app.toggleAutoPlay()" 
+        title="Tự động phát"
+        x-text="$store.app.autoPlaying ? '❙❙' : '▶'">
       </button>
-      <button class="btn btn-shuffle" id="shuffle-btn" title="Trộn bài">
-        ↻
+      <button 
+        class="btn btn-shuffle" 
+        @click="$store.app.shuffle()" 
+        title="Trộn bài"
+        x-text="$store.app.shuffleConfirm ? '✓' : '↻'">
       </button>
-      <button class="btn btn-next" id="next-btn" title="Sau">
+      <button 
+        class="btn btn-next" 
+        @click="$store.app.next()" 
+        title="Sau">
         ❯
       </button>
     </div>
     
     <!-- Progress -->
     <div class="progress-container">
-      <div class="progress-text" id="progress-text">Thẻ 1 / 10</div>
+      <div class="progress-text">
+        <template x-if="$store.app.words.length > 0">
+          <span>
+            Thẻ <span x-text="$store.app.progress.current"></span> / <span x-text="$store.app.progress.total"></span>
+            <template x-if="$store.app.rememberedCount > 0">
+              <span> (<span x-text="$store.app.rememberedCount"></span> đã thuộc)</span>
+            </template>
+          </span>
+        </template>
+        <template x-if="$store.app.words.length === 0">
+          <span>Hoàn thành!</span>
+        </template>
+      </div>
       <div class="progress-bar">
-        <div class="progress-fill" id="progress-fill"></div>
+        <div class="progress-fill" :style="{ width: $store.app.progress.percent + '%' }"></div>
       </div>
     </div>
     
     <!-- Category Selector -->
     <div class="category-selector">
       <label for="category-select">Chọn chủ đề:</label>
-      <select id="category-select">
-        <!-- Options will be populated by JavaScript -->
+      <select 
+        id="category-select"
+        x-model="$store.app.currentCategory.id"
+        @change="$store.app.loadCategory($event.target.value)">
+        <template x-for="cat in $store.app.categories" :key="cat.id">
+          <option :value="cat.id" x-text="cat.name"></option>
+        </template>
       </select>
       
       <!-- Remembered Words List -->
-      <div class="remembered-list">
-        <button class="remembered-list-toggle" id="remembered-list-toggle">
+      <div class="remembered-list" :class="{ expanded: $store.app.rememberedListOpen }">
+        <button 
+          class="remembered-list-toggle" 
+          @click="$store.app.rememberedListOpen = !$store.app.rememberedListOpen">
           <span class="toggle-icon">▶</span>
-          <span id="remembered-list-title">Từ đã thuộc (0)</span>
+          <span>Từ đã thuộc (<span x-text="$store.app.rememberedCount"></span>)</span>
         </button>
-        <div class="remembered-list-content" id="remembered-list-content">
-          <ul id="remembered-words-ul"></ul>
+        <div class="remembered-list-content">
+          <ul>
+            <template x-if="$store.app.rememberedInCategory.length === 0">
+              <div class="remembered-list-empty">Chưa có từ nào được đánh dấu</div>
+            </template>
+            <template x-for="word in $store.app.rememberedInCategory" :key="word.japanese">
+              <li>
+                <div class="word-text">
+                  <span class="word-japanese" x-text="word.japanese"></span>
+                  <span class="word-vietnamese" x-text="' - ' + word.vietnamese"></span>
+                </div>
+                <button 
+                  class="unmark-btn" 
+                  @click="$store.app.unmarkRemembered(word.japanese)" 
+                  title="Bỏ đánh dấu">
+                  ✕
+                </button>
+              </li>
+            </template>
+          </ul>
         </div>
       </div>
     </div>
@@ -101,18 +203,32 @@
     <!-- Audio Options -->
     <div class="audio-options">
       <label class="checkbox-label">
-        <input type="checkbox" id="read-both-toggle">
+        <input 
+          type="checkbox" 
+          :checked="$store.app.readBoth"
+          @change="$store.app.toggleReadBoth()">
         <span>🔊 Đọc cả tiếng Việt sau tiếng Nhật</span>
       </label>
       <label class="checkbox-label">
-        <input type="checkbox" id="spiral-mode-toggle">
+        <input 
+          type="checkbox" 
+          :checked="$store.app.spiralMode"
+          @change="$store.app.toggleSpiralMode()">
         <span>🌀 Chế độ xoáy ốc (ôn lại từ trước)</span>
       </label>
       <label class="checkbox-label">
-        <input type="checkbox" id="skip-remembered-toggle">
+        <input 
+          type="checkbox" 
+          :checked="$store.app.skipRemembered"
+          @change="$store.app.toggleSkipRemembered()">
         <span>✅ Bỏ qua từ đã thuộc</span>
       </label>
-      <button class="reset-btn" id="reset-remembered-btn" title="Xóa tất cả đánh dấu">🗑️ Xóa đánh dấu</button>
+      <button 
+        class="reset-btn" 
+        @click="$store.app.resetRemembered()" 
+        title="Xóa tất cả đánh dấu">
+        🗑️ Xóa đánh dấu
+      </button>
     </div>
     
     <!-- Keyboard Shortcuts -->
@@ -128,7 +244,5 @@
       <a href="https://github.com/tuanchauict/oh-my-japanese-flashcard" target="_blank" rel="noopener noreferrer">Open source on GitHub</a>
     </footer>
   </div>
-  
-  <script type="module" src="js/app.js"></script>
 </body>
 </html>

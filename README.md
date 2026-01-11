@@ -35,7 +35,7 @@
 
 ## 🛠️ Công nghệ
 
-- Vanilla JavaScript (ES Modules)
+- Alpine.js (reactive UI framework)
 - CSS3 với animations
 - Edge TTS (audio generation)
 - Media Session API
@@ -47,14 +47,9 @@
 
 ```
 ├── assets/          # Favicon, icons, audio files
-├── js/              # ES modules
-│   ├── app.js       # Main coordinator
-│   ├── storage.js   # LocalStorage wrapper
-│   ├── audio.js     # Audio playback & Media Session
-│   ├── cards.js     # Card display & navigation
-│   ├── remembered.js # Remembered words tracking
-│   └── autoplay.js  # Auto-play & wake lock
-├── scripts/         # Build scripts
+├── js/
+│   └── alpine-store.js  # Alpine.js reactive store
+├── scripts/
 │   └── generate_audio.py
 ├── index.html
 ├── styles.css
