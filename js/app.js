@@ -59,6 +59,7 @@ class FlashCardApp {
       speakBtnBack: document.getElementById('speak-btn-back'),
       autoPlayBtn: document.getElementById('auto-play-btn'),
       readBothToggle: document.getElementById('read-both-toggle'),
+      spiralModeToggle: document.getElementById('spiral-mode-toggle'),
       skipRememberedToggle: document.getElementById('skip-remembered-toggle'),
       markRememberedBtn: document.getElementById('mark-remembered-btn'),
       markRememberedBtnBack: document.getElementById('mark-remembered-btn-back'),
@@ -91,6 +92,10 @@ class FlashCardApp {
   loadPreferences() {
     this.readBothLanguages = Storage.getBoolean(Storage.keys.READ_BOTH);
     this.elements.readBothToggle.checked = this.readBothLanguages;
+
+    const spiralMode = Storage.getBoolean(Storage.keys.SPIRAL_MODE);
+    this.elements.spiralModeToggle.checked = spiralMode;
+    this.cards.setSpiralMode(spiralMode);
 
     this.remembered.skipEnabled = Storage.getBoolean(Storage.keys.SKIP_REMEMBERED);
     this.elements.skipRememberedToggle.checked = this.remembered.skipEnabled;
@@ -133,6 +138,12 @@ class FlashCardApp {
     this.elements.readBothToggle.addEventListener('change', (e) => {
       this.readBothLanguages = e.target.checked;
       Storage.set(Storage.keys.READ_BOTH, this.readBothLanguages);
+    });
+
+    // Spiral mode toggle
+    this.elements.spiralModeToggle.addEventListener('change', (e) => {
+      this.cards.setSpiralMode(e.target.checked);
+      Storage.set(Storage.keys.SPIRAL_MODE, e.target.checked);
     });
 
     // Skip remembered toggle

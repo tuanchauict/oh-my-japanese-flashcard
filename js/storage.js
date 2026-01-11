@@ -7,7 +7,8 @@ const Storage = {
     MODE: 'flashcard-mode',
     READ_BOTH: 'flashcard-read-both',
     SKIP_REMEMBERED: 'flashcard-skip-remembered',
-    REMEMBERED: 'flashcard-remembered'
+    REMEMBERED: 'flashcard-remembered',
+    SPIRAL_MODE: 'flashcard-spiral-mode'
   },
 
   get(key, defaultValue = null) {
