@@ -267,9 +267,11 @@ class FlashCardApp {
     words = this.remembered.filterWords(words);
 
     if (words.length === 0) {
+      this.cards.setWords([]);
       this.cards.showEmpty();
       this.elements.progressText.textContent = 'Hoàn thành!';
       this.elements.progressFill.style.width = '100%';
+      this.updateRememberedList();
       return;
     }
 
