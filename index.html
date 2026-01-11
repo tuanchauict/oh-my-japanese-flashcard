@@ -23,7 +23,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   
-  <link rel="stylesheet" href="styles.css?v=3">
+  <link rel="stylesheet" href="styles.css?v=4">
 </head>
 <body>
   <div class="container">
@@ -43,11 +43,13 @@
           <div class="japanese" id="front-main"></div>
           <div class="romaji" id="front-sub"></div>
           <button class="speak-btn" id="speak-btn" title="Nghe phát âm">🔊</button>
+          <button class="mark-btn" id="mark-remembered-btn" title="Đánh dấu đã thuộc">☆</button>
           <div class="hint">Nhấn để xem nghĩa</div>
         </div>
         <div class="flashcard-back">
           <div class="vietnamese" id="back-main"></div>
           <button class="speak-btn speak-btn-back" id="speak-btn-back" title="Nghe phát âm">🔊</button>
+          <button class="mark-btn mark-btn-back" id="mark-remembered-btn-back" title="Đánh dấu đã thuộc">☆</button>
           <div class="hint">Nhấn để quay lại</div>
         </div>
       </div>
@@ -91,6 +93,11 @@
         <input type="checkbox" id="read-both-toggle">
         <span>🔊 Đọc cả tiếng Việt sau tiếng Nhật</span>
       </label>
+      <label class="checkbox-label">
+        <input type="checkbox" id="skip-remembered-toggle">
+        <span>✅ Bỏ qua từ đã thuộc</span>
+      </label>
+      <button class="reset-btn" id="reset-remembered-btn" title="Xóa tất cả đánh dấu">🗑️ Xóa đánh dấu</button>
     </div>
     
     <!-- Keyboard Shortcuts -->

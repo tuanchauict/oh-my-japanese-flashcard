@@ -14,6 +14,8 @@ class FlashCardApp {
     this.autoPlayDelay = 3000; // 3 seconds
     this.wakeLock = null;
     this.readBothLanguages = false; // Read Vietnamese after Japanese
+    this.rememberedWords = new Set(); // Words marked as remembered
+    this.skipRemembered = false; // Skip remembered words option
     
     this.init();
   }
@@ -111,7 +113,11 @@ class FlashCardApp {
       speakBtn: document.getElementById('speak-btn'),
       speakBtnBack: document.getElementById('speak-btn-back'),
       autoPlayBtn: document.getElementById('auto-play-btn'),
-      readBothToggle: document.getElementById('read-both-toggle')
+      readBothToggle: document.getElementById('read-both-toggle'),
+      skipRememberedToggle: document.getElementById('skip-remembered-toggle'),
+      markRememberedBtn: document.getElementById('mark-remembered-btn'),
+      markRememberedBtnBack: document.getElementById('mark-remembered-btn-back'),
+      resetRememberedBtn: document.getElementById('reset-remembered-btn')
     };
   }
   
@@ -174,6 +180,36 @@ class FlashCardApp {
     // Load saved read-both preference
     this.readBothLanguages = localStorage.getItem('flashcard-read-both') === 'true';
     this.elements.readBothToggle.checked = this.readBothLanguages;
+    
+    // Skip remembered toggle
+    this.elements.skipRememberedToggle.addEventListener('change', (e) => {
+      this.skipRemembered = e.target.checked;
+      localStorage.setItem('flashcard-skip-remembered', this.skipRemembered);
+      this.applyFilter();
+    });
+    
+    // Load saved skip-remembered preference
+    this.skipRemembered = localStorage.getItem('flashcard-skip-remembered') === 'true';
+    this.elements.skipRememberedToggle.checked = this.skipRemembered;
+    
+    // Load remembered words from localStorage
+    this.loadRememberedWords();
+    
+    // Mark remembered buttons
+    this.elements.markRememberedBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      this.toggleRemembered();
+    });
+    
+    this.elements.markRememberedBtnBack.addEventListener('click', (e) => {
+      e.stopPropagation();
+      this.toggleRemembered();
+    });
+    
+    // Reset remembered button
+    this.elements.resetRememberedBtn.addEventListener('click', () => {
+      this.resetRemembered();
+    });
     
     // Keyboard shortcuts
     document.addEventListener('keydown', (e) => {
@@ -303,6 +339,21 @@ class FlashCardApp {
       }
     }
     
+    // Filter out remembered words if skip option is enabled
+    if (this.skipRemembered) {
+      this.currentWords = this.currentWords.filter(w => !this.rememberedWords.has(w.japanese));
+    }
+    
+    // Handle empty list after filtering
+    if (this.currentWords.length === 0) {
+      this.elements.frontMain.textContent = '🎉';
+      this.elements.frontSub.textContent = 'Đã thuộc hết!';
+      this.elements.backMain.textContent = '';
+      this.elements.progressText.textContent = 'Hoàn thành!';
+      this.elements.progressFill.style.width = '100%';
+      return;
+    }
+    
     this.currentIndex = Math.min(startIndex, this.currentWords.length - 1);
     this.isFlipped = false;
     this.saveState();
@@ -359,6 +410,9 @@ class FlashCardApp {
     } else {
       document.title = this.mode === 'jp-vn' ? word.japanese : word.vietnamese;
     }
+    
+    // Update remembered button state
+    this.updateRememberedButton();
     
     // Update Media Session metadata for lock screen / control center
     this.updateMediaSession(word);
@@ -524,12 +578,85 @@ class FlashCardApp {
     const total = this.currentWords.length;
     const percentage = (current / total) * 100;
     
-    this.elements.progressText.textContent = `Thẻ ${current} / ${total}`;
+    const rememberedCount = this.getRememberedCountInCurrentWords();
+    const rememberedText = rememberedCount > 0 ? ` (${rememberedCount} đã thuộc)` : '';
+    this.elements.progressText.textContent = `Thẻ ${current} / ${total}${rememberedText}`;
     this.elements.progressFill.style.width = `${percentage}%`;
     
     // Update button states (prev disabled at start, next always enabled for loop)
     this.elements.prevBtn.disabled = this.currentIndex === 0;
     this.elements.nextBtn.disabled = false;
+  }
+  
+  // Remembered words management
+  loadRememberedWords() {
+    try {
+      const saved = localStorage.getItem('flashcard-remembered');
+      if (saved) {
+        this.rememberedWords = new Set(JSON.parse(saved));
+      }
+    } catch (e) {
+      console.warn('Failed to load remembered words:', e);
+      this.rememberedWords = new Set();
+    }
+  }
+  
+  saveRememberedWords() {
+    localStorage.setItem('flashcard-remembered', JSON.stringify([...this.rememberedWords]));
+  }
+  
+  isCurrentWordRemembered() {
+    if (this.currentWords.length === 0) return false;
+    const word = this.currentWords[this.currentIndex];
+    return this.rememberedWords.has(word.japanese);
+  }
+  
+  toggleRemembered() {
+    if (this.currentWords.length === 0) return;
+    const word = this.currentWords[this.currentIndex];
+    
+    if (this.rememberedWords.has(word.japanese)) {
+      this.rememberedWords.delete(word.japanese);
+    } else {
+      this.rememberedWords.add(word.japanese);
+    }
+    
+    this.saveRememberedWords();
+    this.updateRememberedButton();
+    this.updateProgress();
+    
+    // If skip remembered is on and we just marked as remembered, go to next
+    if (this.skipRemembered && this.rememberedWords.has(word.japanese)) {
+      setTimeout(() => this.nextCard(), 300);
+    }
+  }
+  
+  updateRememberedButton() {
+    const isRemembered = this.isCurrentWordRemembered();
+    const icon = isRemembered ? '★' : '☆';
+    this.elements.markRememberedBtn.textContent = icon;
+    this.elements.markRememberedBtnBack.textContent = icon;
+    this.elements.markRememberedBtn.classList.toggle('remembered', isRemembered);
+    this.elements.markRememberedBtnBack.classList.toggle('remembered', isRemembered);
+  }
+  
+  getRememberedCountInCurrentWords() {
+    return this.currentWords.filter(w => this.rememberedWords.has(w.japanese)).length;
+  }
+  
+  applyFilter() {
+    // Re-select current category to apply filter
+    const currentCategoryId = this.currentCategory?.id || 'all';
+    this.selectCategory(currentCategoryId);
+  }
+  
+  resetRemembered() {
+    if (confirm('Xóa tất cả đánh dấu đã thuộc?')) {
+      this.rememberedWords.clear();
+      this.saveRememberedWords();
+      this.updateRememberedButton();
+      this.updateProgress();
+    }
   }
 }
 
