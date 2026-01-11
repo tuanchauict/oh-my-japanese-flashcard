@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="favicon.svg" width="120" height="120" alt="車">
+  <img src="assets/favicon.svg" width="120" height="120" alt="車">
 </p>
 
 # 🚗 Oh! My Japanese Flashcard 🎴
@@ -13,11 +13,15 @@
 ## ✨ Tính năng
 
 - 📚 **Bộ từ vựng đầy đủ** - Các khẩu lệnh trong lớp học lái xe Nhật Bản
-- 🔊 **Phát âm audio** - Nghe phát âm chuẩn tiếng Nhật
+- 🔊 **Phát âm audio** - Nghe phát âm chuẩn tiếng Nhật và tiếng Việt
+- 🇻🇳 **Đọc cả hai ngôn ngữ** - Tùy chọn đọc tiếng Việt sau tiếng Nhật
 - 🔄 **Hai chế độ học** - Nhật → Việt hoặc Việt → Nhật
 - ▶️ **Tự động phát** - Auto-play với chống tắt màn hình
 - 🔀 **Trộn bài ngẫu nhiên** - Học theo thứ tự ngẫu nhiên
+- ⭐ **Đánh dấu đã thuộc** - Theo dõi từ đã học, bỏ qua khi ôn tập
 - 💾 **Lưu tiến độ** - Tự động nhớ vị trí học
+- 🎧 **Media Session** - Điều khiển từ màn hình khóa
+- 📱 **PWA** - Cài đặt như app trên điện thoại
 - 📱 **Responsive** - Hoạt động tốt trên mobile và desktop
 
 ## ⌨️ Phím tắt
@@ -31,11 +35,32 @@
 
 ## 🛠️ Công nghệ
 
-- Vanilla JavaScript
+- Vanilla JavaScript (ES Modules)
 - CSS3 với animations
-- Web Audio API
+- Edge TTS (audio generation)
+- Media Session API
 - Screen Wake Lock API
 - LocalStorage
+- PWA (Progressive Web App)
+
+## 📁 Cấu trúc
+
+```
+├── assets/          # Favicon, icons, audio files
+├── js/              # ES modules
+│   ├── app.js       # Main coordinator
+│   ├── storage.js   # LocalStorage wrapper
+│   ├── audio.js     # Audio playback & Media Session
+│   ├── cards.js     # Card display & navigation
+│   ├── remembered.js # Remembered words tracking
+│   └── autoplay.js  # Auto-play & wake lock
+├── scripts/         # Build scripts
+│   └── generate_audio.py
+├── index.html
+├── styles.css
+├── dictionary.json
+└── manifest.json
+```
 
 ## 📦 Triển khai
 
