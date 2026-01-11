@@ -113,27 +113,44 @@ class CardManager {
   }
 
   nextSpiral() {
-    // Spiral pattern: forward → review previous → forward → review previous...
-    // 1 → 2 → 1 → 3 → 2 → 4 → 3 → 5 → 4 → ...
+    // Spiral pattern with window of 3:
+    // 1 → 2 → 3 → [1 → 2 → 3] → 4 → [2 → 3 → 4] → 5 → [3 → 4 → 5] → 6 → ...
+    // After initial 3 cards, pattern is: new card → review window of 3
+    const windowSize = 3;
+    
+    // Calculate window start position
+    const windowStart = Math.max(0, this.highestReached - windowSize + 1);
+    
     if (this.spiralState === 'forward') {
-      // Move to next new card
-      if (this.currentIndex < this.words.length - 1) {
+      // Initial phase: go through first windowSize cards
+      if (this.highestReached < windowSize - 1) {
         this.currentIndex++;
-        this.highestReached = Math.max(this.highestReached, this.currentIndex);
-        // Only review if we have a previous card to review
-        if (this.currentIndex > 0) {
-          this.spiralState = 'review';
-        }
+        this.highestReached = this.currentIndex;
       } else {
-        // Reached end, loop back
-        this.currentIndex = 0;
-        this.highestReached = 0;
-        this.spiralState = 'forward';
+        // After initial cards, switch to review
+        this.spiralState = 'review';
+        this.currentIndex = windowStart;
       }
     } else {
-      // Review: go back one card
-      this.currentIndex = Math.max(0, this.currentIndex - 1);
-      this.spiralState = 'forward';
+      // Review phase: go through window, then add new card
+      if (this.currentIndex < this.highestReached) {
+        // Continue through review window
+        this.currentIndex++;
+      } else {
+        // Finished window, add new card
+        if (this.highestReached < this.words.length - 1) {
+          this.highestReached++;
+          this.currentIndex = this.highestReached;
+          // Jump back to start of new window
+          const newWindowStart = Math.max(0, this.highestReached - windowSize + 1);
+          this.currentIndex = newWindowStart;
+        } else {
+          // Reached end, loop back
+          this.currentIndex = 0;
+          this.highestReached = 0;
+          this.spiralState = 'forward';
+        }
+      }
     }
     this.resetFlip();
     return true;
