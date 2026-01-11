@@ -154,7 +154,7 @@ document.addEventListener('alpine:init', () => {
       await this.loadDictionary();
       await Audio.loadMapping();
       this.loadPreferences();
-      this.loadCategory(Storage.get(Storage.keys.CATEGORY, 'all'));
+      this.loadCategory(Storage.get(Storage.keys.CATEGORY, 'all'), true); // Restore saved index on init
       this.setupMediaSession();
       this.setupKeyboard();
     },
@@ -182,7 +182,7 @@ document.addEventListener('alpine:init', () => {
     },
     
     // Category
-    loadCategory(categoryId) {
+    loadCategory(categoryId, restoreIndex = false) {
       if (categoryId === 'all') {
         this.currentCategory = { id: 'all', name: 'Tất cả từ vựng' };
         this.words = this.dictionary.categories.flatMap(c => [...c.words]);
@@ -198,12 +198,18 @@ document.addEventListener('alpine:init', () => {
         this.words = this.words.filter(w => !this.remembered.has(w.japanese));
       }
       
-      this.currentIndex = Math.min(Storage.getInt(Storage.keys.INDEX, 0), Math.max(0, this.words.length - 1));
+      // Only restore saved index on initial load, otherwise start from 0
+      if (restoreIndex) {
+        this.currentIndex = Math.min(Storage.getInt(Storage.keys.INDEX, 0), Math.max(0, this.words.length - 1));
+      } else {
+        this.currentIndex = 0;
+      }
       this.isFlipped = false;
       this.spiralState = 'forward';
       this.highestReached = this.currentIndex;
       this.autoPlayVersion++; // Invalidate any pending auto-play schedules
       Storage.set(Storage.keys.CATEGORY, categoryId);
+      Storage.set(Storage.keys.INDEX, '0');
       
       this.updateMediaSessionMetadata();
       this.speak();

@@ -161,7 +161,7 @@
       <label for="category-select">Chọn chủ đề:</label>
       <select 
         id="category-select"
-        x-model="$store.app.currentCategory.id"
+        :value="$store.app.currentCategory.id"
         @change="$store.app.loadCategory($event.target.value)">
         <template x-for="cat in $store.app.categories" :key="cat.id">
           <option :value="cat.id" x-text="cat.name"></option>
