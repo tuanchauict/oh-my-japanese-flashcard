@@ -383,7 +383,7 @@ class FlashCardApp {
         artist: word.vietnamese,
         album: `${categoryName} (${cardNumber})`,
         artwork: [
-          { src: 'favicon.svg', sizes: '512x512', type: 'image/svg+xml' }
+          { src: 'assets/favicon.svg', sizes: '512x512', type: 'image/svg+xml' }
         ]
       });
       

@@ -23,7 +23,7 @@ VIETNAMESE_VOICES = [
     "vi-VN-NamMinhNeural",  # Male, natural
 ]
 
-AUDIO_DIR = "audio"
+AUDIO_DIR = "assets/audio"
 
 
 def get_audio_filename(text: str, lang: str = "ja") -> str:
@@ -94,7 +94,7 @@ async def main():
     for i, text in enumerate(sorted(japanese_texts), 1):
         filename = get_audio_filename(text, "ja")
         output_path = os.path.join(AUDIO_DIR, filename)
-        audio_mapping[text] = f"audio/{filename}"
+        audio_mapping[text] = f"assets/audio/{filename}"
         
         print(f"[JA {i}/{len(japanese_texts)}] {text}", end="")
         success, voice = await generate_audio(text, output_path, "ja")
@@ -113,7 +113,7 @@ async def main():
     for i, text in enumerate(sorted(vietnamese_texts), 1):
         filename = get_audio_filename(text, "vi")
         output_path = os.path.join(AUDIO_DIR, filename)
-        audio_mapping[text] = f"audio/{filename}"
+        audio_mapping[text] = f"assets/audio/{filename}"
         
         print(f"[VI {i}/{len(vietnamese_texts)}] {text}", end="")
         success, voice = await generate_audio(text, output_path, "vi")
