@@ -497,6 +497,11 @@ class FlashCardApp {
         this.updateRememberedList();
         this.updateRememberedButton();
         this.updateProgress();
+        
+        // If skip mode is on, re-apply filter to add the word back
+        if (this.remembered.skipEnabled) {
+          this.applyFilter();
+        }
       });
 
       ul.appendChild(li);
