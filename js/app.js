@@ -11,6 +11,7 @@ class FlashCardApp {
     this.dictionary = null;
     this.currentCategory = null;
     this.readBothLanguages = false;
+    this.pendingRemoval = false;
 
     this.audio = new AudioManager();
     this.remembered = new RememberedManager();
@@ -346,6 +347,13 @@ class FlashCardApp {
   }
 
   nextCard() {
+    // Remove pending remembered word before moving
+    if (this.pendingRemoval) {
+      this.pendingRemoval = false;
+      this.removeCurrentWordFromList();
+      return;
+    }
+    
     if (this.cards.next()) {
       this.saveState();
       this.updateCard();
@@ -397,12 +405,10 @@ class FlashCardApp {
     this.updateRememberedButton();
     this.updateProgress();
     this.updateRememberedList();
-
+    
+    // Mark for removal on next card transition (don't hide immediately)
     if (this.remembered.skipEnabled && isNowRemembered) {
-      // Remove the word from current list and continue
-      setTimeout(() => {
-        this.removeCurrentWordFromList();
-      }, 300);
+      this.pendingRemoval = true;
     }
   }
 
