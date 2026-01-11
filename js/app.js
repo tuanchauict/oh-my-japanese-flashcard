@@ -62,7 +62,11 @@ class FlashCardApp {
       skipRememberedToggle: document.getElementById('skip-remembered-toggle'),
       markRememberedBtn: document.getElementById('mark-remembered-btn'),
       markRememberedBtnBack: document.getElementById('mark-remembered-btn-back'),
-      resetRememberedBtn: document.getElementById('reset-remembered-btn')
+      resetRememberedBtn: document.getElementById('reset-remembered-btn'),
+      rememberedListToggle: document.getElementById('remembered-list-toggle'),
+      rememberedListTitle: document.getElementById('remembered-list-title'),
+      rememberedListContent: document.getElementById('remembered-list-content'),
+      rememberedWordsUl: document.getElementById('remembered-words-ul')
     };
   }
 
@@ -150,6 +154,11 @@ class FlashCardApp {
     // Reset remembered
     this.elements.resetRememberedBtn.addEventListener('click', () => {
       this.resetRemembered();
+    });
+
+    // Remembered list toggle
+    this.elements.rememberedListToggle.addEventListener('click', () => {
+      this.toggleRememberedList();
     });
 
     // Keyboard shortcuts
@@ -269,6 +278,7 @@ class FlashCardApp {
     this.saveState();
     this.updateCard();
     this.updateProgress();
+    this.updateRememberedList();
   }
 
   applyFilter() {
@@ -373,6 +383,7 @@ class FlashCardApp {
     const isNowRemembered = this.remembered.toggle(word.japanese);
     this.updateRememberedButton();
     this.updateProgress();
+    this.updateRememberedList();
 
     if (this.remembered.skipEnabled && isNowRemembered) {
       setTimeout(() => this.nextCard(), 300);
@@ -397,7 +408,62 @@ class FlashCardApp {
       this.remembered.reset();
       this.updateRememberedButton();
       this.updateProgress();
+      this.updateRememberedList();
     }
+  }
+
+  toggleRememberedList() {
+    const listContainer = this.elements.rememberedListToggle.parentElement;
+    listContainer.classList.toggle('expanded');
+  }
+
+  updateRememberedList() {
+    // Get words for current category
+    let allWords;
+    if (this.currentCategory?.id === 'all') {
+      allWords = this.dictionary.categories.flatMap(cat => cat.words);
+    } else {
+      const category = this.dictionary.categories.find(c => c.id === this.currentCategory?.id);
+      allWords = category ? category.words : [];
+    }
+
+    // Filter to remembered words only
+    const rememberedWords = allWords.filter(w => this.remembered.isRemembered(w.japanese));
+    
+    // Update title
+    this.elements.rememberedListTitle.textContent = `Từ đã thuộc (${rememberedWords.length})`;
+
+    // Build list
+    const ul = this.elements.rememberedWordsUl;
+    ul.innerHTML = '';
+
+    if (rememberedWords.length === 0) {
+      const emptyMsg = document.createElement('div');
+      emptyMsg.className = 'remembered-list-empty';
+      emptyMsg.textContent = 'Chưa có từ nào được đánh dấu';
+      ul.appendChild(emptyMsg);
+      return;
+    }
+
+    rememberedWords.forEach(word => {
+      const li = document.createElement('li');
+      li.innerHTML = `
+        <div class="word-text">
+          <span class="word-japanese">${word.japanese}</span>
+          <span class="word-vietnamese"> - ${word.vietnamese}</span>
+        </div>
+        <button class="unmark-btn" title="Bỏ đánh dấu">✕</button>
+      `;
+
+      li.querySelector('.unmark-btn').addEventListener('click', () => {
+        this.remembered.toggle(word.japanese);
+        this.updateRememberedList();
+        this.updateRememberedButton();
+        this.updateProgress();
+      });
+
+      ul.appendChild(li);
+    });
   }
 
   // Progress

@@ -23,7 +23,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   
-  <link rel="stylesheet" href="styles.css?v=4">
+  <link rel="stylesheet" href="styles.css?v=5">
 </head>
 <body>
   <div class="container">
@@ -85,6 +85,17 @@
       <select id="category-select">
         <!-- Options will be populated by JavaScript -->
       </select>
+      
+      <!-- Remembered Words List -->
+      <div class="remembered-list">
+        <button class="remembered-list-toggle" id="remembered-list-toggle">
+          <span class="toggle-icon">▶</span>
+          <span id="remembered-list-title">Từ đã thuộc (0)</span>
+        </button>
+        <div class="remembered-list-content" id="remembered-list-content">
+          <ul id="remembered-words-ul"></ul>
+        </div>
+      </div>
     </div>
     
     <!-- Audio Options -->
