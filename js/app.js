@@ -386,8 +386,30 @@ class FlashCardApp {
     this.updateRememberedList();
 
     if (this.remembered.skipEnabled && isNowRemembered) {
-      setTimeout(() => this.nextCard(), 300);
+      // Remove the word from current list and continue
+      setTimeout(() => {
+        this.removeCurrentWordFromList();
+      }, 300);
     }
+  }
+
+  removeCurrentWordFromList() {
+    const currentIndex = this.cards.currentIndex;
+    const words = this.cards.words.filter((_, i) => i !== currentIndex);
+    
+    if (words.length === 0) {
+      this.cards.showEmpty();
+      this.elements.progressText.textContent = 'Hoàn thành!';
+      this.elements.progressFill.style.width = '100%';
+      return;
+    }
+
+    // Adjust index if we removed a card before the end
+    const newIndex = Math.min(currentIndex, words.length - 1);
+    this.cards.setWords(words);
+    this.cards.setIndex(newIndex);
+    this.updateCard();
+    this.updateProgress();
   }
 
   updateRememberedButton() {
