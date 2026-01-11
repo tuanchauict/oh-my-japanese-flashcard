@@ -79,6 +79,7 @@ document.addEventListener('alpine:init', () => {
     
     // UI state
     autoPlaying: false,
+    autoPlayVersion: 0, // Invalidate old schedules when category changes
     wakeLock: null,
     shuffleConfirm: false,
     rememberedListOpen: false,
@@ -201,10 +202,16 @@ document.addEventListener('alpine:init', () => {
       this.isFlipped = false;
       this.spiralState = 'forward';
       this.highestReached = this.currentIndex;
+      this.autoPlayVersion++; // Invalidate any pending auto-play schedules
       Storage.set(Storage.keys.CATEGORY, categoryId);
       
       this.updateMediaSessionMetadata();
       this.speak();
+      
+      // Restart auto-play scheduling if active
+      if (this.autoPlaying) {
+        this.scheduleNext();
+      }
     },
     
     // Navigation
@@ -414,13 +421,17 @@ document.addEventListener('alpine:init', () => {
     scheduleNext() {
       if (!this.autoPlaying) return;
       
+      const version = this.autoPlayVersion;
+      
       const check = () => {
-        if (!this.autoPlaying) return;
+        // Stop if auto-play was disabled or category changed
+        if (!this.autoPlaying || version !== this.autoPlayVersion) return;
+        
         if (Audio.isPlaying()) {
           setTimeout(check, 500);
         } else {
           setTimeout(() => {
-            if (this.autoPlaying) {
+            if (this.autoPlaying && version === this.autoPlayVersion) {
               this.next();
               this.scheduleNext();
             }
