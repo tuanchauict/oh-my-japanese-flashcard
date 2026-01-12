@@ -466,10 +466,16 @@ document.addEventListener('alpine:init', () => {
         Audio.play(this.currentWord.japanese, () => {
           setTimeout(() => {
             Audio.play(this.currentWord.meaning, () => {
-              // Also read example if available
+              // Also read example and its meaning if available
               if (this.currentWord.example) {
                 setTimeout(() => {
-                  Audio.play(this.currentWord.example, done);
+                  Audio.play(this.currentWord.example, () => {
+                    if (this.currentWord.exampleMeaning) {
+                      Audio.play(this.currentWord.exampleMeaning, done);
+                    } else {
+                      done();
+                    }
+                  });
                 }, 500);
               } else {
                 done();
@@ -485,7 +491,15 @@ document.addEventListener('alpine:init', () => {
     speakExample() {
       if (!this.currentWord?.example) return;
       this.speaking = true;
-      Audio.play(this.currentWord.example, () => { this.speaking = false; });
+      
+      // Play example sentence, then meaning
+      Audio.play(this.currentWord.example, () => {
+        if (this.currentWord?.exampleMeaning) {
+          Audio.play(this.currentWord.exampleMeaning, () => { this.speaking = false; });
+        } else {
+          this.speaking = false;
+        }
+      });
     },
     
     // Auto-play

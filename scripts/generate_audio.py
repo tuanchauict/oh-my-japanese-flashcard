@@ -106,6 +106,7 @@ async def main():
     primary_texts = set()
     meaning_texts = set()
     example_texts = set()  # Japanese examples
+    example_meaning_texts = set()  # Example meanings (in meaning language)
 
     for category in dictionary["categories"]:
         for word in category["words"]:
@@ -114,10 +115,13 @@ async def main():
                 meaning_texts.add(word["meaning"])
             if word.get("example"):
                 example_texts.add(word["example"])
+            if word.get("exampleMeaning"):
+                example_meaning_texts.add(word["exampleMeaning"])
     
     print(f"Found {len(primary_texts)} unique primary language phrases")
     print(f"Found {len(meaning_texts)} unique meaning language phrases")
     print(f"Found {len(example_texts)} unique example sentences")
+    print(f"Found {len(example_meaning_texts)} unique example meanings")
     print(f"Primary voices: {', '.join(VOICES.get(primary_lang, VOICES['en']))}")
     print(f"Meaning voices: {', '.join(VOICES.get(meaning_lang, VOICES['en']))}")
     print("-" * 50)
@@ -190,6 +194,28 @@ async def main():
         
         print("-" * 50)
     
+    # Generate audio for example meanings (in meaning language)
+    success_count_example_meanings = 0
+    if example_meaning_texts:
+        print(f"Generating example meaning audio ({meaning_lang.upper()})...")
+        
+        for i, text in enumerate(sorted(example_meaning_texts), 1):
+            filename = get_audio_filename(text, meaning_lang)
+            output_path = os.path.join(audio_dir, filename)
+            audio_mapping[text] = f"{audio_dir}/{filename}"
+            
+            # Truncate display for long examples
+            display_text = text[:40] + "..." if len(text) > 40 else text
+            print(f"[EX-M {i}/{len(example_meaning_texts)}] {display_text}", end="")
+            success, voice = await generate_audio(text, output_path, meaning_lang)
+            if success:
+                success_count_example_meanings += 1
+                print(f" ✓ ({voice.split('-')[-1]})")
+            else:
+                print(" ✗")
+        
+        print("-" * 50)
+    
     # Save audio mapping inside the audio directory
     mapping_path = os.path.join(audio_dir, "audio_mapping.json")
     with open(mapping_path, "w", encoding="utf-8") as f:
@@ -200,6 +226,7 @@ async def main():
     print(f"  {primary_lang.upper()}: {success_count_primary}/{len(primary_texts)} audio files")
     print(f"  {meaning_lang.upper()}: {success_count_meaning}/{len(meaning_texts)} audio files")
     print(f"  Examples (JA): {success_count_examples}/{len(example_texts)} audio files")
+    print(f"  Example meanings ({meaning_lang.upper()}): {success_count_example_meanings}/{len(example_meaning_texts)} audio files")
     print(f"Audio mapping saved to {mapping_path}")
 
 
