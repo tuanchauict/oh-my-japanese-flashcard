@@ -7,6 +7,7 @@ const Storage = {
     INDEX: 'flashcard-index',
     MODE: 'flashcard-mode',
     READ_BOTH: 'flashcard-read-both',
+    READ_EXAMPLE: 'flashcard-read-example',
     SKIP_REMEMBERED: 'flashcard-skip-remembered',
     REMEMBERED: 'flashcard-remembered',
     SPIRAL_MODE: 'flashcard-spiral-mode'
@@ -74,6 +75,7 @@ document.addEventListener('alpine:init', () => {
     
     // Settings
     readBoth: false,
+    readExample: true,
     spiralMode: false,
     skipRemembered: false,
     remembered: new Set(),
@@ -238,6 +240,7 @@ document.addEventListener('alpine:init', () => {
       const defaultMode = this.dictionary?.metadata?.modes?.[0]?.id || 'jp-vn';
       this.mode = Storage.get(Storage.keys.MODE, defaultMode);
       this.readBoth = Storage.getBool(Storage.keys.READ_BOTH);
+      this.readExample = Storage.get(Storage.keys.READ_EXAMPLE, 'true') === 'true';
       this.spiralMode = Storage.getBool(Storage.keys.SPIRAL_MODE);
       this.skipRemembered = Storage.getBool(Storage.keys.SKIP_REMEMBERED);
       const saved = Storage.getJSON(Storage.keys.REMEMBERED, []);
@@ -396,6 +399,11 @@ document.addEventListener('alpine:init', () => {
       Storage.set(Storage.keys.READ_BOTH, this.readBoth);
     },
     
+    toggleReadExample() {
+      this.readExample = !this.readExample;
+      Storage.set(Storage.keys.READ_EXAMPLE, this.readExample);
+    },
+    
     toggleSpiralMode() {
       this.spiralMode = !this.spiralMode;
       this.spiralState = 'forward';
@@ -466,8 +474,8 @@ document.addEventListener('alpine:init', () => {
         Audio.play(this.currentWord.japanese, () => {
           setTimeout(() => {
             Audio.play(this.currentWord.meaning, () => {
-              // Also read example and its meaning if available
-              if (this.currentWord.example) {
+              // Also read example and its meaning if readExample is enabled
+              if (this.readExample && this.currentWord.example) {
                 setTimeout(() => {
                   Audio.play(this.currentWord.example, () => {
                     if (this.currentWord.exampleMeaning) {

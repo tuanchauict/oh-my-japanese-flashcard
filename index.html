@@ -220,6 +220,13 @@
           @change="$store.app.toggleReadBoth()">
         <span x-text="$store.app.readBothLabel"></span>
       </label>
+      <label class="checkbox-label" x-show="$store.app.readBoth">
+        <input 
+          type="checkbox" 
+          :checked="$store.app.readExample"
+          @change="$store.app.toggleReadExample()">
+        <span>📝 Đọc câu ví dụ</span>
+      </label>
       <label class="checkbox-label">
         <input 
           type="checkbox" 
