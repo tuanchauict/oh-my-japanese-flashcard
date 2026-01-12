@@ -31,23 +31,19 @@
 </head>
 <body x-data x-init="$store.app.init()">
   <div class="container">
-    <h1>🚗 Từ Vựng Lái Xe Nhật Bản</h1>
-    <p class="subtitle">Bộ khẩu lệnh đầy đủ trong lớp học lái xe</p>
+    <h1 x-text="$store.app.title"></h1>
+    <p class="subtitle" x-text="$store.app.subtitle"></p>
     
     <!-- Mode Toggle -->
     <div class="mode-toggle">
-      <button 
-        class="mode-btn" 
-        :class="{ active: $store.app.mode === 'jp-vn' }"
-        @click="$store.app.setMode('jp-vn')">
-        🇯🇵 → 🇻🇳
-      </button>
-      <button 
-        class="mode-btn" 
-        :class="{ active: $store.app.mode === 'vn-jp' }"
-        @click="$store.app.setMode('vn-jp')">
-        🇻🇳 → 🇯🇵
-      </button>
+      <template x-for="m in $store.app.modes" :key="m.id">
+        <button 
+          class="mode-btn" 
+          :class="{ active: $store.app.mode === m.id }"
+          @click="$store.app.setMode(m.id)"
+          x-text="m.label">
+        </button>
+      </template>
     </div>
     
     <!-- Flash Card -->
@@ -207,7 +203,7 @@
           type="checkbox" 
           :checked="$store.app.readBoth"
           @change="$store.app.toggleReadBoth()">
-        <span>🔊 Đọc cả tiếng Việt sau tiếng Nhật</span>
+        <span x-text="$store.app.readBothLabel"></span>
       </label>
       <label class="checkbox-label">
         <input 

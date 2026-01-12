@@ -1,4 +1,13 @@
 {
+  "metadata": {
+    "title": "🚗 Từ Vựng Lái Xe Nhật Bản",
+    "subtitle": "Bộ khẩu lệnh đầy đủ trong lớp học lái xe",
+    "modes": [
+      { "id": "jp-vn", "label": "🇯🇵 → 🇻🇳" },
+      { "id": "vn-jp", "label": "🇻🇳 → 🇯🇵" }
+    ],
+    "readBothLabel": "🔊 Đọc cả tiếng Việt sau tiếng Nhật"
+  },
   "categories": [
     {
       "id": "before-boarding",

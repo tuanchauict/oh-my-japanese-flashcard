@@ -89,7 +89,23 @@ document.addEventListener('alpine:init', () => {
     // Spiral state
     spiralStep: 0, // Current step in spiral sequence
 
-    // Computed
+    // Computed - Metadata
+    get title() {
+      return this.dictionary?.metadata?.title || '';
+    },
+    
+    get subtitle() {
+      return this.dictionary?.metadata?.subtitle || '';
+    },
+    
+    get modes() {
+      return this.dictionary?.metadata?.modes || [];
+    },
+    
+    get readBothLabel() {
+      return this.dictionary?.metadata?.readBothLabel || '';
+    },
+    
     get currentWord() {
       return this.words[this.currentIndex] || null;
     },
