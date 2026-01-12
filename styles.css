@@ -253,11 +253,21 @@ h1 {
 
 .flashcard-front {
   background: linear-gradient(145deg, #ffffff 0%, #f5f5f5 100%);
+  z-index: 2;
+}
+
+.flashcard.flipped .flashcard-front {
+  pointer-events: none;
 }
 
 .flashcard-back {
   background: linear-gradient(145deg, #4facfe 0%, #00f2fe 100%);
   transform: rotateY(180deg);
+  z-index: 1;
+}
+
+.flashcard.flipped .flashcard-back {
+  pointer-events: auto;
 }
 
 .japanese {
