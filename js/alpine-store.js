@@ -138,18 +138,32 @@ document.addEventListener('alpine:init', () => {
     
     get frontMain() {
       if (!this.currentWord) return '';
-      return this.mode === 'jp-vn' ? this.currentWord.japanese : this.currentWord.meaning;
+      return this.mode.startsWith('jp') ? this.currentWord.japanese : this.currentWord.meaning;
     },
     
     get frontSub() {
       if (!this.currentWord) return '';
-      return this.mode === 'jp-vn' ? this.currentWord.romaji : '';
+      return this.mode.startsWith('jp') ? this.currentWord.romaji : '';
     },
     
     get backMain() {
       if (!this.currentWord) return '';
-      if (this.mode === 'jp-vn') return this.currentWord.meaning;
+      if (this.mode.startsWith('jp')) return this.currentWord.meaning;
       return `<span style="font-size:2rem">${this.currentWord.japanese}</span><br><br><span style="font-size:1.2rem;opacity:0.9">${this.currentWord.romaji}</span>`;
+    },
+    
+    get hasExample() {
+      return this.currentWord?.example;
+    },
+    
+    get exampleText() {
+      if (!this.currentWord?.example) return '';
+      return this.currentWord.example;
+    },
+    
+    get exampleMeaning() {
+      if (!this.currentWord?.exampleMeaning) return '';
+      return this.currentWord.exampleMeaning;
     },
     
     get isCurrentRemembered() {
@@ -166,18 +180,48 @@ document.addEventListener('alpine:init', () => {
     },
 
     // Init
-    async init(dictionaryFile = 'dictionary.json') {
-      this.dictionaryFile = dictionaryFile;
-      await this.loadDictionary();
+    _initializing: false,
+    _initialized: false,
+    
+    async init() {
+      // Prevent concurrent or duplicate init
+      if (this._initializing || this._initialized) {
+        console.log('Init already in progress or completed, skipping');
+        return;
+      }
+      this._initializing = true;
       
-      // Get dictionary name for audio folder (e.g., "dictionary" from "dictionary.json")
-      const dictionaryName = dictionaryFile.replace('.json', '');
-      await Audio.loadMapping(dictionaryName);
+      // Always use URL parameter if available
+      const urlDict = new URLSearchParams(window.location.search).get('dictionary');
+      const dictionaryFile = urlDict || 'dictionary.json';
+      
+      console.log('Init with dictionary:', dictionaryFile);
+      this.dictionaryFile = dictionaryFile;
+      this.dictionaryName = dictionaryFile.replace('.json', '');
+      
+      await this.loadDictionary();
+      console.log('Dictionary loaded:', this.dictionary?.metadata?.title, 'Categories:', this.dictionary?.categories?.length);
+      
+      if (!this.dictionary) {
+        console.error('Failed to load dictionary');
+        this._initializing = false;
+        return;
+      }
+      
+      // Get dictionary name for audio folder
+      await Audio.loadMapping(this.dictionaryName);
       
       this.loadPreferences();
-      this.loadCategory(Storage.get(Storage.keys.CATEGORY, 'all'), true); // Restore saved index on init
+      
+      // Get saved category for this specific dictionary
+      const savedCategory = Storage.get(`${this.dictionaryName}-category`, 'all');
+      this.loadCategory(savedCategory, true);
+      
       this.setupMediaSession();
       this.setupKeyboard();
+      
+      this._initializing = false;
+      this._initialized = true;
     },
     
     async loadDictionary() {
@@ -206,15 +250,21 @@ document.addEventListener('alpine:init', () => {
     
     // Category
     loadCategory(categoryId, restoreIndex = false) {
+      // Validate category exists, fallback to 'all' if not
+      if (categoryId !== 'all') {
+        const cat = this.dictionary.categories.find(c => c.id === categoryId);
+        if (!cat) {
+          categoryId = 'all'; // Category not found, fallback
+        }
+      }
+      
       if (categoryId === 'all') {
         this.currentCategory = { id: 'all', name: 'Tất cả từ vựng' };
         this.words = this.dictionary.categories.flatMap(c => [...c.words]);
       } else {
         const cat = this.dictionary.categories.find(c => c.id === categoryId);
-        if (cat) {
-          this.currentCategory = cat;
-          this.words = [...cat.words];
-        }
+        this.currentCategory = cat;
+        this.words = [...cat.words];
       }
       
       if (this.skipRemembered) {
@@ -223,15 +273,18 @@ document.addEventListener('alpine:init', () => {
       
       // Only restore saved index on initial load, otherwise start from 0
       if (restoreIndex) {
-        this.currentIndex = Math.min(Storage.getInt(Storage.keys.INDEX, 0), Math.max(0, this.words.length - 1));
+        const savedIndex = Storage.getInt(`${this.dictionaryName}-index`, 0);
+        this.currentIndex = Math.min(savedIndex, Math.max(0, this.words.length - 1));
       } else {
         this.currentIndex = 0;
       }
       this.isFlipped = false;
       this.spiralStep = 0;
       this.autoPlayVersion++; // Invalidate any pending auto-play schedules
-      Storage.set(Storage.keys.CATEGORY, categoryId);
-      Storage.set(Storage.keys.INDEX, '0');
+      
+      // Save with dictionary-specific keys
+      Storage.set(`${this.dictionaryName}-category`, categoryId);
+      Storage.set(`${this.dictionaryName}-index`, '0');
       
       this.updateMediaSessionMetadata();
       this.speak();
@@ -327,7 +380,7 @@ document.addEventListener('alpine:init', () => {
     },
     
     saveIndex() {
-      Storage.set(Storage.keys.INDEX, this.currentIndex.toString());
+      Storage.set(`${this.dictionaryName}-index`, this.currentIndex.toString());
     },
     
     // Mode
@@ -412,12 +465,27 @@ document.addEventListener('alpine:init', () => {
       if (this.readBoth) {
         Audio.play(this.currentWord.japanese, () => {
           setTimeout(() => {
-            Audio.play(this.currentWord.meaning, done);
+            Audio.play(this.currentWord.meaning, () => {
+              // Also read example if available
+              if (this.currentWord.example) {
+                setTimeout(() => {
+                  Audio.play(this.currentWord.example, done);
+                }, 500);
+              } else {
+                done();
+              }
+            });
           }, 500);
         });
       } else {
         Audio.play(this.currentWord.japanese, done);
       }
+    },
+    
+    speakExample() {
+      if (!this.currentWord?.example) return;
+      this.speaking = true;
+      Audio.play(this.currentWord.example, () => { this.speaking = false; });
     },
     
     // Auto-play

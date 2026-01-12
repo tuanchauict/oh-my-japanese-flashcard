@@ -23,10 +23,10 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   
-  <link rel="stylesheet" href="styles.css?v=6">
+  <link rel="stylesheet" href="styles.css?v=8">
   
   <!-- Alpine.js -->
-  <script src="js/alpine-store.js"></script>
+  <script src="js/alpine-store.js?v=7"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 <body x-data x-init="$store.app.init()">
@@ -73,7 +73,21 @@
           <div class="hint">Nhấn để xem nghĩa</div>
         </div>
         <div class="flashcard-back">
-          <div class="vietnamese" x-html="$store.app.backMain"></div>
+          <div class="meaning" x-html="$store.app.backMain"></div>
+          
+          <!-- Example sentence section -->
+          <div class="example-section" x-show="$store.app.hasExample">
+            <div class="example-text" x-text="$store.app.exampleText"></div>
+            <div class="example-meaning" x-text="$store.app.exampleMeaning"></div>
+            <button 
+              class="speak-btn speak-btn-example" 
+              :class="{ speaking: $store.app.speaking }"
+              @click.stop="$store.app.speakExample()" 
+              title="Nghe ví dụ">
+              🔊
+            </button>
+          </div>
+          
           <button 
             class="speak-btn speak-btn-back" 
             :class="{ speaking: $store.app.speaking }"
@@ -153,14 +167,13 @@
     </div>
     
     <!-- Category Selector -->
-    <div class="category-selector">
+    <div class="category-selector" x-show="$store.app.categories.length > 0">
       <label for="category-select">Chọn chủ đề:</label>
       <select 
         id="category-select"
-        :value="$store.app.currentCategory.id"
         @change="$store.app.loadCategory($event.target.value)">
         <template x-for="cat in $store.app.categories" :key="cat.id">
-          <option :value="cat.id" x-text="cat.name"></option>
+          <option :value="cat.id" :selected="cat.id === $store.app.currentCategory.id" x-text="cat.name"></option>
         </template>
       </select>
       
