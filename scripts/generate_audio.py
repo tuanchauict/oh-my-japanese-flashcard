@@ -36,10 +36,14 @@ VOICES = {
 }
 
 
-def get_audio_dir(dictionary_file: str) -> str:
-    """Get audio directory based on dictionary filename."""
-    base_name = os.path.splitext(os.path.basename(dictionary_file))[0]
-    return f"assets/audio/{base_name}"
+def get_dictionary_dir(dictionary_name: str) -> str:
+    """Get dictionary directory based on dictionary name."""
+    return f"assets/dictionaries/{dictionary_name}"
+
+
+def get_audio_dir(dictionary_name: str) -> str:
+    """Get audio directory based on dictionary name."""
+    return f"assets/dictionaries/{dictionary_name}/audios"
 
 
 def get_audio_filename(text: str, lang: str = "ja") -> str:
@@ -72,11 +76,14 @@ async def generate_audio(text: str, output_path: str, lang: str = "ja", max_retr
 
 async def main():
     if len(sys.argv) < 2:
-        print("Usage: python generate_audio.py <dictionary.json>")
-        print("Example: python generate_audio.py dictionary.json")
+        print("Usage: python generate_audio.py <dictionary-name>")
+        print("Example: python generate_audio.py dictionary")
+        print("         python generate_audio.py n5-dictionary")
         sys.exit(1)
     
-    dictionary_file = sys.argv[1]
+    dictionary_name = sys.argv[1]
+    dictionary_dir = get_dictionary_dir(dictionary_name)
+    dictionary_file = os.path.join(dictionary_dir, "dictionary.json")
     
     if not os.path.exists(dictionary_file):
         print(f"Error: Dictionary file '{dictionary_file}' not found")
@@ -91,11 +98,11 @@ async def main():
     primary_lang = metadata.get("primaryLanguage", "ja")
     meaning_lang = metadata.get("meaningLanguage", "en")
     
-    # Create audio directory based on dictionary name
-    audio_dir = get_audio_dir(dictionary_file)
+    # Create audio directory
+    audio_dir = get_audio_dir(dictionary_name)
     os.makedirs(audio_dir, exist_ok=True)
     
-    print(f"Dictionary: {dictionary_file}")
+    print(f"Dictionary: {dictionary_name}")
     print(f"Primary language: {primary_lang}")
     print(f"Meaning language: {meaning_lang}")
     print(f"Audio directory: {audio_dir}")
@@ -216,8 +223,8 @@ async def main():
         
         print("-" * 50)
     
-    # Save audio mapping inside the audio directory
-    mapping_path = os.path.join(audio_dir, "audio_mapping.json")
+    # Save audio mapping in the dictionary directory (not audio directory)
+    mapping_path = os.path.join(dictionary_dir, "audio-mapping.json")
     with open(mapping_path, "w", encoding="utf-8") as f:
         json.dump(audio_mapping, f, ensure_ascii=False, indent=2)
     

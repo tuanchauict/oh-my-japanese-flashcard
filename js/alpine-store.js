@@ -27,7 +27,7 @@ const Audio = {
   
   async loadMapping(dictionaryName) {
     try {
-      const path = `assets/audio/${dictionaryName}/audio_mapping.json`;
+      const path = `assets/dictionaries/${dictionaryName}/audio-mapping.json`;
       const res = await fetch(path);
       this.mapping = await res.json();
     } catch (e) {
@@ -213,13 +213,11 @@ document.addEventListener('alpine:init', () => {
       }
       this._initializing = true;
       
-      // Always use URL parameter if available
+      // URL param is dictionary name (e.g., 'n5-dictionary'), default to 'dictionary'
       const urlDict = new URLSearchParams(window.location.search).get('dictionary');
-      const dictionaryFile = urlDict || 'dictionary.json';
+      this.dictionaryName = urlDict || 'dictionary';
       
-      console.log('Init with dictionary:', dictionaryFile);
-      this.dictionaryFile = dictionaryFile;
-      this.dictionaryName = dictionaryFile.replace('.json', '');
+      console.log('Init with dictionary:', this.dictionaryName);
       
       await this.loadDictionary();
       console.log('Dictionary loaded:', this.dictionary?.metadata?.title, 'Categories:', this.dictionary?.categories?.length);
@@ -230,7 +228,7 @@ document.addEventListener('alpine:init', () => {
         return;
       }
       
-      // Get dictionary name for audio folder
+      // Load audio mapping
       await Audio.loadMapping(this.dictionaryName);
       
       this.loadPreferences();
@@ -248,7 +246,8 @@ document.addEventListener('alpine:init', () => {
     
     async loadDictionary() {
       try {
-        const res = await fetch(this.dictionaryFile);
+        const path = `assets/dictionaries/${this.dictionaryName}/dictionary.json`;
+        const res = await fetch(path);
         this.dictionary = await res.json();
       } catch (e) {
         console.error('Failed to load dictionary:', e);
