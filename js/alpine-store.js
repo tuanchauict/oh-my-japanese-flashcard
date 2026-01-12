@@ -87,8 +87,7 @@ document.addEventListener('alpine:init', () => {
     speaking: false,
     
     // Spiral state
-    spiralState: 'forward',
-    highestReached: 0,
+    spiralStep: 0, // Current step in spiral sequence
 
     // Computed
     get currentWord() {
@@ -205,8 +204,7 @@ document.addEventListener('alpine:init', () => {
         this.currentIndex = 0;
       }
       this.isFlipped = false;
-      this.spiralState = 'forward';
-      this.highestReached = this.currentIndex;
+      this.spiralStep = 0;
       this.autoPlayVersion++; // Invalidate any pending auto-play schedules
       Storage.set(Storage.keys.CATEGORY, categoryId);
       Storage.set(Storage.keys.INDEX, '0');
@@ -227,10 +225,10 @@ document.addEventListener('alpine:init', () => {
     },
     
     prev() {
-      if (this.currentIndex > 0) {
-        this.currentIndex--;
+      if (this.spiralStep > 0) {
+        this.spiralStep--;
+        this.currentIndex = this.spiralIndexAt(this.spiralStep, this.spiralMode ? 3 : 0, this.words.length);
         this.isFlipped = false;
-        this.spiralState = 'forward';
         this.saveIndex();
         this.updateMediaSessionMetadata();
         this.speak();
@@ -244,11 +242,8 @@ document.addEventListener('alpine:init', () => {
         return;
       }
       
-      if (this.spiralMode) {
-        this.nextSpiral();
-      } else {
-        this.nextLinear();
-      }
+      this.spiralStep++;
+      this.currentIndex = this.spiralIndexAt(this.spiralStep, this.spiralMode ? 3 : 0, this.words.length);
       
       this.isFlipped = false;
       this.saveIndex();
@@ -256,40 +251,43 @@ document.addEventListener('alpine:init', () => {
       this.speak();
     },
     
-    nextLinear() {
-      if (this.currentIndex < this.words.length - 1) {
-        this.currentIndex++;
-      } else {
-        this.currentIndex = 0;
-      }
-    },
-    
-    nextSpiral() {
-      const windowSize = 3;
-      const windowStart = Math.max(0, this.highestReached - windowSize + 1);
+    /**
+     * Maps a step number to card index using spiral pattern
+     * @param {number} step - Current step in the sequence
+     * @param {number} windowSize - Review window size (0 = linear, 1 = repeat twice, 3 = current behavior)
+     * @param {number} n - Total number of cards
+     * @returns {number} Card index
+     * 
+     * Pattern for windowSize=3: 0→1→2→[0→1→2]→3→[1→2→3]→4→[2→3→4]→5→...
+     */
+    spiralIndexAt(step, windowSize, n) {
+      if (n === 0) return 0;
       
-      if (this.spiralState === 'forward') {
-        if (this.highestReached < windowSize - 1) {
-          this.currentIndex++;
-          this.highestReached = this.currentIndex;
-        } else {
-          this.spiralState = 'review';
-          this.currentIndex = windowStart;
-        }
+      // Step 1: Map step to spiral index (as if infinite cards)
+      let spiralIndex;
+      
+      if (windowSize === 0) {
+        spiralIndex = step;
+      } else if (step < windowSize) {
+        // Initial forward phase
+        spiralIndex = step;
       } else {
-        if (this.currentIndex < this.highestReached) {
-          this.currentIndex++;
+        const adjusted = step - windowSize;
+        const cycleLen = windowSize + 1;
+        const cycleNum = Math.floor(adjusted / cycleLen);
+        const posInCycle = adjusted % cycleLen;
+        
+        if (posInCycle < windowSize) {
+          // Reviewing: window starts at cycleNum
+          spiralIndex = cycleNum + posInCycle;
         } else {
-          if (this.highestReached < this.words.length - 1) {
-            this.highestReached++;
-            this.currentIndex = Math.max(0, this.highestReached - windowSize + 1);
-          } else {
-            this.currentIndex = 0;
-            this.highestReached = 0;
-            this.spiralState = 'forward';
-          }
+          // New card
+          spiralIndex = windowSize + cycleNum;
         }
       }
+      
+      // Step 2: Normalize to actual card count
+      return spiralIndex % n;
     },
     
     shuffle() {
