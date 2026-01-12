@@ -2,6 +2,8 @@
   "metadata": {
     "title": "🚗 Từ Vựng Lái Xe Nhật Bản",
     "subtitle": "Bộ khẩu lệnh đầy đủ trong lớp học lái xe",
+    "primaryLanguage": "ja",
+    "meaningLanguage": "vi",
     "modes": [
       { "id": "jp-vn", "label": "🇯🇵 → 🇻🇳" },
       { "id": "vn-jp", "label": "🇻🇳 → 🇯🇵" }
@@ -16,12 +18,12 @@
         {
           "japanese": "乗車します",
           "romaji": "Jousha shimasu",
-          "vietnamese": "Xin phép lên xe"
+          "meaning": "Xin phép lên xe"
         },
         {
           "japanese": "車の周りを確認",
           "romaji": "Kuruma no mawari wo kakunin",
-          "vietnamese": "Kiểm tra xung quanh xe"
+          "meaning": "Kiểm tra xung quanh xe"
         }
       ]
     },
@@ -32,32 +34,32 @@
         {
           "japanese": "座席調整",
           "romaji": "Zaseki chōsei",
-          "vietnamese": "Điều chỉnh ghế ngồi"
+          "meaning": "Điều chỉnh ghế ngồi"
         },
         {
           "japanese": "ハンドル調整",
           "romaji": "Handoru chōsei",
-          "vietnamese": "Điều chỉnh vô lăng"
+          "meaning": "Điều chỉnh vô lăng"
         },
         {
           "japanese": "ミラー調整",
           "romaji": "Mirā chōsei",
-          "vietnamese": "Điều chỉnh gương"
+          "meaning": "Điều chỉnh gương"
         },
         {
           "japanese": "シートベルト締めて",
           "romaji": "Shīto beruto shimete",
-          "vietnamese": "Thắt dây an toàn"
+          "meaning": "Thắt dây an toàn"
         },
         {
           "japanese": "ドア閉めて",
           "romaji": "Doa shimete",
-          "vietnamese": "Đóng cửa"
+          "meaning": "Đóng cửa"
         },
         {
           "japanese": "サイドブレーキ確認",
           "romaji": "Saido burēki kakunin",
-          "vietnamese": "Kiểm tra phanh tay"
+          "meaning": "Kiểm tra phanh tay"
         }
       ]
     },
@@ -68,32 +70,32 @@
         {
           "japanese": "エンジンかけて",
           "romaji": "Enjin kakete",
-          "vietnamese": "Nổ máy"
+          "meaning": "Nổ máy"
         },
         {
           "japanese": "ギア入れて",
           "romaji": "Gia irete",
-          "vietnamese": "Vào số"
+          "meaning": "Vào số"
         },
         {
           "japanese": "ドライブに入れて",
           "romaji": "Doraibu ni irete",
-          "vietnamese": "Vào số D (Drive)"
+          "meaning": "Vào số D (Drive)"
         },
         {
           "japanese": "パーキング",
           "romaji": "Pākingu",
-          "vietnamese": "Số P (Parking)"
+          "meaning": "Số P (Parking)"
         },
         {
           "japanese": "ニュートラル",
           "romaji": "Nyūtoraru",
-          "vietnamese": "Số N (Neutral)"
+          "meaning": "Số N (Neutral)"
         },
         {
           "japanese": "リバース",
           "romaji": "Ribāsu",
-          "vietnamese": "Số R (Reverse/Lùi)"
+          "meaning": "Số R (Reverse/Lùi)"
         }
       ]
     },
@@ -104,42 +106,42 @@
         {
           "japanese": "発進準備",
           "romaji": "Hasshin junbi",
-          "vietnamese": "Chuẩn bị khởi hành"
+          "meaning": "Chuẩn bị khởi hành"
         },
         {
           "japanese": "サイドブレーキ下ろして",
           "romaji": "Saido burēki oroshite",
-          "vietnamese": "Nhả phanh tay"
+          "meaning": "Nhả phanh tay"
         },
         {
           "japanese": "右ウインカー",
           "romaji": "Migi uinkā",
-          "vietnamese": "Bật xi-nhan phải"
+          "meaning": "Bật xi-nhan phải"
         },
         {
           "japanese": "左ウインカー",
           "romaji": "Hidari uinkā",
-          "vietnamese": "Bật xi-nhan trái"
+          "meaning": "Bật xi-nhan trái"
         },
         {
           "japanese": "発進",
           "romaji": "Hasshin",
-          "vietnamese": "Xuất phát"
+          "meaning": "Xuất phát"
         },
         {
           "japanese": "ゆっくり発進",
           "romaji": "Yukkuri hasshin",
-          "vietnamese": "Khởi hành từ từ"
+          "meaning": "Khởi hành từ từ"
         },
         {
           "japanese": "アクセル踏んで",
           "romaji": "Akuseru funde",
-          "vietnamese": "Đạp ga"
+          "meaning": "Đạp ga"
         },
         {
           "japanese": "ブレーキ踏んで",
           "romaji": "Burēki funde",
-          "vietnamese": "Đạp phanh"
+          "meaning": "Đạp phanh"
         }
       ]
     },
@@ -150,77 +152,77 @@
         {
           "japanese": "速度上げて",
           "romaji": "Sokudo agete",
-          "vietnamese": "Tăng tốc"
+          "meaning": "Tăng tốc"
         },
         {
           "japanese": "速度落として",
           "romaji": "Sokudo otoshite",
-          "vietnamese": "Giảm tốc"
+          "meaning": "Giảm tốc"
         },
         {
           "japanese": "もっと速く",
           "romaji": "Motto hayaku",
-          "vietnamese": "Nhanh hơn nữa"
+          "meaning": "Nhanh hơn nữa"
         },
         {
           "japanese": "もっとゆっくり",
           "romaji": "Motto yukkuri",
-          "vietnamese": "Chậm hơn nữa"
+          "meaning": "Chậm hơn nữa"
         },
         {
           "japanese": "このまま",
           "romaji": "Kono mama",
-          "vietnamese": "Giữ nguyên tốc độ"
+          "meaning": "Giữ nguyên tốc độ"
         },
         {
           "japanese": "まっすぐ行って",
           "romaji": "Massugu itte",
-          "vietnamese": "Đi thẳng"
+          "meaning": "Đi thẳng"
         },
         {
           "japanese": "右に曲がって",
           "romaji": "Migi ni magatte",
-          "vietnamese": "Rẽ phải"
+          "meaning": "Rẽ phải"
         },
         {
           "japanese": "左に曲がって",
           "romaji": "Hidari ni magatte",
-          "vietnamese": "Rẽ trái"
+          "meaning": "Rẽ trái"
         },
         {
           "japanese": "次の角",
           "romaji": "Tsugi no kado",
-          "vietnamese": "Góc tiếp theo"
+          "meaning": "Góc tiếp theo"
         },
         {
           "japanese": "次の信号",
           "romaji": "Tsugi no shingō",
-          "vietnamese": "Đèn tín hiệu tiếp theo"
+          "meaning": "Đèn tín hiệu tiếp theo"
         },
         {
           "japanese": "二つ目の信号",
           "romaji": "Futatsu me no shingō",
-          "vietnamese": "Đèn tín hiệu thứ hai"
+          "meaning": "Đèn tín hiệu thứ hai"
         },
         {
           "japanese": "車線変更",
           "romaji": "Shasen henkō",
-          "vietnamese": "Chuyển làn"
+          "meaning": "Chuyển làn"
         },
         {
           "japanese": "右の車線",
           "romaji": "Migi no shasen",
-          "vietnamese": "Làn bên phải"
+          "meaning": "Làn bên phải"
         },
         {
           "japanese": "左の車線",
           "romaji": "Hidari no shasen",
-          "vietnamese": "Làn bên trái"
+          "meaning": "Làn bên trái"
         },
         {
           "japanese": "追い越し",
           "romaji": "Oikoshi",
-          "vietnamese": "Vượt xe"
+          "meaning": "Vượt xe"
         }
       ]
     },
@@ -231,27 +233,27 @@
         {
           "japanese": "止まって",
           "romaji": "Tomatte",
-          "vietnamese": "Dừng lại"
+          "meaning": "Dừng lại"
         },
         {
           "japanese": "ここで止まって",
           "romaji": "Koko de tomatte",
-          "vietnamese": "Dừng ở đây"
+          "meaning": "Dừng ở đây"
         },
         {
           "japanese": "ゆっくり止まって",
           "romaji": "Yukkuri tomatte",
-          "vietnamese": "Dừng từ từ"
+          "meaning": "Dừng từ từ"
         },
         {
           "japanese": "完全に止まって",
           "romaji": "Kanzen ni tomatte",
-          "vietnamese": "Dừng hoàn toàn"
+          "meaning": "Dừng hoàn toàn"
         },
         {
           "japanese": "一時停止",
           "romaji": "Ichiji teishi",
-          "vietnamese": "Dừng tạm thời"
+          "meaning": "Dừng tạm thời"
         }
       ]
     },
@@ -262,42 +264,42 @@
         {
           "japanese": "縦列駐車",
           "romaji": "Jūretsu chūsha",
-          "vietnamese": "Đỗ xe song song"
+          "meaning": "Đỗ xe song song"
         },
         {
           "japanese": "車庫入れ",
           "romaji": "Shakoire",
-          "vietnamese": "Đỗ vào gara/Lùi vào chỗ đỗ"
+          "meaning": "Đỗ vào gara/Lùi vào chỗ đỗ"
         },
         {
           "japanese": "方向転換",
           "romaji": "Hōkō tenkan",
-          "vietnamese": "Quay đầu xe"
+          "meaning": "Quay đầu xe"
         },
         {
           "japanese": "バックして",
           "romaji": "Bakku shite",
-          "vietnamese": "Lùi xe"
+          "meaning": "Lùi xe"
         },
         {
           "japanese": "ハンドル右に切って",
           "romaji": "Handoru migi ni kitte",
-          "vietnamese": "Đánh lái phải"
+          "meaning": "Đánh lái phải"
         },
         {
           "japanese": "ハンドル左に切って",
           "romaji": "Handoru hidari ni kitte",
-          "vietnamese": "Đánh lái trái"
+          "meaning": "Đánh lái trái"
         },
         {
           "japanese": "ハンドル戻して",
           "romaji": "Handoru modoshite",
-          "vietnamese": "Trả lái về giữa"
+          "meaning": "Trả lái về giữa"
         },
         {
           "japanese": "ハンドルいっぱい切って",
           "romaji": "Handoru ippai kitte",
-          "vietnamese": "Đánh lái hết cỡ"
+          "meaning": "Đánh lái hết cỡ"
         }
       ]
     },
@@ -308,27 +310,27 @@
         {
           "japanese": "エンジン切って",
           "romaji": "Enjin kitte",
-          "vietnamese": "Tắt máy"
+          "meaning": "Tắt máy"
         },
         {
           "japanese": "ギアをパーキングに",
           "romaji": "Gia wo pākingu ni",
-          "vietnamese": "Về số P"
+          "meaning": "Về số P"
         },
         {
           "japanese": "サイドブレーキ引いて",
           "romaji": "Saido burēki hiite",
-          "vietnamese": "Kéo phanh tay"
+          "meaning": "Kéo phanh tay"
         },
         {
           "japanese": "ウインカー消して",
           "romaji": "Uinkā keshite",
-          "vietnamese": "Tắt xi-nhan"
+          "meaning": "Tắt xi-nhan"
         },
         {
           "japanese": "降車",
           "romaji": "Kōsha",
-          "vietnamese": "Xuống xe"
+          "meaning": "Xuống xe"
         }
       ]
     },
@@ -339,52 +341,52 @@
         {
           "japanese": "交差点",
           "romaji": "Kōsaten",
-          "vietnamese": "Ngã tư"
+          "meaning": "Ngã tư"
         },
         {
           "japanese": "右折レーン",
           "romaji": "Usetsu rēn",
-          "vietnamese": "Làn rẽ phải"
+          "meaning": "Làn rẽ phải"
         },
         {
           "japanese": "左折レーン",
           "romaji": "Sasetsu rēn",
-          "vietnamese": "Làn rẽ trái"
+          "meaning": "Làn rẽ trái"
         },
         {
           "japanese": "直進レーン",
           "romaji": "Chokushin rēn",
-          "vietnamese": "Làn đi thẳng"
+          "meaning": "Làn đi thẳng"
         },
         {
           "japanese": "高速道路",
           "romaji": "Kōsoku dōro",
-          "vietnamese": "Đường cao tốc"
+          "meaning": "Đường cao tốc"
         },
         {
           "japanese": "合流",
           "romaji": "Gōryū",
-          "vietnamese": "Nhập làn (vào cao tốc)"
+          "meaning": "Nhập làn (vào cao tốc)"
         },
         {
           "japanese": "出口",
           "romaji": "Deguchi",
-          "vietnamese": "Lối ra"
+          "meaning": "Lối ra"
         },
         {
           "japanese": "坂道発進",
           "romaji": "Sakamichi hasshin",
-          "vietnamese": "Khởi hành trên dốc"
+          "meaning": "Khởi hành trên dốc"
         },
         {
           "japanese": "上り坂",
           "romaji": "Noborizaka",
-          "vietnamese": "Dốc lên"
+          "meaning": "Dốc lên"
         },
         {
           "japanese": "下り坂",
           "romaji": "Kudarizaka",
-          "vietnamese": "Dốc xuống"
+          "meaning": "Dốc xuống"
         }
       ]
     },
@@ -395,42 +397,42 @@
         {
           "japanese": "いいですよ",
           "romaji": "Ii desu yo",
-          "vietnamese": "Tốt đấy"
+          "meaning": "Tốt đấy"
         },
         {
           "japanese": "上手",
           "romaji": "Jōzu",
-          "vietnamese": "Giỏi lắm"
+          "meaning": "Giỏi lắm"
         },
         {
           "japanese": "そうそう",
           "romaji": "Sō sō",
-          "vietnamese": "Đúng rồi đúng rồi"
+          "meaning": "Đúng rồi đúng rồi"
         },
         {
           "japanese": "完璧",
           "romaji": "Kanpeki",
-          "vietnamese": "Hoàn hảo"
+          "meaning": "Hoàn hảo"
         },
         {
           "japanese": "違います",
           "romaji": "Chigaimasu",
-          "vietnamese": "Sai rồi"
+          "meaning": "Sai rồi"
         },
         {
           "japanese": "危ない",
           "romaji": "Abunai",
-          "vietnamese": "Nguy hiểm"
+          "meaning": "Nguy hiểm"
         },
         {
           "japanese": "ダメ",
           "romaji": "Dame",
-          "vietnamese": "Không được"
+          "meaning": "Không được"
         },
         {
           "japanese": "もう一回",
           "romaji": "Mō ikkai",
-          "vietnamese": "Làm lại một lần nữa"
+          "meaning": "Làm lại một lần nữa"
         }
       ]
     },
@@ -441,22 +443,22 @@
         {
           "japanese": "分かりません",
           "romaji": "Wakarimasen",
-          "vietnamese": "Tôi không hiểu"
+          "meaning": "Tôi không hiểu"
         },
         {
           "japanese": "もう一度お願いします",
           "romaji": "Mō ichido onegai shimasu",
-          "vietnamese": "Làm ơn nói lại một lần nữa"
+          "meaning": "Làm ơn nói lại một lần nữa"
         },
         {
           "japanese": "ゆっくり話してください",
           "romaji": "Yukkuri hanashite kudasai",
-          "vietnamese": "Xin hãy nói chậm"
+          "meaning": "Xin hãy nói chậm"
         },
         {
           "japanese": "日本語が分かりません",
           "romaji": "Nihongo ga wakarimasen",
-          "vietnamese": "Tôi không biết tiếng Nhật"
+          "meaning": "Tôi không biết tiếng Nhật"
         }
       ]
     },
@@ -467,52 +469,52 @@
         {
           "japanese": "止まって",
           "romaji": "Tomatte",
-          "vietnamese": "Dừng"
+          "meaning": "Dừng"
         },
         {
           "japanese": "右",
           "romaji": "Migi",
-          "vietnamese": "Phải"
+          "meaning": "Phải"
         },
         {
           "japanese": "左",
           "romaji": "Hidari",
-          "vietnamese": "Trái"
+          "meaning": "Trái"
         },
         {
           "japanese": "まっすぐ",
           "romaji": "Massugu",
-          "vietnamese": "Thẳng"
+          "meaning": "Thẳng"
         },
         {
           "japanese": "バック",
           "romaji": "Bakku",
-          "vietnamese": "Lùi"
+          "meaning": "Lùi"
         },
         {
           "japanese": "ゆっくり",
           "romaji": "Yukkuri",
-          "vietnamese": "Chậm"
+          "meaning": "Chậm"
         },
         {
           "japanese": "ハンドル",
           "romaji": "Handoru",
-          "vietnamese": "Vô lăng"
+          "meaning": "Vô lăng"
         },
         {
           "japanese": "ブレーキ",
           "romaji": "Burēki",
-          "vietnamese": "Phanh"
+          "meaning": "Phanh"
         },
         {
           "japanese": "アクセル",
           "romaji": "Akuseru",
-          "vietnamese": "Ga"
+          "meaning": "Ga"
         },
         {
           "japanese": "危ない",
           "romaji": "Abunai",
-          "vietnamese": "Nguy hiểm"
+          "meaning": "Nguy hiểm"
         }
       ]
     }

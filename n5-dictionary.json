@@ -1,0 +1,3535 @@
+{
+  "metadata": {
+    "title": "📚 JLPT N5 Vocabulary",
+    "subtitle": "Core vocabulary for basic Japanese communication",
+    "primaryLanguage": "ja",
+    "meaningLanguage": "en",
+    "modes": [
+      {
+        "id": "jp-en",
+        "label": "🇯🇵 → 🇬🇧"
+      },
+      {
+        "id": "en-jp",
+        "label": "🇬🇧 → 🇯🇵"
+      }
+    ],
+    "readBothLabel": "🔊 Read both Japanese and English"
+  },
+  "categories": [
+    {
+      "id": "basic-numbers",
+      "name": "Basic Numbers",
+      "words": [
+        {
+          "japanese": "ゼロ/れい",
+          "romaji": "zero/rei",
+          "meaning": "zero",
+          "example": "電話番号はゼロから始まります",
+          "exampleMeaning": "The phone number starts with zero"
+        },
+        {
+          "japanese": "いち",
+          "romaji": "ichi",
+          "meaning": "one",
+          "example": "一つください",
+          "exampleMeaning": "Please give me one"
+        },
+        {
+          "japanese": "に",
+          "romaji": "ni",
+          "meaning": "two",
+          "example": "二人で行きます",
+          "exampleMeaning": "Two people will go"
+        },
+        {
+          "japanese": "さん",
+          "romaji": "san",
+          "meaning": "three",
+          "example": "三時に会いましょう",
+          "exampleMeaning": "Let's meet at 3 o'clock"
+        },
+        {
+          "japanese": "し/よん",
+          "romaji": "shi/yon",
+          "meaning": "four",
+          "example": "四月は春です",
+          "exampleMeaning": "April is spring"
+        },
+        {
+          "japanese": "ご",
+          "romaji": "go",
+          "meaning": "five",
+          "example": "五千円です",
+          "exampleMeaning": "It's 5,000 yen"
+        },
+        {
+          "japanese": "ろく",
+          "romaji": "roku",
+          "meaning": "six",
+          "example": "六日に来ます",
+          "exampleMeaning": "I'll come on the 6th"
+        },
+        {
+          "japanese": "しち/なな",
+          "romaji": "shichi/nana",
+          "meaning": "seven",
+          "example": "七時に起きます",
+          "exampleMeaning": "I wake up at 7 o'clock"
+        },
+        {
+          "japanese": "はち",
+          "romaji": "hachi",
+          "meaning": "eight",
+          "example": "八百屋",
+          "exampleMeaning": "Vegetable shop"
+        },
+        {
+          "japanese": "きゅう/く",
+          "romaji": "kyuu/ku",
+          "meaning": "nine",
+          "example": "九月",
+          "exampleMeaning": "September"
+        },
+        {
+          "japanese": "じゅう",
+          "romaji": "juu",
+          "meaning": "ten",
+          "example": "十分です",
+          "exampleMeaning": "10 minutes/It's enough"
+        },
+        {
+          "japanese": "ひゃく",
+          "romaji": "hyaku",
+          "meaning": "hundred",
+          "example": "百円",
+          "exampleMeaning": "100 yen"
+        },
+        {
+          "japanese": "せん",
+          "romaji": "sen",
+          "meaning": "thousand",
+          "example": "千円札",
+          "exampleMeaning": "1,000 yen bill"
+        },
+        {
+          "japanese": "まん",
+          "romaji": "man",
+          "meaning": "ten thousand",
+          "example": "一万円",
+          "exampleMeaning": "10,000 yen"
+        }
+      ]
+    },
+    {
+      "id": "days-dates",
+      "name": "Days & Dates",
+      "words": [
+        {
+          "japanese": "きょう",
+          "romaji": "kyou",
+          "meaning": "today",
+          "example": "今日は暑いです",
+          "exampleMeaning": "Today is hot"
+        },
+        {
+          "japanese": "あした",
+          "romaji": "ashita",
+          "meaning": "tomorrow",
+          "example": "明日会いましょう",
+          "exampleMeaning": "Let's meet tomorrow"
+        },
+        {
+          "japanese": "きのう",
+          "romaji": "kinou",
+          "meaning": "yesterday",
+          "example": "昨日雨でした",
+          "exampleMeaning": "It was rainy yesterday"
+        },
+        {
+          "japanese": "おととい",
+          "romaji": "ototoi",
+          "meaning": "day before yesterday",
+          "example": "おととい買いました",
+          "exampleMeaning": "I bought it the day before yesterday"
+        },
+        {
+          "japanese": "あさって",
+          "romaji": "asatte",
+          "meaning": "day after tomorrow",
+          "example": "あさって試験です",
+          "exampleMeaning": "The exam is the day after tomorrow"
+        },
+        {
+          "japanese": "まいにち",
+          "romaji": "mainichi",
+          "meaning": "every day",
+          "example": "毎日勉強します",
+          "exampleMeaning": "I study every day"
+        },
+        {
+          "japanese": "まいあさ",
+          "romaji": "maiasa",
+          "meaning": "every morning",
+          "example": "毎朝コーヒーを飲みます",
+          "exampleMeaning": "I drink coffee every morning"
+        },
+        {
+          "japanese": "まいばん",
+          "romaji": "maiban",
+          "meaning": "every night",
+          "example": "毎晩本を読みます",
+          "exampleMeaning": "I read books every night"
+        }
+      ]
+    },
+    {
+      "id": "time-of-day",
+      "name": "Time of Day",
+      "words": [
+        {
+          "japanese": "あさ",
+          "romaji": "asa",
+          "meaning": "morning",
+          "example": "朝ごはんを食べます",
+          "exampleMeaning": "I eat breakfast"
+        },
+        {
+          "japanese": "ひる",
+          "romaji": "hiru",
+          "meaning": "noon/daytime",
+          "example": "お昼に会いましょう",
+          "exampleMeaning": "Let's meet at noon"
+        },
+        {
+          "japanese": "ばん/よる",
+          "romaji": "ban/yoru",
+          "meaning": "night/evening",
+          "example": "晩ご飯は何ですか",
+          "exampleMeaning": "What's for dinner?"
+        },
+        {
+          "japanese": "ごぜん",
+          "romaji": "gozen",
+          "meaning": "a.m.",
+          "example": "午前九時",
+          "exampleMeaning": "9 a.m."
+        },
+        {
+          "japanese": "ごご",
+          "romaji": "gogo",
+          "meaning": "p.m.",
+          "example": "午後三時",
+          "exampleMeaning": "3 p.m."
+        }
+      ]
+    },
+    {
+      "id": "time-periods",
+      "name": "Time Periods",
+      "words": [
+        {
+          "japanese": "いま",
+          "romaji": "ima",
+          "meaning": "now",
+          "example": "今何時ですか",
+          "exampleMeaning": "What time is it now?"
+        },
+        {
+          "japanese": "とき",
+          "romaji": "toki",
+          "meaning": "time/when",
+          "example": "子供の時",
+          "exampleMeaning": "When I was a child"
+        },
+        {
+          "japanese": "じかん",
+          "romaji": "jikan",
+          "meaning": "time/hour",
+          "example": "時間がありません",
+          "exampleMeaning": "I don't have time"
+        },
+        {
+          "japanese": "～ぷん/～ふん",
+          "romaji": "pun/fun",
+          "meaning": "minute",
+          "example": "十分前",
+          "exampleMeaning": "10 minutes ago"
+        },
+        {
+          "japanese": "はん",
+          "romaji": "han",
+          "meaning": "half",
+          "example": "三時半",
+          "exampleMeaning": "3:30"
+        }
+      ]
+    },
+    {
+      "id": "days-of-the-week",
+      "name": "Days of the Week",
+      "words": [
+        {
+          "japanese": "げつようび",
+          "romaji": "getsuyoubi",
+          "meaning": "Monday",
+          "example": "月曜日は忙しいです",
+          "exampleMeaning": "Monday is busy"
+        },
+        {
+          "japanese": "かようび",
+          "romaji": "kayoubi",
+          "meaning": "Tuesday",
+          "example": "火曜日に会議があります",
+          "exampleMeaning": "There's a meeting on Tuesday"
+        },
+        {
+          "japanese": "すいようび",
+          "romaji": "suiyoubi",
+          "meaning": "Wednesday",
+          "example": "水曜日は休みです",
+          "exampleMeaning": "Wednesday is a day off"
+        },
+        {
+          "japanese": "もくようび",
+          "romaji": "mokuyoubi",
+          "meaning": "Thursday",
+          "example": "木曜日にテストがあります",
+          "exampleMeaning": "There's a test on Thursday"
+        },
+        {
+          "japanese": "きんようび",
+          "romaji": "kinyoubi",
+          "meaning": "Friday",
+          "example": "金曜日が好きです",
+          "exampleMeaning": "I like Friday"
+        },
+        {
+          "japanese": "どようび",
+          "romaji": "doyoubi",
+          "meaning": "Saturday",
+          "example": "土曜日に映画を見ます",
+          "exampleMeaning": "I watch movies on Saturday"
+        },
+        {
+          "japanese": "にちようび",
+          "romaji": "nichiyoubi",
+          "meaning": "Sunday",
+          "example": "日曜日は休みます",
+          "exampleMeaning": "I rest on Sunday"
+        }
+      ]
+    },
+    {
+      "id": "months",
+      "name": "Months",
+      "words": [
+        {
+          "japanese": "いちがつ",
+          "romaji": "ichigatsu",
+          "meaning": "January",
+          "example": "一月は寒いです",
+          "exampleMeaning": "January is cold"
+        },
+        {
+          "japanese": "にがつ",
+          "romaji": "nigatsu",
+          "meaning": "February",
+          "example": "二月に日本へ行きます",
+          "exampleMeaning": "I'll go to Japan in February"
+        },
+        {
+          "japanese": "さんがつ",
+          "romaji": "sangatsu",
+          "meaning": "March",
+          "example": "三月は春です",
+          "exampleMeaning": "March is spring"
+        },
+        {
+          "japanese": "しがつ",
+          "romaji": "shigatsu",
+          "meaning": "April",
+          "example": "四月に学校が始まります",
+          "exampleMeaning": "School starts in April"
+        },
+        {
+          "japanese": "ごがつ",
+          "romaji": "gogatsu",
+          "meaning": "May",
+          "example": "五月五日",
+          "exampleMeaning": "May 5th"
+        },
+        {
+          "japanese": "ろくがつ",
+          "romaji": "rokugatsu",
+          "meaning": "June",
+          "example": "六月は雨が多いです",
+          "exampleMeaning": "It rains a lot in June"
+        },
+        {
+          "japanese": "しちがつ",
+          "romaji": "shichigatsu",
+          "meaning": "July",
+          "example": "七月は暑いです",
+          "exampleMeaning": "July is hot"
+        },
+        {
+          "japanese": "はちがつ",
+          "romaji": "hachigatsu",
+          "meaning": "August",
+          "example": "八月に旅行します",
+          "exampleMeaning": "I'll travel in August"
+        },
+        {
+          "japanese": "くがつ",
+          "romaji": "kugatsu",
+          "meaning": "September",
+          "example": "九月に帰ります",
+          "exampleMeaning": "I'll return in September"
+        },
+        {
+          "japanese": "じゅうがつ",
+          "romaji": "juugatsu",
+          "meaning": "October",
+          "example": "十月は涼しいです",
+          "exampleMeaning": "October is cool"
+        },
+        {
+          "japanese": "じゅういちがつ",
+          "romaji": "juuichigatsu",
+          "meaning": "November",
+          "example": "十一月に誕生日です",
+          "exampleMeaning": "My birthday is in November"
+        },
+        {
+          "japanese": "じゅうにがつ",
+          "romaji": "juunigatsu",
+          "meaning": "December",
+          "example": "十二月はクリスマスです",
+          "exampleMeaning": "December is Christmas"
+        }
+      ]
+    },
+    {
+      "id": "seasons-time-concepts",
+      "name": "Seasons & Time Concepts",
+      "words": [
+        {
+          "japanese": "はる",
+          "romaji": "haru",
+          "meaning": "spring",
+          "example": "春は花がきれいです",
+          "exampleMeaning": "Flowers are beautiful in spring"
+        },
+        {
+          "japanese": "なつ",
+          "romaji": "natsu",
+          "meaning": "summer",
+          "example": "夏は暑いです",
+          "exampleMeaning": "Summer is hot"
+        },
+        {
+          "japanese": "あき",
+          "romaji": "aki",
+          "meaning": "autumn/fall",
+          "example": "秋は涼しいです",
+          "exampleMeaning": "Autumn is cool"
+        },
+        {
+          "japanese": "ふゆ",
+          "romaji": "fuyu",
+          "meaning": "winter",
+          "example": "冬は寒いです",
+          "exampleMeaning": "Winter is cold"
+        },
+        {
+          "japanese": "ことし",
+          "romaji": "kotoshi",
+          "meaning": "this year",
+          "example": "今年は忙しいです",
+          "exampleMeaning": "This year is busy"
+        },
+        {
+          "japanese": "らいねん",
+          "romaji": "rainen",
+          "meaning": "next year",
+          "example": "来年日本へ行きます",
+          "exampleMeaning": "I'll go to Japan next year"
+        },
+        {
+          "japanese": "きょねん",
+          "romaji": "kyonen",
+          "meaning": "last year",
+          "example": "去年結婚しました",
+          "exampleMeaning": "I got married last year"
+        },
+        {
+          "japanese": "せんげつ",
+          "romaji": "sengetsu",
+          "meaning": "last month",
+          "example": "先月買いました",
+          "exampleMeaning": "I bought it last month"
+        },
+        {
+          "japanese": "らいしゅう",
+          "romaji": "raishuu",
+          "meaning": "next week",
+          "example": "来週会いましょう",
+          "exampleMeaning": "Let's meet next week"
+        },
+        {
+          "japanese": "せんしゅう",
+          "romaji": "senshuu",
+          "meaning": "last week",
+          "example": "先週雨でした",
+          "exampleMeaning": "It was rainy last week"
+        },
+        {
+          "japanese": "こんしゅう",
+          "romaji": "konshuu",
+          "meaning": "this week",
+          "example": "今週は忙しいです",
+          "exampleMeaning": "This week is busy"
+        }
+      ]
+    },
+    {
+      "id": "common-actions",
+      "name": "Common Actions",
+      "words": [
+        {
+          "japanese": "ある",
+          "romaji": "aru",
+          "meaning": "to exist (inanimate)",
+          "example": "机の上に本があります",
+          "exampleMeaning": "There's a book on the desk"
+        },
+        {
+          "japanese": "いる",
+          "romaji": "iru",
+          "meaning": "to exist (animate)",
+          "example": "部屋に人がいます",
+          "exampleMeaning": "There's a person in the room"
+        },
+        {
+          "japanese": "いく",
+          "romaji": "iku",
+          "meaning": "to go",
+          "example": "学校へ行きます",
+          "exampleMeaning": "I go to school"
+        },
+        {
+          "japanese": "くる",
+          "romaji": "kuru",
+          "meaning": "to come",
+          "example": "友達が来ます",
+          "exampleMeaning": "My friend is coming"
+        },
+        {
+          "japanese": "かえる",
+          "romaji": "kaeru",
+          "meaning": "to return",
+          "example": "家に帰ります",
+          "exampleMeaning": "I return home"
+        },
+        {
+          "japanese": "する",
+          "romaji": "suru",
+          "meaning": "to do",
+          "example": "勉強します",
+          "exampleMeaning": "I study"
+        },
+        {
+          "japanese": "みる",
+          "romaji": "miru",
+          "meaning": "to see/watch",
+          "example": "テレビを見ます",
+          "exampleMeaning": "I watch TV"
+        },
+        {
+          "japanese": "きく",
+          "romaji": "kiku",
+          "meaning": "to listen/ask",
+          "example": "音楽を聞きます",
+          "exampleMeaning": "I listen to music"
+        },
+        {
+          "japanese": "はなす",
+          "romaji": "hanasu",
+          "meaning": "to speak",
+          "example": "日本語を話します",
+          "exampleMeaning": "I speak Japanese"
+        },
+        {
+          "japanese": "よむ",
+          "romaji": "yomu",
+          "meaning": "to read",
+          "example": "本を読みます",
+          "exampleMeaning": "I read books"
+        },
+        {
+          "japanese": "かく",
+          "romaji": "kaku",
+          "meaning": "to write",
+          "example": "手紙を書きます",
+          "exampleMeaning": "I write a letter"
+        },
+        {
+          "japanese": "たべる",
+          "romaji": "taberu",
+          "meaning": "to eat",
+          "example": "ご飯を食べます",
+          "exampleMeaning": "I eat rice/meal"
+        },
+        {
+          "japanese": "のむ",
+          "romaji": "nomu",
+          "meaning": "to drink",
+          "example": "水を飲みます",
+          "exampleMeaning": "I drink water"
+        },
+        {
+          "japanese": "かう",
+          "romaji": "kau",
+          "meaning": "to buy",
+          "example": "りんごを買います",
+          "exampleMeaning": "I buy apples"
+        },
+        {
+          "japanese": "うる",
+          "romaji": "uru",
+          "meaning": "to sell",
+          "example": "車を売ります",
+          "exampleMeaning": "I sell a car"
+        },
+        {
+          "japanese": "おしえる",
+          "romaji": "oshieru",
+          "meaning": "to teach",
+          "example": "英語を教えます",
+          "exampleMeaning": "I teach English"
+        },
+        {
+          "japanese": "ならう",
+          "romaji": "narau",
+          "meaning": "to learn",
+          "example": "ピアノを習います",
+          "exampleMeaning": "I learn piano"
+        },
+        {
+          "japanese": "べんきょうする",
+          "romaji": "benkyou suru",
+          "meaning": "to study",
+          "example": "毎日勉強します",
+          "exampleMeaning": "I study every day"
+        }
+      ]
+    },
+    {
+      "id": "movement-daily-activities",
+      "name": "Movement & Daily Activities",
+      "words": [
+        {
+          "japanese": "あるく",
+          "romaji": "aruku",
+          "meaning": "to walk",
+          "example": "駅まで歩きます",
+          "exampleMeaning": "I walk to the station"
+        },
+        {
+          "japanese": "はしる",
+          "romaji": "hashiru",
+          "meaning": "to run",
+          "example": "公園で走ります",
+          "exampleMeaning": "I run in the park"
+        },
+        {
+          "japanese": "およぐ",
+          "romaji": "oyogu",
+          "meaning": "to swim",
+          "example": "海で泳ぎます",
+          "exampleMeaning": "I swim in the sea"
+        },
+        {
+          "japanese": "あそぶ",
+          "romaji": "asobu",
+          "meaning": "to play",
+          "example": "友達と遊びます",
+          "exampleMeaning": "I play with friends"
+        },
+        {
+          "japanese": "はたらく",
+          "romaji": "hataraku",
+          "meaning": "to work",
+          "example": "会社で働きます",
+          "exampleMeaning": "I work at a company"
+        },
+        {
+          "japanese": "やすむ",
+          "romaji": "yasumu",
+          "meaning": "to rest",
+          "example": "日曜日に休みます",
+          "exampleMeaning": "I rest on Sunday"
+        },
+        {
+          "japanese": "ねる",
+          "romaji": "neru",
+          "meaning": "to sleep",
+          "example": "夜寝ます",
+          "exampleMeaning": "I sleep at night"
+        },
+        {
+          "japanese": "おきる",
+          "romaji": "okiru",
+          "meaning": "to wake up",
+          "example": "朝六時に起きます",
+          "exampleMeaning": "I wake up at 6 a.m."
+        },
+        {
+          "japanese": "たつ",
+          "romaji": "tatsu",
+          "meaning": "to stand",
+          "example": "立ってください",
+          "exampleMeaning": "Please stand up"
+        },
+        {
+          "japanese": "すわる",
+          "romaji": "suwaru",
+          "meaning": "to sit",
+          "example": "椅子に座ります",
+          "exampleMeaning": "I sit on a chair"
+        }
+      ]
+    },
+    {
+      "id": "daily-routine",
+      "name": "Daily Routine",
+      "words": [
+        {
+          "japanese": "あう",
+          "romaji": "au",
+          "meaning": "to meet",
+          "example": "友達に会います",
+          "exampleMeaning": "I meet my friend"
+        },
+        {
+          "japanese": "まつ",
+          "romaji": "matsu",
+          "meaning": "to wait",
+          "example": "駅で待ちます",
+          "exampleMeaning": "I wait at the station"
+        },
+        {
+          "japanese": "いれる",
+          "romaji": "ireru",
+          "meaning": "to put in",
+          "example": "コーヒーを入れます",
+          "exampleMeaning": "I make/pour coffee"
+        },
+        {
+          "japanese": "だす",
+          "romaji": "dasu",
+          "meaning": "to take out/send",
+          "example": "手紙を出します",
+          "exampleMeaning": "I send a letter"
+        },
+        {
+          "japanese": "あける",
+          "romaji": "akeru",
+          "meaning": "to open",
+          "example": "窓を開けます",
+          "exampleMeaning": "I open the window"
+        },
+        {
+          "japanese": "しめる",
+          "romaji": "shimeru",
+          "meaning": "to close",
+          "example": "ドアを閉めます",
+          "exampleMeaning": "I close the door"
+        },
+        {
+          "japanese": "つける",
+          "romaji": "tsukeru",
+          "meaning": "to turn on",
+          "example": "電気をつけます",
+          "exampleMeaning": "I turn on the light"
+        },
+        {
+          "japanese": "けす",
+          "romaji": "kesu",
+          "meaning": "to turn off/erase",
+          "example": "電気を消します",
+          "exampleMeaning": "I turn off the light"
+        },
+        {
+          "japanese": "のる",
+          "romaji": "noru",
+          "meaning": "to ride/get on",
+          "example": "電車に乗ります",
+          "exampleMeaning": "I ride the train"
+        },
+        {
+          "japanese": "おりる",
+          "romaji": "oriru",
+          "meaning": "to get off",
+          "example": "次で降ります",
+          "exampleMeaning": "I'll get off at the next stop"
+        }
+      ]
+    },
+    {
+      "id": "communication-expression",
+      "name": "Communication & Expression",
+      "words": [
+        {
+          "japanese": "いう",
+          "romaji": "iu",
+          "meaning": "to say",
+          "example": "何と言いましたか",
+          "exampleMeaning": "What did you say?"
+        },
+        {
+          "japanese": "わかる",
+          "romaji": "wakaru",
+          "meaning": "to understand",
+          "example": "日本語が分かります",
+          "exampleMeaning": "I understand Japanese"
+        },
+        {
+          "japanese": "しる",
+          "romaji": "shiru",
+          "meaning": "to know",
+          "example": "彼を知っています",
+          "exampleMeaning": "I know him"
+        },
+        {
+          "japanese": "おぼえる",
+          "romaji": "oboeru",
+          "meaning": "to memorize",
+          "example": "単語を覚えます",
+          "exampleMeaning": "I memorize vocabulary"
+        },
+        {
+          "japanese": "わすれる",
+          "romaji": "wasureru",
+          "meaning": "to forget",
+          "example": "名前を忘れました",
+          "exampleMeaning": "I forgot the name"
+        },
+        {
+          "japanese": "おもう",
+          "romaji": "omou",
+          "meaning": "to think",
+          "example": "そう思います",
+          "exampleMeaning": "I think so"
+        }
+      ]
+    },
+    {
+      "id": "other-common-verbs",
+      "name": "Other Common Verbs",
+      "words": [
+        {
+          "japanese": "ある",
+          "romaji": "aru",
+          "meaning": "to have",
+          "example": "お金があります",
+          "exampleMeaning": "I have money"
+        },
+        {
+          "japanese": "いる",
+          "romaji": "iru",
+          "meaning": "to need",
+          "example": "時間がいります",
+          "exampleMeaning": "I need time"
+        },
+        {
+          "japanese": "もつ",
+          "romaji": "motsu",
+          "meaning": "to hold/have",
+          "example": "かばんを持ちます",
+          "exampleMeaning": "I hold a bag"
+        },
+        {
+          "japanese": "とる",
+          "romaji": "toru",
+          "meaning": "to take",
+          "example": "写真を撮ります",
+          "exampleMeaning": "I take a photo"
+        },
+        {
+          "japanese": "きる",
+          "romaji": "kiru",
+          "meaning": "to wear (上)",
+          "example": "シャツを着ます",
+          "exampleMeaning": "I wear a shirt"
+        },
+        {
+          "japanese": "はく",
+          "romaji": "haku",
+          "meaning": "to wear (下)",
+          "example": "ズボンをはきます",
+          "exampleMeaning": "I wear pants"
+        },
+        {
+          "japanese": "かぶる",
+          "romaji": "kaburu",
+          "meaning": "to wear (頭)",
+          "example": "帽子をかぶります",
+          "exampleMeaning": "I wear a hat"
+        },
+        {
+          "japanese": "ぬぐ",
+          "romaji": "nugu",
+          "meaning": "to take off",
+          "example": "靴を脱ぎます",
+          "exampleMeaning": "I take off shoes"
+        },
+        {
+          "japanese": "あげる",
+          "romaji": "ageru",
+          "meaning": "to give",
+          "example": "プレゼントをあげます",
+          "exampleMeaning": "I give a present"
+        },
+        {
+          "japanese": "もらう",
+          "romaji": "morau",
+          "meaning": "to receive",
+          "example": "プレゼントをもらいます",
+          "exampleMeaning": "I receive a present"
+        },
+        {
+          "japanese": "かりる",
+          "romaji": "kariru",
+          "meaning": "to borrow",
+          "example": "本を借ります",
+          "exampleMeaning": "I borrow a book"
+        },
+        {
+          "japanese": "かす",
+          "romaji": "kasu",
+          "meaning": "to lend",
+          "example": "お金を貸します",
+          "exampleMeaning": "I lend money"
+        },
+        {
+          "japanese": "つかう",
+          "romaji": "tsukau",
+          "meaning": "to use",
+          "example": "パソコンを使います",
+          "exampleMeaning": "I use a computer"
+        },
+        {
+          "japanese": "てつだう",
+          "romaji": "tetsudau",
+          "meaning": "to help",
+          "example": "母を手伝います",
+          "exampleMeaning": "I help my mother"
+        },
+        {
+          "japanese": "よぶ",
+          "romaji": "yobu",
+          "meaning": "to call",
+          "example": "名前を呼びます",
+          "exampleMeaning": "I call a name"
+        },
+        {
+          "japanese": "すむ",
+          "romaji": "sumu",
+          "meaning": "to live",
+          "example": "東京に住んでいます",
+          "exampleMeaning": "I live in Tokyo"
+        },
+        {
+          "japanese": "しぬ",
+          "romaji": "shinu",
+          "meaning": "to die",
+          "example": "花が死にました",
+          "exampleMeaning": "The flower died"
+        },
+        {
+          "japanese": "うまれる",
+          "romaji": "umareru",
+          "meaning": "to be born",
+          "example": "日本で生まれました",
+          "exampleMeaning": "I was born in Japan"
+        }
+      ]
+    },
+    {
+      "id": "adjectives",
+      "name": "い-Adjectives (い形容詞)",
+      "words": [
+        {
+          "japanese": "あたらしい",
+          "romaji": "atarashii",
+          "meaning": "new",
+          "example": "新しい車です",
+          "exampleMeaning": "It's a new car"
+        },
+        {
+          "japanese": "ふるい",
+          "romaji": "furui",
+          "meaning": "old (thing)",
+          "example": "古い家です",
+          "exampleMeaning": "It's an old house"
+        },
+        {
+          "japanese": "いい/よい",
+          "romaji": "ii/yoi",
+          "meaning": "good",
+          "example": "いい天気ですね",
+          "exampleMeaning": "It's good weather, isn't it?"
+        },
+        {
+          "japanese": "わるい",
+          "romaji": "warui",
+          "meaning": "bad",
+          "example": "悪い人です",
+          "exampleMeaning": "He's a bad person"
+        },
+        {
+          "japanese": "おおきい",
+          "romaji": "ookii",
+          "meaning": "big",
+          "example": "大きい犬です",
+          "exampleMeaning": "It's a big dog"
+        },
+        {
+          "japanese": "ちいさい",
+          "romaji": "chiisai",
+          "meaning": "small",
+          "example": "小さい猫です",
+          "exampleMeaning": "It's a small cat"
+        },
+        {
+          "japanese": "たかい",
+          "romaji": "takai",
+          "meaning": "tall/high/expensive",
+          "example": "高い山です",
+          "exampleMeaning": "It's a tall mountain"
+        },
+        {
+          "japanese": "ひくい",
+          "romaji": "hikui",
+          "meaning": "low/short",
+          "example": "低い建物です",
+          "exampleMeaning": "It's a low building"
+        },
+        {
+          "japanese": "ながい",
+          "romaji": "nagai",
+          "meaning": "long",
+          "example": "長い髪です",
+          "exampleMeaning": "It's long hair"
+        },
+        {
+          "japanese": "みじかい",
+          "romaji": "mijikai",
+          "meaning": "short",
+          "example": "短いスカートです",
+          "exampleMeaning": "It's a short skirt"
+        },
+        {
+          "japanese": "あつい",
+          "romaji": "atsui",
+          "meaning": "hot",
+          "example": "暑い日です",
+          "exampleMeaning": "It's a hot day"
+        },
+        {
+          "japanese": "さむい",
+          "romaji": "samui",
+          "meaning": "cold",
+          "example": "寒い冬です",
+          "exampleMeaning": "It's a cold winter"
+        },
+        {
+          "japanese": "あたたかい",
+          "romaji": "atatakai",
+          "meaning": "warm",
+          "example": "暖かい春です",
+          "exampleMeaning": "It's a warm spring"
+        },
+        {
+          "japanese": "すずしい",
+          "romaji": "suzushii",
+          "meaning": "cool",
+          "example": "涼しい風です",
+          "exampleMeaning": "It's a cool breeze"
+        },
+        {
+          "japanese": "つめたい",
+          "romaji": "tsumetai",
+          "meaning": "cold (to touch)",
+          "example": "冷たい水です",
+          "exampleMeaning": "It's cold water"
+        },
+        {
+          "japanese": "あつい",
+          "romaji": "atsui",
+          "meaning": "thick",
+          "example": "厚い本です",
+          "exampleMeaning": "It's a thick book"
+        },
+        {
+          "japanese": "うすい",
+          "romaji": "usui",
+          "meaning": "thin",
+          "example": "薄いシャツです",
+          "exampleMeaning": "It's a thin shirt"
+        },
+        {
+          "japanese": "おもい",
+          "romaji": "omoi",
+          "meaning": "heavy",
+          "example": "重い荷物です",
+          "exampleMeaning": "It's heavy luggage"
+        },
+        {
+          "japanese": "かるい",
+          "romaji": "karui",
+          "meaning": "light (weight)",
+          "example": "軽いかばんです",
+          "exampleMeaning": "It's a light bag"
+        },
+        {
+          "japanese": "かたい",
+          "romaji": "katai",
+          "meaning": "hard",
+          "example": "固いパンです",
+          "exampleMeaning": "It's hard bread"
+        },
+        {
+          "japanese": "やわらかい",
+          "romaji": "yawarakai",
+          "meaning": "soft",
+          "example": "柔らかい布団です",
+          "exampleMeaning": "It's a soft futon"
+        },
+        {
+          "japanese": "ひろい",
+          "romaji": "hiroi",
+          "meaning": "wide/spacious",
+          "example": "広い部屋です",
+          "exampleMeaning": "It's a spacious room"
+        },
+        {
+          "japanese": "せまい",
+          "romaji": "semai",
+          "meaning": "narrow",
+          "example": "狭い道です",
+          "exampleMeaning": "It's a narrow road"
+        },
+        {
+          "japanese": "あかるい",
+          "romaji": "akarui",
+          "meaning": "bright",
+          "example": "明るい部屋です",
+          "exampleMeaning": "It's a bright room"
+        },
+        {
+          "japanese": "くらい",
+          "romaji": "kurai",
+          "meaning": "dark",
+          "example": "暗い夜です",
+          "exampleMeaning": "It's a dark night"
+        },
+        {
+          "japanese": "あかい",
+          "romaji": "akai",
+          "meaning": "red",
+          "example": "赤いりんごです",
+          "exampleMeaning": "It's a red apple"
+        },
+        {
+          "japanese": "あおい",
+          "romaji": "aoi",
+          "meaning": "blue",
+          "example": "青い空です",
+          "exampleMeaning": "It's a blue sky"
+        },
+        {
+          "japanese": "しろい",
+          "romaji": "shiroi",
+          "meaning": "white",
+          "example": "白い雪です",
+          "exampleMeaning": "It's white snow"
+        },
+        {
+          "japanese": "くろい",
+          "romaji": "kuroi",
+          "meaning": "black",
+          "example": "黒い猫です",
+          "exampleMeaning": "It's a black cat"
+        },
+        {
+          "japanese": "ちゃいろい",
+          "romaji": "chairoi",
+          "meaning": "brown",
+          "example": "茶色い犬です",
+          "exampleMeaning": "It's a brown dog"
+        },
+        {
+          "japanese": "はやい",
+          "romaji": "hayai",
+          "meaning": "fast/early",
+          "example": "速い車です",
+          "exampleMeaning": "It's a fast car"
+        },
+        {
+          "japanese": "おそい",
+          "romaji": "osoi",
+          "meaning": "slow/late",
+          "example": "遅い電車です",
+          "exampleMeaning": "It's a late train"
+        },
+        {
+          "japanese": "おおい",
+          "romaji": "ooi",
+          "meaning": "many/much",
+          "example": "人が多いです",
+          "exampleMeaning": "There are many people"
+        },
+        {
+          "japanese": "すくない",
+          "romaji": "sukunai",
+          "meaning": "few/little",
+          "example": "お金が少ないです",
+          "exampleMeaning": "There's little money"
+        },
+        {
+          "japanese": "おいしい",
+          "romaji": "oishii",
+          "meaning": "delicious",
+          "example": "おいしい料理です",
+          "exampleMeaning": "It's delicious food"
+        },
+        {
+          "japanese": "まずい",
+          "romaji": "mazui",
+          "meaning": "not tasty",
+          "example": "まずいスープです",
+          "exampleMeaning": "It's bad-tasting soup"
+        },
+        {
+          "japanese": "たのしい",
+          "romaji": "tanoshii",
+          "meaning": "fun/enjoyable",
+          "example": "楽しいパーティーです",
+          "exampleMeaning": "It's a fun party"
+        },
+        {
+          "japanese": "うれしい",
+          "romaji": "ureshii",
+          "meaning": "happy/glad",
+          "example": "うれしいニュースです",
+          "exampleMeaning": "It's happy news"
+        },
+        {
+          "japanese": "かなしい",
+          "romaji": "kanashii",
+          "meaning": "sad",
+          "example": "悲しい映画です",
+          "exampleMeaning": "It's a sad movie"
+        },
+        {
+          "japanese": "さびしい",
+          "romaji": "sabishii",
+          "meaning": "lonely",
+          "example": "寂しい夜です",
+          "exampleMeaning": "It's a lonely night"
+        },
+        {
+          "japanese": "むずかしい",
+          "romaji": "muzukashii",
+          "meaning": "difficult",
+          "example": "難しい問題です",
+          "exampleMeaning": "It's a difficult problem"
+        },
+        {
+          "japanese": "やさしい",
+          "romaji": "yasashii",
+          "meaning": "easy/kind",
+          "example": "易しいテストです",
+          "exampleMeaning": "It's an easy test"
+        },
+        {
+          "japanese": "やすい",
+          "romaji": "yasui",
+          "meaning": "cheap",
+          "example": "安い服です",
+          "exampleMeaning": "They're cheap clothes"
+        },
+        {
+          "japanese": "たかい",
+          "romaji": "takai",
+          "meaning": "expensive",
+          "example": "高い時計です",
+          "exampleMeaning": "It's an expensive watch"
+        },
+        {
+          "japanese": "いそがしい",
+          "romaji": "isogashii",
+          "meaning": "busy",
+          "example": "忙しい一日です",
+          "exampleMeaning": "It's a busy day"
+        },
+        {
+          "japanese": "うるさい",
+          "romaji": "urusai",
+          "meaning": "noisy",
+          "example": "うるさい音です",
+          "exampleMeaning": "It's a noisy sound"
+        },
+        {
+          "japanese": "しずかな",
+          "romaji": "shizuka na",
+          "meaning": "quiet",
+          "example": "静かな場所です",
+          "exampleMeaning": "It's a quiet place"
+        },
+        {
+          "japanese": "すごい",
+          "romaji": "sugoi",
+          "meaning": "amazing",
+          "example": "すごい景色です",
+          "exampleMeaning": "It's an amazing view"
+        },
+        {
+          "japanese": "こわい",
+          "romaji": "kowai",
+          "meaning": "scary",
+          "example": "怖い映画です",
+          "exampleMeaning": "It's a scary movie"
+        },
+        {
+          "japanese": "ただしい",
+          "romaji": "tadashii",
+          "meaning": "correct",
+          "example": "正しい答えです",
+          "exampleMeaning": "It's the correct answer"
+        },
+        {
+          "japanese": "わかい",
+          "romaji": "wakai",
+          "meaning": "young",
+          "example": "若い先生です",
+          "exampleMeaning": "He's a young teacher"
+        },
+        {
+          "japanese": "ちかい",
+          "romaji": "chikai",
+          "meaning": "near",
+          "example": "近い駅です",
+          "exampleMeaning": "It's a nearby station"
+        },
+        {
+          "japanese": "とおい",
+          "romaji": "tooi",
+          "meaning": "far",
+          "example": "遠い国です",
+          "exampleMeaning": "It's a far country"
+        },
+        {
+          "japanese": "めずらしい",
+          "romaji": "mezurashii",
+          "meaning": "rare",
+          "example": "珍しい花です",
+          "exampleMeaning": "It's a rare flower"
+        },
+        {
+          "japanese": "おもしろい",
+          "romaji": "omoshiroi",
+          "meaning": "interesting",
+          "example": "面白い本です",
+          "exampleMeaning": "It's an interesting book"
+        },
+        {
+          "japanese": "つまらない",
+          "romaji": "tsumaranai",
+          "meaning": "boring",
+          "example": "つまらない映画です",
+          "exampleMeaning": "It's a boring movie"
+        }
+      ]
+    },
+    {
+      "id": "adjectives",
+      "name": "な-Adjectives (な形容詞)",
+      "words": [
+        {
+          "japanese": "きれい(な)",
+          "romaji": "kirei na",
+          "meaning": "beautiful/clean",
+          "example": "きれいな花です",
+          "exampleMeaning": "It's a beautiful flower"
+        },
+        {
+          "japanese": "しずか(な)",
+          "romaji": "shizuka na",
+          "meaning": "quiet",
+          "example": "静かな部屋です",
+          "exampleMeaning": "It's a quiet room"
+        },
+        {
+          "japanese": "にぎやか(な)",
+          "romaji": "nigiyaka na",
+          "meaning": "lively",
+          "example": "にぎやかな町です",
+          "exampleMeaning": "It's a lively town"
+        },
+        {
+          "japanese": "げんき(な)",
+          "romaji": "genki na",
+          "meaning": "healthy/energetic",
+          "example": "元気な子供です",
+          "exampleMeaning": "He's an energetic child"
+        },
+        {
+          "japanese": "ひま(な)",
+          "romaji": "hima na",
+          "meaning": "free (time)",
+          "example": "暇な時間です",
+          "exampleMeaning": "It's free time"
+        },
+        {
+          "japanese": "べんり(な)",
+          "romaji": "benri na",
+          "meaning": "convenient",
+          "example": "便利な店です",
+          "exampleMeaning": "It's a convenient store"
+        },
+        {
+          "japanese": "ふべん(な)",
+          "romaji": "fuben na",
+          "meaning": "inconvenient",
+          "example": "不便な場所です",
+          "exampleMeaning": "It's an inconvenient place"
+        },
+        {
+          "japanese": "すき(な)",
+          "romaji": "suki na",
+          "meaning": "like",
+          "example": "好きな食べ物です",
+          "exampleMeaning": "It's my favorite food"
+        },
+        {
+          "japanese": "きらい(な)",
+          "romaji": "kirai na",
+          "meaning": "dislike",
+          "example": "嫌いな野菜です",
+          "exampleMeaning": "It's a vegetable I dislike"
+        },
+        {
+          "japanese": "だいすき(な)",
+          "romaji": "daisuki na",
+          "meaning": "love/like very much",
+          "example": "大好きな歌です",
+          "exampleMeaning": "It's a song I love"
+        },
+        {
+          "japanese": "だいきらい(な)",
+          "romaji": "daikirai na",
+          "meaning": "hate",
+          "example": "大嫌いな虫です",
+          "exampleMeaning": "It's an insect I hate"
+        },
+        {
+          "japanese": "じょうず(な)",
+          "romaji": "jouzu na",
+          "meaning": "skillful/good at",
+          "example": "上手な絵です",
+          "exampleMeaning": "It's a skillful drawing"
+        },
+        {
+          "japanese": "へた(な)",
+          "romaji": "heta na",
+          "meaning": "unskillful/bad at",
+          "example": "下手な歌です",
+          "exampleMeaning": "It's poor singing"
+        },
+        {
+          "japanese": "ゆうめい(な)",
+          "romaji": "yuumei na",
+          "meaning": "famous",
+          "example": "有名な人です",
+          "exampleMeaning": "He's a famous person"
+        },
+        {
+          "japanese": "たいせつ(な)",
+          "romaji": "taisetsu na",
+          "meaning": "important",
+          "example": "大切な友達です",
+          "exampleMeaning": "He's an important friend"
+        },
+        {
+          "japanese": "かんたん(な)",
+          "romaji": "kantan na",
+          "meaning": "simple/easy",
+          "example": "簡単な仕事です",
+          "exampleMeaning": "It's simple work"
+        },
+        {
+          "japanese": "しんせつ(な)",
+          "romaji": "shinsetsu na",
+          "meaning": "kind",
+          "example": "親切な人です",
+          "exampleMeaning": "He's a kind person"
+        },
+        {
+          "japanese": "たいへん(な)",
+          "romaji": "taihen na",
+          "meaning": "difficult/hard",
+          "example": "大変な仕事です",
+          "exampleMeaning": "It's hard work"
+        },
+        {
+          "japanese": "すてき(な)",
+          "romaji": "suteki na",
+          "meaning": "wonderful",
+          "example": "すてきなドレスです",
+          "exampleMeaning": "It's a wonderful dress"
+        }
+      ]
+    },
+    {
+      "id": "people",
+      "name": "People (人)",
+      "words": [
+        {
+          "japanese": "ひと",
+          "romaji": "hito",
+          "meaning": "person",
+          "example": "いい人です",
+          "exampleMeaning": "He's a good person"
+        },
+        {
+          "japanese": "わたし",
+          "romaji": "watashi",
+          "meaning": "I/me",
+          "example": "私は学生です",
+          "exampleMeaning": "I am a student"
+        },
+        {
+          "japanese": "あなた",
+          "romaji": "anata",
+          "meaning": "you",
+          "example": "あなたは誰ですか",
+          "exampleMeaning": "Who are you?"
+        },
+        {
+          "japanese": "かれ",
+          "romaji": "kare",
+          "meaning": "he/him",
+          "example": "彼は先生です",
+          "exampleMeaning": "He is a teacher"
+        },
+        {
+          "japanese": "かのじょ",
+          "romaji": "kanojo",
+          "meaning": "she/her",
+          "example": "彼女は看護師です",
+          "exampleMeaning": "She is a nurse"
+        },
+        {
+          "japanese": "ともだち",
+          "romaji": "tomodachi",
+          "meaning": "friend",
+          "example": "友達に会います",
+          "exampleMeaning": "I meet my friend"
+        },
+        {
+          "japanese": "かぞく",
+          "romaji": "kazoku",
+          "meaning": "family",
+          "example": "家族と住んでいます",
+          "exampleMeaning": "I live with my family"
+        },
+        {
+          "japanese": "ちち",
+          "romaji": "chichi",
+          "meaning": "father (my)",
+          "example": "父は会社員です",
+          "exampleMeaning": "My father is a company employee"
+        },
+        {
+          "japanese": "はは",
+          "romaji": "haha",
+          "meaning": "mother (my)",
+          "example": "母は先生です",
+          "exampleMeaning": "My mother is a teacher"
+        },
+        {
+          "japanese": "おとうさん",
+          "romaji": "otousan",
+          "meaning": "father (someone else's)",
+          "example": "お父さんは元気ですか",
+          "exampleMeaning": "Is your father well?"
+        },
+        {
+          "japanese": "おかあさん",
+          "romaji": "okaasan",
+          "meaning": "mother (someone else's)",
+          "example": "お母さんは優しいです",
+          "exampleMeaning": "Your mother is kind"
+        },
+        {
+          "japanese": "あに",
+          "romaji": "ani",
+          "meaning": "older brother (my)",
+          "example": "兄は大学生です",
+          "exampleMeaning": "My older brother is a university student"
+        },
+        {
+          "japanese": "あね",
+          "romaji": "ane",
+          "meaning": "older sister (my)",
+          "example": "姉は看護師です",
+          "exampleMeaning": "My older sister is a nurse"
+        },
+        {
+          "japanese": "おとうと",
+          "romaji": "otouto",
+          "meaning": "younger brother (my)",
+          "example": "弟は高校生です",
+          "exampleMeaning": "My younger brother is a high school student"
+        },
+        {
+          "japanese": "いもうと",
+          "romaji": "imouto",
+          "meaning": "younger sister (my)",
+          "example": "妹は中学生です",
+          "exampleMeaning": "My younger sister is a middle school student"
+        },
+        {
+          "japanese": "おにいさん",
+          "romaji": "oniisan",
+          "meaning": "older brother (someone else's)",
+          "example": "お兄さんはどこですか",
+          "exampleMeaning": "Where is your older brother?"
+        },
+        {
+          "japanese": "おねえさん",
+          "romaji": "oneesan",
+          "meaning": "older sister (someone else's)",
+          "example": "お姉さんはきれいです",
+          "exampleMeaning": "Your older sister is beautiful"
+        },
+        {
+          "japanese": "おとうとさん",
+          "romaji": "otoutosan",
+          "meaning": "younger brother (someone else's)",
+          "example": "弟さんは何歳ですか",
+          "exampleMeaning": "How old is your younger brother?"
+        },
+        {
+          "japanese": "いもうとさん",
+          "romaji": "imoutosan",
+          "meaning": "younger sister (someone else's)",
+          "example": "妹さんはかわいいです",
+          "exampleMeaning": "Your younger sister is cute"
+        },
+        {
+          "japanese": "こども",
+          "romaji": "kodomo",
+          "meaning": "child",
+          "example": "子供が三人います",
+          "exampleMeaning": "I have three children"
+        },
+        {
+          "japanese": "おとこ",
+          "romaji": "otoko",
+          "meaning": "man/male",
+          "example": "男の人です",
+          "exampleMeaning": "He's a man"
+        },
+        {
+          "japanese": "おんな",
+          "romaji": "onna",
+          "meaning": "woman/female",
+          "example": "女の人です",
+          "exampleMeaning": "She's a woman"
+        },
+        {
+          "japanese": "おとこのこ",
+          "romaji": "otokonoko",
+          "meaning": "boy",
+          "example": "男の子が遊んでいます",
+          "exampleMeaning": "A boy is playing"
+        },
+        {
+          "japanese": "おんなのこ",
+          "romaji": "onnanoko",
+          "meaning": "girl",
+          "example": "女の子がいます",
+          "exampleMeaning": "There's a girl"
+        },
+        {
+          "japanese": "がくせい",
+          "romaji": "gakusei",
+          "meaning": "student",
+          "example": "学生です",
+          "exampleMeaning": "I'm a student"
+        },
+        {
+          "japanese": "せんせい",
+          "romaji": "sensei",
+          "meaning": "teacher",
+          "example": "先生に聞きます",
+          "exampleMeaning": "I ask the teacher"
+        },
+        {
+          "japanese": "しゃいん",
+          "romaji": "shain",
+          "meaning": "company employee",
+          "example": "会社員です",
+          "exampleMeaning": "I'm a company employee"
+        },
+        {
+          "japanese": "いしゃ",
+          "romaji": "isha",
+          "meaning": "doctor",
+          "example": "医者に行きます",
+          "exampleMeaning": "I go to the doctor"
+        },
+        {
+          "japanese": "かんごし",
+          "romaji": "kangoshi",
+          "meaning": "nurse",
+          "example": "看護師です",
+          "exampleMeaning": "I'm a nurse"
+        },
+        {
+          "japanese": "エンジニア",
+          "romaji": "enjinia",
+          "meaning": "engineer",
+          "example": "エンジニアです",
+          "exampleMeaning": "I'm an engineer"
+        }
+      ]
+    },
+    {
+      "id": "places",
+      "name": "Places (場所)",
+      "words": [
+        {
+          "japanese": "うち/いえ",
+          "romaji": "uchi/ie",
+          "meaning": "house/home",
+          "example": "家に帰ります",
+          "exampleMeaning": "I go home"
+        },
+        {
+          "japanese": "がっこう",
+          "romaji": "gakkou",
+          "meaning": "school",
+          "example": "学校へ行きます",
+          "exampleMeaning": "I go to school"
+        },
+        {
+          "japanese": "だいがく",
+          "romaji": "daigaku",
+          "meaning": "university",
+          "example": "大学で勉強します",
+          "exampleMeaning": "I study at university"
+        },
+        {
+          "japanese": "かいしゃ",
+          "romaji": "kaisha",
+          "meaning": "company",
+          "example": "会社で働きます",
+          "exampleMeaning": "I work at a company"
+        },
+        {
+          "japanese": "びょういん",
+          "romaji": "byouin",
+          "meaning": "hospital",
+          "example": "病院へ行きます",
+          "exampleMeaning": "I go to the hospital"
+        },
+        {
+          "japanese": "ぎんこう",
+          "romaji": "ginkou",
+          "meaning": "bank",
+          "example": "銀行でお金をおろします",
+          "exampleMeaning": "I withdraw money at the bank"
+        },
+        {
+          "japanese": "ゆうびんきょく",
+          "romaji": "yuubinkyoku",
+          "meaning": "post office",
+          "example": "郵便局で手紙を出します",
+          "exampleMeaning": "I send a letter at the post office"
+        },
+        {
+          "japanese": "えき",
+          "romaji": "eki",
+          "meaning": "station",
+          "example": "駅で待ちます",
+          "exampleMeaning": "I wait at the station"
+        },
+        {
+          "japanese": "くうこう",
+          "romaji": "kuukou",
+          "meaning": "airport",
+          "example": "空港へ行きます",
+          "exampleMeaning": "I go to the airport"
+        },
+        {
+          "japanese": "みせ",
+          "romaji": "mise",
+          "meaning": "store/shop",
+          "example": "店で買います",
+          "exampleMeaning": "I buy at the store"
+        },
+        {
+          "japanese": "デパート",
+          "romaji": "depaato",
+          "meaning": "department store",
+          "example": "デパートで買い物します",
+          "exampleMeaning": "I shop at the department store"
+        },
+        {
+          "japanese": "スーパー",
+          "romaji": "suupaa",
+          "meaning": "supermarket",
+          "example": "スーパーで野菜を買います",
+          "exampleMeaning": "I buy vegetables at the supermarket"
+        },
+        {
+          "japanese": "コンビニ",
+          "romaji": "konbini",
+          "meaning": "convenience store",
+          "example": "コンビニに行きます",
+          "exampleMeaning": "I go to the convenience store"
+        },
+        {
+          "japanese": "レストラン",
+          "romaji": "resutoran",
+          "meaning": "restaurant",
+          "example": "レストランで食べます",
+          "exampleMeaning": "I eat at a restaurant"
+        },
+        {
+          "japanese": "カフェ",
+          "romaji": "kafe",
+          "meaning": "cafe",
+          "example": "カフェでコーヒーを飲みます",
+          "exampleMeaning": "I drink coffee at a cafe"
+        },
+        {
+          "japanese": "ホテル",
+          "romaji": "hoteru",
+          "meaning": "hotel",
+          "example": "ホテルに泊まります",
+          "exampleMeaning": "I stay at a hotel"
+        },
+        {
+          "japanese": "りょかん",
+          "romaji": "ryokan",
+          "meaning": "Japanese inn",
+          "example": "旅館に泊まります",
+          "exampleMeaning": "I stay at a Japanese inn"
+        },
+        {
+          "japanese": "こうえん",
+          "romaji": "kouen",
+          "meaning": "park",
+          "example": "公園で遊びます",
+          "exampleMeaning": "I play in the park"
+        },
+        {
+          "japanese": "としょかん",
+          "romaji": "toshokan",
+          "meaning": "library",
+          "example": "図書館で本を読みます",
+          "exampleMeaning": "I read books at the library"
+        },
+        {
+          "japanese": "びじゅつかん",
+          "romaji": "bijutsukan",
+          "meaning": "art museum",
+          "example": "美術館へ行きます",
+          "exampleMeaning": "I go to the art museum"
+        },
+        {
+          "japanese": "えいがかん",
+          "romaji": "eigakan",
+          "meaning": "movie theater",
+          "example": "映画館で映画を見ます",
+          "exampleMeaning": "I watch a movie at the movie theater"
+        },
+        {
+          "japanese": "きょうかい",
+          "romaji": "kyoukai",
+          "meaning": "church",
+          "example": "教会へ行きます",
+          "exampleMeaning": "I go to church"
+        },
+        {
+          "japanese": "おてら",
+          "romaji": "otera",
+          "meaning": "temple",
+          "example": "お寺を見ます",
+          "exampleMeaning": "I visit a temple"
+        },
+        {
+          "japanese": "じんじゃ",
+          "romaji": "jinja",
+          "meaning": "shrine",
+          "example": "神社へ行きます",
+          "exampleMeaning": "I go to a shrine"
+        },
+        {
+          "japanese": "へや",
+          "romaji": "heya",
+          "meaning": "room",
+          "example": "部屋で勉強します",
+          "exampleMeaning": "I study in my room"
+        },
+        {
+          "japanese": "トイレ",
+          "romaji": "toire",
+          "meaning": "toilet/bathroom",
+          "example": "トイレはどこですか",
+          "exampleMeaning": "Where is the toilet?"
+        },
+        {
+          "japanese": "おふろ",
+          "romaji": "ofuro",
+          "meaning": "bath",
+          "example": "お風呂に入ります",
+          "exampleMeaning": "I take a bath"
+        },
+        {
+          "japanese": "にわ",
+          "romaji": "niwa",
+          "meaning": "garden",
+          "example": "庭で遊びます",
+          "exampleMeaning": "I play in the garden"
+        },
+        {
+          "japanese": "まち",
+          "romaji": "machi",
+          "meaning": "town/city",
+          "example": "町を歩きます",
+          "exampleMeaning": "I walk around the town"
+        },
+        {
+          "japanese": "くに",
+          "romaji": "kuni",
+          "meaning": "country",
+          "example": "どこの国ですか",
+          "exampleMeaning": "Which country is it?"
+        }
+      ]
+    },
+    {
+      "id": "things",
+      "name": "Things (物)",
+      "words": [
+        {
+          "japanese": "もの",
+          "romaji": "mono",
+          "meaning": "thing",
+          "example": "いいものです",
+          "exampleMeaning": "It's a good thing"
+        },
+        {
+          "japanese": "ほん",
+          "romaji": "hon",
+          "meaning": "book",
+          "example": "本を読みます",
+          "exampleMeaning": "I read a book"
+        },
+        {
+          "japanese": "ざっし",
+          "romaji": "zasshi",
+          "meaning": "magazine",
+          "example": "雑誌を買います",
+          "exampleMeaning": "I buy a magazine"
+        },
+        {
+          "japanese": "しんぶん",
+          "romaji": "shinbun",
+          "meaning": "newspaper",
+          "example": "新聞を読みます",
+          "exampleMeaning": "I read a newspaper"
+        },
+        {
+          "japanese": "じしょ",
+          "romaji": "jisho",
+          "meaning": "dictionary",
+          "example": "辞書で調べます",
+          "exampleMeaning": "I look it up in a dictionary"
+        },
+        {
+          "japanese": "かみ",
+          "romaji": "kami",
+          "meaning": "paper",
+          "example": "紙に書きます",
+          "exampleMeaning": "I write on paper"
+        },
+        {
+          "japanese": "てがみ",
+          "romaji": "tegami",
+          "meaning": "letter",
+          "example": "手紙を書きます",
+          "exampleMeaning": "I write a letter"
+        },
+        {
+          "japanese": "ノート",
+          "romaji": "nooto",
+          "meaning": "notebook",
+          "example": "ノートに書きます",
+          "exampleMeaning": "I write in a notebook"
+        },
+        {
+          "japanese": "えんぴつ",
+          "romaji": "enpitsu",
+          "meaning": "pencil",
+          "example": "鉛筆で書きます",
+          "exampleMeaning": "I write with a pencil"
+        },
+        {
+          "japanese": "ペン",
+          "romaji": "pen",
+          "meaning": "pen",
+          "example": "ペンで書きます",
+          "exampleMeaning": "I write with a pen"
+        },
+        {
+          "japanese": "けしゴム",
+          "romaji": "keshigomu",
+          "meaning": "eraser",
+          "example": "消しゴムで消します",
+          "exampleMeaning": "I erase with an eraser"
+        },
+        {
+          "japanese": "かばん",
+          "romaji": "kaban",
+          "meaning": "bag",
+          "example": "かばんを持ちます",
+          "exampleMeaning": "I carry a bag"
+        },
+        {
+          "japanese": "つくえ",
+          "romaji": "tsukue",
+          "meaning": "desk",
+          "example": "机の上に本があります",
+          "exampleMeaning": "There's a book on the desk"
+        },
+        {
+          "japanese": "いす",
+          "romaji": "isu",
+          "meaning": "chair",
+          "example": "椅子に座ります",
+          "exampleMeaning": "I sit on a chair"
+        },
+        {
+          "japanese": "とけい",
+          "romaji": "tokei",
+          "meaning": "clock/watch",
+          "example": "時計を見ます",
+          "exampleMeaning": "I look at the clock"
+        },
+        {
+          "japanese": "でんわ",
+          "romaji": "denwa",
+          "meaning": "telephone",
+          "example": "電話をかけます",
+          "exampleMeaning": "I make a phone call"
+        },
+        {
+          "japanese": "けいたい",
+          "romaji": "keitai",
+          "meaning": "mobile phone",
+          "example": "携帯で話します",
+          "exampleMeaning": "I talk on my mobile phone"
+        },
+        {
+          "japanese": "パソコン",
+          "romaji": "pasokon",
+          "meaning": "computer",
+          "example": "パソコンで仕事します",
+          "exampleMeaning": "I work on a computer"
+        },
+        {
+          "japanese": "テレビ",
+          "romaji": "terebi",
+          "meaning": "TV",
+          "example": "テレビを見ます",
+          "exampleMeaning": "I watch TV"
+        },
+        {
+          "japanese": "ラジオ",
+          "romaji": "rajio",
+          "meaning": "radio",
+          "example": "ラジオを聞きます",
+          "exampleMeaning": "I listen to the radio"
+        },
+        {
+          "japanese": "カメラ",
+          "romaji": "kamera",
+          "meaning": "camera",
+          "example": "カメラで写真を撮ります",
+          "exampleMeaning": "I take photos with a camera"
+        },
+        {
+          "japanese": "しゃしん",
+          "romaji": "shashin",
+          "meaning": "photograph",
+          "example": "写真を撮ります",
+          "exampleMeaning": "I take a photograph"
+        },
+        {
+          "japanese": "ドア",
+          "romaji": "doa",
+          "meaning": "door",
+          "example": "ドアを開けます",
+          "exampleMeaning": "I open the door"
+        },
+        {
+          "japanese": "まど",
+          "romaji": "mado",
+          "meaning": "window",
+          "example": "窓を開けます",
+          "exampleMeaning": "I open the window"
+        },
+        {
+          "japanese": "でんき",
+          "romaji": "denki",
+          "meaning": "light/electricity",
+          "example": "電気をつけます",
+          "exampleMeaning": "I turn on the light"
+        },
+        {
+          "japanese": "エアコン",
+          "romaji": "eakon",
+          "meaning": "air conditioner",
+          "example": "エアコンをつけます",
+          "exampleMeaning": "I turn on the air conditioner"
+        },
+        {
+          "japanese": "くるま",
+          "romaji": "kuruma",
+          "meaning": "car",
+          "example": "車で行きます",
+          "exampleMeaning": "I go by car"
+        },
+        {
+          "japanese": "じてんしゃ",
+          "romaji": "jitensha",
+          "meaning": "bicycle",
+          "example": "自転車で行きます",
+          "exampleMeaning": "I go by bicycle"
+        },
+        {
+          "japanese": "バス",
+          "romaji": "basu",
+          "meaning": "bus",
+          "example": "バスに乗ります",
+          "exampleMeaning": "I ride the bus"
+        },
+        {
+          "japanese": "でんしゃ",
+          "romaji": "densha",
+          "meaning": "train",
+          "example": "電車で行きます",
+          "exampleMeaning": "I go by train"
+        },
+        {
+          "japanese": "ちかてつ",
+          "romaji": "chikatetsu",
+          "meaning": "subway",
+          "example": "地下鉄で行きます",
+          "exampleMeaning": "I go by subway"
+        },
+        {
+          "japanese": "ひこうき",
+          "romaji": "hikouki",
+          "meaning": "airplane",
+          "example": "飛行機で行きます",
+          "exampleMeaning": "I go by airplane"
+        },
+        {
+          "japanese": "ふね",
+          "romaji": "fune",
+          "meaning": "ship/boat",
+          "example": "船で行きます",
+          "exampleMeaning": "I go by ship"
+        },
+        {
+          "japanese": "タクシー",
+          "romaji": "takushii",
+          "meaning": "taxi",
+          "example": "タクシーで行きます",
+          "exampleMeaning": "I go by taxi"
+        },
+        {
+          "japanese": "きっぷ",
+          "romaji": "kippu",
+          "meaning": "ticket",
+          "example": "切符を買います",
+          "exampleMeaning": "I buy a ticket"
+        },
+        {
+          "japanese": "おかね",
+          "romaji": "okane",
+          "meaning": "money",
+          "example": "お金がありません",
+          "exampleMeaning": "I don't have money"
+        },
+        {
+          "japanese": "えん",
+          "romaji": "en",
+          "meaning": "yen",
+          "example": "千円です",
+          "exampleMeaning": "It's 1,000 yen"
+        }
+      ]
+    },
+    {
+      "id": "food-drink",
+      "name": "Food & Drink (食べ物・飲み物)",
+      "words": [
+        {
+          "japanese": "たべもの",
+          "romaji": "tabemono",
+          "meaning": "food",
+          "example": "食べ物を買います",
+          "exampleMeaning": "I buy food"
+        },
+        {
+          "japanese": "のみもの",
+          "romaji": "nomimono",
+          "meaning": "drink",
+          "example": "飲み物をください",
+          "exampleMeaning": "Please give me a drink"
+        },
+        {
+          "japanese": "ごはん",
+          "romaji": "gohan",
+          "meaning": "rice/meal",
+          "example": "ご飯を食べます",
+          "exampleMeaning": "I eat rice/meal"
+        },
+        {
+          "japanese": "パン",
+          "romaji": "pan",
+          "meaning": "bread",
+          "example": "パンを買います",
+          "exampleMeaning": "I buy bread"
+        },
+        {
+          "japanese": "たまご",
+          "romaji": "tamago",
+          "meaning": "egg",
+          "example": "卵を食べます",
+          "exampleMeaning": "I eat eggs"
+        },
+        {
+          "japanese": "にく",
+          "romaji": "niku",
+          "meaning": "meat",
+          "example": "肉が好きです",
+          "exampleMeaning": "I like meat"
+        },
+        {
+          "japanese": "さかな",
+          "romaji": "sakana",
+          "meaning": "fish",
+          "example": "魚を食べます",
+          "exampleMeaning": "I eat fish"
+        },
+        {
+          "japanese": "やさい",
+          "romaji": "yasai",
+          "meaning": "vegetable",
+          "example": "野菜は体にいいです",
+          "exampleMeaning": "Vegetables are good for your health"
+        },
+        {
+          "japanese": "くだもの",
+          "romaji": "kudamono",
+          "meaning": "fruit",
+          "example": "果物を食べます",
+          "exampleMeaning": "I eat fruit"
+        },
+        {
+          "japanese": "りんご",
+          "romaji": "ringo",
+          "meaning": "apple",
+          "example": "りんごを買います",
+          "exampleMeaning": "I buy apples"
+        },
+        {
+          "japanese": "みかん",
+          "romaji": "mikan",
+          "meaning": "mandarin orange",
+          "example": "みかんが好きです",
+          "exampleMeaning": "I like mandarin oranges"
+        },
+        {
+          "japanese": "バナナ",
+          "romaji": "banana",
+          "meaning": "banana",
+          "example": "バナナを食べます",
+          "exampleMeaning": "I eat a banana"
+        },
+        {
+          "japanese": "みず",
+          "romaji": "mizu",
+          "meaning": "water",
+          "example": "水を飲みます",
+          "exampleMeaning": "I drink water"
+        },
+        {
+          "japanese": "おちゃ",
+          "romaji": "ocha",
+          "meaning": "tea",
+          "example": "お茶を飲みます",
+          "exampleMeaning": "I drink tea"
+        },
+        {
+          "japanese": "こうちゃ",
+          "romaji": "koucha",
+          "meaning": "black tea",
+          "example": "紅茶が好きです",
+          "exampleMeaning": "I like black tea"
+        },
+        {
+          "japanese": "コーヒー",
+          "romaji": "koohii",
+          "meaning": "coffee",
+          "example": "コーヒーを飲みます",
+          "exampleMeaning": "I drink coffee"
+        },
+        {
+          "japanese": "ぎゅうにゅう",
+          "romaji": "gyuunyuu",
+          "meaning": "milk",
+          "example": "牛乳を飲みます",
+          "exampleMeaning": "I drink milk"
+        },
+        {
+          "japanese": "ジュース",
+          "romaji": "juusu",
+          "meaning": "juice",
+          "example": "ジュースをください",
+          "exampleMeaning": "Please give me juice"
+        },
+        {
+          "japanese": "ビール",
+          "romaji": "biiru",
+          "meaning": "beer",
+          "example": "ビールを飲みます",
+          "exampleMeaning": "I drink beer"
+        },
+        {
+          "japanese": "おさけ",
+          "romaji": "osake",
+          "meaning": "alcohol/sake",
+          "example": "お酒を飲みます",
+          "exampleMeaning": "I drink alcohol"
+        },
+        {
+          "japanese": "ワイン",
+          "romaji": "wain",
+          "meaning": "wine",
+          "example": "ワインが好きです",
+          "exampleMeaning": "I like wine"
+        },
+        {
+          "japanese": "レストラン",
+          "romaji": "resutoran",
+          "meaning": "restaurant",
+          "example": "レストランで食べます",
+          "exampleMeaning": "I eat at a restaurant"
+        }
+      ]
+    },
+    {
+      "id": "clothes",
+      "name": "Clothes (服)",
+      "words": [
+        {
+          "japanese": "ふく",
+          "romaji": "fuku",
+          "meaning": "clothes",
+          "example": "服を買います",
+          "exampleMeaning": "I buy clothes"
+        },
+        {
+          "japanese": "シャツ",
+          "romaji": "shatsu",
+          "meaning": "shirt",
+          "example": "シャツを着ます",
+          "exampleMeaning": "I wear a shirt"
+        },
+        {
+          "japanese": "ズボン",
+          "romaji": "zubon",
+          "meaning": "pants/trousers",
+          "example": "ズボンをはきます",
+          "exampleMeaning": "I wear pants"
+        },
+        {
+          "japanese": "スカート",
+          "romaji": "sukaato",
+          "meaning": "skirt",
+          "example": "スカートをはきます",
+          "exampleMeaning": "I wear a skirt"
+        },
+        {
+          "japanese": "くつ",
+          "romaji": "kutsu",
+          "meaning": "shoes",
+          "example": "靴をはきます",
+          "exampleMeaning": "I wear shoes"
+        },
+        {
+          "japanese": "くつした",
+          "romaji": "kutsushita",
+          "meaning": "socks",
+          "example": "靴下をはきます",
+          "exampleMeaning": "I wear socks"
+        },
+        {
+          "japanese": "ぼうし",
+          "romaji": "boushi",
+          "meaning": "hat/cap",
+          "example": "帽子をかぶります",
+          "exampleMeaning": "I wear a hat"
+        },
+        {
+          "japanese": "めがね",
+          "romaji": "megane",
+          "meaning": "glasses",
+          "example": "眼鏡をかけます",
+          "exampleMeaning": "I wear glasses"
+        },
+        {
+          "japanese": "とけい",
+          "romaji": "tokei",
+          "meaning": "watch",
+          "example": "時計をします",
+          "exampleMeaning": "I wear a watch"
+        }
+      ]
+    },
+    {
+      "id": "nature-weather",
+      "name": "Nature & Weather (自然・天気)",
+      "words": [
+        {
+          "japanese": "てんき",
+          "romaji": "tenki",
+          "meaning": "weather",
+          "example": "天気がいいです",
+          "exampleMeaning": "The weather is good"
+        },
+        {
+          "japanese": "あめ",
+          "romaji": "ame",
+          "meaning": "rain",
+          "example": "雨が降ります",
+          "exampleMeaning": "It rains"
+        },
+        {
+          "japanese": "ゆき",
+          "romaji": "yuki",
+          "meaning": "snow",
+          "example": "雪が降ります",
+          "exampleMeaning": "It snows"
+        },
+        {
+          "japanese": "かぜ",
+          "romaji": "kaze",
+          "meaning": "wind",
+          "example": "風が強いです",
+          "exampleMeaning": "The wind is strong"
+        },
+        {
+          "japanese": "くも",
+          "romaji": "kumo",
+          "meaning": "cloud",
+          "example": "雲が多いです",
+          "exampleMeaning": "There are many clouds"
+        },
+        {
+          "japanese": "そら",
+          "romaji": "sora",
+          "meaning": "sky",
+          "example": "空がきれいです",
+          "exampleMeaning": "The sky is beautiful"
+        },
+        {
+          "japanese": "うみ",
+          "romaji": "umi",
+          "meaning": "sea",
+          "example": "海で泳ぎます",
+          "exampleMeaning": "I swim in the sea"
+        },
+        {
+          "japanese": "かわ",
+          "romaji": "kawa",
+          "meaning": "river",
+          "example": "川で魚を釣ります",
+          "exampleMeaning": "I fish in the river"
+        },
+        {
+          "japanese": "やま",
+          "romaji": "yama",
+          "meaning": "mountain",
+          "example": "山に登ります",
+          "exampleMeaning": "I climb a mountain"
+        },
+        {
+          "japanese": "はな",
+          "romaji": "hana",
+          "meaning": "flower",
+          "example": "花がきれいです",
+          "exampleMeaning": "The flowers are beautiful"
+        },
+        {
+          "japanese": "き",
+          "romaji": "ki",
+          "meaning": "tree",
+          "example": "木の下で休みます",
+          "exampleMeaning": "I rest under the tree"
+        },
+        {
+          "japanese": "いぬ",
+          "romaji": "inu",
+          "meaning": "dog",
+          "example": "犬を飼っています",
+          "exampleMeaning": "I have a dog"
+        },
+        {
+          "japanese": "ねこ",
+          "romaji": "neko",
+          "meaning": "cat",
+          "example": "猫がかわいいです",
+          "exampleMeaning": "The cat is cute"
+        },
+        {
+          "japanese": "とり",
+          "romaji": "tori",
+          "meaning": "bird",
+          "example": "鳥が飛んでいます",
+          "exampleMeaning": "A bird is flying"
+        },
+        {
+          "japanese": "さかな",
+          "romaji": "sakana",
+          "meaning": "fish",
+          "example": "魚を釣ります",
+          "exampleMeaning": "I fish"
+        }
+      ]
+    },
+    {
+      "id": "body-parts",
+      "name": "Body Parts (体)",
+      "words": [
+        {
+          "japanese": "からだ",
+          "romaji": "karada",
+          "meaning": "body",
+          "example": "体が痛いです",
+          "exampleMeaning": "My body hurts"
+        },
+        {
+          "japanese": "あたま",
+          "romaji": "atama",
+          "meaning": "head",
+          "example": "頭が痛いです",
+          "exampleMeaning": "I have a headache"
+        },
+        {
+          "japanese": "かお",
+          "romaji": "kao",
+          "meaning": "face",
+          "example": "顔を洗います",
+          "exampleMeaning": "I wash my face"
+        },
+        {
+          "japanese": "め",
+          "romaji": "me",
+          "meaning": "eye",
+          "example": "目がきれいです",
+          "exampleMeaning": "Your eyes are beautiful"
+        },
+        {
+          "japanese": "はな",
+          "romaji": "hana",
+          "meaning": "nose",
+          "example": "鼻が高いです",
+          "exampleMeaning": "He has a high nose"
+        },
+        {
+          "japanese": "みみ",
+          "romaji": "mimi",
+          "meaning": "ear",
+          "example": "耳が痛いです",
+          "exampleMeaning": "My ear hurts"
+        },
+        {
+          "japanese": "くち",
+          "romaji": "kuchi",
+          "meaning": "mouth",
+          "example": "口を開けます",
+          "exampleMeaning": "I open my mouth"
+        },
+        {
+          "japanese": "は",
+          "romaji": "ha",
+          "meaning": "tooth/teeth",
+          "example": "歯を磨きます",
+          "exampleMeaning": "I brush my teeth"
+        },
+        {
+          "japanese": "て",
+          "romaji": "te",
+          "meaning": "hand",
+          "example": "手を洗います",
+          "exampleMeaning": "I wash my hands"
+        },
+        {
+          "japanese": "あし",
+          "romaji": "ashi",
+          "meaning": "foot/leg",
+          "example": "足が痛いです",
+          "exampleMeaning": "My foot/leg hurts"
+        },
+        {
+          "japanese": "ゆび",
+          "romaji": "yubi",
+          "meaning": "finger",
+          "example": "指が長いです",
+          "exampleMeaning": "Your fingers are long"
+        },
+        {
+          "japanese": "は",
+          "romaji": "wa",
+          "meaning": "topic marker",
+          "example": "私は学生です",
+          "exampleMeaning": "I am a student"
+        },
+        {
+          "japanese": "が",
+          "romaji": "ga",
+          "meaning": "subject marker",
+          "example": "犬がいます",
+          "exampleMeaning": "There is a dog"
+        },
+        {
+          "japanese": "を",
+          "romaji": "wo/o",
+          "meaning": "object marker",
+          "example": "本を読みます",
+          "exampleMeaning": "I read a book"
+        },
+        {
+          "japanese": "に",
+          "romaji": "ni",
+          "meaning": "direction/time/location",
+          "example": "学校に行きます",
+          "exampleMeaning": "I go to school"
+        },
+        {
+          "japanese": "で",
+          "romaji": "de",
+          "meaning": "location of action/means",
+          "example": "駅で待ちます",
+          "exampleMeaning": "I wait at the station"
+        },
+        {
+          "japanese": "へ",
+          "romaji": "e",
+          "meaning": "direction",
+          "example": "東京へ行きます",
+          "exampleMeaning": "I go to Tokyo"
+        },
+        {
+          "japanese": "と",
+          "romaji": "to",
+          "meaning": "and/with",
+          "example": "友達と行きます",
+          "exampleMeaning": "I go with a friend"
+        },
+        {
+          "japanese": "の",
+          "romaji": "no",
+          "meaning": "possessive/descriptive",
+          "example": "私の本です",
+          "exampleMeaning": "It's my book"
+        },
+        {
+          "japanese": "か",
+          "romaji": "ka",
+          "meaning": "question marker",
+          "example": "学生ですか",
+          "exampleMeaning": "Are you a student?"
+        },
+        {
+          "japanese": "ね",
+          "romaji": "ne",
+          "meaning": "confirmation",
+          "example": "いいですね",
+          "exampleMeaning": "It's good, isn't it?"
+        },
+        {
+          "japanese": "よ",
+          "romaji": "yo",
+          "meaning": "emphasis",
+          "example": "おいしいですよ",
+          "exampleMeaning": "It's delicious!"
+        },
+        {
+          "japanese": "から",
+          "romaji": "kara",
+          "meaning": "from/because",
+          "example": "駅から歩きます",
+          "exampleMeaning": "I walk from the station"
+        },
+        {
+          "japanese": "まで",
+          "romaji": "made",
+          "meaning": "until/to",
+          "example": "六時まで働きます",
+          "exampleMeaning": "I work until 6 o'clock"
+        },
+        {
+          "japanese": "も",
+          "romaji": "mo",
+          "meaning": "also/too",
+          "example": "私も行きます",
+          "exampleMeaning": "I'll go too"
+        },
+        {
+          "japanese": "や",
+          "romaji": "ya",
+          "meaning": "and (non-exhaustive)",
+          "example": "りんごやみかん",
+          "exampleMeaning": "Apples, oranges, etc."
+        },
+        {
+          "japanese": "これ",
+          "romaji": "kore",
+          "meaning": "this (near speaker)",
+          "example": "これは本です",
+          "exampleMeaning": "This is a book"
+        },
+        {
+          "japanese": "それ",
+          "romaji": "sore",
+          "meaning": "that (near listener)",
+          "example": "それは何ですか",
+          "exampleMeaning": "What is that?"
+        },
+        {
+          "japanese": "あれ",
+          "romaji": "are",
+          "meaning": "that (far from both)",
+          "example": "あれは学校です",
+          "exampleMeaning": "That is a school"
+        },
+        {
+          "japanese": "どれ",
+          "romaji": "dore",
+          "meaning": "which",
+          "example": "どれが好きですか",
+          "exampleMeaning": "Which do you like?"
+        },
+        {
+          "japanese": "この",
+          "romaji": "kono",
+          "meaning": "this ~",
+          "example": "この本を読みます",
+          "exampleMeaning": "I read this book"
+        },
+        {
+          "japanese": "その",
+          "romaji": "sono",
+          "meaning": "that ~",
+          "example": "その人は誰ですか",
+          "exampleMeaning": "Who is that person?"
+        },
+        {
+          "japanese": "あの",
+          "romaji": "ano",
+          "meaning": "that ~ (far)",
+          "example": "あの山は富士山です",
+          "exampleMeaning": "That mountain is Mt. Fuji"
+        },
+        {
+          "japanese": "どの",
+          "romaji": "dono",
+          "meaning": "which ~",
+          "example": "どの本ですか",
+          "exampleMeaning": "Which book is it?"
+        },
+        {
+          "japanese": "ここ",
+          "romaji": "koko",
+          "meaning": "here",
+          "example": "ここに来てください",
+          "exampleMeaning": "Please come here"
+        },
+        {
+          "japanese": "そこ",
+          "romaji": "soko",
+          "meaning": "there (near listener)",
+          "example": "そこに置きます",
+          "exampleMeaning": "I'll put it there"
+        },
+        {
+          "japanese": "あそこ",
+          "romaji": "asoko",
+          "meaning": "over there",
+          "example": "あそこに行きます",
+          "exampleMeaning": "I'll go over there"
+        },
+        {
+          "japanese": "どこ",
+          "romaji": "doko",
+          "meaning": "where",
+          "example": "どこに行きますか",
+          "exampleMeaning": "Where are you going?"
+        },
+        {
+          "japanese": "こちら",
+          "romaji": "kochira",
+          "meaning": "this way/this person",
+          "example": "こちらは田中さんです",
+          "exampleMeaning": "This is Mr. Tanaka"
+        },
+        {
+          "japanese": "そちら",
+          "romaji": "sochira",
+          "meaning": "that way/that person",
+          "example": "そちらへ行きます",
+          "exampleMeaning": "I'll go that way"
+        },
+        {
+          "japanese": "あちら",
+          "romaji": "achira",
+          "meaning": "that way (far)/that person",
+          "example": "あちらは出口です",
+          "exampleMeaning": "That way is the exit"
+        },
+        {
+          "japanese": "どちら",
+          "romaji": "dochira",
+          "meaning": "which way/which person",
+          "example": "どちらが好きですか",
+          "exampleMeaning": "Which do you prefer?"
+        },
+        {
+          "japanese": "こう",
+          "romaji": "kou",
+          "meaning": "like this",
+          "example": "こうしてください",
+          "exampleMeaning": "Please do it like this"
+        },
+        {
+          "japanese": "そう",
+          "romaji": "sou",
+          "meaning": "like that/so",
+          "example": "そうです",
+          "exampleMeaning": "That's right"
+        },
+        {
+          "japanese": "ああ",
+          "romaji": "aa",
+          "meaning": "like that (far)",
+          "example": "ああ、分かりました",
+          "exampleMeaning": "Oh, I understand"
+        },
+        {
+          "japanese": "どう",
+          "romaji": "dou",
+          "meaning": "how",
+          "example": "どうですか",
+          "exampleMeaning": "How is it?"
+        },
+        {
+          "japanese": "なに/なん",
+          "romaji": "nani/nan",
+          "meaning": "what",
+          "example": "何ですか",
+          "exampleMeaning": "What is it?"
+        },
+        {
+          "japanese": "だれ",
+          "romaji": "dare",
+          "meaning": "who",
+          "example": "誰ですか",
+          "exampleMeaning": "Who is it?"
+        },
+        {
+          "japanese": "どこ",
+          "romaji": "doko",
+          "meaning": "where",
+          "example": "どこに行きますか",
+          "exampleMeaning": "Where are you going?"
+        },
+        {
+          "japanese": "いつ",
+          "romaji": "itsu",
+          "meaning": "when",
+          "example": "いつ行きますか",
+          "exampleMeaning": "When are you going?"
+        },
+        {
+          "japanese": "どう",
+          "romaji": "dou",
+          "meaning": "how",
+          "example": "どうですか",
+          "exampleMeaning": "How is it?"
+        },
+        {
+          "japanese": "どうして",
+          "romaji": "doushite",
+          "meaning": "why",
+          "example": "どうして来ましたか",
+          "exampleMeaning": "Why did you come?"
+        },
+        {
+          "japanese": "なぜ",
+          "romaji": "naze",
+          "meaning": "why",
+          "example": "なぜですか",
+          "exampleMeaning": "Why is that?"
+        },
+        {
+          "japanese": "どの",
+          "romaji": "dono",
+          "meaning": "which",
+          "example": "どの本ですか",
+          "exampleMeaning": "Which book is it?"
+        },
+        {
+          "japanese": "どれ",
+          "romaji": "dore",
+          "meaning": "which one",
+          "example": "どれが好きですか",
+          "exampleMeaning": "Which one do you like?"
+        },
+        {
+          "japanese": "どちら",
+          "romaji": "dochira",
+          "meaning": "which (of two)",
+          "example": "どちらがいいですか",
+          "exampleMeaning": "Which is better?"
+        },
+        {
+          "japanese": "いくら",
+          "romaji": "ikura",
+          "meaning": "how much",
+          "example": "いくらですか",
+          "exampleMeaning": "How much is it?"
+        },
+        {
+          "japanese": "いくつ",
+          "romaji": "ikutsu",
+          "meaning": "how many/how old",
+          "example": "いくつありますか",
+          "exampleMeaning": "How many are there?"
+        }
+      ]
+    },
+    {
+      "id": "frequency-quantity",
+      "name": "Frequency & Quantity",
+      "words": [
+        {
+          "japanese": "たくさん",
+          "romaji": "takusan",
+          "meaning": "a lot/many",
+          "example": "たくさん食べます",
+          "exampleMeaning": "I eat a lot"
+        },
+        {
+          "japanese": "すこし",
+          "romaji": "sukoshi",
+          "meaning": "a little",
+          "example": "少し待ってください",
+          "exampleMeaning": "Please wait a little"
+        },
+        {
+          "japanese": "ちょっと",
+          "romaji": "chotto",
+          "meaning": "a little/a bit",
+          "example": "ちょっと待ってください",
+          "exampleMeaning": "Please wait a moment"
+        },
+        {
+          "japanese": "とても",
+          "romaji": "totemo",
+          "meaning": "very",
+          "example": "とてもおいしいです",
+          "exampleMeaning": "It's very delicious"
+        },
+        {
+          "japanese": "あまり",
+          "romaji": "amari",
+          "meaning": "not very (+ negative)",
+          "example": "あまり好きじゃありません",
+          "exampleMeaning": "I don't like it very much"
+        },
+        {
+          "japanese": "ぜんぜん",
+          "romaji": "zenzen",
+          "meaning": "not at all (+ negative)",
+          "example": "全然分かりません",
+          "exampleMeaning": "I don't understand at all"
+        },
+        {
+          "japanese": "もっと",
+          "romaji": "motto",
+          "meaning": "more",
+          "example": "もっと食べます",
+          "exampleMeaning": "I'll eat more"
+        },
+        {
+          "japanese": "いちばん",
+          "romaji": "ichiban",
+          "meaning": "most/best",
+          "example": "一番好きです",
+          "exampleMeaning": "I like it the most"
+        },
+        {
+          "japanese": "だけ",
+          "romaji": "dake",
+          "meaning": "only",
+          "example": "これだけです",
+          "exampleMeaning": "This is all/only"
+        },
+        {
+          "japanese": "ぐらい/くらい",
+          "romaji": "gurai/kurai",
+          "meaning": "about/approximately",
+          "example": "十分ぐらい",
+          "exampleMeaning": "About 10 minutes"
+        }
+      ]
+    },
+    {
+      "id": "manner-degree",
+      "name": "Manner & Degree",
+      "words": [
+        {
+          "japanese": "ゆっくり",
+          "romaji": "yukkuri",
+          "meaning": "slowly",
+          "example": "ゆっくり話してください",
+          "exampleMeaning": "Please speak slowly"
+        },
+        {
+          "japanese": "はやく",
+          "romaji": "hayaku",
+          "meaning": "quickly/early",
+          "example": "早く来てください",
+          "exampleMeaning": "Please come quickly"
+        },
+        {
+          "japanese": "すぐ",
+          "romaji": "sugu",
+          "meaning": "immediately",
+          "example": "すぐ行きます",
+          "exampleMeaning": "I'll go immediately"
+        },
+        {
+          "japanese": "また",
+          "romaji": "mata",
+          "meaning": "again/also",
+          "example": "また来ます",
+          "exampleMeaning": "I'll come again"
+        },
+        {
+          "japanese": "まだ",
+          "romaji": "mada",
+          "meaning": "still/not yet",
+          "example": "まだです",
+          "exampleMeaning": "Not yet"
+        },
+        {
+          "japanese": "もう",
+          "romaji": "mou",
+          "meaning": "already",
+          "example": "もう食べました",
+          "exampleMeaning": "I already ate"
+        },
+        {
+          "japanese": "いつも",
+          "romaji": "itsumo",
+          "meaning": "always",
+          "example": "いつも勉強します",
+          "exampleMeaning": "I always study"
+        },
+        {
+          "japanese": "ときどき",
+          "romaji": "tokidoki",
+          "meaning": "sometimes",
+          "example": "時々映画を見ます",
+          "exampleMeaning": "I sometimes watch movies"
+        },
+        {
+          "japanese": "たいてい",
+          "romaji": "taitei",
+          "meaning": "usually",
+          "example": "たいてい家にいます",
+          "exampleMeaning": "I'm usually at home"
+        },
+        {
+          "japanese": "よく",
+          "romaji": "yoku",
+          "meaning": "often/well",
+          "example": "よく分かります",
+          "exampleMeaning": "I understand well"
+        }
+      ]
+    },
+    {
+      "id": "other-common-adverbs",
+      "name": "Other Common Adverbs",
+      "words": [
+        {
+          "japanese": "いっしょに",
+          "romaji": "issho ni",
+          "meaning": "together",
+          "example": "一緒に行きましょう",
+          "exampleMeaning": "Let's go together"
+        },
+        {
+          "japanese": "ぜんぶ",
+          "romaji": "zenbu",
+          "meaning": "all/everything",
+          "example": "全部食べました",
+          "exampleMeaning": "I ate everything"
+        },
+        {
+          "japanese": "たぶん",
+          "romaji": "tabun",
+          "meaning": "probably",
+          "example": "たぶん雨です",
+          "exampleMeaning": "It will probably rain"
+        },
+        {
+          "japanese": "はじめて",
+          "romaji": "hajimete",
+          "meaning": "for the first time",
+          "example": "初めて来ました",
+          "exampleMeaning": "I came for the first time"
+        },
+        {
+          "japanese": "また",
+          "romaji": "mata",
+          "meaning": "again/also",
+          "example": "また会いましょう",
+          "exampleMeaning": "Let's meet again"
+        }
+      ]
+    },
+    {
+      "id": "greetings",
+      "name": "Greetings",
+      "words": [
+        {
+          "japanese": "おはよう(ございます)",
+          "romaji": "ohayou gozaimasu",
+          "meaning": "good morning",
+          "example": "おはようございます",
+          "exampleMeaning": "Good morning"
+        },
+        {
+          "japanese": "こんにちは",
+          "romaji": "konnichiwa",
+          "meaning": "hello/good afternoon",
+          "example": "こんにちは",
+          "exampleMeaning": "Hello"
+        },
+        {
+          "japanese": "こんばんは",
+          "romaji": "konbanwa",
+          "meaning": "good evening",
+          "example": "こんばんは",
+          "exampleMeaning": "Good evening"
+        },
+        {
+          "japanese": "おやすみ(なさい)",
+          "romaji": "oyasuminasai",
+          "meaning": "good night",
+          "example": "おやすみなさい",
+          "exampleMeaning": "Good night"
+        },
+        {
+          "japanese": "さようなら",
+          "romaji": "sayounara",
+          "meaning": "goodbye",
+          "example": "さようなら",
+          "exampleMeaning": "Goodbye"
+        },
+        {
+          "japanese": "じゃあ、また",
+          "romaji": "jaa, mata",
+          "meaning": "see you",
+          "example": "じゃあ、また",
+          "exampleMeaning": "See you"
+        },
+        {
+          "japanese": "ありがとう(ございます)",
+          "romaji": "arigatou gozaimasu",
+          "meaning": "thank you",
+          "example": "ありがとうございます",
+          "exampleMeaning": "Thank you very much"
+        },
+        {
+          "japanese": "どういたしまして",
+          "romaji": "douitashimashite",
+          "meaning": "you're welcome",
+          "example": "どういたしまして",
+          "exampleMeaning": "You're welcome"
+        },
+        {
+          "japanese": "すみません",
+          "romaji": "sumimasen",
+          "meaning": "excuse me/sorry",
+          "example": "すみません",
+          "exampleMeaning": "Excuse me/I'm sorry"
+        },
+        {
+          "japanese": "ごめん(なさい)",
+          "romaji": "gomennasai",
+          "meaning": "I'm sorry",
+          "example": "ごめんなさい",
+          "exampleMeaning": "I'm sorry"
+        },
+        {
+          "japanese": "いただきます",
+          "romaji": "itadakimasu",
+          "meaning": "(before eating)",
+          "example": "いただきます",
+          "exampleMeaning": "I humbly receive (this meal)"
+        },
+        {
+          "japanese": "ごちそうさま(でした)",
+          "romaji": "gochisousama deshita",
+          "meaning": "(after eating)",
+          "example": "ごちそうさまでした",
+          "exampleMeaning": "Thank you for the meal"
+        },
+        {
+          "japanese": "いってきます",
+          "romaji": "ittekimasu",
+          "meaning": "I'm leaving (home)",
+          "example": "いってきます",
+          "exampleMeaning": "I'm leaving"
+        },
+        {
+          "japanese": "いってらっしゃい",
+          "romaji": "itterasshai",
+          "meaning": "have a good trip",
+          "example": "いってらっしゃい",
+          "exampleMeaning": "Have a good trip"
+        },
+        {
+          "japanese": "ただいま",
+          "romaji": "tadaima",
+          "meaning": "I'm home",
+          "example": "ただいま",
+          "exampleMeaning": "I'm home"
+        },
+        {
+          "japanese": "おかえり(なさい)",
+          "romaji": "okaerinasai",
+          "meaning": "welcome home",
+          "example": "おかえりなさい",
+          "exampleMeaning": "Welcome home"
+        }
+      ]
+    },
+    {
+      "id": "polite-expressions",
+      "name": "Polite Expressions",
+      "words": [
+        {
+          "japanese": "はじめまして",
+          "romaji": "hajimemashite",
+          "meaning": "nice to meet you",
+          "example": "初めまして",
+          "exampleMeaning": "Nice to meet you"
+        },
+        {
+          "japanese": "どうぞよろしく",
+          "romaji": "douzo yoroshiku",
+          "meaning": "pleased to meet you",
+          "example": "どうぞよろしく",
+          "exampleMeaning": "Pleased to meet you"
+        },
+        {
+          "japanese": "おねがいします",
+          "romaji": "onegaishimasu",
+          "meaning": "please (request)",
+          "example": "お願いします",
+          "exampleMeaning": "Please"
+        },
+        {
+          "japanese": "ください",
+          "romaji": "kudasai",
+          "meaning": "please give me",
+          "example": "水をください",
+          "exampleMeaning": "Please give me water"
+        },
+        {
+          "japanese": "どうぞ",
+          "romaji": "douzo",
+          "meaning": "please/go ahead",
+          "example": "どうぞお入りください",
+          "exampleMeaning": "Please come in"
+        },
+        {
+          "japanese": "ちょっとまって",
+          "romaji": "chotto matte",
+          "meaning": "wait a moment",
+          "example": "ちょっと待ってください",
+          "exampleMeaning": "Please wait a moment"
+        }
+      ]
+    },
+    {
+      "id": "yes-no-responses",
+      "name": "Yes/No & Responses",
+      "words": [
+        {
+          "japanese": "はい",
+          "romaji": "hai",
+          "meaning": "yes",
+          "example": "はい、そうです",
+          "exampleMeaning": "Yes, that's right"
+        },
+        {
+          "japanese": "いいえ",
+          "romaji": "iie",
+          "meaning": "no",
+          "example": "いいえ、違います",
+          "exampleMeaning": "No, that's wrong"
+        },
+        {
+          "japanese": "そうです",
+          "romaji": "sou desu",
+          "meaning": "that's right",
+          "example": "そうです",
+          "exampleMeaning": "That's right"
+        },
+        {
+          "japanese": "そうですか",
+          "romaji": "sou desu ka",
+          "meaning": "is that so?",
+          "example": "そうですか",
+          "exampleMeaning": "Is that so?"
+        },
+        {
+          "japanese": "わかりました",
+          "romaji": "wakarimashita",
+          "meaning": "I understand",
+          "example": "分かりました",
+          "exampleMeaning": "I understand"
+        },
+        {
+          "japanese": "わかりません",
+          "romaji": "wakarimasen",
+          "meaning": "I don't understand",
+          "example": "分かりません",
+          "exampleMeaning": "I don't understand"
+        },
+        {
+          "japanese": "しりません",
+          "romaji": "shirimasen",
+          "meaning": "I don't know",
+          "example": "知りません",
+          "exampleMeaning": "I don't know"
+        },
+        {
+          "japanese": "だいじょうぶ",
+          "romaji": "daijoubu",
+          "meaning": "OK/alright",
+          "example": "大丈夫です",
+          "exampleMeaning": "It's OK"
+        },
+        {
+          "japanese": "〜つ",
+          "romaji": "tsu",
+          "meaning": "general counter",
+          "example": "一つください",
+          "exampleMeaning": "Please give me one"
+        },
+        {
+          "japanese": "〜こ",
+          "romaji": "ko",
+          "meaning": "small objects",
+          "example": "りんご三個",
+          "exampleMeaning": "Three apples"
+        },
+        {
+          "japanese": "〜ほん/〜ぽん/〜ぼん",
+          "romaji": "hon/pon/bon",
+          "meaning": "long objects",
+          "example": "ペン二本",
+          "exampleMeaning": "Two pens"
+        },
+        {
+          "japanese": "〜まい",
+          "romaji": "mai",
+          "meaning": "flat objects",
+          "example": "紙五枚",
+          "exampleMeaning": "Five sheets of paper"
+        },
+        {
+          "japanese": "〜さつ",
+          "romaji": "satsu",
+          "meaning": "books",
+          "example": "本三冊",
+          "exampleMeaning": "Three books"
+        },
+        {
+          "japanese": "〜だい",
+          "romaji": "dai",
+          "meaning": "machines/vehicles",
+          "example": "車二台",
+          "exampleMeaning": "Two cars"
+        },
+        {
+          "japanese": "〜にん",
+          "romaji": "nin",
+          "meaning": "people",
+          "example": "三人います",
+          "exampleMeaning": "There are three people"
+        },
+        {
+          "japanese": "〜ひき/〜ぴき/〜びき",
+          "romaji": "hiki/piki/biki",
+          "meaning": "small animals",
+          "example": "犬二匹",
+          "exampleMeaning": "Two dogs"
+        },
+        {
+          "japanese": "〜かい",
+          "romaji": "kai",
+          "meaning": "floors/times",
+          "example": "三階",
+          "exampleMeaning": "Third floor"
+        }
+      ]
+    },
+    {
+      "id": "miscellaneous-nouns",
+      "name": "Miscellaneous Nouns",
+      "words": [
+        {
+          "japanese": "なまえ",
+          "romaji": "namae",
+          "meaning": "name",
+          "example": "名前は何ですか",
+          "exampleMeaning": "What is your name?"
+        },
+        {
+          "japanese": "こと",
+          "romaji": "koto",
+          "meaning": "thing/matter",
+          "example": "いいことです",
+          "exampleMeaning": "It's a good thing"
+        },
+        {
+          "japanese": "ところ",
+          "romaji": "tokoro",
+          "meaning": "place",
+          "example": "いいところです",
+          "exampleMeaning": "It's a good place"
+        },
+        {
+          "japanese": "とき",
+          "romaji": "toki",
+          "meaning": "time/when",
+          "example": "子供の時",
+          "exampleMeaning": "When I was a child"
+        },
+        {
+          "japanese": "もんだい",
+          "romaji": "mondai",
+          "meaning": "problem/question",
+          "example": "問題があります",
+          "exampleMeaning": "There's a problem"
+        },
+        {
+          "japanese": "しごと",
+          "romaji": "shigoto",
+          "meaning": "work/job",
+          "example": "仕事をします",
+          "exampleMeaning": "I work"
+        },
+        {
+          "japanese": "べんきょう",
+          "romaji": "benkyou",
+          "meaning": "study",
+          "example": "勉強します",
+          "exampleMeaning": "I study"
+        },
+        {
+          "japanese": "しけん",
+          "romaji": "shiken",
+          "meaning": "exam/test",
+          "example": "試験があります",
+          "exampleMeaning": "There's an exam"
+        },
+        {
+          "japanese": "しゅくだい",
+          "romaji": "shukudai",
+          "meaning": "homework",
+          "example": "宿題をします",
+          "exampleMeaning": "I do homework"
+        },
+        {
+          "japanese": "やすみ",
+          "romaji": "yasumi",
+          "meaning": "rest/holiday",
+          "example": "休みです",
+          "exampleMeaning": "It's a day off"
+        },
+        {
+          "japanese": "りょこう",
+          "romaji": "ryokou",
+          "meaning": "trip/travel",
+          "example": "旅行します",
+          "exampleMeaning": "I travel"
+        },
+        {
+          "japanese": "おんがく",
+          "romaji": "ongaku",
+          "meaning": "music",
+          "example": "音楽を聞きます",
+          "exampleMeaning": "I listen to music"
+        },
+        {
+          "japanese": "えいが",
+          "romaji": "eiga",
+          "meaning": "movie",
+          "example": "映画を見ます",
+          "exampleMeaning": "I watch a movie"
+        },
+        {
+          "japanese": "スポーツ",
+          "romaji": "supootsu",
+          "meaning": "sport",
+          "example": "スポーツが好きです",
+          "exampleMeaning": "I like sports"
+        }
+      ]
+    }
+  ]
+}

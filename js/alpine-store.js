@@ -24,9 +24,10 @@ const Audio = {
   current: null,
   mapping: {},
   
-  async loadMapping() {
+  async loadMapping(dictionaryName) {
     try {
-      const res = await fetch('audio_mapping.json');
+      const path = `assets/audio/${dictionaryName}/audio_mapping.json`;
+      const res = await fetch(path);
       this.mapping = await res.json();
     } catch (e) {
       console.warn('Audio mapping not found:', e);
@@ -53,7 +54,7 @@ const Audio = {
     if (!('mediaSession' in navigator)) return;
     navigator.mediaSession.metadata = new MediaMetadata({
       title: `${word.japanese} (${word.romaji})`,
-      artist: word.vietnamese,
+      artist: word.meaning,
       album: `${category} (${cardNum})`,
       artwork: [{ src: 'assets/favicon.svg', sizes: '512x512', type: 'image/svg+xml' }]
     });
@@ -137,7 +138,7 @@ document.addEventListener('alpine:init', () => {
     
     get frontMain() {
       if (!this.currentWord) return '';
-      return this.mode === 'jp-vn' ? this.currentWord.japanese : this.currentWord.vietnamese;
+      return this.mode === 'jp-vn' ? this.currentWord.japanese : this.currentWord.meaning;
     },
     
     get frontSub() {
@@ -147,7 +148,7 @@ document.addEventListener('alpine:init', () => {
     
     get backMain() {
       if (!this.currentWord) return '';
-      if (this.mode === 'jp-vn') return this.currentWord.vietnamese;
+      if (this.mode === 'jp-vn') return this.currentWord.meaning;
       return `<span style="font-size:2rem">${this.currentWord.japanese}</span><br><br><span style="font-size:1.2rem;opacity:0.9">${this.currentWord.romaji}</span>`;
     },
     
@@ -165,9 +166,14 @@ document.addEventListener('alpine:init', () => {
     },
 
     // Init
-    async init() {
+    async init(dictionaryFile = 'dictionary.json') {
+      this.dictionaryFile = dictionaryFile;
       await this.loadDictionary();
-      await Audio.loadMapping();
+      
+      // Get dictionary name for audio folder (e.g., "dictionary" from "dictionary.json")
+      const dictionaryName = dictionaryFile.replace('.json', '');
+      await Audio.loadMapping(dictionaryName);
+      
       this.loadPreferences();
       this.loadCategory(Storage.get(Storage.keys.CATEGORY, 'all'), true); // Restore saved index on init
       this.setupMediaSession();
@@ -176,7 +182,7 @@ document.addEventListener('alpine:init', () => {
     
     async loadDictionary() {
       try {
-        const res = await fetch('dictionary.json');
+        const res = await fetch(this.dictionaryFile);
         this.dictionary = await res.json();
       } catch (e) {
         console.error('Failed to load dictionary:', e);
@@ -184,7 +190,9 @@ document.addEventListener('alpine:init', () => {
     },
     
     loadPreferences() {
-      this.mode = Storage.get(Storage.keys.MODE, 'jp-vn');
+      // Use first mode from metadata as default
+      const defaultMode = this.dictionary?.metadata?.modes?.[0]?.id || 'jp-vn';
+      this.mode = Storage.get(Storage.keys.MODE, defaultMode);
       this.readBoth = Storage.getBool(Storage.keys.READ_BOTH);
       this.spiralMode = Storage.getBool(Storage.keys.SPIRAL_MODE);
       this.skipRemembered = Storage.getBool(Storage.keys.SKIP_REMEMBERED);
@@ -404,7 +412,7 @@ document.addEventListener('alpine:init', () => {
       if (this.readBoth) {
         Audio.play(this.currentWord.japanese, () => {
           setTimeout(() => {
-            Audio.play(this.currentWord.vietnamese, done);
+            Audio.play(this.currentWord.meaning, done);
           }, 500);
         });
       } else {

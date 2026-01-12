@@ -1,43 +1,57 @@
 #!/usr/bin/env python3
 """
-Generate audio files for Japanese and Vietnamese flashcard words using Microsoft Edge TTS.
+Generate audio files for flashcard words using Microsoft Edge TTS.
 Uses random voices for variety.
+
+Usage:
+    python generate_audio.py <dictionary.json>
+    
+Example:
+    python generate_audio.py dictionary.json
+    python generate_audio.py n5-dictionary.json
 """
 
 import asyncio
 import json
 import os
+import sys
 import hashlib
 import random
 import edge_tts
 
-# Japanese voice options (reliable neural voices)
-JAPANESE_VOICES = [
-    "ja-JP-NanamiNeural",   # Female, natural
-    "ja-JP-KeitaNeural",    # Male, natural
-]
+# Voice options by language code
+VOICES = {
+    "ja": [
+        "ja-JP-NanamiNeural",   # Female, natural
+        "ja-JP-KeitaNeural",    # Male, natural
+    ],
+    "vi": [
+        "vi-VN-HoaiMyNeural",   # Female, natural
+        "vi-VN-NamMinhNeural",  # Male, natural
+    ],
+    "en": [
+        "en-US-JennyNeural",    # Female, natural
+        "en-US-GuyNeural",      # Male, natural
+    ],
+}
 
-# Vietnamese voice options
-VIETNAMESE_VOICES = [
-    "vi-VN-HoaiMyNeural",   # Female, natural
-    "vi-VN-NamMinhNeural",  # Male, natural
-]
 
-AUDIO_DIR = "assets/audio"
+def get_audio_dir(dictionary_file: str) -> str:
+    """Get audio directory based on dictionary filename."""
+    base_name = os.path.splitext(os.path.basename(dictionary_file))[0]
+    return f"assets/audio/{base_name}"
 
 
 def get_audio_filename(text: str, lang: str = "ja") -> str:
     """Generate a safe filename from text using hash."""
-    # Use MD5 hash to create a safe filename
     text_hash = hashlib.md5(text.encode('utf-8')).hexdigest()[:12]
     return f"{lang}_{text_hash}.mp3"
 
 
 def get_random_voice(lang: str = "ja") -> str:
     """Get a random voice for the specified language."""
-    if lang == "vi":
-        return random.choice(VIETNAMESE_VOICES)
-    return random.choice(JAPANESE_VOICES)
+    voices = VOICES.get(lang, VOICES["en"])
+    return random.choice(voices)
 
 
 async def generate_audio(text: str, output_path: str, lang: str = "ja", max_retries: int = 3) -> tuple[bool, str]:
@@ -50,88 +64,143 @@ async def generate_audio(text: str, output_path: str, lang: str = "ja", max_retr
             return True, voice
         except Exception as e:
             if attempt < max_retries - 1:
-                await asyncio.sleep(0.5)  # Brief pause before retry
+                await asyncio.sleep(0.5)
                 continue
             print(f"  Error generating audio for '{text}': {e}")
             return False, None
 
 
 async def main():
-    # Create audio directory
-    os.makedirs(AUDIO_DIR, exist_ok=True)
+    if len(sys.argv) < 2:
+        print("Usage: python generate_audio.py <dictionary.json>")
+        print("Example: python generate_audio.py dictionary.json")
+        sys.exit(1)
+    
+    dictionary_file = sys.argv[1]
+    
+    if not os.path.exists(dictionary_file):
+        print(f"Error: Dictionary file '{dictionary_file}' not found")
+        sys.exit(1)
     
     # Load dictionary
-    with open("dictionary.json", "r", encoding="utf-8") as f:
+    with open(dictionary_file, "r", encoding="utf-8") as f:
         dictionary = json.load(f)
     
-    # Collect all unique texts (Japanese and Vietnamese)
-    audio_mapping = {}
-    japanese_texts = set()
-    vietnamese_texts = set()
+    # Get languages from metadata
+    metadata = dictionary.get("metadata", {})
+    primary_lang = metadata.get("primaryLanguage", "ja")
+    meaning_lang = metadata.get("meaningLanguage", "en")
     
+    # Create audio directory based on dictionary name
+    audio_dir = get_audio_dir(dictionary_file)
+    os.makedirs(audio_dir, exist_ok=True)
+    
+    print(f"Dictionary: {dictionary_file}")
+    print(f"Primary language: {primary_lang}")
+    print(f"Meaning language: {meaning_lang}")
+    print(f"Audio directory: {audio_dir}")
+    print("-" * 50)
+    
+    # Collect all unique texts
+    audio_mapping = {}
+    primary_texts = set()
+    meaning_texts = set()
+    example_texts = set()  # Japanese examples
+
     for category in dictionary["categories"]:
         for word in category["words"]:
-            japanese_texts.add(word["japanese"])
-            vietnamese_texts.add(word["vietnamese"])
+            primary_texts.add(word["japanese"])
+            if word.get("meaning"):
+                meaning_texts.add(word["meaning"])
+            if word.get("example"):
+                example_texts.add(word["example"])
     
-    print(f"Found {len(japanese_texts)} unique Japanese phrases")
-    print(f"Found {len(vietnamese_texts)} unique Vietnamese phrases")
-    print(f"Japanese voices: {', '.join(JAPANESE_VOICES)}")
-    print(f"Vietnamese voices: {', '.join(VIETNAMESE_VOICES)}")
+    print(f"Found {len(primary_texts)} unique primary language phrases")
+    print(f"Found {len(meaning_texts)} unique meaning language phrases")
+    print(f"Found {len(example_texts)} unique example sentences")
+    print(f"Primary voices: {', '.join(VOICES.get(primary_lang, VOICES['en']))}")
+    print(f"Meaning voices: {', '.join(VOICES.get(meaning_lang, VOICES['en']))}")
     print("-" * 50)
     
-    # Delete existing audio files to regenerate with random voices
-    for filename in os.listdir(AUDIO_DIR):
-        if filename.endswith('.mp3'):
-            os.remove(os.path.join(AUDIO_DIR, filename))
-    print("Cleared existing audio files")
-    print("-" * 50)
+    # Clear existing audio files
+    if os.path.exists(audio_dir):
+        for filename in os.listdir(audio_dir):
+            if filename.endswith('.mp3'):
+                os.remove(os.path.join(audio_dir, filename))
+        print("Cleared existing audio files")
+        print("-" * 50)
     
-    # Generate audio for Japanese texts
-    print("Generating Japanese audio...")
-    success_count_ja = 0
+    # Generate audio for primary language texts
+    print(f"Generating {primary_lang.upper()} audio...")
+    success_count_primary = 0
     
-    for i, text in enumerate(sorted(japanese_texts), 1):
-        filename = get_audio_filename(text, "ja")
-        output_path = os.path.join(AUDIO_DIR, filename)
-        audio_mapping[text] = f"assets/audio/{filename}"
+    for i, text in enumerate(sorted(primary_texts), 1):
+        filename = get_audio_filename(text, primary_lang)
+        output_path = os.path.join(audio_dir, filename)
+        audio_mapping[text] = f"{audio_dir}/{filename}"
         
-        print(f"[JA {i}/{len(japanese_texts)}] {text}", end="")
-        success, voice = await generate_audio(text, output_path, "ja")
+        print(f"[{primary_lang.upper()} {i}/{len(primary_texts)}] {text}", end="")
+        success, voice = await generate_audio(text, output_path, primary_lang)
         if success:
-            success_count_ja += 1
+            success_count_primary += 1
             print(f" ✓ ({voice.split('-')[-1]})")
         else:
             print(" ✗")
     
     print("-" * 50)
     
-    # Generate audio for Vietnamese texts
-    print("Generating Vietnamese audio...")
-    success_count_vi = 0
+    # Generate audio for meaning language texts
+    print(f"Generating {meaning_lang.upper()} audio...")
+    success_count_meaning = 0
     
-    for i, text in enumerate(sorted(vietnamese_texts), 1):
-        filename = get_audio_filename(text, "vi")
-        output_path = os.path.join(AUDIO_DIR, filename)
-        audio_mapping[text] = f"assets/audio/{filename}"
+    for i, text in enumerate(sorted(meaning_texts), 1):
+        filename = get_audio_filename(text, meaning_lang)
+        output_path = os.path.join(audio_dir, filename)
+        audio_mapping[text] = f"{audio_dir}/{filename}"
         
-        print(f"[VI {i}/{len(vietnamese_texts)}] {text}", end="")
-        success, voice = await generate_audio(text, output_path, "vi")
+        print(f"[{meaning_lang.upper()} {i}/{len(meaning_texts)}] {text}", end="")
+        success, voice = await generate_audio(text, output_path, meaning_lang)
         if success:
-            success_count_vi += 1
+            success_count_meaning += 1
             print(f" ✓ ({voice.split('-')[-1]})")
         else:
             print(" ✗")
     
-    # Save audio mapping file
-    with open("audio_mapping.json", "w", encoding="utf-8") as f:
+    print("-" * 50)
+    
+    # Generate audio for example sentences (always in Japanese)
+    success_count_examples = 0
+    if example_texts:
+        print(f"Generating example audio (JA)...")
+        
+        for i, text in enumerate(sorted(example_texts), 1):
+            filename = get_audio_filename(text, "ja")
+            output_path = os.path.join(audio_dir, filename)
+            audio_mapping[text] = f"{audio_dir}/{filename}"
+            
+            # Truncate display for long examples
+            display_text = text[:40] + "..." if len(text) > 40 else text
+            print(f"[EX {i}/{len(example_texts)}] {display_text}", end="")
+            success, voice = await generate_audio(text, output_path, "ja")
+            if success:
+                success_count_examples += 1
+                print(f" ✓ ({voice.split('-')[-1]})")
+            else:
+                print(" ✗")
+        
+        print("-" * 50)
+    
+    # Save audio mapping inside the audio directory
+    mapping_path = os.path.join(audio_dir, "audio_mapping.json")
+    with open(mapping_path, "w", encoding="utf-8") as f:
         json.dump(audio_mapping, f, ensure_ascii=False, indent=2)
     
     print("-" * 50)
     print(f"Done!")
-    print(f"  Japanese: {success_count_ja}/{len(japanese_texts)} audio files")
-    print(f"  Vietnamese: {success_count_vi}/{len(vietnamese_texts)} audio files")
-    print(f"Audio mapping saved to audio_mapping.json")
+    print(f"  {primary_lang.upper()}: {success_count_primary}/{len(primary_texts)} audio files")
+    print(f"  {meaning_lang.upper()}: {success_count_meaning}/{len(meaning_texts)} audio files")
+    print(f"  Examples (JA): {success_count_examples}/{len(example_texts)} audio files")
+    print(f"Audio mapping saved to {mapping_path}")
 
 
 if __name__ == "__main__":
