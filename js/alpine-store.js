@@ -35,17 +35,37 @@ const Audio = {
     }
   },
   
-  play(text, onEnded) {
-    const path = this.mapping[text];
-    if (!path) { onEnded?.(); return; }
-    
-    if (!this.current) this.current = new window.Audio();
-    else this.current.pause();
-    
-    this.current.src = path;
-    this.current.onended = () => onEnded?.();
-    this.current.onerror = () => onEnded?.();
-    this.current.play().catch(() => onEnded?.());
+  // Play a single audio, returns Promise
+  playOne(text) {
+    return new Promise((resolve) => {
+      const path = this.mapping[text];
+      if (!path) { resolve(); return; }
+      
+      if (!this.current) this.current = new window.Audio();
+      else this.current.pause();
+      
+      this.current.src = path;
+      this.current.onended = resolve;
+      this.current.onerror = resolve;
+      this.current.play().catch(resolve);
+    });
+  },
+  
+  // Play a sequence of audio items
+  // items: array of { text: string, delay?: number } or just string
+  async playSequence(items) {
+    for (const item of items) {
+      const text = typeof item === 'string' ? item : item.text;
+      const delay = typeof item === 'string' ? 0 : (item.delay || 0);
+      
+      if (delay > 0) {
+        await new Promise(r => setTimeout(r, delay));
+      }
+      
+      if (text) {
+        await this.playOne(text);
+      }
+    }
   },
   
   pause() { this.current?.pause(); },
@@ -463,51 +483,62 @@ document.addEventListener('alpine:init', () => {
       this.speak();
     },
     
-    // Audio
-    speak() {
-      if (!this.currentWord) return;
-      this.speaking = true;
+    // Audio - build sequence based on settings
+    buildSpeakSequence() {
+      if (!this.currentWord) return [];
       
-      const done = () => { this.speaking = false; };
+      const word = this.currentWord;
+      const sequence = [{ text: word.japanese }];
       
       if (this.readBoth) {
-        Audio.play(this.currentWord.japanese, () => {
-          setTimeout(() => {
-            Audio.play(this.currentWord.meaning, () => {
-              // Also read example and its meaning if readExample is enabled
-              if (this.readExample && this.currentWord.example) {
-                setTimeout(() => {
-                  Audio.play(this.currentWord.example, () => {
-                    if (this.currentWord.exampleMeaning) {
-                      Audio.play(this.currentWord.exampleMeaning, done);
-                    } else {
-                      done();
-                    }
-                  });
-                }, 500);
-              } else {
-                done();
-              }
-            });
-          }, 500);
-        });
-      } else {
-        Audio.play(this.currentWord.japanese, done);
+        sequence.push({ text: word.meaning, delay: 300 });
+        
+        if (this.readExample && word.example) {
+          sequence.push({ text: word.example, delay: 300 });
+          if (word.exampleMeaning) {
+            sequence.push({ text: word.exampleMeaning });
+          }
+        }
+      }
+      
+      return sequence;
+    },
+    
+    buildExampleSequence() {
+      if (!this.currentWord?.example) return [];
+      
+      const word = this.currentWord;
+      const sequence = [{ text: word.example }];
+      
+      if (word.exampleMeaning) {
+        sequence.push({ text: word.exampleMeaning });
+      }
+      
+      return sequence;
+    },
+    
+    async speak() {
+      const sequence = this.buildSpeakSequence();
+      if (sequence.length === 0) return;
+      
+      this.speaking = true;
+      try {
+        await Audio.playSequence(sequence);
+      } finally {
+        this.speaking = false;
       }
     },
     
-    speakExample() {
-      if (!this.currentWord?.example) return;
-      this.speaking = true;
+    async speakExample() {
+      const sequence = this.buildExampleSequence();
+      if (sequence.length === 0) return;
       
-      // Play example sentence, then meaning
-      Audio.play(this.currentWord.example, () => {
-        if (this.currentWord?.exampleMeaning) {
-          Audio.play(this.currentWord.exampleMeaning, () => { this.speaking = false; });
-        } else {
-          this.speaking = false;
-        }
-      });
+      this.speaking = true;
+      try {
+        await Audio.playSequence(sequence);
+      } finally {
+        this.speaking = false;
+      }
     },
     
     // Auto-play
