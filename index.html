@@ -23,10 +23,10 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   
-  <link rel="stylesheet" href="styles.css?v=8">
+  <link rel="stylesheet" href="styles.css?v=9">
   
   <!-- Alpine.js -->
-  <script src="js/alpine-store.js?v=7"></script>
+  <script src="js/alpine-store.js?v=8"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 <body x-data x-init="$store.app.init()">
@@ -77,15 +77,17 @@
           
           <!-- Example sentence section -->
           <div class="example-section" x-show="$store.app.hasExample">
-            <div class="example-text" x-text="$store.app.exampleText"></div>
+            <div class="example-row">
+              <span class="example-text" x-text="$store.app.exampleText"></span>
+              <button 
+                class="speak-btn-inline" 
+                :class="{ speaking: $store.app.speaking }"
+                @click.stop="$store.app.speakExample()" 
+                title="Nghe ví dụ">
+                🔊
+              </button>
+            </div>
             <div class="example-meaning" x-text="$store.app.exampleMeaning"></div>
-            <button 
-              class="speak-btn speak-btn-example" 
-              :class="{ speaking: $store.app.speaking }"
-              @click.stop="$store.app.speakExample()" 
-              title="Nghe ví dụ">
-              🔊
-            </button>
           </div>
           
           <button 

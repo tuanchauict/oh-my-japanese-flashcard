@@ -289,15 +289,21 @@ h1 {
   padding: 15px 20px;
   background: rgba(255, 255, 255, 0.15);
   border-radius: 12px;
-  position: relative;
   max-width: 90%;
+}
+
+.example-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
 }
 
 .example-text {
   font-size: 1.2rem;
   color: white;
   text-align: center;
-  margin-bottom: 8px;
   line-height: 1.5;
 }
 
@@ -306,23 +312,31 @@ h1 {
   color: rgba(255, 255, 255, 0.8);
   text-align: center;
   font-style: italic;
+  margin-top: 8px;
 }
 
-.speak-btn-example {
-  position: absolute;
-  top: 50%;
-  right: -45px;
-  transform: translateY(-50%);
-  width: 36px;
-  height: 36px;
-  font-size: 1.1rem;
+.speak-btn-inline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  font-size: 0.85rem;
   background: rgba(255, 255, 255, 0.25);
-  box-shadow: none;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
 }
 
-.speak-btn-example:hover {
+.speak-btn-inline:hover {
   background: rgba(255, 255, 255, 0.4);
-  box-shadow: none;
+  transform: scale(1.1);
+}
+
+.speak-btn-inline.speaking {
+  animation: pulse 0.5s ease infinite;
 }
 
 .hint {
@@ -631,11 +645,10 @@ h1 {
     font-size: 0.85rem;
   }
   
-  .speak-btn-example {
-    right: -40px;
-    width: 32px;
-    height: 32px;
-    font-size: 1rem;
+  .speak-btn-inline {
+    width: 22px;
+    height: 22px;
+    font-size: 0.75rem;
   }
   
   .controls {
