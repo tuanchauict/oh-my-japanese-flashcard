@@ -310,18 +310,22 @@ document.addEventListener('alpine:init', () => {
       Storage.set(`${this.dictionaryName}-index`, '0');
       
       this.updateMediaSessionMetadata();
-      this.speak();
       
-      // Restart auto-play scheduling if active
+      // Start auto-play scheduling if active, otherwise just speak once
       if (this.autoPlaying) {
         this.scheduleNext();
+      } else {
+        this.speak();
       }
     },
     
     // Navigation
     flip() {
       this.isFlipped = !this.isFlipped;
-      this.speak();
+      // Don't restart audio if already playing or in auto-play mode
+      if (!this.autoPlaying && !this.speaking) {
+        this.speak();
+      }
     },
     
     prev() {
@@ -331,7 +335,9 @@ document.addEventListener('alpine:init', () => {
         this.isFlipped = false;
         this.saveIndex();
         this.updateMediaSessionMetadata();
-        this.speak();
+        if (!this.autoPlaying) {
+          this.speak();
+        }
       }
     },
     
@@ -348,7 +354,9 @@ document.addEventListener('alpine:init', () => {
       this.isFlipped = false;
       this.saveIndex();
       this.updateMediaSessionMetadata();
-      this.speak();
+      if (!this.autoPlaying) {
+        this.speak();
+      }
     },
     
     /**
@@ -572,22 +580,19 @@ document.addEventListener('alpine:init', () => {
       
       const version = this.autoPlayVersion;
       
-      const check = () => {
-        // Stop if auto-play was disabled or category changed
+      // Play current word audio sequence, then move to next
+      this.speak().then(() => {
+        // Stop if auto-play was disabled or category changed during playback
         if (!this.autoPlaying || version !== this.autoPlayVersion) return;
         
-        if (Audio.isPlaying()) {
-          setTimeout(check, 500);
-        } else {
-          setTimeout(() => {
-            if (this.autoPlaying && version === this.autoPlayVersion) {
-              this.next();
-              this.scheduleNext();
-            }
-          }, 3000);
-        }
-      };
-      check();
+        // Small delay before next card
+        setTimeout(() => {
+          if (this.autoPlaying && version === this.autoPlayVersion) {
+            this.next();
+            this.scheduleNext();
+          }
+        }, 1000);
+      });
     },
     
     // Media Session
