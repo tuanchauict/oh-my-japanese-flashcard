@@ -81,19 +81,22 @@ def get_tts_text(text: str, lang: str) -> str:
     return result
 
 
-async def generate_audio(text: str, output_path: str, lang: str = "ja", rate: str = "+0%", max_retries: int = 3) -> tuple[bool, str]:
-    """Generate audio file for a single text with random voice and retry logic.
+async def generate_audio(text: str, output_path: str, lang: str = "ja", rate: str = "+0%", voice: str = None, max_retries: int = 3) -> tuple[bool, str]:
+    """Generate audio file for a single text with retry logic.
     
     Args:
         text: Text to convert to speech
         output_path: Path to save the audio file
         lang: Language code (ja, en, vi)
         rate: Speech rate (e.g., "+0%" for normal, "-30%" for slow)
+        voice: Specific voice to use (if None, picks random)
         max_retries: Number of retry attempts
     """
     tts_text = get_tts_text(text, lang)
-    for attempt in range(max_retries):
+    if voice is None:
         voice = get_random_voice(lang)
+    
+    for attempt in range(max_retries):
         try:
             communicate = edge_tts.Communicate(tts_text, voice, rate=rate)
             await communicate.save(output_path)
@@ -173,11 +176,13 @@ async def main():
         print("Cleared existing audio files")
         print("-" * 50)
     
-    # Generate audio for primary language texts (normal speed)
-    print(f"Generating {primary_lang.upper()} audio (normal)...")
+    # Generate audio for primary language texts (normal + slow with same voice)
+    print(f"Generating {primary_lang.upper()} audio (normal + slow)...")
     success_count_primary = 0
+    success_count_primary_slow = 0
     
     for i, text in enumerate(sorted(primary_texts), 1):
+        # Generate normal speed
         filename = get_audio_filename(text, primary_lang)
         output_path = os.path.join(audio_dir, filename)
         audio_mapping[text] = f"{audio_dir}/{filename}"
@@ -186,27 +191,19 @@ async def main():
         success, voice = await generate_audio(text, output_path, primary_lang)
         if success:
             success_count_primary += 1
-            print(f" ✓ ({voice.split('-')[-1]})")
-        else:
-            print(" ✗")
-    
-    print("-" * 50)
-    
-    # Generate slow audio for primary language texts (for learning)
-    print(f"Generating {primary_lang.upper()} audio (slow)...")
-    success_count_primary_slow = 0
-    
-    for i, text in enumerate(sorted(primary_texts), 1):
-        filename = get_audio_filename(text, primary_lang, slow=True)
-        output_path = os.path.join(audio_dir, filename)
-        # Use special key format for slow audio: text + ":slow"
-        audio_mapping[text + ":slow"] = f"{audio_dir}/{filename}"
-        
-        print(f"[{primary_lang.upper()}-SLOW {i}/{len(primary_texts)}] {text}", end="")
-        success, voice = await generate_audio(text, output_path, primary_lang, rate="-30%")
-        if success:
-            success_count_primary_slow += 1
-            print(f" ✓ ({voice.split('-')[-1]})")
+            print(f" ✓ ({voice.split('-')[-1]})", end="")
+            
+            # Generate slow version with same voice
+            filename_slow = get_audio_filename(text, primary_lang, slow=True)
+            output_path_slow = os.path.join(audio_dir, filename_slow)
+            audio_mapping[text + ":slow"] = f"{audio_dir}/{filename_slow}"
+            
+            success_slow, _ = await generate_audio(text, output_path_slow, primary_lang, rate="-30%", voice=voice)
+            if success_slow:
+                success_count_primary_slow += 1
+                print(" +slow ✓")
+            else:
+                print(" +slow ✗")
         else:
             print(" ✗")
     
