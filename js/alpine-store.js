@@ -36,9 +36,11 @@ const Audio = {
   },
   
   // Play a single audio, returns Promise
-  playOne(text) {
+  playOne(text, slow = false) {
     return new Promise((resolve) => {
-      const path = this.mapping[text];
+      // For slow audio, use the special key format
+      const key = slow ? text + ':slow' : text;
+      const path = this.mapping[key];
       if (!path) { resolve(); return; }
       
       if (!this.current) this.current = new window.Audio();
@@ -52,18 +54,19 @@ const Audio = {
   },
   
   // Play a sequence of audio items
-  // items: array of { text: string, delay?: number } or just string
+  // items: array of { text: string, delay?: number, slow?: boolean } or just string
   async playSequence(items) {
     for (const item of items) {
       const text = typeof item === 'string' ? item : item.text;
       const delay = typeof item === 'string' ? 0 : (item.delay || 0);
+      const slow = typeof item === 'string' ? false : (item.slow || false);
       
       if (delay > 0) {
         await new Promise(r => setTimeout(r, delay));
       }
       
       if (text) {
-        await this.playOne(text);
+        await this.playOne(text, slow);
       }
     }
   },
@@ -564,6 +567,18 @@ document.addEventListener('alpine:init', () => {
       this.speaking = true;
       try {
         await Audio.playSequence(sequence);
+      } finally {
+        this.speaking = false;
+      }
+    },
+    
+    async speakSlow() {
+      if (!this.currentWord) return;
+      
+      this.speaking = true;
+      try {
+        // Play slow version of the Japanese word
+        await Audio.playOne(this.currentWord.japanese, true);
       } finally {
         this.speaking = false;
       }

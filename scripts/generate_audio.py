@@ -46,10 +46,11 @@ def get_audio_dir(dictionary_name: str) -> str:
     return f"assets/dictionaries/{dictionary_name}/audios"
 
 
-def get_audio_filename(text: str, lang: str = "ja") -> str:
+def get_audio_filename(text: str, lang: str = "ja", slow: bool = False) -> str:
     """Generate a safe filename from text using hash."""
     text_hash = hashlib.md5(text.encode('utf-8')).hexdigest()[:12]
-    return f"{lang}_{text_hash}.mp3"
+    suffix = "_slow" if slow else ""
+    return f"{lang}_{text_hash}{suffix}.mp3"
 
 
 def get_random_voice(lang: str = "ja") -> str:
@@ -63,7 +64,7 @@ import re
 def get_tts_text(text: str, lang: str) -> str:
     """
     Get text optimized for TTS.
-    - Replaces '/' with language-appropriate 'or' conjunction
+    - Replaces '/' with SSML break for pause
     - Removes parenthetical content like "(9)" from "nine (9)"
     """
     if lang == "ja":
@@ -71,8 +72,8 @@ def get_tts_text(text: str, lang: str) -> str:
     
     result = text
     
-    # Replace "/" with language-appropriate conjunction
-    result = result.replace("/", ". ")
+    # Replace "/" with SSML break for pause
+    result = result.replace("/", "<break time='400ms'/>")
     
     # Remove parenthetical content like "(9)", "(10,000)", etc.
     result = re.sub(r'\s*\([^)]+\)\s*', ' ', result).strip()
@@ -80,13 +81,21 @@ def get_tts_text(text: str, lang: str) -> str:
     return result
 
 
-async def generate_audio(text: str, output_path: str, lang: str = "ja", max_retries: int = 3) -> tuple[bool, str]:
-    """Generate audio file for a single text with random voice and retry logic."""
+async def generate_audio(text: str, output_path: str, lang: str = "ja", rate: str = "+0%", max_retries: int = 3) -> tuple[bool, str]:
+    """Generate audio file for a single text with random voice and retry logic.
+    
+    Args:
+        text: Text to convert to speech
+        output_path: Path to save the audio file
+        lang: Language code (ja, en, vi)
+        rate: Speech rate (e.g., "+0%" for normal, "-30%" for slow)
+        max_retries: Number of retry attempts
+    """
     tts_text = get_tts_text(text, lang)
     for attempt in range(max_retries):
         voice = get_random_voice(lang)
         try:
-            communicate = edge_tts.Communicate(tts_text, voice)
+            communicate = edge_tts.Communicate(tts_text, voice, rate=rate)
             await communicate.save(output_path)
             return True, voice
         except Exception as e:
@@ -164,8 +173,8 @@ async def main():
         print("Cleared existing audio files")
         print("-" * 50)
     
-    # Generate audio for primary language texts
-    print(f"Generating {primary_lang.upper()} audio...")
+    # Generate audio for primary language texts (normal speed)
+    print(f"Generating {primary_lang.upper()} audio (normal)...")
     success_count_primary = 0
     
     for i, text in enumerate(sorted(primary_texts), 1):
@@ -177,6 +186,26 @@ async def main():
         success, voice = await generate_audio(text, output_path, primary_lang)
         if success:
             success_count_primary += 1
+            print(f" ✓ ({voice.split('-')[-1]})")
+        else:
+            print(" ✗")
+    
+    print("-" * 50)
+    
+    # Generate slow audio for primary language texts (for learning)
+    print(f"Generating {primary_lang.upper()} audio (slow)...")
+    success_count_primary_slow = 0
+    
+    for i, text in enumerate(sorted(primary_texts), 1):
+        filename = get_audio_filename(text, primary_lang, slow=True)
+        output_path = os.path.join(audio_dir, filename)
+        # Use special key format for slow audio: text + ":slow"
+        audio_mapping[text + ":slow"] = f"{audio_dir}/{filename}"
+        
+        print(f"[{primary_lang.upper()}-SLOW {i}/{len(primary_texts)}] {text}", end="")
+        success, voice = await generate_audio(text, output_path, primary_lang, rate="-30%")
+        if success:
+            success_count_primary_slow += 1
             print(f" ✓ ({voice.split('-')[-1]})")
         else:
             print(" ✗")
@@ -254,6 +283,7 @@ async def main():
     print("-" * 50)
     print(f"Done!")
     print(f"  {primary_lang.upper()}: {success_count_primary}/{len(primary_texts)} audio files")
+    print(f"  {primary_lang.upper()} (slow): {success_count_primary_slow}/{len(primary_texts)} audio files")
     print(f"  {meaning_lang.upper()}: {success_count_meaning}/{len(meaning_texts)} audio files")
     print(f"  Examples (JA): {success_count_examples}/{len(example_texts)} audio files")
     print(f"  Example meanings ({meaning_lang.upper()}): {success_count_example_meanings}/{len(example_meaning_texts)} audio files")
