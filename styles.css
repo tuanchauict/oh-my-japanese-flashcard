@@ -484,26 +484,11 @@ h1.clickable-title {
   color: rgba(255, 255, 255, 0.8);
 }
 
-/* Speak Buttons Container */
-.speak-buttons {
+/* Speak Button */
+.speak-btn {
   position: absolute;
   top: 15px;
   right: 15px;
-  display: flex;
-  gap: 8px;
-  z-index: 10;
-}
-
-.speak-buttons-back {
-  top: 15px;
-  right: 15px;
-}
-
-/* Speak Button */
-.speak-btn {
-  position: relative;
-  top: auto;
-  right: auto;
   width: 50px;
   height: 50px;
   border: none;
@@ -514,10 +499,7 @@ h1.clickable-title {
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
-}
-
-.speak-btn-slow {
-  font-size: 1.3rem;
+  z-index: 10;
 }
 
 .speak-btn:hover {

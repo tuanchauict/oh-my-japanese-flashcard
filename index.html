@@ -23,10 +23,10 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   
-  <link rel="stylesheet" href="styles.css?v=10">
+  <link rel="stylesheet" href="styles.css?v=11">
   
   <!-- Alpine.js -->
-  <script src="js/alpine-store.js?v=9"></script>
+  <script src="js/alpine-store.js?v=10"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 <body x-data x-init="$store.app.init()">
@@ -78,22 +78,13 @@
         <div class="flashcard-front">
           <div class="japanese" x-text="$store.app.frontMain"></div>
           <div class="romaji" x-text="$store.app.frontSub"></div>
-          <div class="speak-buttons">
-            <button 
-              class="speak-btn" 
-              :class="{ speaking: $store.app.speaking }"
-              @click.stop="$store.app.speak()" 
-              title="Nghe phát âm">
-              🔊
-            </button>
-            <button 
-              class="speak-btn speak-btn-slow" 
-              :class="{ speaking: $store.app.speaking }"
-              @click.stop="$store.app.speakSlow()" 
-              title="Nghe chậm">
-              🐢
-            </button>
-          </div>
+          <button 
+            class="speak-btn" 
+            :class="{ speaking: $store.app.speaking }"
+            @click.stop="$store.app.speak()" 
+            title="Nghe phát âm">
+            🔊
+          </button>
           <button 
             class="mark-btn" 
             :class="{ remembered: $store.app.isCurrentRemembered }"
@@ -121,22 +112,13 @@
             <div class="example-meaning" x-text="$store.app.exampleMeaning"></div>
           </div>
           
-          <div class="speak-buttons speak-buttons-back">
-            <button 
-              class="speak-btn speak-btn-back" 
-              :class="{ speaking: $store.app.speaking }"
-              @click.stop="$store.app.speak()" 
-              title="Nghe phát âm">
-              🔊
-            </button>
-            <button 
-              class="speak-btn speak-btn-back speak-btn-slow" 
-              :class="{ speaking: $store.app.speaking }"
-              @click.stop="$store.app.speakSlow()" 
-              title="Nghe chậm">
-              🐢
-            </button>
-          </div>
+          <button 
+            class="speak-btn speak-btn-back" 
+            :class="{ speaking: $store.app.speaking }"
+            @click.stop="$store.app.speak()" 
+            title="Nghe phát âm">
+            🔊
+          </button>
           <button 
             class="mark-btn mark-btn-back" 
             :class="{ remembered: $store.app.isCurrentRemembered }"
@@ -253,6 +235,13 @@
     
     <!-- Audio Options -->
     <div class="audio-options">
+      <label class="checkbox-label">
+        <input 
+          type="checkbox" 
+          :checked="$store.app.readSlow"
+          @change="$store.app.toggleReadSlow()">
+        <span>🐢 Đọc chậm trước</span>
+      </label>
       <label class="checkbox-label">
         <input 
           type="checkbox" 

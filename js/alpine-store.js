@@ -8,6 +8,7 @@ const Storage = {
     MODE: 'flashcard-mode',
     READ_BOTH: 'flashcard-read-both',
     READ_EXAMPLE: 'flashcard-read-example',
+    READ_SLOW: 'flashcard-read-slow',
     SKIP_REMEMBERED: 'flashcard-skip-remembered',
     REMEMBERED: 'flashcard-remembered',
     SPIRAL_MODE: 'flashcard-spiral-mode'
@@ -99,6 +100,7 @@ document.addEventListener('alpine:init', () => {
     // Settings
     readBoth: false,
     readExample: true,
+    readSlow: false,
     spiralMode: false,
     skipRemembered: false,
     remembered: new Set(),
@@ -296,6 +298,7 @@ document.addEventListener('alpine:init', () => {
       this.mode = Storage.get(Storage.keys.MODE, defaultMode);
       this.readBoth = Storage.getBool(Storage.keys.READ_BOTH);
       this.readExample = Storage.get(Storage.keys.READ_EXAMPLE, 'true') === 'true';
+      this.readSlow = Storage.getBool(Storage.keys.READ_SLOW);
       this.spiralMode = Storage.getBool(Storage.keys.SPIRAL_MODE);
       this.skipRemembered = Storage.getBool(Storage.keys.SKIP_REMEMBERED);
       const saved = Storage.getJSON(Storage.keys.REMEMBERED, []);
@@ -467,6 +470,11 @@ document.addEventListener('alpine:init', () => {
       Storage.set(Storage.keys.READ_EXAMPLE, this.readExample);
     },
     
+    toggleReadSlow() {
+      this.readSlow = !this.readSlow;
+      Storage.set(Storage.keys.READ_SLOW, this.readSlow);
+    },
+    
     toggleSpiralMode() {
       this.spiralMode = !this.spiralMode;
       this.spiralState = 'forward';
@@ -531,13 +539,27 @@ document.addEventListener('alpine:init', () => {
       if (!this.currentWord) return [];
       
       const word = this.currentWord;
-      const sequence = [{ text: word.japanese }];
+      const sequence = [];
+      
+      // Play slow first if enabled
+      if (this.readSlow) {
+        sequence.push({ text: word.japanese, slow: true });
+        sequence.push({ text: word.japanese, delay: 300 });
+      } else {
+        sequence.push({ text: word.japanese });
+      }
       
       if (this.readBoth) {
         sequence.push({ text: word.meaning, delay: 300 });
         
         if (this.readExample && word.example) {
-          sequence.push({ text: word.example, delay: 300 });
+          // Play slow example first if enabled
+          if (this.readSlow) {
+            sequence.push({ text: word.example, delay: 300, slow: true });
+            sequence.push({ text: word.example, delay: 300 });
+          } else {
+            sequence.push({ text: word.example, delay: 300 });
+          }
           if (word.exampleMeaning) {
             sequence.push({ text: word.exampleMeaning });
           }
@@ -551,7 +573,15 @@ document.addEventListener('alpine:init', () => {
       if (!this.currentWord?.example) return [];
       
       const word = this.currentWord;
-      const sequence = [{ text: word.example }];
+      const sequence = [];
+      
+      // Play slow first if enabled
+      if (this.readSlow) {
+        sequence.push({ text: word.example, slow: true });
+        sequence.push({ text: word.example, delay: 300 });
+      } else {
+        sequence.push({ text: word.example });
+      }
       
       if (word.exampleMeaning) {
         sequence.push({ text: word.exampleMeaning });
@@ -567,18 +597,6 @@ document.addEventListener('alpine:init', () => {
       this.speaking = true;
       try {
         await Audio.playSequence(sequence);
-      } finally {
-        this.speaking = false;
-      }
-    },
-    
-    async speakSlow() {
-      if (!this.currentWord) return;
-      
-      this.speaking = true;
-      try {
-        // Play slow version of the Japanese word
-        await Audio.playOne(this.currentWord.japanese, true);
       } finally {
         this.speaking = false;
       }
