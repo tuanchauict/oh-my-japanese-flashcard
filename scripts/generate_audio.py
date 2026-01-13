@@ -228,12 +228,14 @@ async def main():
     
     print("-" * 50)
     
-    # Generate audio for example sentences (always in Japanese)
+    # Generate audio for example sentences (always in Japanese, normal + slow)
     success_count_examples = 0
+    success_count_examples_slow = 0
     if example_texts:
-        print(f"Generating example audio (JA)...")
+        print(f"Generating example audio (JA, normal + slow)...")
         
         for i, text in enumerate(sorted(example_texts), 1):
+            # Generate normal speed
             filename = get_audio_filename(text, "ja")
             output_path = os.path.join(audio_dir, filename)
             audio_mapping[text] = f"{audio_dir}/{filename}"
@@ -244,7 +246,19 @@ async def main():
             success, voice = await generate_audio(text, output_path, "ja")
             if success:
                 success_count_examples += 1
-                print(f" ✓ ({voice.split('-')[-1]})")
+                print(f" ✓ ({voice.split('-')[-1]})", end="")
+                
+                # Generate slow version with same voice
+                filename_slow = get_audio_filename(text, "ja", slow=True)
+                output_path_slow = os.path.join(audio_dir, filename_slow)
+                audio_mapping[text + ":slow"] = f"{audio_dir}/{filename_slow}"
+                
+                success_slow, _ = await generate_audio(text, output_path_slow, "ja", rate="-30%", voice=voice)
+                if success_slow:
+                    success_count_examples_slow += 1
+                    print(" +slow ✓")
+                else:
+                    print(" +slow ✗")
             else:
                 print(" ✗")
         
@@ -283,6 +297,7 @@ async def main():
     print(f"  {primary_lang.upper()} (slow): {success_count_primary_slow}/{len(primary_texts)} audio files")
     print(f"  {meaning_lang.upper()}: {success_count_meaning}/{len(meaning_texts)} audio files")
     print(f"  Examples (JA): {success_count_examples}/{len(example_texts)} audio files")
+    print(f"  Examples (JA slow): {success_count_examples_slow}/{len(example_texts)} audio files")
     print(f"  Example meanings ({meaning_lang.upper()}): {success_count_example_meanings}/{len(example_meaning_texts)} audio files")
     print(f"Audio mapping saved to {mapping_path}")
 
