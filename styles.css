@@ -28,6 +28,131 @@ h1 {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
+/* Title with dropdown */
+.clickable-title {
+  cursor: pointer;
+  display: inline-block;
+  padding: 5px 15px;
+  border-radius: 8px;
+  transition: background-color 0.2s;
+}
+
+.clickable-title:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.clickable-title::after {
+  content: '';
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-left: 8px;
+  vertical-align: middle;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+}
+
+/* Dictionary Modal */
+.dict-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.dict-modal-overlay[style*="display: none"] {
+  display: none !important;
+}
+
+.dict-modal {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  max-width: 400px;
+  width: 100%;
+  overflow: hidden;
+  animation: modalSlideIn 0.2s ease-out;
+}
+
+@keyframes modalSlideIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95) translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.dict-modal-title {
+  padding: 20px;
+  margin: 0;
+  font-size: 1.2rem;
+  color: #333;
+  border-bottom: 1px solid #eee;
+  text-align: center;
+}
+
+.dict-menu-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  width: 100%;
+  padding: 16px 24px;
+  border: none;
+  background: none;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  color: #333;
+}
+
+.dict-item-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.dict-item-meta {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 0.85rem;
+  opacity: 0.7;
+}
+
+.dict-item-desc {
+  flex: 1;
+}
+
+.dict-item-count {
+  font-weight: 500;
+  margin-left: 12px;
+}
+
+.dict-menu-item:hover {
+  background-color: #f5f5f5;
+}
+
+.dict-menu-item.active {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.dict-menu-item:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+
 .subtitle {
   color: rgba(255, 255, 255, 0.9);
   text-align: center;

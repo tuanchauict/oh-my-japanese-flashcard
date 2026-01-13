@@ -1,0 +1,14 @@
+[
+  {
+    "id": "dictionary",
+    "name": "🚗 Từ Vựng Lái Xe Nhật Bản",
+    "description": "Bộ khẩu lệnh đầy đủ trong lớp học lái xe",
+    "wordCount": 87
+  },
+  {
+    "id": "n5-dictionary",
+    "name": "📚 JLPT N5 Vocabulary",
+    "description": "Core vocabulary for basic Japanese communication",
+    "wordCount": 399
+  }
+]

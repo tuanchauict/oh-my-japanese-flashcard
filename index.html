@@ -30,8 +30,30 @@
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 <body x-data x-init="$store.app.init()">
+  <!-- Dictionary Modal -->
+  <div class="dict-modal-overlay" x-show="$store.app.showDictMenu" x-transition.opacity @click="$store.app.showDictMenu = false">
+    <div class="dict-modal" @click.stop>
+      <h2 class="dict-modal-title">Select Dictionary</h2>
+      <template x-for="d in $store.app.dictionaries" :key="d.id">
+        <button 
+          class="dict-menu-item"
+          :class="{ active: d.id === $store.app.dictionaryName }"
+          @click="$store.app.selectDictionary(d.id)">
+          <span class="dict-item-name" x-text="d.name"></span>
+          <span class="dict-item-meta">
+            <span class="dict-item-desc" x-text="d.description"></span>
+            <span class="dict-item-count" x-text="d.wordCount + ' words'"></span>
+          </span>
+        </button>
+      </template>
+    </div>
+  </div>
+
   <div class="container">
-    <h1 x-text="$store.app.title"></h1>
+    <h1 
+      class="clickable-title" 
+      @click.stop="$store.app.toggleDictMenu()" 
+      x-text="$store.app.title"></h1>
     <p class="subtitle" x-text="$store.app.subtitle"></p>
     
     <!-- Mode Toggle -->

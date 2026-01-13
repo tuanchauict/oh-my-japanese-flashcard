@@ -108,6 +108,8 @@ document.addEventListener('alpine:init', () => {
     rememberedListOpen: false,
     pendingRemoval: false,
     speaking: false,
+    showDictMenu: false,
+    dictionaries: [],
     
     // Spiral state
     spiralStep: 0, // Current step in spiral sequence
@@ -213,6 +215,9 @@ document.addEventListener('alpine:init', () => {
       }
       this._initializing = true;
       
+      // Load available dictionaries list
+      await this.loadDictionariesList();
+      
       // URL param is dictionary name (e.g., 'n5-dictionary'), default to 'dictionary'
       const urlDict = new URLSearchParams(window.location.search).get('dictionary');
       this.dictionaryName = urlDict || 'dictionary';
@@ -252,6 +257,34 @@ document.addEventListener('alpine:init', () => {
       } catch (e) {
         console.error('Failed to load dictionary:', e);
       }
+    },
+    
+    async loadDictionariesList() {
+      try {
+        const res = await fetch('assets/dictionaries/dictionaries.json');
+        this.dictionaries = await res.json();
+      } catch (e) {
+        console.warn('Failed to load dictionaries list:', e);
+        this.dictionaries = [];
+      }
+    },
+    
+    toggleDictMenu() {
+      this.showDictMenu = !this.showDictMenu;
+    },
+    
+    selectDictionary(dictId) {
+      this.showDictMenu = false;
+      if (dictId === this.dictionaryName) return;
+      
+      // Navigate to the new dictionary
+      const url = new URL(window.location);
+      if (dictId === 'dictionary') {
+        url.searchParams.delete('dictionary');
+      } else {
+        url.searchParams.set('dictionary', dictId);
+      }
+      window.location.href = url.toString();
     },
     
     loadPreferences() {
