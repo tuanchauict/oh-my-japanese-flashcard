@@ -1,0 +1,740 @@
+{
+  "metadata": {
+    "title": "🏦 Banking & Loans Vocabulary",
+    "subtitle": "Essential Japanese vocabulary for banking and loan applications",
+    "primaryLanguage": "ja",
+    "meaningLanguage": "en",
+    "modes": [
+      {
+        "id": "jp-en",
+        "label": "🇯🇵 → 🇬🇧"
+      },
+      {
+        "id": "en-jp",
+        "label": "🇬🇧 → 🇯🇵"
+      }
+    ],
+    "readBothLabel": "🔊 Read both Japanese and English"
+  },
+  "categories": [
+    {
+      "id": "banking-basics",
+      "name": "Banking Basics",
+      "words": [
+        {
+          "japanese": "銀行 (ぎんこう)",
+          "romaji": "ginkou",
+          "meaning": "bank",
+          "example": "銀行に行きます。",
+          "exampleMeaning": "I go to the bank."
+        },
+        {
+          "japanese": "口座 (こうざ)",
+          "romaji": "kouza",
+          "meaning": "bank account",
+          "example": "口座を開きます。",
+          "exampleMeaning": "I open an account."
+        },
+        {
+          "japanese": "預金 (よきん)",
+          "romaji": "yokin",
+          "meaning": "deposit, savings",
+          "example": "預金があります。",
+          "exampleMeaning": "I have deposits."
+        },
+        {
+          "japanese": "貯金 (ちょきん)",
+          "romaji": "chokin",
+          "meaning": "savings",
+          "example": "貯金をします。",
+          "exampleMeaning": "I save money."
+        },
+        {
+          "japanese": "引き出し (ひきだし)",
+          "romaji": "hikidashi",
+          "meaning": "withdrawal",
+          "example": "引き出しをします。",
+          "exampleMeaning": "I make a withdrawal."
+        },
+        {
+          "japanese": "振込 (ふりこみ)",
+          "romaji": "furikomi",
+          "meaning": "bank transfer",
+          "example": "振込で払います。",
+          "exampleMeaning": "I pay by bank transfer."
+        },
+        {
+          "japanese": "残高 (ざんだか)",
+          "romaji": "zandaka",
+          "meaning": "balance (account)",
+          "example": "残高を確認します。",
+          "exampleMeaning": "I check the balance."
+        },
+        {
+          "japanese": "通帳 (つうちょう)",
+          "romaji": "tsuuchou",
+          "meaning": "bankbook, passbook",
+          "example": "通帳を持っています。",
+          "exampleMeaning": "I have a bankbook."
+        },
+        {
+          "japanese": "暗証番号 (あんしょうばんごう)",
+          "romaji": "anshou bangou",
+          "meaning": "PIN number",
+          "example": "暗証番号を入れます。",
+          "exampleMeaning": "I enter the PIN number."
+        },
+        {
+          "japanese": "キャッシュカード",
+          "romaji": "kyasshu kaado",
+          "meaning": "cash card, ATM card",
+          "example": "キャッシュカードで引き出します。",
+          "exampleMeaning": "I withdraw with a cash card."
+        },
+        {
+          "japanese": "ATM (エーティーエム)",
+          "romaji": "eetiiemu",
+          "meaning": "ATM, automated teller machine",
+          "example": "ATMを使います。",
+          "exampleMeaning": "I use the ATM."
+        },
+        {
+          "japanese": "窓口 (まどぐち)",
+          "romaji": "madoguchi",
+          "meaning": "counter, service window",
+          "example": "窓口で手続きします。",
+          "exampleMeaning": "I do the procedure at the counter."
+        },
+        {
+          "japanese": "手数料 (てすうりょう)",
+          "romaji": "tesuuryou",
+          "meaning": "fee, commission",
+          "example": "手数料がかかります。",
+          "exampleMeaning": "A fee is charged."
+        },
+        {
+          "japanese": "利息 (りそく)",
+          "romaji": "risoku",
+          "meaning": "interest (money)",
+          "example": "利息が付きます。",
+          "exampleMeaning": "Interest is added."
+        },
+        {
+          "japanese": "金利 (きんり)",
+          "romaji": "kinri",
+          "meaning": "interest rate",
+          "example": "金利は低いです。",
+          "exampleMeaning": "The interest rate is low."
+        }
+      ]
+    },
+    {
+      "id": "loan-basics",
+      "name": "Loan Basics",
+      "words": [
+        {
+          "japanese": "ローン",
+          "romaji": "roon",
+          "meaning": "loan",
+          "example": "ローンを組みます。",
+          "exampleMeaning": "I take out a loan."
+        },
+        {
+          "japanese": "借金 (しゃっきん)",
+          "romaji": "shakkin",
+          "meaning": "debt, borrowed money",
+          "example": "借金があります。",
+          "exampleMeaning": "I have debt."
+        },
+        {
+          "japanese": "融資 (ゆうし)",
+          "romaji": "yuushi",
+          "meaning": "loan, financing",
+          "example": "融資を受けます。",
+          "exampleMeaning": "I receive financing."
+        },
+        {
+          "japanese": "借入 (かりいれ)",
+          "romaji": "kariire",
+          "meaning": "borrowing, loan",
+          "example": "借入の申込みをします。",
+          "exampleMeaning": "I apply for a loan."
+        },
+        {
+          "japanese": "返済 (へんさい)",
+          "romaji": "hensai",
+          "meaning": "repayment",
+          "example": "返済が始まります。",
+          "exampleMeaning": "Repayment begins."
+        },
+        {
+          "japanese": "元金 (がんきん)",
+          "romaji": "gankin",
+          "meaning": "principal (loan amount)",
+          "example": "元金を返します。",
+          "exampleMeaning": "I repay the principal."
+        },
+        {
+          "japanese": "借り入れ額 (かりいれがく)",
+          "romaji": "kariire gaku",
+          "meaning": "loan amount, borrowed amount",
+          "example": "借り入れ額は大きいです。",
+          "exampleMeaning": "The loan amount is large."
+        },
+        {
+          "japanese": "月々の返済 (つきづきのへんさい)",
+          "romaji": "tsukizuki no hensai",
+          "meaning": "monthly repayment",
+          "example": "月々の返済は5万円です。",
+          "exampleMeaning": "The monthly repayment is 50,000 yen."
+        },
+        {
+          "japanese": "分割払い (ぶんかつばらい)",
+          "romaji": "bunkatsu barai",
+          "meaning": "installment payment",
+          "example": "分割払いにします。",
+          "exampleMeaning": "I pay in installments."
+        },
+        {
+          "japanese": "一括払い (いっかつばらい)",
+          "romaji": "ikkatsu barai",
+          "meaning": "lump sum payment",
+          "example": "一括払いで返します。",
+          "exampleMeaning": "I repay in a lump sum."
+        },
+        {
+          "japanese": "延滞 (えんたい)",
+          "romaji": "entai",
+          "meaning": "overdue payment, delinquency",
+          "example": "延滞しないようにします。",
+          "exampleMeaning": "I make sure not to be overdue."
+        },
+        {
+          "japanese": "滞納 (たいのう)",
+          "romaji": "tainou",
+          "meaning": "non-payment, arrears",
+          "example": "滞納があります。",
+          "exampleMeaning": "There are arrears."
+        },
+        {
+          "japanese": "繰り上げ返済 (くりあげへんさい)",
+          "romaji": "kuriage hensai",
+          "meaning": "early repayment, prepayment",
+          "example": "繰り上げ返済をします。",
+          "exampleMeaning": "I make an early repayment."
+        },
+        {
+          "japanese": "返済期間 (へんさいきかん)",
+          "romaji": "hensai kikan",
+          "meaning": "repayment period",
+          "example": "返済期間は30年です。",
+          "exampleMeaning": "The repayment period is 30 years."
+        },
+        {
+          "japanese": "借り換え (かりかえ)",
+          "romaji": "karikae",
+          "meaning": "refinancing, loan switching",
+          "example": "借り換えを検討します。",
+          "exampleMeaning": "I consider refinancing."
+        }
+      ]
+    },
+    {
+      "id": "loan-types",
+      "name": "Types of Loans",
+      "words": [
+        {
+          "japanese": "住宅ローン (じゅうたくローン)",
+          "romaji": "juutaku roon",
+          "meaning": "housing loan, mortgage",
+          "example": "住宅ローンを申し込みます。",
+          "exampleMeaning": "I apply for a housing loan."
+        },
+        {
+          "japanese": "自動車ローン (じどうしゃローン)",
+          "romaji": "jidousha roon",
+          "meaning": "car loan, auto loan",
+          "example": "自動車ローンを組みます。",
+          "exampleMeaning": "I take out a car loan."
+        },
+        {
+          "japanese": "教育ローン (きょういくローン)",
+          "romaji": "kyouiku roon",
+          "meaning": "education loan, student loan",
+          "example": "教育ローンで学費を払います。",
+          "exampleMeaning": "I pay tuition with an education loan."
+        },
+        {
+          "japanese": "事業資金 (じぎょうしきん)",
+          "romaji": "jigyou shikin",
+          "meaning": "business capital, business loan",
+          "example": "事業資金を借ります。",
+          "exampleMeaning": "I borrow business capital."
+        },
+        {
+          "japanese": "カードローン",
+          "romaji": "kaado roon",
+          "meaning": "card loan, personal loan",
+          "example": "カードローンは便利です。",
+          "exampleMeaning": "Card loans are convenient."
+        },
+        {
+          "japanese": "フリーローン",
+          "romaji": "furii roon",
+          "meaning": "free loan, unsecured personal loan",
+          "example": "フリーローンを使います。",
+          "exampleMeaning": "I use a free loan."
+        },
+        {
+          "japanese": "固定金利 (こていきんり)",
+          "romaji": "kotei kinri",
+          "meaning": "fixed interest rate",
+          "example": "固定金利を選びます。",
+          "exampleMeaning": "I choose a fixed interest rate."
+        },
+        {
+          "japanese": "変動金利 (へんどうきんり)",
+          "romaji": "hendou kinri",
+          "meaning": "variable interest rate",
+          "example": "変動金利は安いです。",
+          "exampleMeaning": "The variable interest rate is low."
+        }
+      ]
+    },
+    {
+      "id": "loan-application",
+      "name": "Loan Application Process",
+      "words": [
+        {
+          "japanese": "申し込み (もうしこみ)",
+          "romaji": "moushikomi",
+          "meaning": "application",
+          "example": "申し込みをします。",
+          "exampleMeaning": "I make an application."
+        },
+        {
+          "japanese": "審査 (しんさ)",
+          "romaji": "shinsa",
+          "meaning": "examination, screening, credit check",
+          "example": "審査に通りました。",
+          "exampleMeaning": "I passed the examination."
+        },
+        {
+          "japanese": "承認 (しょうにん)",
+          "romaji": "shounin",
+          "meaning": "approval",
+          "example": "承認されました。",
+          "exampleMeaning": "It was approved."
+        },
+        {
+          "japanese": "否決 (ひけつ)",
+          "romaji": "hiketsu",
+          "meaning": "rejection, denial",
+          "example": "否決されました。",
+          "exampleMeaning": "It was rejected."
+        },
+        {
+          "japanese": "必要書類 (ひつようしょるい)",
+          "romaji": "hitsuyou shorui",
+          "meaning": "required documents",
+          "example": "必要書類を準備します。",
+          "exampleMeaning": "I prepare the required documents."
+        },
+        {
+          "japanese": "所得証明 (しょとくしょうめい)",
+          "romaji": "shotoku shoumei",
+          "meaning": "income certificate, proof of income",
+          "example": "所得証明が必要です。",
+          "exampleMeaning": "Income certificate is necessary."
+        },
+        {
+          "japanese": "源泉徴収票 (げんせんちょうしゅうひょう)",
+          "romaji": "gensen choushuu hyou",
+          "meaning": "withholding tax slip, tax statement",
+          "example": "源泉徴収票を提出します。",
+          "exampleMeaning": "I submit a withholding tax slip."
+        },
+        {
+          "japanese": "身分証明書 (みぶんしょうめいしょ)",
+          "romaji": "mibun shoumeisho",
+          "meaning": "identification document, ID",
+          "example": "身分証明書を見せます。",
+          "exampleMeaning": "I show identification."
+        },
+        {
+          "japanese": "印鑑 (いんかん)",
+          "romaji": "inkan",
+          "meaning": "seal, stamp (personal seal)",
+          "example": "印鑑を押します。",
+          "exampleMeaning": "I stamp with my seal."
+        },
+        {
+          "japanese": "契約 (けいやく)",
+          "romaji": "keiyaku",
+          "meaning": "contract",
+          "example": "契約を結びます。",
+          "exampleMeaning": "I sign a contract."
+        },
+        {
+          "japanese": "契約書 (けいやくしょ)",
+          "romaji": "keiyakusho",
+          "meaning": "contract document",
+          "example": "契約書にサインします。",
+          "exampleMeaning": "I sign the contract document."
+        },
+        {
+          "japanese": "保証人 (ほしょうにん)",
+          "romaji": "hoshounin",
+          "meaning": "guarantor",
+          "example": "保証人が必要です。",
+          "exampleMeaning": "A guarantor is necessary."
+        },
+        {
+          "japanese": "連帯保証人 (れんたいほしょうにん)",
+          "romaji": "rentai hoshounin",
+          "meaning": "joint guarantor",
+          "example": "連帯保証人を立てます。",
+          "exampleMeaning": "I provide a joint guarantor."
+        },
+        {
+          "japanese": "担保 (たんぽ)",
+          "romaji": "tanpo",
+          "meaning": "collateral, security",
+          "example": "担保が要ります。",
+          "exampleMeaning": "Collateral is needed."
+        },
+        {
+          "japanese": "信用情報 (しんようじょうほう)",
+          "romaji": "shinyou jouhou",
+          "meaning": "credit information",
+          "example": "信用情報を確認されます。",
+          "exampleMeaning": "Credit information is checked."
+        }
+      ]
+    },
+    {
+      "id": "financial-terms",
+      "name": "Financial Terms",
+      "words": [
+        {
+          "japanese": "年収 (ねんしゅう)",
+          "romaji": "nenshuu",
+          "meaning": "annual income",
+          "example": "年収は500万円です。",
+          "exampleMeaning": "My annual income is 5 million yen."
+        },
+        {
+          "japanese": "収入 (しゅうにゅう)",
+          "romaji": "shuunyuu",
+          "meaning": "income",
+          "example": "収入が増えました。",
+          "exampleMeaning": "My income increased."
+        },
+        {
+          "japanese": "支出 (ししゅつ)",
+          "romaji": "shishutsu",
+          "meaning": "expenditure, expenses",
+          "example": "支出を減らします。",
+          "exampleMeaning": "I reduce expenditures."
+        },
+        {
+          "japanese": "資産 (しさん)",
+          "romaji": "shisan",
+          "meaning": "assets",
+          "example": "資産があります。",
+          "exampleMeaning": "I have assets."
+        },
+        {
+          "japanese": "負債 (ふさい)",
+          "romaji": "fusai",
+          "meaning": "debt, liabilities",
+          "example": "負債が多いです。",
+          "exampleMeaning": "I have a lot of debt."
+        },
+        {
+          "japanese": "頭金 (あたまきん)",
+          "romaji": "atamakin",
+          "meaning": "down payment",
+          "example": "頭金を払います。",
+          "exampleMeaning": "I pay a down payment."
+        },
+        {
+          "japanese": "自己資金 (じこしきん)",
+          "romaji": "jiko shikin",
+          "meaning": "own capital, personal funds",
+          "example": "自己資金を用意します。",
+          "exampleMeaning": "I prepare personal funds."
+        },
+        {
+          "japanese": "返済能力 (へんさいのうりょく)",
+          "romaji": "hensai nouryoku",
+          "meaning": "repayment ability",
+          "example": "返済能力を証明します。",
+          "exampleMeaning": "I prove repayment ability."
+        },
+        {
+          "japanese": "返済比率 (へんさいひりつ)",
+          "romaji": "hensai hiritsu",
+          "meaning": "repayment ratio",
+          "example": "返済比率は30%です。",
+          "exampleMeaning": "The repayment ratio is 30%."
+        },
+        {
+          "japanese": "借入限度額 (かりいれげんどがく)",
+          "romaji": "kariire gendogaku",
+          "meaning": "borrowing limit",
+          "example": "借入限度額を確認します。",
+          "exampleMeaning": "I check the borrowing limit."
+        },
+        {
+          "japanese": "信用度 (しんようど)",
+          "romaji": "shinyoudo",
+          "meaning": "creditworthiness",
+          "example": "信用度が高いです。",
+          "exampleMeaning": "My creditworthiness is high."
+        },
+        {
+          "japanese": "金融機関 (きんゆうきかん)",
+          "romaji": "kinyuu kikan",
+          "meaning": "financial institution",
+          "example": "金融機関で借ります。",
+          "exampleMeaning": "I borrow from a financial institution."
+        }
+      ]
+    },
+    {
+      "id": "payment-methods",
+      "name": "Payment Methods",
+      "words": [
+        {
+          "japanese": "口座引き落とし (こうざひきおとし)",
+          "romaji": "kouza hikiotoshi",
+          "meaning": "automatic bank withdrawal",
+          "example": "口座引き落としで払います。",
+          "exampleMeaning": "I pay by automatic withdrawal."
+        },
+        {
+          "japanese": "自動引き落とし (じどうひきおとし)",
+          "romaji": "jidou hikiotoshi",
+          "meaning": "automatic debit",
+          "example": "自動引き落としを設定します。",
+          "exampleMeaning": "I set up automatic debit."
+        },
+        {
+          "japanese": "振り込み先 (ふりこみさき)",
+          "romaji": "furikomi saki",
+          "meaning": "transfer destination, payee account",
+          "example": "振り込み先を教えてください。",
+          "exampleMeaning": "Please tell me the transfer destination."
+        },
+        {
+          "japanese": "支払日 (しはらいび)",
+          "romaji": "shiharaibi",
+          "meaning": "payment date",
+          "example": "支払日は毎月10日です。",
+          "exampleMeaning": "The payment date is the 10th of every month."
+        },
+        {
+          "japanese": "引き落とし日 (ひきおとしび)",
+          "romaji": "hikiotoshibi",
+          "meaning": "withdrawal date",
+          "example": "引き落とし日を確認します。",
+          "exampleMeaning": "I check the withdrawal date."
+        },
+        {
+          "japanese": "領収書 (りょうしゅうしょ)",
+          "romaji": "ryoushuusho",
+          "meaning": "receipt",
+          "example": "領収書をもらいます。",
+          "exampleMeaning": "I receive a receipt."
+        },
+        {
+          "japanese": "明細書 (めいさいしょ)",
+          "romaji": "meisaisho",
+          "meaning": "statement, detailed statement",
+          "example": "明細書を確認します。",
+          "exampleMeaning": "I check the statement."
+        }
+      ]
+    },
+    {
+      "id": "loan-issues",
+      "name": "Loan Issues & Problems",
+      "words": [
+        {
+          "japanese": "延滞金 (えんたいきん)",
+          "romaji": "entaikin",
+          "meaning": "late payment fee, penalty",
+          "example": "延滞金が発生します。",
+          "exampleMeaning": "Late payment fees occur."
+        },
+        {
+          "japanese": "遅延損害金 (ちえんそんがいきん)",
+          "romaji": "chien songaikin",
+          "meaning": "late payment penalty",
+          "example": "遅延損害金を払います。",
+          "exampleMeaning": "I pay a late payment penalty."
+        },
+        {
+          "japanese": "債務整理 (さいむせいり)",
+          "romaji": "saimu seiri",
+          "meaning": "debt restructuring",
+          "example": "債務整理を考えます。",
+          "exampleMeaning": "I consider debt restructuring."
+        },
+        {
+          "japanese": "破産 (はさん)",
+          "romaji": "hasan",
+          "meaning": "bankruptcy",
+          "example": "破産を申請します。",
+          "exampleMeaning": "I file for bankruptcy."
+        },
+        {
+          "japanese": "債権者 (さいけんしゃ)",
+          "romaji": "saikensha",
+          "meaning": "creditor",
+          "example": "債権者と話します。",
+          "exampleMeaning": "I talk with the creditor."
+        },
+        {
+          "japanese": "債務者 (さいむしゃ)",
+          "romaji": "saimusha",
+          "meaning": "debtor",
+          "example": "債務者として返済します。",
+          "exampleMeaning": "I repay as a debtor."
+        },
+        {
+          "japanese": "返済計画 (へんさいけいかく)",
+          "romaji": "hensai keikaku",
+          "meaning": "repayment plan",
+          "example": "返済計画を立てます。",
+          "exampleMeaning": "I make a repayment plan."
+        },
+        {
+          "japanese": "相談 (そうだん)",
+          "romaji": "soudan",
+          "meaning": "consultation",
+          "example": "銀行に相談します。",
+          "exampleMeaning": "I consult with the bank."
+        }
+      ]
+    },
+    {
+      "id": "useful-verbs",
+      "name": "Useful Verbs for Banking",
+      "words": [
+        {
+          "japanese": "借りる (かりる)",
+          "romaji": "kariru",
+          "meaning": "to borrow",
+          "example": "お金を借ります。",
+          "exampleMeaning": "I borrow money."
+        },
+        {
+          "japanese": "貸す (かす)",
+          "romaji": "kasu",
+          "meaning": "to lend",
+          "example": "銀行がお金を貸します。",
+          "exampleMeaning": "The bank lends money."
+        },
+        {
+          "japanese": "返す (かえす)",
+          "romaji": "kaesu",
+          "meaning": "to return, to repay",
+          "example": "ローンを返します。",
+          "exampleMeaning": "I repay the loan."
+        },
+        {
+          "japanese": "払う (はらう)",
+          "romaji": "harau",
+          "meaning": "to pay",
+          "example": "利息を払います。",
+          "exampleMeaning": "I pay interest."
+        },
+        {
+          "japanese": "貯める (ためる)",
+          "romaji": "tameru",
+          "meaning": "to save (money)",
+          "example": "お金を貯めます。",
+          "exampleMeaning": "I save money."
+        },
+        {
+          "japanese": "預ける (あずける)",
+          "romaji": "azukeru",
+          "meaning": "to deposit",
+          "example": "銀行にお金を預けます。",
+          "exampleMeaning": "I deposit money at the bank."
+        },
+        {
+          "japanese": "組む (くむ)",
+          "romaji": "kumu",
+          "meaning": "to take out (loan), to arrange",
+          "example": "ローンを組みます。",
+          "exampleMeaning": "I take out a loan."
+        },
+        {
+          "japanese": "申し込む (もうしこむ)",
+          "romaji": "moushikomu",
+          "meaning": "to apply",
+          "example": "ローンに申し込みます。",
+          "exampleMeaning": "I apply for a loan."
+        },
+        {
+          "japanese": "滞る (とどこおる)",
+          "romaji": "todokooru",
+          "meaning": "to be overdue, to be in arrears",
+          "example": "返済が滞ります。",
+          "exampleMeaning": "Repayment is overdue."
+        },
+        {
+          "japanese": "完済する (かんさいする)",
+          "romaji": "kansai suru",
+          "meaning": "to fully repay, to pay off",
+          "example": "ローンを完済します。",
+          "exampleMeaning": "I fully repay the loan."
+        }
+      ]
+    },
+    {
+      "id": "common-phrases",
+      "name": "Common Banking Phrases",
+      "words": [
+        {
+          "japanese": "ローンの審査に通る (ローンのしんさにとおる)",
+          "romaji": "roon no shinsa ni tooru",
+          "meaning": "to pass the loan screening",
+          "example": "ローンの審査に通りました。",
+          "exampleMeaning": "I passed the loan screening."
+        },
+        {
+          "japanese": "ローンを組む (ローンをくむ)",
+          "romaji": "roon wo kumu",
+          "meaning": "to take out a loan",
+          "example": "住宅ローンを組みます。",
+          "exampleMeaning": "I take out a housing loan."
+        },
+        {
+          "japanese": "お金を借りる (おかねをかりる)",
+          "romaji": "okane wo kariru",
+          "meaning": "to borrow money",
+          "example": "銀行からお金を借ります。",
+          "exampleMeaning": "I borrow money from the bank."
+        },
+        {
+          "japanese": "返済する (へんさいする)",
+          "romaji": "hensai suru",
+          "meaning": "to make repayment",
+          "example": "毎月返済します。",
+          "exampleMeaning": "I make repayment every month."
+        },
+        {
+          "japanese": "口座を開く (こうざをひらく)",
+          "romaji": "kouza wo hiraku",
+          "meaning": "to open an account",
+          "example": "新しい口座を開きます。",
+          "exampleMeaning": "I open a new account."
+        }
+      ]
+    }
+  ]
+}

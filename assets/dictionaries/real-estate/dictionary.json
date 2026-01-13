@@ -1,0 +1,976 @@
+{
+  "metadata": {
+    "title": "🏠 Real Estate Vocabulary",
+    "subtitle": "Essential Japanese vocabulary for real estate transactions and property",
+    "primaryLanguage": "ja",
+    "meaningLanguage": "en",
+    "modes": [
+      {
+        "id": "jp-en",
+        "label": "🇯🇵 → 🇬🇧"
+      },
+      {
+        "id": "en-jp",
+        "label": "🇬🇧 → 🇯🇵"
+      }
+    ],
+    "readBothLabel": "🔊 Read both Japanese and English"
+  },
+  "categories": [
+    {
+      "id": "property-types",
+      "name": "Property Types",
+      "words": [
+        {
+          "japanese": "不動産 (ふどうさん)",
+          "romaji": "fudousan",
+          "meaning": "real estate",
+          "example": "不動産を買います。",
+          "exampleMeaning": "I buy real estate."
+        },
+        {
+          "japanese": "物件 (ぶっけん)",
+          "romaji": "bukken",
+          "meaning": "property",
+          "example": "物件を探します。",
+          "exampleMeaning": "I search for properties."
+        },
+        {
+          "japanese": "住宅 (じゅうたく)",
+          "romaji": "juutaku",
+          "meaning": "housing, residence",
+          "example": "住宅を購入します。",
+          "exampleMeaning": "I purchase housing."
+        },
+        {
+          "japanese": "一戸建て (いっこだて)",
+          "romaji": "ikkodate",
+          "meaning": "detached house, single-family home",
+          "example": "一戸建てに住みたいです。",
+          "exampleMeaning": "I want to live in a detached house."
+        },
+        {
+          "japanese": "マンション",
+          "romaji": "manshon",
+          "meaning": "apartment, condominium",
+          "example": "マンションを買います。",
+          "exampleMeaning": "I buy an apartment."
+        },
+        {
+          "japanese": "アパート",
+          "romaji": "apaato",
+          "meaning": "apartment (usually smaller/cheaper)",
+          "example": "アパートを借ります。",
+          "exampleMeaning": "I rent an apartment."
+        },
+        {
+          "japanese": "土地 (とち)",
+          "romaji": "tochi",
+          "meaning": "land",
+          "example": "土地を購入します。",
+          "exampleMeaning": "I purchase land."
+        },
+        {
+          "japanese": "建物 (たてもの)",
+          "romaji": "tatemono",
+          "meaning": "building",
+          "example": "建物が古いです。",
+          "exampleMeaning": "The building is old."
+        },
+        {
+          "japanese": "中古物件 (ちゅうこぶっけん)",
+          "romaji": "chuuko bukken",
+          "meaning": "pre-owned property, used property",
+          "example": "中古物件を探しています。",
+          "exampleMeaning": "I'm looking for pre-owned property."
+        },
+        {
+          "japanese": "新築 (しんちく)",
+          "romaji": "shinchiku",
+          "meaning": "newly built",
+          "example": "新築のマンションです。",
+          "exampleMeaning": "It's a newly built apartment."
+        },
+        {
+          "japanese": "築年数 (ちくねんすう)",
+          "romaji": "chikunensuu",
+          "meaning": "age of building, years since construction",
+          "example": "築年数は10年です。",
+          "exampleMeaning": "The age of the building is 10 years."
+        },
+        {
+          "japanese": "分譲マンション (ぶんじょうマンション)",
+          "romaji": "bunjou manshon",
+          "meaning": "condominium for sale",
+          "example": "分譲マンションを買います。",
+          "exampleMeaning": "I buy a condominium for sale."
+        },
+        {
+          "japanese": "賃貸 (ちんたい)",
+          "romaji": "chintai",
+          "meaning": "rental",
+          "example": "賃貸の物件です。",
+          "exampleMeaning": "It's a rental property."
+        }
+      ]
+    },
+    {
+      "id": "property-features",
+      "name": "Property Features",
+      "words": [
+        {
+          "japanese": "間取り (まどり)",
+          "romaji": "madori",
+          "meaning": "floor plan, layout",
+          "example": "間取りを確認します。",
+          "exampleMeaning": "I check the floor plan."
+        },
+        {
+          "japanese": "部屋 (へや)",
+          "romaji": "heya",
+          "meaning": "room",
+          "example": "部屋は3つあります。",
+          "exampleMeaning": "There are three rooms."
+        },
+        {
+          "japanese": "寝室 (しんしつ)",
+          "romaji": "shinshitsu",
+          "meaning": "bedroom",
+          "example": "寝室は広いです。",
+          "exampleMeaning": "The bedroom is spacious."
+        },
+        {
+          "japanese": "リビング",
+          "romaji": "ribingu",
+          "meaning": "living room",
+          "example": "リビングが明るいです。",
+          "exampleMeaning": "The living room is bright."
+        },
+        {
+          "japanese": "ダイニング",
+          "romaji": "dainingu",
+          "meaning": "dining room",
+          "example": "ダイニングは広いです。",
+          "exampleMeaning": "The dining room is spacious."
+        },
+        {
+          "japanese": "キッチン",
+          "romaji": "kicchin",
+          "meaning": "kitchen",
+          "example": "キッチンは新しいです。",
+          "exampleMeaning": "The kitchen is new."
+        },
+        {
+          "japanese": "浴室 (よくしつ)",
+          "romaji": "yokushitsu",
+          "meaning": "bathroom, bath",
+          "example": "浴室が2つあります。",
+          "exampleMeaning": "There are two bathrooms."
+        },
+        {
+          "japanese": "トイレ",
+          "romaji": "toire",
+          "meaning": "toilet",
+          "example": "トイレは別です。",
+          "exampleMeaning": "The toilet is separate."
+        },
+        {
+          "japanese": "玄関 (げんかん)",
+          "romaji": "genkan",
+          "meaning": "entrance, entryway",
+          "example": "玄関が広いです。",
+          "exampleMeaning": "The entrance is spacious."
+        },
+        {
+          "japanese": "バルコニー",
+          "romaji": "barukonii",
+          "meaning": "balcony",
+          "example": "バルコニーがあります。",
+          "exampleMeaning": "There is a balcony."
+        },
+        {
+          "japanese": "ベランダ",
+          "romaji": "beranda",
+          "meaning": "veranda, balcony",
+          "example": "ベランダは南向きです。",
+          "exampleMeaning": "The balcony faces south."
+        },
+        {
+          "japanese": "庭 (にわ)",
+          "romaji": "niwa",
+          "meaning": "garden, yard",
+          "example": "庭が広いです。",
+          "exampleMeaning": "The garden is spacious."
+        },
+        {
+          "japanese": "駐車場 (ちゅうしゃじょう)",
+          "romaji": "chuushajou",
+          "meaning": "parking lot, parking space",
+          "example": "駐車場が付いています。",
+          "exampleMeaning": "A parking space is included."
+        },
+        {
+          "japanese": "収納 (しゅうのう)",
+          "romaji": "shuunou",
+          "meaning": "storage",
+          "example": "収納がたくさんあります。",
+          "exampleMeaning": "There is a lot of storage."
+        },
+        {
+          "japanese": "クローゼット",
+          "romaji": "kuroozetto",
+          "meaning": "closet",
+          "example": "クローゼットが大きいです。",
+          "exampleMeaning": "The closet is big."
+        },
+        {
+          "japanese": "エレベーター",
+          "romaji": "erebeetaa",
+          "meaning": "elevator",
+          "example": "エレベーターがあります。",
+          "exampleMeaning": "There is an elevator."
+        },
+        {
+          "japanese": "階段 (かいだん)",
+          "romaji": "kaidan",
+          "meaning": "stairs",
+          "example": "階段を上ります。",
+          "exampleMeaning": "I go up the stairs."
+        },
+        {
+          "japanese": "窓 (まど)",
+          "romaji": "mado",
+          "meaning": "window",
+          "example": "窓が大きいです。",
+          "exampleMeaning": "The windows are large."
+        }
+      ]
+    },
+    {
+      "id": "measurements",
+      "name": "Measurements & Specifications",
+      "words": [
+        {
+          "japanese": "面積 (めんせき)",
+          "romaji": "menseki",
+          "meaning": "area",
+          "example": "面積は80平米です。",
+          "exampleMeaning": "The area is 80 square meters."
+        },
+        {
+          "japanese": "平米 (へいべい)",
+          "romaji": "heibei",
+          "meaning": "square meter (㎡)",
+          "example": "100平米の物件です。",
+          "exampleMeaning": "It's a 100 square meter property."
+        },
+        {
+          "japanese": "坪 (つぼ)",
+          "romaji": "tsubo",
+          "meaning": "tsubo (Japanese unit ≈ 3.3㎡)",
+          "example": "30坪の土地です。",
+          "exampleMeaning": "It's 30 tsubo of land."
+        },
+        {
+          "japanese": "広さ (ひろさ)",
+          "romaji": "hirosa",
+          "meaning": "size, space",
+          "example": "広さは十分です。",
+          "exampleMeaning": "The size is sufficient."
+        },
+        {
+          "japanese": "階 (かい)",
+          "romaji": "kai",
+          "meaning": "floor (level)",
+          "example": "5階の部屋です。",
+          "exampleMeaning": "It's a 5th floor room."
+        },
+        {
+          "japanese": "向き (むき)",
+          "romaji": "muki",
+          "meaning": "direction, facing",
+          "example": "南向きです。",
+          "exampleMeaning": "It faces south."
+        },
+        {
+          "japanese": "南向き (みなみむき)",
+          "romaji": "minami muki",
+          "meaning": "south-facing",
+          "example": "南向きの部屋です。",
+          "exampleMeaning": "It's a south-facing room."
+        },
+        {
+          "japanese": "日当たり (ひあたり)",
+          "romaji": "hiatari",
+          "meaning": "sunlight, sun exposure",
+          "example": "日当たりが良いです。",
+          "exampleMeaning": "The sunlight is good."
+        },
+        {
+          "japanese": "眺め (ながめ)",
+          "romaji": "nagame",
+          "meaning": "view",
+          "example": "眺めがきれいです。",
+          "exampleMeaning": "The view is beautiful."
+        }
+      ]
+    },
+    {
+      "id": "location-access",
+      "name": "Location & Access",
+      "words": [
+        {
+          "japanese": "立地 (りっち)",
+          "romaji": "ricchi",
+          "meaning": "location, site",
+          "example": "立地が良いです。",
+          "exampleMeaning": "The location is good."
+        },
+        {
+          "japanese": "住所 (じゅうしょ)",
+          "romaji": "juusho",
+          "meaning": "address",
+          "example": "住所を教えてください。",
+          "exampleMeaning": "Please tell me the address."
+        },
+        {
+          "japanese": "最寄り駅 (もよりえき)",
+          "romaji": "moyori eki",
+          "meaning": "nearest station",
+          "example": "最寄り駅は渋谷です。",
+          "exampleMeaning": "The nearest station is Shibuya."
+        },
+        {
+          "japanese": "駅から徒歩 (えきからとほ)",
+          "romaji": "eki kara toho",
+          "meaning": "walking distance from station",
+          "example": "駅から徒歩5分です。",
+          "exampleMeaning": "It's a 5-minute walk from the station."
+        },
+        {
+          "japanese": "交通 (こうつう)",
+          "romaji": "koutsuu",
+          "meaning": "transportation, traffic",
+          "example": "交通が便利です。",
+          "exampleMeaning": "Transportation is convenient."
+        },
+        {
+          "japanese": "アクセス",
+          "romaji": "akusesu",
+          "meaning": "access",
+          "example": "アクセスが良いです。",
+          "exampleMeaning": "Access is good."
+        },
+        {
+          "japanese": "周辺環境 (しゅうへんかんきょう)",
+          "romaji": "shuuhen kankyou",
+          "meaning": "surrounding environment, neighborhood",
+          "example": "周辺環境を確認します。",
+          "exampleMeaning": "I check the surrounding environment."
+        },
+        {
+          "japanese": "近隣 (きんりん)",
+          "romaji": "kinrin",
+          "meaning": "neighborhood, vicinity",
+          "example": "近隣は静かです。",
+          "exampleMeaning": "The neighborhood is quiet."
+        },
+        {
+          "japanese": "学区 (がっく)",
+          "romaji": "gakku",
+          "meaning": "school district",
+          "example": "学区が良いです。",
+          "exampleMeaning": "The school district is good."
+        }
+      ]
+    },
+    {
+      "id": "buying-selling",
+      "name": "Buying & Selling",
+      "words": [
+        {
+          "japanese": "売買 (ばいばい)",
+          "romaji": "baibai",
+          "meaning": "buying and selling, transaction",
+          "example": "不動産の売買をします。",
+          "exampleMeaning": "I conduct a real estate transaction."
+        },
+        {
+          "japanese": "購入 (こうにゅう)",
+          "romaji": "kounyuu",
+          "meaning": "purchase",
+          "example": "マンションを購入します。",
+          "exampleMeaning": "I purchase an apartment."
+        },
+        {
+          "japanese": "売却 (ばいきゃく)",
+          "romaji": "baikyaku",
+          "meaning": "sale, selling",
+          "example": "家を売却します。",
+          "exampleMeaning": "I sell the house."
+        },
+        {
+          "japanese": "売主 (うりぬし)",
+          "romaji": "urinushi",
+          "meaning": "seller",
+          "example": "売主と交渉します。",
+          "exampleMeaning": "I negotiate with the seller."
+        },
+        {
+          "japanese": "買主 (かいぬし)",
+          "romaji": "kainushi",
+          "meaning": "buyer",
+          "example": "買主を探します。",
+          "exampleMeaning": "I look for a buyer."
+        },
+        {
+          "japanese": "不動産会社 (ふどうさんがいしゃ)",
+          "romaji": "fudousan gaisha",
+          "meaning": "real estate company",
+          "example": "不動産会社に相談します。",
+          "exampleMeaning": "I consult with a real estate company."
+        },
+        {
+          "japanese": "仲介 (ちゅうかい)",
+          "romaji": "chuukai",
+          "meaning": "mediation, brokerage",
+          "example": "仲介を依頼します。",
+          "exampleMeaning": "I request mediation."
+        },
+        {
+          "japanese": "仲介手数料 (ちゅうかいてすうりょう)",
+          "romaji": "chuukai tesuuryou",
+          "meaning": "brokerage fee",
+          "example": "仲介手数料を払います。",
+          "exampleMeaning": "I pay the brokerage fee."
+        },
+        {
+          "japanese": "売り出し価格 (うりだしかかく)",
+          "romaji": "uridashi kakaku",
+          "meaning": "asking price, listing price",
+          "example": "売り出し価格は3000万円です。",
+          "exampleMeaning": "The asking price is 30 million yen."
+        },
+        {
+          "japanese": "成約価格 (せいやくかかく)",
+          "romaji": "seiyaku kakaku",
+          "meaning": "contract price, selling price",
+          "example": "成約価格が決まりました。",
+          "exampleMeaning": "The contract price was decided."
+        },
+        {
+          "japanese": "値引き (ねびき)",
+          "romaji": "nebiki",
+          "meaning": "discount, price reduction",
+          "example": "値引きを交渉します。",
+          "exampleMeaning": "I negotiate a discount."
+        },
+        {
+          "japanese": "価格交渉 (かかくこうしょう)",
+          "romaji": "kakaku koushou",
+          "meaning": "price negotiation",
+          "example": "価格交渉をします。",
+          "exampleMeaning": "I do price negotiation."
+        },
+        {
+          "japanese": "内覧 (ないらん)",
+          "romaji": "nairan",
+          "meaning": "property viewing, inspection",
+          "example": "内覧に行きます。",
+          "exampleMeaning": "I go to a property viewing."
+        },
+        {
+          "japanese": "見学 (けんがく)",
+          "romaji": "kengaku",
+          "meaning": "tour, viewing",
+          "example": "物件を見学します。",
+          "exampleMeaning": "I view the property."
+        },
+        {
+          "japanese": "申し込み (もうしこみ)",
+          "romaji": "moushikomi",
+          "meaning": "application",
+          "example": "購入の申し込みをします。",
+          "exampleMeaning": "I apply for purchase."
+        },
+        {
+          "japanese": "契約 (けいやく)",
+          "romaji": "keiyaku",
+          "meaning": "contract",
+          "example": "契約を結びます。",
+          "exampleMeaning": "I sign a contract."
+        },
+        {
+          "japanese": "売買契約 (ばいばいけいやく)",
+          "romaji": "baibai keiyaku",
+          "meaning": "sales contract",
+          "example": "売買契約を締結します。",
+          "exampleMeaning": "I conclude a sales contract."
+        },
+        {
+          "japanese": "手付金 (てつけきん)",
+          "romaji": "tetsukekin",
+          "meaning": "deposit, earnest money",
+          "example": "手付金を払います。",
+          "exampleMeaning": "I pay the deposit."
+        },
+        {
+          "japanese": "残金 (ざんきん)",
+          "romaji": "zankin",
+          "meaning": "remaining payment, balance",
+          "example": "残金を払います。",
+          "exampleMeaning": "I pay the remaining payment."
+        },
+        {
+          "japanese": "決済 (けっさい)",
+          "romaji": "kessai",
+          "meaning": "settlement, payment",
+          "example": "決済をします。",
+          "exampleMeaning": "I make settlement."
+        },
+        {
+          "japanese": "引き渡し (ひきわたし)",
+          "romaji": "hikiwatashi",
+          "meaning": "delivery, handover",
+          "example": "引き渡しは来月です。",
+          "exampleMeaning": "The handover is next month."
+        },
+        {
+          "japanese": "所有権 (しょゆうけん)",
+          "romaji": "shoyuuken",
+          "meaning": "ownership",
+          "example": "所有権が移ります。",
+          "exampleMeaning": "Ownership transfers."
+        },
+        {
+          "japanese": "登記 (とうき)",
+          "romaji": "touki",
+          "meaning": "registration (property)",
+          "example": "登記をします。",
+          "exampleMeaning": "I do the registration."
+        }
+      ]
+    },
+    {
+      "id": "renting",
+      "name": "Renting",
+      "words": [
+        {
+          "japanese": "賃貸契約 (ちんたいけいやく)",
+          "romaji": "chintai keiyaku",
+          "meaning": "rental contract, lease",
+          "example": "賃貸契約を結びます。",
+          "exampleMeaning": "I sign a rental contract."
+        },
+        {
+          "japanese": "家賃 (やちん)",
+          "romaji": "yachin",
+          "meaning": "rent",
+          "example": "家賃は8万円です。",
+          "exampleMeaning": "The rent is 80,000 yen."
+        },
+        {
+          "japanese": "敷金 (しききん)",
+          "romaji": "shikikin",
+          "meaning": "security deposit",
+          "example": "敷金を払います。",
+          "exampleMeaning": "I pay a security deposit."
+        },
+        {
+          "japanese": "礼金 (れいきん)",
+          "romaji": "reikin",
+          "meaning": "key money (non-refundable)",
+          "example": "礼金が2ヶ月分です。",
+          "exampleMeaning": "The key money is 2 months' rent."
+        },
+        {
+          "japanese": "更新料 (こうしんりょう)",
+          "romaji": "koushinryou",
+          "meaning": "contract renewal fee",
+          "example": "更新料を払います。",
+          "exampleMeaning": "I pay the renewal fee."
+        },
+        {
+          "japanese": "契約期間 (けいやくきかん)",
+          "romaji": "keiyaku kikan",
+          "meaning": "contract period",
+          "example": "契約期間は2年です。",
+          "exampleMeaning": "The contract period is 2 years."
+        },
+        {
+          "japanese": "入居 (にゅうきょ)",
+          "romaji": "nyuukyo",
+          "meaning": "moving in",
+          "example": "来月入居します。",
+          "exampleMeaning": "I move in next month."
+        },
+        {
+          "japanese": "退去 (たいきょ)",
+          "romaji": "taikyo",
+          "meaning": "moving out, vacating",
+          "example": "来年退去します。",
+          "exampleMeaning": "I move out next year."
+        },
+        {
+          "japanese": "大家 (おおや)",
+          "romaji": "ooya",
+          "meaning": "landlord",
+          "example": "大家に連絡します。",
+          "exampleMeaning": "I contact the landlord."
+        },
+        {
+          "japanese": "管理会社 (かんりがいしゃ)",
+          "romaji": "kanri gaisha",
+          "meaning": "property management company",
+          "example": "管理会社に電話します。",
+          "exampleMeaning": "I call the management company."
+        },
+        {
+          "japanese": "共益費 (きょうえきひ)",
+          "romaji": "kyouekihi",
+          "meaning": "common service fee, maintenance fee",
+          "example": "共益費は5000円です。",
+          "exampleMeaning": "The common service fee is 5,000 yen."
+        },
+        {
+          "japanese": "管理費 (かんりひ)",
+          "romaji": "kanrihi",
+          "meaning": "management fee",
+          "example": "管理費が含まれています。",
+          "exampleMeaning": "The management fee is included."
+        },
+        {
+          "japanese": "保証人 (ほしょうにん)",
+          "romaji": "hoshounin",
+          "meaning": "guarantor",
+          "example": "保証人が必要です。",
+          "exampleMeaning": "A guarantor is necessary."
+        },
+        {
+          "japanese": "保証会社 (ほしょうがいしゃ)",
+          "romaji": "hoshou gaisha",
+          "meaning": "guarantor company",
+          "example": "保証会社を使います。",
+          "exampleMeaning": "I use a guarantor company."
+        },
+        {
+          "japanese": "火災保険 (かさいほけん)",
+          "romaji": "kasai hoken",
+          "meaning": "fire insurance",
+          "example": "火災保険に加入します。",
+          "exampleMeaning": "I enroll in fire insurance."
+        }
+      ]
+    },
+    {
+      "id": "facilities-amenities",
+      "name": "Facilities & Amenities",
+      "words": [
+        {
+          "japanese": "設備 (せつび)",
+          "romaji": "setsubi",
+          "meaning": "facilities, equipment",
+          "example": "設備が充実しています。",
+          "exampleMeaning": "The facilities are well-equipped."
+        },
+        {
+          "japanese": "エアコン",
+          "romaji": "eakon",
+          "meaning": "air conditioner",
+          "example": "エアコンが付いています。",
+          "exampleMeaning": "Air conditioning is included."
+        },
+        {
+          "japanese": "暖房 (だんぼう)",
+          "romaji": "danbou",
+          "meaning": "heating",
+          "example": "暖房があります。",
+          "exampleMeaning": "There is heating."
+        },
+        {
+          "japanese": "オートロック",
+          "romaji": "ooto rokku",
+          "meaning": "auto-lock entrance",
+          "example": "オートロック付きです。",
+          "exampleMeaning": "It has an auto-lock entrance."
+        },
+        {
+          "japanese": "インターホン",
+          "romaji": "intaahon",
+          "meaning": "intercom",
+          "example": "インターホンがあります。",
+          "exampleMeaning": "There is an intercom."
+        },
+        {
+          "japanese": "宅配ボックス (たくはいボックス)",
+          "romaji": "takuhai bokkusu",
+          "meaning": "delivery box, parcel locker",
+          "example": "宅配ボックスが便利です。",
+          "exampleMeaning": "The delivery box is convenient."
+        },
+        {
+          "japanese": "ペット可 (ペットか)",
+          "romaji": "petto ka",
+          "meaning": "pets allowed",
+          "example": "ペット可の物件です。",
+          "exampleMeaning": "It's a pet-friendly property."
+        },
+        {
+          "japanese": "家具付き (かぐつき)",
+          "romaji": "kagu tsuki",
+          "meaning": "furnished",
+          "example": "家具付きの部屋です。",
+          "exampleMeaning": "It's a furnished room."
+        },
+        {
+          "japanese": "インターネット",
+          "romaji": "intaanetto",
+          "meaning": "internet",
+          "example": "インターネットが使えます。",
+          "exampleMeaning": "Internet is available."
+        },
+        {
+          "japanese": "防犯カメラ (ぼうはんカメラ)",
+          "romaji": "bouhan kamera",
+          "meaning": "security camera",
+          "example": "防犯カメラがあります。",
+          "exampleMeaning": "There are security cameras."
+        }
+      ]
+    },
+    {
+      "id": "costs-fees",
+      "name": "Costs & Fees",
+      "words": [
+        {
+          "japanese": "価格 (かかく)",
+          "romaji": "kakaku",
+          "meaning": "price",
+          "example": "価格は3000万円です。",
+          "exampleMeaning": "The price is 30 million yen."
+        },
+        {
+          "japanese": "坪単価 (つぼたんか)",
+          "romaji": "tsubo tanka",
+          "meaning": "price per tsubo",
+          "example": "坪単価が高いです。",
+          "exampleMeaning": "The price per tsubo is high."
+        },
+        {
+          "japanese": "諸費用 (しょひよう)",
+          "romaji": "shohiyou",
+          "meaning": "various expenses, incidental costs",
+          "example": "諸費用がかかります。",
+          "exampleMeaning": "Various expenses are incurred."
+        },
+        {
+          "japanese": "固定資産税 (こていしさんぜい)",
+          "romaji": "kotei shisan zei",
+          "meaning": "property tax",
+          "example": "固定資産税を払います。",
+          "exampleMeaning": "I pay property tax."
+        },
+        {
+          "japanese": "都市計画税 (としけいかくぜい)",
+          "romaji": "toshi keikaku zei",
+          "meaning": "city planning tax",
+          "example": "都市計画税がかかります。",
+          "exampleMeaning": "City planning tax is charged."
+        },
+        {
+          "japanese": "修繕積立金 (しゅうぜんつみたてきん)",
+          "romaji": "shuuzen tsumitate kin",
+          "meaning": "repair reserve fund",
+          "example": "修繕積立金は月1万円です。",
+          "exampleMeaning": "The repair reserve fund is 10,000 yen per month."
+        },
+        {
+          "japanese": "光熱費 (こうねつひ)",
+          "romaji": "kounetsuhi",
+          "meaning": "utility costs (electricity, gas, water)",
+          "example": "光熱費は別です。",
+          "exampleMeaning": "Utility costs are separate."
+        },
+        {
+          "japanese": "登記費用 (とうきひよう)",
+          "romaji": "touki hiyou",
+          "meaning": "registration fees",
+          "example": "登記費用がかかります。",
+          "exampleMeaning": "Registration fees are incurred."
+        }
+      ]
+    },
+    {
+      "id": "conditions",
+      "name": "Conditions & State",
+      "words": [
+        {
+          "japanese": "状態 (じょうたい)",
+          "romaji": "joutai",
+          "meaning": "condition, state",
+          "example": "状態が良いです。",
+          "exampleMeaning": "The condition is good."
+        },
+        {
+          "japanese": "リフォーム",
+          "romaji": "rifoomu",
+          "meaning": "renovation, remodeling",
+          "example": "リフォームをします。",
+          "exampleMeaning": "I do renovations."
+        },
+        {
+          "japanese": "リノベーション",
+          "romaji": "rinobeeshon",
+          "meaning": "renovation (large-scale)",
+          "example": "リノベーション済みです。",
+          "exampleMeaning": "It's already renovated."
+        },
+        {
+          "japanese": "修繕 (しゅうぜん)",
+          "romaji": "shuuzen",
+          "meaning": "repair",
+          "example": "修繕が必要です。",
+          "exampleMeaning": "Repairs are necessary."
+        },
+        {
+          "japanese": "欠陥 (けっかん)",
+          "romaji": "kekkan",
+          "meaning": "defect, flaw",
+          "example": "欠陥がありません。",
+          "exampleMeaning": "There are no defects."
+        },
+        {
+          "japanese": "耐震性 (たいしんせい)",
+          "romaji": "taishinsei",
+          "meaning": "earthquake resistance",
+          "example": "耐震性が高いです。",
+          "exampleMeaning": "Earthquake resistance is high."
+        },
+        {
+          "japanese": "築浅 (ちくあさ)",
+          "romaji": "chikuasa",
+          "meaning": "newly built (within few years)",
+          "example": "築浅の物件です。",
+          "exampleMeaning": "It's a newly built property."
+        }
+      ]
+    },
+    {
+      "id": "useful-verbs-real-estate",
+      "name": "Useful Verbs for Real Estate",
+      "words": [
+        {
+          "japanese": "買う (かう)",
+          "romaji": "kau",
+          "meaning": "to buy",
+          "example": "家を買います。",
+          "exampleMeaning": "I buy a house."
+        },
+        {
+          "japanese": "売る (うる)",
+          "romaji": "uru",
+          "meaning": "to sell",
+          "example": "マンションを売ります。",
+          "exampleMeaning": "I sell the apartment."
+        },
+        {
+          "japanese": "借りる (かりる)",
+          "romaji": "kariru",
+          "meaning": "to rent, to borrow",
+          "example": "アパートを借ります。",
+          "exampleMeaning": "I rent an apartment."
+        },
+        {
+          "japanese": "貸す (かす)",
+          "romaji": "kasu",
+          "meaning": "to rent out, to lend",
+          "example": "部屋を貸します。",
+          "exampleMeaning": "I rent out a room."
+        },
+        {
+          "japanese": "探す (さがす)",
+          "romaji": "sagasu",
+          "meaning": "to search, to look for",
+          "example": "物件を探します。",
+          "exampleMeaning": "I search for properties."
+        },
+        {
+          "japanese": "住む (すむ)",
+          "romaji": "sumu",
+          "meaning": "to live, to reside",
+          "example": "東京に住みます。",
+          "exampleMeaning": "I live in Tokyo."
+        },
+        {
+          "japanese": "引っ越す (ひっこす)",
+          "romaji": "hikkosu",
+          "meaning": "to move (residence)",
+          "example": "来月引っ越します。",
+          "exampleMeaning": "I move next month."
+        },
+        {
+          "japanese": "内見する (ないけんする)",
+          "romaji": "naiken suru",
+          "meaning": "to view (property)",
+          "example": "物件を内見します。",
+          "exampleMeaning": "I view the property."
+        },
+        {
+          "japanese": "交渉する (こうしょうする)",
+          "romaji": "koushou suru",
+          "meaning": "to negotiate",
+          "example": "価格を交渉します。",
+          "exampleMeaning": "I negotiate the price."
+        },
+        {
+          "japanese": "建てる (たてる)",
+          "romaji": "tateru",
+          "meaning": "to build",
+          "example": "家を建てます。",
+          "exampleMeaning": "I build a house."
+        }
+      ]
+    },
+    {
+      "id": "common-phrases-real-estate",
+      "name": "Common Real Estate Phrases",
+      "words": [
+        {
+          "japanese": "物件を探す (ぶっけんをさがす)",
+          "romaji": "bukken wo sagasu",
+          "meaning": "to search for properties",
+          "example": "賃貸の物件を探します。",
+          "exampleMeaning": "I search for rental properties."
+        },
+        {
+          "japanese": "内覧に行く (ないらんにいく)",
+          "romaji": "nairan ni iku",
+          "meaning": "to go to a property viewing",
+          "example": "明日内覧に行きます。",
+          "exampleMeaning": "I go to a property viewing tomorrow."
+        },
+        {
+          "japanese": "家を買う (いえをかう)",
+          "romaji": "ie wo kau",
+          "meaning": "to buy a house",
+          "example": "来年家を買います。",
+          "exampleMeaning": "I will buy a house next year."
+        },
+        {
+          "japanese": "引っ越しをする (ひっこしをする)",
+          "romaji": "hikkoshi wo suru",
+          "meaning": "to move (residence)",
+          "example": "来月引っ越しをします。",
+          "exampleMeaning": "I will move next month."
+        },
+        {
+          "japanese": "契約を結ぶ (けいやくをむすぶ)",
+          "romaji": "keiyaku wo musubu",
+          "meaning": "to sign a contract",
+          "example": "今日契約を結びます。",
+          "exampleMeaning": "I sign a contract today."
+        }
+      ]
+    }
+  ]
+}

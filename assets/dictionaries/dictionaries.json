@@ -10,5 +10,17 @@
     "name": "📚 JLPT N5 Vocabulary",
     "description": "Core vocabulary for basic Japanese communication",
     "wordCount": 399
+  },
+  {
+    "id": "banking",
+    "name": "🏦 Banking & Finance",
+    "description": "Essential vocabulary for banking and financial transactions",
+    "wordCount": 95
+  },
+  {
+    "id": "real-estate",
+    "name": "🏠 Real Estate",
+    "description": "Vocabulary for renting and buying property in Japan",
+    "wordCount": 127
   }
 ]
