@@ -58,12 +58,35 @@ def get_random_voice(lang: str = "ja") -> str:
     return random.choice(voices)
 
 
+import re
+
+def get_tts_text(text: str, lang: str) -> str:
+    """
+    Get text optimized for TTS.
+    - Replaces '/' with language-appropriate 'or' conjunction
+    - Removes parenthetical content like "(9)" from "nine (9)"
+    """
+    if lang == "ja":
+        return text
+    
+    result = text
+    
+    # Replace "/" with language-appropriate conjunction
+    result = result.replace("/", ". ")
+    
+    # Remove parenthetical content like "(9)", "(10,000)", etc.
+    result = re.sub(r'\s*\([^)]+\)\s*', ' ', result).strip()
+    
+    return result
+
+
 async def generate_audio(text: str, output_path: str, lang: str = "ja", max_retries: int = 3) -> tuple[bool, str]:
     """Generate audio file for a single text with random voice and retry logic."""
+    tts_text = get_tts_text(text, lang)
     for attempt in range(max_retries):
         voice = get_random_voice(lang)
         try:
-            communicate = edge_tts.Communicate(text, voice)
+            communicate = edge_tts.Communicate(tts_text, voice)
             await communicate.save(output_path)
             return True, voice
         except Exception as e:
