@@ -1,65 +1,76 @@
 <p align="center">
-  <img src="assets/favicon.svg" width="120" height="120" alt="車">
+  <img src="assets/favicon.svg" width="120" height="120" alt="日本語">
 </p>
 
-# 🚗 Oh! My Japanese Flashcard 🎴
+# 🎴 Oh! My Japanese Flashcard
 
-Ứng dụng flashcard học từ vựng tiếng Nhật cho lớp học lái xe.
+A Japanese vocabulary flashcard app with audio support and multiple dictionaries.
 
 ## 🌐 Demo
 
 [https://japanese.iamtuna.org/](https://japanese.iamtuna.org/)
 
-## ✨ Tính năng
+## 📚 Dictionaries
 
-- 📚 **Bộ từ vựng đầy đủ** - Các khẩu lệnh trong lớp học lái xe Nhật Bản
-- 🔊 **Phát âm audio** - Nghe phát âm chuẩn tiếng Nhật và tiếng Việt
-- 🇻🇳 **Đọc cả hai ngôn ngữ** - Tùy chọn đọc tiếng Việt sau tiếng Nhật
-- 🔄 **Hai chế độ học** - Nhật → Việt hoặc Việt → Nhật
-- ▶️ **Tự động phát** - Auto-play với chống tắt màn hình
-- 🔀 **Trộn bài ngẫu nhiên** - Học theo thứ tự ngẫu nhiên
-- ⭐ **Đánh dấu đã thuộc** - Theo dõi từ đã học, bỏ qua khi ôn tập
-- 💾 **Lưu tiến độ** - Tự động nhớ vị trí học
-- 🎧 **Media Session** - Điều khiển từ màn hình khóa
-- 📱 **PWA** - Cài đặt như app trên điện thoại
-- 📱 **Responsive** - Hoạt động tốt trên mobile và desktop
+- 🚗 **Driving School** - Commands and vocabulary for Japanese driving lessons
+- 📖 **JLPT N5** - Basic Japanese vocabulary for N5 level
+- 🏦 **Banking & Finance** - Essential vocabulary for banking transactions
+- 🏠 **Real Estate** - Vocabulary for renting and buying property in Japan
 
-## ⌨️ Phím tắt
+## ✨ Features
 
-| Phím | Chức năng |
-|------|-----------|
-| `←` `→` | Di chuyển thẻ |
-| `Space` `↑` `↓` | Lật thẻ |
-| `S` | Trộn bài |
-| `P` `Enter` | Phát âm |
+- 🔊 **Audio pronunciation** - Native Japanese audio with slow playback option
+- 🔄 **Two study modes** - Japanese → English or English → Japanese
+- ▶️ **Auto-play** - Continuous playback with screen wake lock
+- 🔀 **Shuffle mode** - Randomize card order
+- ⭐ **Mark as learned** - Track progress, skip learned words
+- 💾 **Save progress** - Automatically remembers your position
+- 🎧 **Media Session** - Control from lock screen
+- 📱 **PWA** - Install as a mobile app
+- 📱 **Responsive** - Works on mobile and desktop
 
-## 🛠️ Công nghệ
+## ⌨️ Keyboard Shortcuts
 
-- Alpine.js (reactive UI framework)
-- CSS3 với animations
+| Key | Action |
+|-----|--------|
+| `←` `→` | Navigate cards |
+| `Space` `↑` `↓` | Flip card |
+| `S` | Shuffle |
+| `P` `Enter` | Play audio |
+
+## 🛠️ Tech Stack
+
+- Alpine.js (reactive UI)
 - Edge TTS (audio generation)
 - Media Session API
 - Screen Wake Lock API
-- LocalStorage
 - PWA (Progressive Web App)
+- Cloudflare Pages
 
-## 📁 Cấu trúc
+## 📁 Structure
 
 ```
-├── assets/          # Favicon, icons, audio files
+├── assets/
+│   ├── dictionaries/     # Dictionary JSON + audio files
+│   └── icons/
 ├── js/
-│   └── alpine-store.js  # Alpine.js reactive store
+│   └── alpine-store.js
 ├── scripts/
 │   └── generate_audio.py
 ├── index.html
 ├── styles.css
-├── dictionary.json
 └── manifest.json
 ```
 
-## 📦 Triển khai
+## 🔊 Generating Audio
 
-Dự án được deploy tự động lên Cloudflare Pages qua Git integration.
+```bash
+source venv/bin/activate && python3 scripts/generate_audio.py <dictionary-name>
+```
+
+## 📦 Deployment
+
+Auto-deployed to Cloudflare Pages via Git integration.
 
 ## 📄 License
 
