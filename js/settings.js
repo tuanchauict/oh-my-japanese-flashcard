@@ -44,8 +44,20 @@ export const settingsMixin = {
     this.loadCategory(this.currentCategory.id);
   },
   
+  toggleChorusSound() {
+    const { Storage, SoundEffects } = window.FlashcardModules;
+    this.chorusSound = !this.chorusSound;
+    Storage.set(Storage.keys.CHORUS_SOUND, this.chorusSound);
+    // Start or stop the rhythm
+    if (this.chorusSound) {
+      SoundEffects.startTingRhythm();
+    } else {
+      SoundEffects.stopTingRhythm();
+    }
+  },
+  
   loadPreferences() {
-    const { Storage } = window.FlashcardModules;
+    const { Storage, SoundEffects } = window.FlashcardModules;
     // Use first mode from metadata as default
     const defaultMode = this.dictionary?.metadata?.modes?.[0]?.id || 'jp-vn';
     this.mode = Storage.get(Storage.keys.MODE, defaultMode);
@@ -54,7 +66,13 @@ export const settingsMixin = {
     this.readSlow = Storage.getBool(Storage.keys.READ_SLOW);
     this.spiralMode = Storage.getBool(Storage.keys.SPIRAL_MODE);
     this.skipRemembered = Storage.getBool(Storage.keys.SKIP_REMEMBERED);
+    this.chorusSound = Storage.getBool(Storage.keys.CHORUS_SOUND);
     const saved = Storage.getJSON(Storage.keys.REMEMBERED, []);
     this.remembered = new Set(saved);
+    
+    // Start rhythm if chorus sound was enabled
+    if (this.chorusSound) {
+      SoundEffects.startTingRhythm();
+    }
   }
 };

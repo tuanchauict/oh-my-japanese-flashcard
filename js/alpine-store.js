@@ -3,6 +3,7 @@
 
 import { Storage } from './storage.js';
 import { Audio } from './audio.js';
+import { SoundEffects } from './sound-effects.js';
 import { navigationMixin } from './navigation.js';
 import { settingsMixin } from './settings.js';
 import { rememberedMixin } from './remembered.js';
@@ -13,7 +14,7 @@ import { keyboardMixin } from './keyboard.js';
 import { dictionaryMixin } from './dictionary.js';
 
 // Expose modules globally for mixins to access
-window.FlashcardModules = { Storage, Audio };
+window.FlashcardModules = { Storage, Audio, SoundEffects };
 
 // Main flashcard store
 document.addEventListener('alpine:init', () => {
@@ -33,6 +34,7 @@ document.addEventListener('alpine:init', () => {
     readSlow: false,
     spiralMode: false,
     skipRemembered: false,
+    chorusSound: false,
     remembered: new Set(),
     
     // UI state

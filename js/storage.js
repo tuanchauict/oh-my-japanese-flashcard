@@ -9,7 +9,8 @@ export const StorageKeys = {
   READ_SLOW: 'flashcard-read-slow',
   SKIP_REMEMBERED: 'flashcard-skip-remembered',
   REMEMBERED: 'flashcard-remembered',
-  SPIRAL_MODE: 'flashcard-spiral-mode'
+  SPIRAL_MODE: 'flashcard-spiral-mode',
+  CHORUS_SOUND: 'flashcard-chorus-sound'
 };
 
 export const Storage = {

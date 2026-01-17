@@ -270,6 +270,13 @@
           @change="$store.app.toggleSkipRemembered()">
         <span>✅ Bỏ qua từ đã thuộc</span>
       </label>
+      <label class="checkbox-label">
+        <input 
+          type="checkbox" 
+          :checked="$store.app.chorusSound"
+          @change="$store.app.toggleChorusSound()">
+        <span>🎵 Âm thanh vui nhộn</span>
+      </label>
       <button 
         class="reset-btn" 
         @click="$store.app.resetRemembered()" 
