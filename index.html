@@ -20,13 +20,13 @@
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="apple-touch-icon" href="assets/icon-192.png">
   <link rel="manifest" href="manifest.json">
-  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   
   <link rel="stylesheet" href="styles.css?v=11">
   
   <!-- Alpine.js -->
-  <script src="js/alpine-store.js?v=10"></script>
+  <script type="module" src="js/alpine-store.js?v=11"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 <body x-data x-init="$store.app.init()">
@@ -214,7 +214,7 @@
             <template x-if="$store.app.rememberedInCategory.length === 0">
               <div class="remembered-list-empty">Chưa có từ nào được đánh dấu</div>
             </template>
-            <template x-for="word in $store.app.rememberedInCategory" :key="word.japanese">
+            <template x-for="(word, idx) in $store.app.rememberedInCategory" :key="word.japanese + '-' + idx">
               <li>
                 <div class="word-text">
                   <span class="word-japanese" x-text="word.japanese"></span>
