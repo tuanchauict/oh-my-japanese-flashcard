@@ -22,5 +22,11 @@
     "name": "🏠 Real Estate",
     "description": "Vocabulary for renting and buying property in Japan",
     "wordCount": 127
+  },
+  {
+    "id": "car-course",
+    "name": "🚗 Từ Vựng Lái Xe Nhật Bản (Karimen Giai đoạn 1)",
+    "description": "Bộ khẩu lệnh đầy đủ trong lớp học lái xe",
+    "wordCount": 16
   }
 ]
