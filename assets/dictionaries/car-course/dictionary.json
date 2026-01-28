@@ -1,0 +1,119 @@
+{
+  "metadata": {
+    "title": "🚗 Từ Vựng Lái Xe Nhật Bản (Karimen Giai đoạn 1)",
+    "subtitle": "Bộ khẩu lệnh sa hình và từ khóa lý thuyết quan trọng",
+    "primaryLanguage": "ja",
+    "meaningLanguage": "vi",
+    "modes": [
+      { "id": "jp-vn", "label": "🇯🇵 → 🇻🇳" },
+      { "id": "vn-jp", "label": "🇻🇳 → 🇯🇵" }
+    ],
+    "readBothLabel": "🔊 Đọc cả tiếng Việt sau tiếng Nhật"
+  },
+  "categories": [
+    {
+      "id": "teacher-noted",
+      "name": "Từ khóa giáo viên nhắc nhở",
+      "words": [
+        {
+          "japanese": "しっかり確認",
+          "romaji": "Shikkari kakunin",
+          "meaning": "Xác nhận/Kiểm tra thật kỹ (Lời dặn ngày 1/26)"
+        },
+        {
+          "japanese": "無線",
+          "romaji": "Musen",
+          "meaning": "Bộ đàm (Giáo viên lo lắng bạn khó nghe qua bộ đàm)"
+        },
+        {
+          "japanese": "巻き込み確認",
+          "romaji": "Makikomi kakunin",
+          "meaning": "Kiểm tra điểm mù (Tránh cuốn người/xe vào gầm khi rẽ)"
+        }
+      ]
+    },
+    {
+      "id": "theory-traps",
+      "name": "Bẫy lý thuyết (Bạn đã sai)",
+      "words": [
+        {
+          "japanese": "優先道路",
+          "romaji": "Yūsen dōro",
+          "meaning": "Đường ưu tiên (Không bắt buộc giảm tốc khi tầm nhìn kém)"
+        },
+        {
+          "japanese": "徐行",
+          "romaji": "Jokō",
+          "meaning": "Đi chậm (Tốc độ có thể dừng lại ngay lập tức)"
+        },
+        {
+          "japanese": "クリープ現象",
+          "romaji": "Kurīpu genshō",
+          "meaning": "Hiệu ứng bò (Chỉ xảy ra ở số D và R)"
+        },
+        {
+          "japanese": "自転車専用道路",
+          "romaji": "Jitensha sen'yō dōro",
+          "meaning": "Đường dành riêng cho xe đạp (Xe máy 50cc không được vào)"
+        }
+      ]
+    },
+    {
+      "id": "driving-commands",
+      "name": "Khẩu lệnh trong sân tập",
+      "words": [
+        {
+          "japanese": "加速して",
+          "romaji": "Kasoku shite",
+          "meaning": "Hãy tăng tốc"
+        },
+        {
+          "japanese": "減速して",
+          "romaji": "Gensoku shite",
+          "meaning": "Hãy giảm tốc"
+        },
+        {
+          "japanese": "合図出して",
+          "romaji": "Aizu dashite",
+          "meaning": "Hãy bật xi nhan"
+        },
+        {
+          "japanese": "合図消して",
+          "romaji": "Aizu keshite",
+          "meaning": "Hãy tắt xi nhan"
+        },
+        {
+          "japanese": "左に寄せて",
+          "romaji": "Hidari ni yosete",
+          "meaning": "Đi sát vào lề bên trái"
+        }
+      ]
+    },
+    {
+      "id": "courses",
+      "name": "Các bài sa hình Giai đoạn 1",
+      "words": [
+        {
+          "japanese": "S字",
+          "romaji": "Esu-ji",
+          "meaning": "Đường cong chữ S"
+        },
+        {
+          "japanese": "クランク",
+          "romaji": "Kuranku",
+          "meaning": "Đường chữ L (Cua vuông góc)"
+        },
+        {
+          "japanese": "坂道発進",
+          "romaji": "Sakamichi hasshin",
+          "meaning": "Khởi hành ngang dốc"
+        },
+        {
+          "japanese": "踏切",
+          "romaji": "Fumikiri",
+          "meaning": "Chỗ giao nhau với đường sắt"
+        }
+      ]
+    }
+  ]
+}
