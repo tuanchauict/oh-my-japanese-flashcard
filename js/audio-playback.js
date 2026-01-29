@@ -20,8 +20,8 @@ export const audioPlaybackMixin = {
     }
     
     if (this.readBoth) {
-      sequence.push({ text: word.meaning, delay: 300 });
-      
+      sequence.push({ text: word.meaning, delay: 300, volume: 0.5 });
+
       if (this.readExample && word.example) {
         // Play slow example first if enabled
         if (this.readSlow) {
@@ -31,7 +31,7 @@ export const audioPlaybackMixin = {
           sequence.push({ text: word.example, delay: 300 });
         }
         if (word.exampleMeaning) {
-          sequence.push({ text: word.exampleMeaning });
+          sequence.push({ text: word.exampleMeaning, volume: 0.5 });
         }
       }
     }
@@ -54,7 +54,7 @@ export const audioPlaybackMixin = {
     }
     
     if (word.exampleMeaning) {
-      sequence.push({ text: word.exampleMeaning });
+      sequence.push({ text: word.exampleMeaning, volume: 0.5 });
     }
     
     return sequence;

@@ -15,17 +15,18 @@ export const Audio = {
   },
   
   // Play a single audio, returns Promise
-  playOne(text, slow = false) {
+  playOne(text, slow = false, volume = 1.0) {
     return new Promise((resolve) => {
       // For slow audio, use the special key format
       const key = slow ? text + ':slow' : text;
       const path = this.mapping[key];
       if (!path) { resolve(); return; }
-      
+
       if (!this.current) this.current = new window.Audio();
       else this.current.pause();
-      
+
       this.current.src = path;
+      this.current.volume = volume;
       this.current.onended = resolve;
       this.current.onerror = resolve;
       this.current.play().catch(resolve);
@@ -33,19 +34,20 @@ export const Audio = {
   },
   
   // Play a sequence of audio items
-  // items: array of { text: string, delay?: number, slow?: boolean } or just string
+  // items: array of { text: string, delay?: number, slow?: boolean, volume?: number } or just string
   async playSequence(items) {
     for (const item of items) {
       const text = typeof item === 'string' ? item : item.text;
       const delay = typeof item === 'string' ? 0 : (item.delay || 0);
       const slow = typeof item === 'string' ? false : (item.slow || false);
-      
+      const volume = typeof item === 'string' ? 1.0 : (item.volume || 1.0);
+
       if (delay > 0) {
         await new Promise(r => setTimeout(r, delay));
       }
-      
+
       if (text) {
-        await this.playOne(text, slow);
+        await this.playOne(text, slow, volume);
       }
     }
   },
