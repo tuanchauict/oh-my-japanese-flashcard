@@ -19,39 +19,39 @@
         { "japanese": "左に曲がって", "romaji": "Hidari ni magarete", "meaning": "Rẽ trái" },
         { "japanese": "加速", "romaji": "Kasoku", "meaning": "Tăng tốc" },
         { "japanese": "減速", "romaji": "Gensoku", "meaning": "Giảm tốc" },
-        { "japanese": "徐行", "romaji": "Jokō", "meaning": "Đi chậm (tốc độ có thể dừng lại ngay)" },
-        { "japanese": "一時停止", "romaji": "Ichiji teishi", "meaning": "Dừng lại tạm thời (dừng hẳn 3 giây)" },
+        { "japanese": "徐行", "romaji": "Jokō", "meaning": "Đi chậm" },
+        { "japanese": "一時停止", "romaji": "Ichiji teishi", "meaning": "Dừng lại tạm thời" },
         { "japanese": "進路変更", "romaji": "Shinro henkō", "meaning": "Chuyển làn đường" },
         { "japanese": "合図出して", "romaji": "Aizu dashite", "meaning": "Bật xi nhan" },
         { "japanese": "合図消して", "romaji": "Aizu keshite", "meaning": "Tắt xi nhan" },
         { "japanese": "巻き込み確認", "romaji": "Makikomi kakunin", "meaning": "Kiểm tra điểm mù bên trái khi rẽ trái" },
-        { "japanese": "目視", "romaji": "Mokushi", "meaning": "Kiểm tra bằng mắt (quay đầu nhìn qua vai)" },
+        { "japanese": "目視", "romaji": "Mokushi", "meaning": "Kiểm tra bằng mắt" },
         { "japanese": "まっすぐ行って", "romaji": "Massugu itte", "meaning": "Đi thẳng" },
         { "japanese": "左に寄せて", "romaji": "Hidari ni yosete", "meaning": "Đi sát vào lề bên trái" },
         { "japanese": "右に寄せて", "romaji": "Migi ni yosete", "meaning": "Đi sát vào lề bên phải" },
         { "japanese": "突き当たりを右", "romaji": "Tsukiatari wo migi", "meaning": "Cuối đường rẽ phải" },
         { "japanese": "突き当たりを左", "romaji": "Tsukiatari wo hidari", "meaning": "Cuối đường rẽ trái" },
         { "japanese": "止まって", "romaji": "Tomatte", "meaning": "Dừng lại" },
-        { "japanese": "発進して", "romaji": "Hasshin shite", "meaning": "Xuất phát / Khởi hành" },
+        { "japanese": "発進して", "romaji": "Hasshin shite", "meaning": "Xuất phát" },
         { "japanese": "速度落として", "romaji": "Sokudo otoshite", "meaning": "Hạ tốc độ xuống" },
         { "japanese": "もっとゆっくり", "romaji": "Motto yukkuri", "meaning": "Chậm hơn nữa" },
         { "japanese": "そのまま進んで", "romaji": "Sonomama susunde", "meaning": "Cứ tiếp tục đi thẳng như vậy" },
-        { "japanese": "縁石に注意", "romaji": "Enseki ni chūi", "meaning": "Chú ý lề đường (coi chừng leo lề)" }
+        { "japanese": "縁石に注意", "romaji": "Enseki ni chūi", "meaning": "Chú ý lề đường" }
       ]
     },
     {
       "id": "driving-exercises-stage-1",
       "name": "Bài tập Sa hình (Giai đoạn 1)",
       "words": [
-        { "japanese": "S字", "romaji": "Esu-ji", "meaning": "Đường cong chữ S (Kiểm tra cách căn bánh xe)" },
-        { "japanese": "クランク", "romaji": "Kuranku", "meaning": "Đường chữ L (Khúc cua vuông góc hẹp)" },
-        { "japanese": "坂道発進", "romaji": "Sakamichi hasshin", "meaning": "Khởi hành ngang dốc (Dùng phanh tay)" },
-        { "japanese": "踏切", "romaji": "Fumikiri", "meaning": "Chỗ giao cắt đường sắt (Dừng lại, hạ kính nghe tàu)" },
+        { "japanese": "S字", "romaji": "Esu-ji", "meaning": "Đường cong chữ S" },
+        { "japanese": "クランク", "romaji": "Kuranku", "meaning": "Đường chữ L" },
+        { "japanese": "坂道発進", "romaji": "Sakamichi hasshin", "meaning": "Khởi hành ngang dốc" },
+        { "japanese": "踏切", "romaji": "Fumikiri", "meaning": "Chỗ giao cắt đường sắt" },
         { "japanese": "後退", "romaji": "Kōtai", "meaning": "Lùi xe" },
-        { "japanese": "狭路の通行", "romaji": "Kyōro no tsūkō", "meaning": "Đi vào đường hẹp (Nói chung cho S và Crank)" },
+        { "japanese": "狭路の通行", "romaji": "Kyōro no tsūkō", "meaning": "Đi vào đường hẹp" },
         { "japanese": "急停止", "romaji": "Kyūteishi", "meaning": "Dừng khẩn cấp" },
         { "japanese": "障害物回避", "romaji": "Shōgaibutsu kaihi", "meaning": "Tránh vật cản trên đường" },
-        { "japanese": "見通しの悪い交差点", "romaji": "Mitooshi no warui kōsaten", "meaning": "Ngã tư tầm nhìn kém (Phải đi chậm/Joko)" },
+        { "japanese": "見通しの悪い交差点", "romaji": "Mitooshi no warui kōsaten", "meaning": "Ngã tư tầm nhìn kém" },
         { "japanese": "目標に合わせた停止", "romaji": "Mokuhyō ni awaseta teishi", "meaning": "Dừng xe đúng vạch mục tiêu" }
       ]
     },
@@ -59,13 +59,13 @@
       "id": "road-terms-essential",
       "name": "Thuật ngữ Xe và Đường bộ",
       "words": [
-        { "japanese": "優先道路", "romaji": "Yūsen dōro", "meaning": "Đường ưu tiên (Vạch kẻ làn chạy xuyên qua giao lộ)" },
+        { "japanese": "優先道路", "romaji": "Yūsen dōro", "meaning": "Đường ưu tiên" },
         { "japanese": "通行帯", "romaji": "Tsūkō-tai", "meaning": "Làn đường giao thông" },
         { "japanese": "歩行者専用道路", "romaji": "Hokōsha sen'yō dōro", "meaning": "Đường dành riêng cho người đi bộ" },
         { "japanese": "自転車専用道路", "romaji": "Jitensha sen'yō dōro", "meaning": "Đường dành riêng cho xe đạp" },
-        { "japanese": "原動機付自転車", "romaji": "Gendōki tsuki jitensha", "meaning": "Xe máy dưới 50cc (Gentsuki)" },
+        { "japanese": "原動機付自転車", "romaji": "Gendōki tsuki jitensha", "meaning": "Xe máy dưới 50cc" },
         { "japanese": "オートマ車 / AT車", "romaji": "Ōtoma-sha", "meaning": "Xe số tự động" },
-        { "japanese": "クリープ現象", "romaji": "Kurīpu genshō", "meaning": "Hiệu ứng bò (xe tự chuyển động khi ở số D/R)" }
+        { "japanese": "クリープ現象", "romaji": "Kurīpu genshō", "meaning": "Hiệu ứng bò" }
       ]
     },
     {
@@ -73,9 +73,9 @@
       "name": "Trạng thái và Phản hồi",
       "words": [
         { "japanese": "わかりました", "romaji": "Wakarimashita", "meaning": "Tôi đã hiểu" },
-        { "japanese": "しっかり確認", "romaji": "Shikkari kakunin", "meaning": "Xác nhận kỹ lưỡng (lời dặn giáo viên 1/26)" },
+        { "japanese": "しっかり確認", "romaji": "Shikkari kakunin", "meaning": "Xác nhận kỹ lưỡng" },
         { "japanese": "安全確認", "romaji": "Anzen kakunin", "meaning": "Xác nhận an toàn" },
-        { "japanese": "難しい", "romaji": "Muzukashii", "meaning": "Khó (về việc nghe bộ đàm)" }
+        { "japanese": "難しい", "romaji": "Muzukashii", "meaning": "Khó" }
       ]
     }
   ]
