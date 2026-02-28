@@ -28,5 +28,11 @@
     "name": "🚗 Từ Vựng Lái Xe Nhật Bản (Karimen Giai đoạn 1)",
     "description": "Bộ khẩu lệnh đầy đủ trong lớp học lái xe",
     "wordCount": 43
+  },
+  {
+    "id": "bjt-language",
+    "name": "💼 BJT Từ Vựng Tiếng Nhật Thương Mại",
+    "description": "Từ vựng tiếng Nhật thương mại theo chuẩn BJT",
+    "wordCount": 40
   }
 ]

@@ -1,0 +1,267 @@
+{
+  "metadata": {
+    "title": "💼 BJT Từ Vựng Tiếng Nhật Thương Mại",
+    "subtitle": "Từ vựng tiếng Nhật thương mại theo chuẩn BJT",
+    "primaryLanguage": "ja",
+    "meaningLanguage": "vi",
+    "modes": [
+      {
+        "id": "jp-vn",
+        "label": "🇯🇵 → 🇻🇳"
+      },
+      {
+        "id": "vn-jp",
+        "label": "🇻🇳 → 🇯🇵"
+      }
+    ],
+    "readBothLabel": "🔊 Đọc cả tiếng Việt sau tiếng Nhật"
+  },
+  "categories": [
+    {
+      "id": "bjt-language-vocab",
+      "name": "BJT 言語 Vocabulary",
+      "words": [
+        {
+          "japanese": "下回る",
+          "romaji": "したまわる",
+          "meaning": "Thấp hơn, dưới mức",
+          "example": "下期の実績が上期の実績を大きく下回った会社はどれですか？"
+        },
+        {
+          "japanese": "立寄り",
+          "romaji": "たちより",
+          "meaning": "ghé qua một chút (mang sắc thái tạt qua, không ở lâu)",
+          "example": "銀行に立ち寄ってから行きます。"
+        },
+        {
+          "japanese": "控え",
+          "romaji": "ひかえ",
+          "meaning": "bản sao lưu (bản copy)",
+          "example": "コピー用紙を注文するため、注文書を書きました。注文書の控えはどのファイルにしまいますか？"
+        },
+        {
+          "japanese": "綴じる",
+          "romaji": "とじる",
+          "meaning": "đóng, kẹp, cho vào file",
+          "example": "注文書の控えをこのファイルにとじてください。"
+        },
+        {
+          "japanese": "即戦力",
+          "romaji": "そくせんりょく",
+          "meaning": "Có thể làm việc và đóng góp hiệu quả ngay lập tức.",
+          "example": "日本語と英語で仕事ができて即戦力になる人を一人採用します。誰を採用しますか？"
+        },
+        {
+          "japanese": "加減する",
+          "romaji": "かげんする",
+          "meaning": "Cộng trừ",
+          "example": "営業利益に営業外損益を加減した数字、いわゆる経常利益で最も儲かっているのはどの会社ですか？"
+        },
+        {
+          "japanese": "決断を下す",
+          "romaji": "けつだんをくだす",
+          "meaning": "Đưa ra quyết định",
+          "example": "社長は重大な局面で、素晴らしい決断を下した。"
+        },
+        {
+          "japanese": "目覚ましい",
+          "romaji": "めざましい",
+          "meaning": "Đáng kinh ngạc / Rực rỡ / Phi thường",
+          "example": "近年、この国では経済発展が目覚ましい。"
+        },
+        {
+          "japanese": "猛暑",
+          "romaji": "もうしょ",
+          "meaning": "Nắng nóng gay gắt / Nắng nóng khắc nghiệt / Cực kỳ nóng",
+          "example": "連日の猛暑で、体調を崩してしまった。"
+        },
+        {
+          "japanese": "迅速",
+          "romaji": "じんそく",
+          "meaning": "nhanh và gọn, mang tính công việc / trang trọng",
+          "example": "ご連絡ありがとうございます。迅速に対応いたします。"
+        },
+        {
+          "japanese": "求人",
+          "romaji": "きゅうじん",
+          "meaning": "tuyển dụng, tuyển nhân viên",
+          "example": "この会社は今求人しています。"
+        },
+        {
+          "japanese": "もらさずに",
+          "romaji": "もらさずに",
+          "meaning": "không bỏ sót, không để sót, không làm rơi mất thông tin",
+          "example": "商品の取扱説明書などの同封物も、もらさずにお返しください。"
+        },
+        {
+          "japanese": "西日が当たる部屋",
+          "romaji": "にしびがあたるへや",
+          "meaning": "phòng bị nắng chiều chiếu vào",
+          "example": "西日が当たる部屋は夏に暑いです。"
+        },
+        {
+          "japanese": "見定める",
+          "romaji": "みさだめる",
+          "meaning": "xác định rõ, đánh giá kỹ, xem xét kỹ để quyết định",
+          "example": "他の製品については、今後の販売実績やマーケットの動向を見定めた上で再検討したいと思います。"
+        },
+        {
+          "japanese": "景気の足取り",
+          "romaji": "けいきのあしどり",
+          "meaning": "tình hình diễn biến của nền kinh tế / nhịp độ của kinh tế",
+          "example": "短期の利率については景気の足取りや株価が安定していることから、当面、現状水準維持でトレンドが変わる要因はあまり見当たりません。"
+        },
+        {
+          "japanese": "当面",
+          "romaji": "とうめん",
+          "meaning": "trước mắt / tạm thời trong thời gian tới",
+          "example": "当面の課題はコスト削減です。"
+        },
+        {
+          "japanese": "現状水準維持",
+          "romaji": "げんじょうすいじゅんいじ",
+          "meaning": "duy trì mức hiện tại / giữ nguyên như bây giờ",
+          "example": "社員数は現状水準を維持します。"
+        },
+        {
+          "japanese": "見当たりません",
+          "romaji": "みあたりません",
+          "meaning": "không thấy / không tìm thấy / không nhận thấy",
+          "example": "トレンドが変わる要因はあまり見当たりません。"
+        },
+        {
+          "japanese": "利回り",
+          "romaji": "りまわり",
+          "meaning": "lợi suất / tỷ suất sinh lời",
+          "example": "この債券の利回りは0.8％です。"
+        },
+        {
+          "japanese": "穏やかな",
+          "romaji": "おだやかな",
+          "meaning": "nhẹ nhàng / ổn định / êm dịu",
+          "example": "穏やかな景気回復傾向が続くと予測される"
+        },
+        {
+          "japanese": "上昇",
+          "romaji": "じょうしょう",
+          "meaning": "tăng lên / tăng trưởng / đi lên",
+          "example": "売り上げが上昇傾向にあります。"
+        },
+        {
+          "japanese": "とどまる",
+          "romaji": "",
+          "meaning": "dừng lại / giữ ở mức / không vượt quá",
+          "example": "利回りは0.8％程度の上昇にとどまる。"
+        },
+        {
+          "japanese": "予想",
+          "romaji": "よそう",
+          "meaning": "dự đoán (cảm tính)",
+          "example": "雨が降ると予想しています。"
+        },
+        {
+          "japanese": "理念",
+          "romaji": "りねん",
+          "meaning": "Triết lý",
+          "example": "私は、その学校の教育の理念に共感している。"
+        },
+        {
+          "japanese": "観点",
+          "romaji": "かんてん",
+          "meaning": "Góc nhìn, khía cạnh",
+          "example": "地球温暖化防止の観点から、自転車の利用が見直されている。"
+        },
+        {
+          "japanese": "見解",
+          "romaji": "けんかい",
+          "meaning": "Nhận định, quan điểm",
+          "example": "大臣は、貿易の問題について政府の見解を述べた。"
+        },
+        {
+          "japanese": "作戦",
+          "romaji": "さくせん",
+          "meaning": "chiến lược, kế hoạch tác chiến, phương án hành động",
+          "example": "監督は、次の試合に勝つために、ある作戦を考えた。"
+        },
+        {
+          "japanese": "帰りがけに",
+          "romaji": "かえりがけに",
+          "meaning": "lúc trên đường về",
+          "example": "旅行の手続きも、昼休みや帰りがけにちょっと寄れて助かったですが。"
+        },
+        {
+          "japanese": "段取り",
+          "romaji": "だんどり",
+          "meaning": "kế hoạch – sắp xếp công việc – chuẩn bị trước",
+          "example": "まあ、避難訓練は必要だけど、ちょっと仕事の段取りがね。"
+        },
+        {
+          "japanese": "午後一",
+          "romaji": "ごごいち",
+          "meaning": "đầu giờ chiều",
+          "example": "私は午前中と夕方は伝票整理で忙しいから、午後一の日だかな。"
+        },
+        {
+          "japanese": "余っている",
+          "romaji": "あまっている",
+          "meaning": "Còn dư, còn thừa, còn lại. Không sử dụng đến, đang để không",
+          "example": "うちには四人がゆったり座れるような大型車で余ってるの、ないよな。"
+        },
+        {
+          "japanese": "仕入れ担当次長",
+          "romaji": "しいれたんとうじちょう",
+          "meaning": "Phó trưởng bộ phận phụ trách mua hàng / nhập hàng",
+          "example": "えーと、先方は仕入れ担当次長と技術者の二人でこっちが私と課長。全部で四人だ。"
+        },
+        {
+          "japanese": "心構え",
+          "romaji": "こころがまえ",
+          "meaning": "Tâm thế / sự chuẩn bị tinh thần / mindset",
+          "example": "みなさんは卒業後、社会人になる心構えはできていますか？"
+        },
+        {
+          "japanese": "意向",
+          "romaji": "いこう",
+          "meaning": "Ý định / mong muốn / dự định / hướng suy nghĩ",
+          "example": "私は、会社を辞める意向を、上司に伝えた。"
+        },
+        {
+          "japanese": "意気込み",
+          "romaji": "いきごみ",
+          "meaning": "Quyết tâm / khí thế / tinh thần hăng hái trước khi làm một việc gì đó",
+          "example": "そのテニス選手はインタビューで優勝への意気込みを語った。"
+        },
+        {
+          "japanese": "あらゆる職種",
+          "romaji": "あらゆるしょくしゅ",
+          "meaning": "mọi loại công việc, mọi vị trí",
+          "example": "設計、現場管理、営業、このほか建築関係のあらゆる職種をチャレンジできます。"
+        },
+        {
+          "japanese": "ひいては",
+          "romaji": "ひいては",
+          "meaning": "'Xa hơn nữa thì / hơn nữa thì / cuối cùng thì'. Đây là từ nối diễn đạt sự lan tỏa, phát triển thêm của tác động.",
+          "example": "それがお客様の満足につながり、ひいては自信のやりがいにもなるのだと思います。"
+        },
+        {
+          "japanese": "仕事に当たる",
+          "romaji": "しごとにあたる",
+          "meaning": "đảm nhận công việc, thực hiện công việc, tiến hành nhiệm vụ",
+          "example": "社員一人一人がやりがいを持って仕事に当たる。"
+        },
+        {
+          "japanese": "取り返せる",
+          "romaji": "とりかえせる",
+          "meaning": "có thể bù lại được\" / \"có thể khắc phục được",
+          "example": "遅れはどこかで取り返せるんですか？"
+        },
+        {
+          "japanese": "指示",
+          "romaji": "しじ",
+          "meaning": "Chỉ thị / Hướng dẫn / Lệnh",
+          "example": "原価率を下げるようにとの指示だよ。"
+        }
+      ]
+    }
+  ]
+}
