@@ -3,7 +3,7 @@
 
 export const settingsMixin = {
   // Settings state (initialized in main store)
-  // readBoth, readExample, readSlow, spiralMode, skipRemembered
+  // readBoth, readExample, readSlow, readTwice, spiralMode, skipRemembered
   
   setMode(mode) {
     const { Storage } = window.FlashcardModules;
@@ -28,6 +28,12 @@ export const settingsMixin = {
     const { Storage } = window.FlashcardModules;
     this.readSlow = !this.readSlow;
     Storage.set(Storage.keys.READ_SLOW, this.readSlow);
+  },
+
+  toggleReadTwice() {
+    const { Storage } = window.FlashcardModules;
+    this.readTwice = !this.readTwice;
+    Storage.set(Storage.keys.READ_TWICE, this.readTwice);
   },
   
   toggleSpiralMode() {
@@ -64,6 +70,7 @@ export const settingsMixin = {
     this.readBoth = Storage.getBool(Storage.keys.READ_BOTH);
     this.readExample = Storage.get(Storage.keys.READ_EXAMPLE, 'true') === 'true';
     this.readSlow = Storage.getBool(Storage.keys.READ_SLOW);
+    this.readTwice = Storage.getBool(Storage.keys.READ_TWICE);
     this.spiralMode = Storage.getBool(Storage.keys.SPIRAL_MODE);
     this.skipRemembered = Storage.getBool(Storage.keys.SKIP_REMEMBERED);
     this.chorusSound = Storage.getBool(Storage.keys.CHORUS_SOUND);

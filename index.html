@@ -236,11 +236,18 @@
     <!-- Audio Options -->
     <div class="audio-options">
       <label class="checkbox-label">
-        <input 
-          type="checkbox" 
+        <input
+          type="checkbox"
           :checked="$store.app.readSlow"
           @change="$store.app.toggleReadSlow()">
         <span>🐢 Đọc chậm trước</span>
+      </label>
+      <label class="checkbox-label">
+        <input
+          type="checkbox"
+          :checked="$store.app.readTwice"
+          @change="$store.app.toggleReadTwice()">
+        <span>🔁 Đọc từ hai lần</span>
       </label>
       <label class="checkbox-label">
         <input 

@@ -18,7 +18,17 @@ export const audioPlaybackMixin = {
     } else {
       sequence.push({ text: word.japanese });
     }
-    
+
+    // Repeat the word if readTwice is enabled
+    if (this.readTwice) {
+      if (this.readSlow) {
+        sequence.push({ text: word.japanese, slow: true, delay: 500 });
+        sequence.push({ text: word.japanese, delay: 300 });
+      } else {
+        sequence.push({ text: word.japanese, delay: 500 });
+      }
+    }
+
     if (this.readBoth) {
       sequence.push({ text: word.meaning, delay: 300, volume: 0.5 });
 
