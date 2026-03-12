@@ -335,7 +335,7 @@
         },
         {
           "japanese": "細々",
-          "romaji": "ほそぼそ",
+          "romaji": "ほそぼそ / こまごま",
           "meaning": "Tiết kiệm từng chút, sống tằn tiện, dè xẻn",
           "example": "給料は据え置きだし、物価は上がる一方だよ。じゃあ細々と切り詰めていくしかないってことだね。"
         }
@@ -470,6 +470,174 @@
           "romaji": "さります",
           "meaning": "Rời đi, rời khỏi",
           "example": "定年より少し早く、母の介護のために残念ではありますがUDを去ります。"
+        },
+        {
+          "japanese": "お中元",
+          "romaji": "おちゅうげん",
+          "meaning": "Tập tục tặng quà giữa năm ở Nhật (thường vào đầu – giữa tháng 7), để bày tỏ sự biết ơn",
+          "example": "あの、送っていただいたお中元リストの件なんですが、確認したいことがいつかありまして。"
+        }
+      ]
+    },
+    {
+      "id": "meeting-planning",
+      "name": "📋 Họp & Kế hoạch",
+      "words": [
+        {
+          "japanese": "前倒し",
+          "romaji": "まえだおし",
+          "meaning": "Đẩy sớm lên, rút ngắn thời gian, tiến độ",
+          "example": "それで、スケジュールの方は3ヶ月を前倒しできないかということをそちらに伺ってご相談したいので。"
+        },
+        {
+          "japanese": "収容",
+          "romaji": "しゅうよう",
+          "meaning": "Sức chứa",
+          "example": "54名収容で基本料金も他と比べて安いところがあるんですけど、どうでしょうか。"
+        },
+        {
+          "japanese": "確保する",
+          "romaji": "かくほする",
+          "meaning": "Giữ, đặt trước, dành",
+          "example": "ほぼ半日は確保することを考えると、一回の会議費の予算を超えてしまいますね。"
+        },
+        {
+          "japanese": "許容範囲",
+          "romaji": "きょようはんい",
+          "meaning": "Phạm vi có thể chấp nhận",
+          "example": "どうかな。天気が悪かったりしたら。6000円台なら許容範囲じゃない。"
+        },
+        {
+          "japanese": "ゆとりがある",
+          "romaji": "ゆとりがある",
+          "meaning": "Có dư, có khoảng trống, không quá chật",
+          "example": "うん。人数も多少ゆとりがあるなら良いと思うよ。"
+        },
+        {
+          "japanese": "位置付け",
+          "romaji": "いちづけ",
+          "meaning": "Định vị, xác định vai trò, xác định vị trí của một thứ trong toàn bộ bức tranh",
+          "example": "実は新商品の位置付けについて企画部とのすり合せに時間がかかってるんだ。"
+        },
+        {
+          "japanese": "すり合わせ",
+          "romaji": "すりあわせ",
+          "meaning": "Điều chỉnh, thống nhất, trao đổi để làm rõ quan điểm",
+          "example": "実は新商品の位置付けについて企画部とのすり合せに時間がかかってるんだ。"
+        },
+        {
+          "japanese": "持ち越す",
+          "romaji": "もちこす",
+          "meaning": "Hoãn lại sang lần sau, chuyển sang một thời điểm sau",
+          "example": "で、この件だけ、次回の会議に持ち越そうって上から待ったがかかってね。"
+        },
+        {
+          "japanese": "待ったがかかる",
+          "romaji": "まったがかかる",
+          "meaning": "Bị yêu cầu tạm dừng, chưa được tiến hành tiếp (thường bởi cấp trên)",
+          "example": "で、この件だけ、次回の会議に持ち越そうって上から待ったがかかってね。"
+        },
+        {
+          "japanese": "切り上げる",
+          "romaji": "きりあげる",
+          "meaning": "Kết thúc sớm, dừng lại trước khi hoàn thành toàn bộ",
+          "example": "こっちを今すぐ切り上げていくことにするよ"
+        },
+        {
+          "japanese": "定例",
+          "romaji": "ていれい",
+          "meaning": "Định kỳ, thường kỳ",
+          "example": "でも、木曜日は定例の役員会の資料作りがあるから、ダメだけど。"
+        },
+        {
+          "japanese": "一日がかり",
+          "romaji": "いちにちがかり",
+          "meaning": "Mất cả ngày, kéo dài suốt cả ngày (nhấn mạnh cảm giác tốn thời gian)",
+          "example": "一日がかりの会議なので、料金が気になります。"
+        },
+        {
+          "japanese": "備考欄",
+          "romaji": "びこうらん",
+          "meaning": "Mục ghi chú",
+          "example": "備考欄にそう書いといてくださいね。"
+        },
+        {
+          "japanese": "大盛況",
+          "romaji": "だいせいきょう",
+          "meaning": "Rất đông, rất thành công, cực kỳ nhộn nhịp",
+          "example": "お陰様でね。まだ10時だっていうのに、大盛況だよ。"
+        }
+      ]
+    },
+    {
+      "id": "system-issues",
+      "name": "🔧 Hệ thống & Sự cố",
+      "words": [
+        {
+          "japanese": "障害",
+          "romaji": "しょうがい",
+          "meaning": "Sự cố, lỗi, trục trặc (hệ thống). Khuyết tật về thể chất, phát triển",
+          "example": "これは最近3ヶ月の障害発生件数ですね。"
+        },
+        {
+          "japanese": "突出する",
+          "romaji": "とっしゅつする",
+          "meaning": "Nổi bật, cao bất thường",
+          "example": "わかりました。これは？ここの件数が突出しているようだけど。"
+        },
+        {
+          "japanese": "立て続けに",
+          "romaji": "たてつづけに",
+          "meaning": "Liên tiếp, nhiều lần trong thời gian ngắn",
+          "example": "はい、それは七月に1回だけ発生した障害が、今月は立て続けに起きまして"
+        },
+        {
+          "japanese": "復旧進捗",
+          "romaji": "ふっきゅうしんちょく",
+          "meaning": "Tiến độ khôi phục",
+          "example": "その前にこの障害に関しては復旧進捗確認が必要だから、至急関連部署に召集をかけてください。"
+        },
+        {
+          "japanese": "関連部署",
+          "romaji": "かんれんぶしょ",
+          "meaning": "Các bộ phận liên quan",
+          "example": "その前にこの障害に関しては復旧進捗確認が必要だから、至急関連部署に召集をかけてください。"
+        },
+        {
+          "japanese": "召集をかける",
+          "romaji": "しょうしゅうをかける",
+          "meaning": "Triệu tập, gọi họp gấp",
+          "example": "その前にこの障害に関しては復旧進捗確認が必要だから、至急関連部署に召集をかけてください。"
+        },
+        {
+          "japanese": "遅延",
+          "romaji": "ちえん",
+          "meaning": "Trì hoãn, chậm trễ",
+          "example": "システムトラブルにより、支払いに遅延が発生しました。"
+        },
+        {
+          "japanese": "前後",
+          "romaji": "ぜんご",
+          "meaning": "Khoảng, xấp xỉ, dao động",
+          "example": "はい、レベルが低いものについてはどれも毎月二十件から三十件前後で特に目立った変化はありません。"
+        },
+        {
+          "japanese": "段階",
+          "romaji": "だんかい",
+          "meaning": "Giai đoạn, bước, phase, stage",
+          "example": "あの、発注書の段階では確かにこの通りだったんですが、あとから注文を600に減らしていただくようにお願いした経緯がございまして。"
+        },
+        {
+          "japanese": "早期",
+          "romaji": "そうき",
+          "meaning": "Sớm (danh từ, trang trọng hơn, dùng trong công việc/văn bản)",
+          "example": "計画の早期見直しが必要です。"
+        },
+        {
+          "japanese": "拙い",
+          "romaji": "つたない",
+          "meaning": "Vụng về, kém, chưa hoàn thiện",
+          "example": "大変拙い資料で恐縮ですが、明日の会議の説明資料を作成しました。"
         }
       ]
     }
