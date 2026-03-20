@@ -35,6 +35,13 @@ export const settingsMixin = {
     this.readTwice = !this.readTwice;
     Storage.set(Storage.keys.READ_TWICE, this.readTwice);
   },
+
+  toggleReadReverse() {
+    const { Storage } = window.FlashcardModules;
+    this.readReverse = !this.readReverse;
+    Storage.set(Storage.keys.READ_REVERSE, this.readReverse);
+    this.loadCategory(this.currentCategory.id);
+  },
   
   toggleSpiralMode() {
     const { Storage } = window.FlashcardModules;
@@ -71,6 +78,7 @@ export const settingsMixin = {
     this.readExample = Storage.get(Storage.keys.READ_EXAMPLE, 'true') === 'true';
     this.readSlow = Storage.getBool(Storage.keys.READ_SLOW);
     this.readTwice = Storage.getBool(Storage.keys.READ_TWICE);
+    this.readReverse = Storage.getBool(Storage.keys.READ_REVERSE);
     this.spiralMode = Storage.getBool(Storage.keys.SPIRAL_MODE);
     this.skipRemembered = Storage.getBool(Storage.keys.SKIP_REMEMBERED);
     this.chorusSound = Storage.getBool(Storage.keys.CHORUS_SOUND);

@@ -250,6 +250,13 @@
         <span>🔁 Đọc từ hai lần</span>
       </label>
       <label class="checkbox-label">
+        <input
+          type="checkbox"
+          :checked="$store.app.readReverse"
+          @change="$store.app.toggleReadReverse()">
+        <span>⏪ Đọc từ mới trước (thứ tự ngược)</span>
+      </label>
+      <label class="checkbox-label">
         <input 
           type="checkbox" 
           :checked="$store.app.readBoth"

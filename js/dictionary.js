@@ -66,6 +66,10 @@ export const dictionaryMixin = {
     if (this.skipRemembered) {
       this.words = this.words.filter(w => !this.remembered.has(w.japanese));
     }
+
+    if (this.readReverse) {
+      this.words.reverse();
+    }
     
     // Only restore saved index on initial load, otherwise start from 0
     if (restoreIndex) {

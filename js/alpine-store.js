@@ -33,6 +33,7 @@ document.addEventListener('alpine:init', () => {
     readExample: true,
     readSlow: false,
     readTwice: false,
+    readReverse: false,
     spiralMode: false,
     skipRemembered: false,
     chorusSound: false,

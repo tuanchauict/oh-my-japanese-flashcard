@@ -7,6 +7,7 @@ export const StorageKeys = {
   READ_BOTH: 'flashcard-read-both',
   READ_EXAMPLE: 'flashcard-read-example',
   READ_SLOW: 'flashcard-read-slow',
+  READ_REVERSE: 'flashcard-read-reverse',
   SKIP_REMEMBERED: 'flashcard-skip-remembered',
   REMEMBERED: 'flashcard-remembered',
   SPIRAL_MODE: 'flashcard-spiral-mode',
