@@ -640,6 +640,186 @@
           "example": "大変拙い資料で恐縮ですが、明日の会議の説明資料を作成しました。"
         }
       ]
+    },
+    {
+      "id": "news-business",
+      "name": "📰 Tin tức & Kinh doanh",
+      "words": [
+        {
+          "japanese": "低迷",
+          "romaji": "ていめい",
+          "meaning": "Suy giảm, trì trệ",
+          "example": "いすゞが3年ぶりに社長交代､米関税とタイ低迷にどう立ち向かう？"
+        },
+        {
+          "japanese": "立ち向かう",
+          "romaji": "たちむかう",
+          "meaning": "Sẽ đối mặt, ứng phó",
+          "example": "いすゞが3年ぶりに社長交代､米関税とタイ低迷にどう立ち向かう？"
+        },
+        {
+          "japanese": "統合",
+          "romaji": "とうごう",
+          "meaning": "Sáp nhập, hợp nhất",
+          "example": "日野･三菱ふそう統合も控える中､最高益を狙える"
+        },
+        {
+          "japanese": "控える中",
+          "romaji": "ひかえるなか",
+          "meaning": "Trong bối cảnh sự kiện đó đang cận kề. Cấu trúc A を控える中、B (Trong bối cảnh A đang sắp diễn ra, thì B…)",
+          "example": "日野･三菱ふそう統合も控える中､最高益を狙える"
+        },
+        {
+          "japanese": "控える",
+          "romaji": "ひかえる",
+          "meaning": "(1) Sự kiện lớn sắp xảy ra. (2) Kiềm chế, hạn chế",
+          "example": "来月の組織変更を控えているので、今は大きな判断は難しいですね。"
+        },
+        {
+          "japanese": "狙う",
+          "romaji": "ねらう",
+          "meaning": "Nhắm tới (Chiến lược, chưa chắc đạt)",
+          "example": "日野･三菱ふそう統合も控える中､最高益を狙えるか"
+        },
+        {
+          "japanese": "ガチで",
+          "romaji": "ガチで",
+          "meaning": "Tiếng lóng, nghĩa là một cách thực sự, thật sự",
+          "example": "いすゞのUDトラックス買収の成果がまもなくガチで顕現する"
+        },
+        {
+          "japanese": "顕現する",
+          "romaji": "けんげんする",
+          "meaning": "Hiện ra rõ ràng, bắt đầu biểu hiện rõ ràng",
+          "example": "いすゞのUDトラックス買収の成果がまもなくガチで顕現する"
+        },
+        {
+          "japanese": "投入する",
+          "romaji": "とうにゅうする",
+          "meaning": "Đưa vào, tung ra (sản phẩm, hệ thống) - nhấn mạnh hành động đưa nguồn lực vào",
+          "example": "2028年に投入される共通プラットフォームに期待しかない"
+        },
+        {
+          "japanese": "導入する",
+          "romaji": "どうにゅうする",
+          "meaning": "Áp dụng, triển khai một hệ thống, phương pháp hoặc công nghệ mới",
+          "example": "新制度を導入する"
+        },
+        {
+          "japanese": "体制",
+          "romaji": "たいせい",
+          "meaning": "Cơ cấu, hệ thống, thể chế, cách tổ chức",
+          "example": "大手トラックメーカーの生産体制が大きく変わる"
+        },
+        {
+          "japanese": "視察",
+          "romaji": "しさつ",
+          "meaning": "Chuyến đi thăm, khảo sát",
+          "example": "あ、佐藤さん、本社の役員の来日の件なんですが、大阪視察の方、手配は大丈夫だね。"
+        },
+        {
+          "japanese": "現地",
+          "romaji": "げんち",
+          "meaning": "Địa phương, khu vực đó",
+          "example": "外国で暮らすなら、現地の言葉を勉強したほうがいいよ。"
+        },
+        {
+          "japanese": "一環",
+          "romaji": "いっかん",
+          "meaning": "Một phần trong tổng thể",
+          "example": "小学生たちは、社会科の授業の一環として工場見学に行った。"
+        },
+        {
+          "japanese": "形態",
+          "romaji": "けいたい",
+          "meaning": "Hình thái, hình thức tồn tại, cấu trúc",
+          "example": "昔に比べて、家族の形態は多様化している。"
+        },
+        {
+          "japanese": "実態",
+          "romaji": "じったい",
+          "meaning": "Thực trạng",
+          "example": "この国の貧困の実態について、調査が行われた。"
+        },
+        {
+          "japanese": "節約",
+          "romaji": "せつやく",
+          "meaning": "Tiết kiệm",
+          "example": "じゃあ、ここは？再開発で利用客も増えてるし。うちは一年契約ですから、36万円の節約になりますよ"
+        }
+      ]
+    },
+    {
+      "id": "expressions-grammar",
+      "name": "📝 Ngữ pháp & Cách nói",
+      "words": [
+        {
+          "japanese": "そもそも",
+          "romaji": "そもそも",
+          "meaning": "Vốn dĩ, Ngay từ đầu, Nói cho cùng, Thực chất thì",
+          "example": "この世代はそもそも世代人口が多いので、一人当たりの買い上げ金額は50代・60代にはかなわないんですが、トータルすると、たくさん買っていただいてるという結果になります。"
+        },
+        {
+          "japanese": "～にはかなわない",
+          "romaji": "～にはかなわない",
+          "meaning": "Không thể so với, không bằng",
+          "example": "品質は大手メーカーにはかなわない。"
+        },
+        {
+          "japanese": "かなわない",
+          "romaji": "かなわない",
+          "meaning": "Không thành hiện thực, không đạt được",
+          "example": "夢がかなわない。"
+        },
+        {
+          "japanese": "～のはかなわない",
+          "romaji": "～のはかなわない",
+          "meaning": "Không chịu nổi, không muốn",
+          "example": "そうか。大体の数字でもいいから、早く出してくれないかなぁ。また期末にバタバタするのはかなわないからなあ。"
+        }
+      ]
+    },
+    {
+      "id": "general-vocabulary",
+      "name": "📚 Từ vựng chung",
+      "words": [
+        {
+          "japanese": "威力",
+          "romaji": "いりょく",
+          "meaning": "Sức mạnh, Sức phá hoại, sức công phá",
+          "example": "台風の威力で、屋根が飛ばされてしまった。"
+        },
+        {
+          "japanese": "洪水",
+          "romaji": "こうずい",
+          "meaning": "Lũ lụt",
+          "example": "台風で、洪水が起きてしまった。"
+        },
+        {
+          "japanese": "本能",
+          "romaji": "ほんのう",
+          "meaning": "Bản năng",
+          "example": "睡眠を取ることは動物の本能だ"
+        },
+        {
+          "japanese": "架空",
+          "romaji": "かくう",
+          "meaning": "Hư cấu",
+          "example": "これは架空の物語です。"
+        },
+        {
+          "japanese": "ジャンル",
+          "romaji": "ジャンル",
+          "meaning": "Thể loại",
+          "example": "書店で、書籍をジャンルに分けて置いている。"
+        },
+        {
+          "japanese": "人目",
+          "romaji": "ひとめ",
+          "meaning": "Sự chú ý của người xung quanh",
+          "example": "森さんは、人目も気にせず、声を上げて泣いた。"
+        }
+      ]
     }
   ]
 }
