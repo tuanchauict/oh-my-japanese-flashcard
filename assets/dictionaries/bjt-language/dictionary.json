@@ -86,6 +86,54 @@
           "romaji": "うわのせする",
           "meaning": "Cộng thêm. Đẩy thêm vào",
           "example": "販売価格に上乗せする。"
+        },
+        {
+          "japanese": "高騰",
+          "romaji": "こうとう",
+          "meaning": "Tăng vọt, tăng cao đột ngột",
+          "example": "この度の原油価格の高騰でやむをえず、運賃を改定させていただくことになりまして。"
+        },
+        {
+          "japanese": "原油価格",
+          "romaji": "げんゆかかく",
+          "meaning": "Giá dầu thô",
+          "example": "この度の原油価格の高騰でやむをえず、運賃を改定させていただくことになりまして。"
+        },
+        {
+          "japanese": "運賃を改定",
+          "romaji": "うんちんをかいてい",
+          "meaning": "Điều chỉnh (tăng) giá vé",
+          "example": "この度の原油価格の高騰でやむをえず、運賃を改定させていただくことになりまして。"
+        },
+        {
+          "japanese": "免除",
+          "romaji": "めんじょ",
+          "meaning": "Miễn, giảm hoàn toàn",
+          "example": "育児休業給付金の支給や社会保険料の免除もあるため、働いているときより収入は減るものの、家計への影響は一定程度抑えられます。"
+        },
+        {
+          "japanese": "繰り上げ",
+          "romaji": "くりあげ",
+          "meaning": "Làm sớm hơn dự định",
+          "example": "住宅ローンの繰り上げ返済をするべき？ 繰り上げ返済のメリットとは？"
+        },
+        {
+          "japanese": "まかなう",
+          "romaji": "まかなう",
+          "meaning": "Xoay xở, trang trải",
+          "example": "つまり、平均的な高齢夫婦世帯でも、年金収入だけでは生活費をまかなえず、不足分を貯蓄で補う構造となっている点が重要です。"
+        },
+        {
+          "japanese": "補う",
+          "romaji": "おぎなう",
+          "meaning": "Bù đắp",
+          "example": "つまり、平均的な高齢夫婦世帯でも、年金収入だけでは生活費をまかなえず、不足分を貯蓄で補う構造となっている点が重要です。"
+        },
+        {
+          "japanese": "立ち行く",
+          "romaji": "たちいく",
+          "meaning": "Xoay xở được, vận hành trôi chảy",
+          "example": "息子さんが数ヶ月の育休を取るとしても、すぐに生活費が立ち行かなくなるとはかぎりません。"
         }
       ]
     },
@@ -152,6 +200,12 @@
           "romaji": "おさえておく",
           "meaning": "Biết trước, nắm chắc, chuẩn bị kỹ trước",
           "example": "ミーティングを成功させるために、どんなところを押さえておけばいいですか？"
+        },
+        {
+          "japanese": "無断",
+          "romaji": "むだん",
+          "meaning": "Không xin phép (tiêu cực, mang tính vi phạm)",
+          "example": "会社資料の無断持ち出しは禁止されています"
         }
       ]
     },
@@ -224,6 +278,30 @@
           "romaji": "よびかけ",
           "meaning": "Kêu gọi, vận động. Hô hào, phát động",
           "example": "学生に勉強会参加の呼びかけを行った。"
+        },
+        {
+          "japanese": "逸材",
+          "romaji": "いつざい",
+          "meaning": "Nhân tài xuất chúng, người có năng lực vượt trội",
+          "example": "山本選手は、10年に一人の逸材と言われている。"
+        },
+        {
+          "japanese": "幹部",
+          "romaji": "かんぶ",
+          "meaning": "Cán bộ chủ chốt",
+          "example": "田中さんは会社の幹部だ。"
+        },
+        {
+          "japanese": "機転",
+          "romaji": "きてん",
+          "meaning": "Sự nhanh trí, ứng biến linh hoạt, xoay xở thông minh trong tình huống bất ngờ",
+          "example": "彼は機転を利かせてその場を乗り切った。"
+        },
+        {
+          "japanese": "間柄",
+          "romaji": "あいだがら",
+          "meaning": "Mối quan hệ, quan hệ giữa người với người",
+          "example": "私と木村さんは親しい間柄。"
         }
       ]
     },
@@ -302,6 +380,30 @@
           "romaji": "めざましい",
           "meaning": "Đáng kinh ngạc. Rực rỡ. Phi thường",
           "example": "近年、この国では経済発展が目覚ましい。"
+        },
+        {
+          "japanese": "競争",
+          "romaji": "きょうそう",
+          "meaning": "Cạnh tranh",
+          "example": "ええ、この駅、競争が激しいらしくて向こうも強気なんですよ。"
+        },
+        {
+          "japanese": "強気",
+          "romaji": "つよき",
+          "meaning": "Thái độ cứng rắn, tự tin, không nhượng bộ",
+          "example": "ええ、この駅、競争が激しいらしくて向こうも強気なんですよ。"
+        },
+        {
+          "japanese": "見込み",
+          "romaji": "みこみ",
+          "meaning": "Triển vọng, khả năng có thể xảy ra. Dự kiến, ước tính (thời gian, số lượng, kết quả)",
+          "example": "今度入ってきた新人は、なかなか見込みがある。"
+        },
+        {
+          "japanese": "拡大",
+          "romaji": "かくだい",
+          "meaning": "Mở rộng, gia tăng",
+          "example": "住宅ローン「月9万円」が加わると赤字は拡大する可能性"
         }
       ]
     },
@@ -422,6 +524,18 @@
           "romaji": "てばなしで",
           "meaning": "Một cách vô điều kiện, không chút dè dặt, không suy nghĩ thêm",
           "example": "社会保険料の半分を事業主が負担してくれているといっても、それを手放しで喜ぶわけにはいきません。"
+        },
+        {
+          "japanese": "あいにく",
+          "romaji": "あいにく",
+          "meaning": "Rất tiếc",
+          "example": "あいにく田中は今日は、一日中出ておりますが"
+        },
+        {
+          "japanese": "むき出し",
+          "romaji": "むきだし",
+          "meaning": "Lộ ra trần trụi, không che đậy, để lộ hoàn toàn",
+          "example": "感情をむき出しにして怒る"
         }
       ]
     },
@@ -476,6 +590,18 @@
           "romaji": "おちゅうげん",
           "meaning": "Tập tục tặng quà giữa năm ở Nhật (thường vào đầu – giữa tháng 7), để bày tỏ sự biết ơn",
           "example": "あの、送っていただいたお中元リストの件なんですが、確認したいことがいつかありまして。"
+        },
+        {
+          "japanese": "縁",
+          "romaji": "えん",
+          "meaning": "Duyên, duyên trời",
+          "example": "ご縁があって、愛さんと結婚することになりました。"
+        },
+        {
+          "japanese": "既婚",
+          "romaji": "きこん",
+          "meaning": "Đã kết hôn",
+          "example": "森さんは独身ですが、田中さんは既婚です。"
         }
       ]
     },
@@ -746,6 +872,12 @@
           "romaji": "せつやく",
           "meaning": "Tiết kiệm",
           "example": "じゃあ、ここは？再開発で利用客も増えてるし。うちは一年契約ですから、36万円の節約になりますよ"
+        },
+        {
+          "japanese": "統計",
+          "romaji": "とうけい",
+          "meaning": "Thống kê",
+          "example": "本記事では、住宅ローン月9万円のケースについて、公的統計をもとに家計への影響を整理します。"
         }
       ]
     },
@@ -776,6 +908,36 @@
           "romaji": "～のはかなわない",
           "meaning": "Không chịu nổi, không muốn",
           "example": "そうか。大体の数字でもいいから、早く出してくれないかなぁ。また期末にバタバタするのはかなわないからなあ。"
+        },
+        {
+          "japanese": "ただでさえ",
+          "romaji": "ただでさえ",
+          "meaning": "Vốn dĩ đã…, ngay cả khi bình thường thì đã…",
+          "example": "それにしてもなぁ。ただでさえ、広告費を減らせってうるさく言われてるのに。"
+        },
+        {
+          "japanese": "同然",
+          "romaji": "どうぜん",
+          "meaning": "Coi như, gần như",
+          "example": "たくさんがあった宿題も、ここまでやれば終わったも同然だ。"
+        },
+        {
+          "japanese": "～するようになる",
+          "romaji": "するようになる",
+          "meaning": "Quy định, hiện tượng tự nhiên dẫn đến thay đổi. Hay dùng trong mô tả hệ thống, thay đổi xã hội",
+          "example": "駅なかに店が出店するようになった。"
+        },
+        {
+          "japanese": "とはかぎりません",
+          "romaji": "とはかぎりません",
+          "meaning": "Không nhất thiết là, không thể nói chắc rằng, không phải lúc nào cũng",
+          "example": "息子さんが数ヶ月の育休を取るとしても、すぐに生活費が立ち行かなくなるとはかぎりません。"
+        },
+        {
+          "japanese": "一定",
+          "romaji": "いってい",
+          "meaning": "Nhất định, ổn định, cố định trong một phạm vi nào đó, không thay đổi quá lớn",
+          "example": "家計への影響は一定程度抑えられます。"
         }
       ]
     },
@@ -818,6 +980,234 @@
           "romaji": "ひとめ",
           "meaning": "Sự chú ý của người xung quanh",
           "example": "森さんは、人目も気にせず、声を上げて泣いた。"
+        },
+        {
+          "japanese": "側面",
+          "romaji": "そくめん",
+          "meaning": "Mặt bên, mặt hông. Khía cạnh, phương diện",
+          "example": "普段は厳しい田中さんにも、優しい側面がある。"
+        },
+        {
+          "japanese": "異色",
+          "romaji": "いしょく",
+          "meaning": "Khác biệt, độc lạ (trung tính, tích cực)",
+          "example": "この映画は異色の作品として話題になった。"
+        },
+        {
+          "japanese": "万事",
+          "romaji": "ばんじ",
+          "meaning": "Mọi việc (trang trọng, văn viết)",
+          "example": "兄に助けてくれたおかげで、万事がうまくいった。"
+        },
+        {
+          "japanese": "万事休す",
+          "romaji": "ばんじきゅうす",
+          "meaning": "Mọi việc đi vào ngõ cụt (hay dùng trong báo, truyện)",
+          "example": "資金は尽き、支援もなく、万事休すとなった"
+        },
+        {
+          "japanese": "ありきたり",
+          "romaji": "ありきたり",
+          "meaning": "Quen, nhàm, tầm thường, hơi chê",
+          "example": "それは、ありきたりの言葉では表現できないほど、美しかった。"
+        }
+      ]
+    },
+    {
+      "id": "w260303",
+      "name": "📅 W260303 (03/03/2026)",
+      "words": [
+        {
+          "japanese": "競争",
+          "romaji": "きょうそう",
+          "meaning": "Cạnh tranh",
+          "example": "ええ、この駅、競争が激しいらしくて向こうも強気なんですよ。"
+        },
+        {
+          "japanese": "ただでさえ",
+          "romaji": "ただでさえ",
+          "meaning": "Vốn dĩ đã…, ngay cả khi bình thường thì đã…",
+          "example": "それにしてもなぁ。ただでさえ、広告費を減らせってうるさく言われてるのに。"
+        },
+        {
+          "japanese": "強気",
+          "romaji": "つよき",
+          "meaning": "Thái độ cứng rắn, tự tin, không nhượng bộ",
+          "example": "ええ、この駅、競争が激しいらしくて向こうも強気なんですよ。"
+        },
+        {
+          "japanese": "側面",
+          "romaji": "そくめん",
+          "meaning": "Mặt bên, mặt hông. Khía cạnh, phương diện",
+          "example": "普段は厳しい田中さんにも、優しい側面がある。"
+        },
+        {
+          "japanese": "同然",
+          "romaji": "どうぜん",
+          "meaning": "Coi như, gần như",
+          "example": "たくさんがあった宿題も、ここまでやれば終わったも同然だ。"
+        },
+        {
+          "japanese": "異色",
+          "romaji": "いしょく",
+          "meaning": "Khác biệt, độc lạ (trung tính, tích cực)",
+          "example": "この映画は異色の作品として話題になった。"
+        },
+        {
+          "japanese": "万事",
+          "romaji": "ばんじ",
+          "meaning": "Mọi việc (trang trọng, văn viết)",
+          "example": "兄に助けてくれたおかげで、万事がうまくいった。"
+        },
+        {
+          "japanese": "万事休す",
+          "romaji": "ばんじきゅうす",
+          "meaning": "Mọi việc đi vào ngõ cụt (hay dùng trong báo, truyện)",
+          "example": "資金は尽き、支援もなく、万事休すとなった"
+        },
+        {
+          "japanese": "見込み",
+          "romaji": "みこみ",
+          "meaning": "Triển vọng, khả năng có thể xảy ra. Dự kiến, ước tính (thời gian, số lượng, kết quả)",
+          "example": "今度入ってきた新人は、なかなか見込みがある。"
+        },
+        {
+          "japanese": "ありきたり",
+          "romaji": "ありきたり",
+          "meaning": "Quen, nhàm, tầm thường, hơi chê",
+          "example": "それは、ありきたりの言葉では表現できないほど、美しかった。"
+        },
+        {
+          "japanese": "むき出し",
+          "romaji": "むきだし",
+          "meaning": "Lộ ra trần trụi, không che đậy, để lộ hoàn toàn",
+          "example": "感情をむき出しにして怒る"
+        },
+        {
+          "japanese": "無断",
+          "romaji": "むだん",
+          "meaning": "Không xin phép (tiêu cực, mang tính vi phạm)",
+          "example": "会社資料の無断持ち出しは禁止されています"
+        },
+        {
+          "japanese": "あいにく",
+          "romaji": "あいにく",
+          "meaning": "Rất tiếc",
+          "example": "あいにく田中は今日は、一日中出ておりますが"
+        },
+        {
+          "japanese": "高騰",
+          "romaji": "こうとう",
+          "meaning": "Tăng vọt, tăng cao đột ngột",
+          "example": "この度の原油価格の高騰でやむをえず、運賃を改定させていただくことになりまして。"
+        },
+        {
+          "japanese": "原油価格",
+          "romaji": "げんゆかかく",
+          "meaning": "Giá dầu thô",
+          "example": "この度の原油価格の高騰でやむをえず、運賃を改定させていただくことになりまして。"
+        },
+        {
+          "japanese": "運賃を改定",
+          "romaji": "うんちんをかいてい",
+          "meaning": "Điều chỉnh (tăng) giá vé",
+          "example": "この度の原油価格の高騰でやむをえず、運賃を改定させていただくことになりまして。"
+        },
+        {
+          "japanese": "間柄",
+          "romaji": "あいだがら",
+          "meaning": "Mối quan hệ, quan hệ giữa người với người",
+          "example": "私と木村さんは親しい間柄。"
+        },
+        {
+          "japanese": "逸材",
+          "romaji": "いつざい",
+          "meaning": "Nhân tài xuất chúng, người có năng lực vượt trội",
+          "example": "山本選手は、10年に一人の逸材と言われている。"
+        },
+        {
+          "japanese": "縁",
+          "romaji": "えん",
+          "meaning": "Duyên, duyên trời",
+          "example": "ご縁があって、愛さんと結婚することになりました。"
+        },
+        {
+          "japanese": "幹部",
+          "romaji": "かんぶ",
+          "meaning": "Cán bộ chủ chốt",
+          "example": "田中さんは会社の幹部だ。"
+        },
+        {
+          "japanese": "既婚",
+          "romaji": "きこん",
+          "meaning": "Đã kết hôn",
+          "example": "森さんは独身ですが、田中さんは既婚です。"
+        },
+        {
+          "japanese": "機転",
+          "romaji": "きてん",
+          "meaning": "Sự nhanh trí, ứng biến linh hoạt, xoay xở thông minh trong tình huống bất ngờ",
+          "example": "彼は機転を利かせてその場を乗り切った。"
+        },
+        {
+          "japanese": "～するようになる",
+          "romaji": "するようになる",
+          "meaning": "Quy định, hiện tượng tự nhiên dẫn đến thay đổi. Hay dùng trong mô tả hệ thống, thay đổi xã hội",
+          "example": "駅なかに店が出店するようになった。"
+        },
+        {
+          "japanese": "立ち行く",
+          "romaji": "たちいく",
+          "meaning": "Xoay xở được, vận hành trôi chảy",
+          "example": "息子さんが数ヶ月の育休を取るとしても、すぐに生活費が立ち行かなくなるとはかぎりません。"
+        },
+        {
+          "japanese": "とはかぎりません",
+          "romaji": "とはかぎりません",
+          "meaning": "Không nhất thiết là, không thể nói chắc rằng, không phải lúc nào cũng",
+          "example": "息子さんが数ヶ月の育休を取るとしても、すぐに生活費が立ち行かなくなるとはかぎりません。"
+        },
+        {
+          "japanese": "免除",
+          "romaji": "めんじょ",
+          "meaning": "Miễn, giảm hoàn toàn",
+          "example": "育児休業給付金の支給や社会保険料の免除もあるため、働いているときより収入は減るものの、家計への影響は一定程度抑えられます。"
+        },
+        {
+          "japanese": "一定",
+          "romaji": "いってい",
+          "meaning": "Nhất định, ổn định, cố định trong một phạm vi nào đó, không thay đổi quá lớn",
+          "example": "家計への影響は一定程度抑えられます。"
+        },
+        {
+          "japanese": "統計",
+          "romaji": "とうけい",
+          "meaning": "Thống kê",
+          "example": "本記事では、住宅ローン月9万円のケースについて、公的統計をもとに家計への影響を整理します。"
+        },
+        {
+          "japanese": "繰り上げ",
+          "romaji": "くりあげ",
+          "meaning": "Làm sớm hơn dự định",
+          "example": "住宅ローンの繰り上げ返済をするべき？ 繰り上げ返済のメリットとは？"
+        },
+        {
+          "japanese": "まかなう",
+          "romaji": "まかなう",
+          "meaning": "Xoay xở, trang trải",
+          "example": "つまり、平均的な高齢夫婦世帯でも、年金収入だけでは生活費をまかなえず、不足分を貯蓄で補う構造となっている点が重要です。"
+        },
+        {
+          "japanese": "拡大",
+          "romaji": "かくだい",
+          "meaning": "Mở rộng, gia tăng",
+          "example": "住宅ローン「月9万円」が加わると赤字は拡大する可能性"
+        },
+        {
+          "japanese": "補う",
+          "romaji": "おぎなう",
+          "meaning": "Bù đắp",
+          "example": "つまり、平均的な高齢夫婦世帯でも、年金収入だけでは生活費をまかなえず、不足分を貯蓄で補う構造となっている点が重要です。"
         }
       ]
     }
