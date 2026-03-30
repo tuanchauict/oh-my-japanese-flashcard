@@ -278,15 +278,19 @@
         <span>🌀 Chế độ xoáy ốc (ôn lại từ trước)</span>
       </label>
       <label class="checkbox-label">
-        <input 
-          type="checkbox" 
-          :checked="$store.app.skipRemembered"
-          @change="$store.app.toggleSkipRemembered()">
-        <span>✅ Bỏ qua từ đã thuộc</span>
+        <span>📋 Lọc từ:</span>
+        <select
+          :value="$store.app.wordFilter"
+          @change="$store.app.setWordFilter($event.target.value)"
+          style="margin-left: 6px; padding: 2px 6px; border-radius: 4px; border: 1px solid #ccc;">
+          <option value="all">Tất cả</option>
+          <option value="skip">Bỏ qua từ đã thuộc</option>
+          <option value="only">Chỉ ôn từ đã thuộc</option>
+        </select>
       </label>
       <label class="checkbox-label">
-        <input 
-          type="checkbox" 
+        <input
+          type="checkbox"
           :checked="$store.app.chorusSound"
           @change="$store.app.toggleChorusSound()">
         <span>🎵 Âm thanh vui nhộn</span>

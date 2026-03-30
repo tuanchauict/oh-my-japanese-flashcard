@@ -63,8 +63,10 @@ export const dictionaryMixin = {
       this.words = [...cat.words];
     }
     
-    if (this.skipRemembered) {
+    if (this.wordFilter === 'skip') {
       this.words = this.words.filter(w => !this.remembered.has(w.japanese));
+    } else if (this.wordFilter === 'only') {
+      this.words = this.words.filter(w => this.remembered.has(w.japanese));
     }
 
     if (this.readReverse) {

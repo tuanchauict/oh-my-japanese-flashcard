@@ -3,7 +3,7 @@
 
 export const settingsMixin = {
   // Settings state (initialized in main store)
-  // readBoth, readExample, readSlow, readTwice, spiralMode, skipRemembered
+  // readBoth, readExample, readSlow, readTwice, spiralMode, wordFilter
   
   setMode(mode) {
     const { Storage } = window.FlashcardModules;
@@ -50,10 +50,10 @@ export const settingsMixin = {
     Storage.set(Storage.keys.SPIRAL_MODE, this.spiralMode);
   },
   
-  toggleSkipRemembered() {
+  setWordFilter(value) {
     const { Storage } = window.FlashcardModules;
-    this.skipRemembered = !this.skipRemembered;
-    Storage.set(Storage.keys.SKIP_REMEMBERED, this.skipRemembered);
+    this.wordFilter = value;
+    Storage.set(Storage.keys.WORD_FILTER, value);
     this.loadCategory(this.currentCategory.id);
   },
   
@@ -80,7 +80,7 @@ export const settingsMixin = {
     this.readTwice = Storage.getBool(Storage.keys.READ_TWICE);
     this.readReverse = Storage.getBool(Storage.keys.READ_REVERSE);
     this.spiralMode = Storage.getBool(Storage.keys.SPIRAL_MODE);
-    this.skipRemembered = Storage.getBool(Storage.keys.SKIP_REMEMBERED);
+    this.wordFilter = Storage.get(Storage.keys.WORD_FILTER, 'all');
     this.chorusSound = Storage.getBool(Storage.keys.CHORUS_SOUND);
     const saved = Storage.getJSON(Storage.keys.REMEMBERED, []);
     this.remembered = new Set(saved);

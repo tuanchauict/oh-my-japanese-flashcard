@@ -18,7 +18,7 @@ export const rememberedMixin = {
       this.remembered.delete(jp);
     } else {
       this.remembered.add(jp);
-      if (this.skipRemembered) {
+      if (this.wordFilter !== 'all') {
         this.pendingRemoval = true;
       }
     }
@@ -28,7 +28,7 @@ export const rememberedMixin = {
   unmarkRemembered(japanese) {
     this.remembered.delete(japanese);
     this.saveRemembered();
-    if (this.skipRemembered) {
+    if (this.wordFilter !== 'all') {
       this.loadCategory(this.currentCategory.id);
     }
   },
@@ -37,7 +37,7 @@ export const rememberedMixin = {
     if (confirm('Xóa tất cả đánh dấu đã thuộc?')) {
       this.remembered.clear();
       this.saveRemembered();
-      if (this.skipRemembered) {
+      if (this.wordFilter !== 'all') {
         this.loadCategory(this.currentCategory.id);
       }
     }
