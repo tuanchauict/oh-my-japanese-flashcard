@@ -5,8 +5,14 @@
     "primaryLanguage": "ja",
     "meaningLanguage": "vi",
     "modes": [
-      { "id": "jp-vn", "label": "🇯🇵 → 🇻🇳" },
-      { "id": "vn-jp", "label": "🇻🇳 → 🇯🇵" }
+      {
+        "id": "jp-vn",
+        "label": "🇯🇵 → 🇻🇳"
+      },
+      {
+        "id": "vn-jp",
+        "label": "🇻🇳 → 🇯🇵"
+      }
     ],
     "readBothLabel": "🔊 Đọc cả tiếng Việt sau tiếng Nhật"
   },
@@ -134,6 +140,42 @@
           "romaji": "たちいく",
           "meaning": "Xoay xở được, vận hành trôi chảy",
           "example": "息子さんが数ヶ月の育休を取るとしても、すぐに生活費が立ち行かなくなるとはかぎりません。"
+        },
+        {
+          "japanese": "乖離",
+          "romaji": "かいり",
+          "meaning": "Chênh lệch , Sai lệch , Lệch nhau",
+          "example": "乖離を可視化することで、予実管理の精度向上を図ります。"
+        },
+        {
+          "japanese": "目安",
+          "romaji": "めやす",
+          "meaning": "mốc tham khảo , tiêu chuẩn ước chừng , chỉ số để căn cứ",
+          "example": "老後資金2000万円という水準はひとつの目安とされていますが、住宅ローンが残っている場合には前提が異なります。"
+        },
+        {
+          "japanese": "補填　補てん",
+          "romaji": "ほてん",
+          "meaning": "dùng tiền,tài sản khác để bù phần thiếu hụt đã phát sinh.",
+          "example": "年金収入では不足する生活費を補てんする。"
+        },
+        {
+          "japanese": "取り崩し",
+          "romaji": "とりくずし",
+          "meaning": "rút dần tiền đã tích lũy (tiết kiệm, tài sản) để chi tiêu",
+          "example": "しかし、そこに住宅ローンという固定支出が加わると、資金の取り崩しペースが大きく変わります。"
+        },
+        {
+          "japanese": "通算",
+          "romaji": "つうさん",
+          "meaning": "tính gộp tổng cộng toàn bộ, không phân biệt liên tục hay gián đoạn",
+          "example": "給付額は、休業開始から通算180日までは休業前賃金の67％、180日を超えると50％が目安です。"
+        },
+        {
+          "japanese": "下支えする",
+          "romaji": "したざさえする",
+          "meaning": "chống đỡ từ phía dưới / giữ cho không bị tụt mạnh",
+          "example": "育休中は健康保険料や厚生年金保険料が免除されるため、手取りを下支えする効果がありますが、住民税は別です。"
         }
       ]
     },
@@ -206,6 +248,18 @@
           "romaji": "むだん",
           "meaning": "Không xin phép (tiêu cực, mang tính vi phạm)",
           "example": "会社資料の無断持ち出しは禁止されています"
+        },
+        {
+          "japanese": "可視化",
+          "romaji": "かしか",
+          "meaning": "làm cho nhìn thấy được, dễ theo dõi, minh bạch hóa",
+          "example": "明日金曜日にご説明しますが、来期からUDT殿における資材費低減活動の可視化並びに促進を目的として上記を推進します。"
+        },
+        {
+          "japanese": "精度",
+          "romaji": "せいど",
+          "meaning": "Độ chính xác , Độ tin cậy của kết quả",
+          "example": "予実管理の精度向上を図る。"
         }
       ]
     },
@@ -404,6 +458,30 @@
           "romaji": "かくだい",
           "meaning": "Mở rộng, gia tăng",
           "example": "住宅ローン「月9万円」が加わると赤字は拡大する可能性"
+        },
+        {
+          "japanese": "促進",
+          "romaji": "そくしん",
+          "meaning": "thúc đẩy, đẩy nhanh, khuyến khích phát triển",
+          "example": "尚、この３指標の管理,記入促進はいすゞは澤本さんにお願い。UDTの窓口（購買部門）をご任命願います。"
+        },
+        {
+          "japanese": "推察",
+          "romaji": "すいさつ",
+          "meaning": "Đánh giá , nhận định , suy xét trên cơ sở hiện trạng",
+          "example": "乖離の要因は需要変動によるものと推察しています。"
+        },
+        {
+          "japanese": "推進",
+          "romaji": "すいしん",
+          "meaning": "Thúc đẩy một việc gì đó tiến lên một cách có tổ chức, có trách nhiệm và liên tục",
+          "example": "また、本活動はいすゞで行っている推進体制同様に購買内のリソースを使い完結することを考えています。"
+        },
+        {
+          "japanese": "図る",
+          "romaji": "はかる",
+          "meaning": "Nhằm,đặt mục tiêu để đạt được, nỗ lực thực hiện, thúc đẩy để đạt tới một trạng thái nào đó",
+          "example": "乖離を可視化することで、予実管理の精度向上を図ります。"
         }
       ]
     },
@@ -440,6 +518,18 @@
           "romaji": "ほそぼそ / こまごま",
           "meaning": "Tiết kiệm từng chút, sống tằn tiện, dè xẻn",
           "example": "給料は据え置きだし、物価は上がる一方だよ。じゃあ細々と切り詰めていくしかないってことだね。"
+        },
+        {
+          "japanese": "支障",
+          "romaji": "ししょう",
+          "meaning": "trở ngại, ảnh hưởng tiêu cực",
+          "example": "特に、息子さんが数ヶ月の育休を取ると聞くと、「収入はどうなるのか」「生活に支障は出ないのか」と不安に感じるのは自然なことです。"
+        },
+        {
+          "japanese": "行き詰まる",
+          "romaji": "いきつまる",
+          "meaning": "bế tắc, không xoay xở được",
+          "example": "このように、育休中も一定の収入が見込めるため、数ヶ月休むからといっても、すぐに生活費に行き詰まるとはかぎりません。"
         }
       ]
     },
@@ -536,6 +626,30 @@
           "romaji": "むきだし",
           "meaning": "Lộ ra trần trụi, không che đậy, để lộ hoàn toàn",
           "example": "感情をむき出しにして怒る"
+        },
+        {
+          "japanese": "前向きに考えます",
+          "romaji": "まえむきにかんがえます",
+          "meaning": "Chưa quyết + khả năng thấp",
+          "example": "社内で前向きに考えさせていただきます。"
+        },
+        {
+          "japanese": "生じる",
+          "romaji": "しょうじる",
+          "meaning": "phát sinh , nảy sinh , xảy ra một cách tự nhiên (không do chủ ý trực tiếp)",
+          "example": "65歳以上の夫婦のみの無職世帯では、平均的にも月4万円程度の赤字が生じており、老後は貯蓄の取り崩しを前提とした家計構造となっています。"
+        },
+        {
+          "japanese": "おおむね",
+          "romaji": "おおむね",
+          "meaning": "nhìn chung / khoảng / xấp xỉ",
+          "example": "既存の給付と合わせて給付率80％となり、手取りでおおむね10割相当とされています。"
+        },
+        {
+          "japanese": "和らげる",
+          "romaji": "やわらける",
+          "meaning": "làm dịu đi / làm giảm bớt / làm nhẹ lại",
+          "example": "この制度は夫婦で育休を取りやすくすることを目的としており、生活費への不安を和らげる仕組みとして注目されています。"
         }
       ]
     },
@@ -938,6 +1052,60 @@
           "romaji": "いってい",
           "meaning": "Nhất định, ổn định, cố định trong một phạm vi nào đó, không thay đổi quá lớn",
           "example": "家計への影響は一定程度抑えられます。"
+        },
+        {
+          "japanese": "するようにな",
+          "romaji": "するようにな",
+          "meaning": "Quy định, hiện tượng tự nhiên dẫn đến thay đổi, Hay dùng trong: mô tả hệ thống, thay đổi xã hội, business, báo cáo",
+          "example": "駅なかに店が出店するようになった。"
+        },
+        {
+          "japanese": "〜における",
+          "romaji": "〜における",
+          "meaning": "trong , đối với , thuộc về (ngữ cảnh học thuật, thống kê)",
+          "example": "総務省統計局の同調査では、65歳以上の夫婦のみの無職世帯における1ヶ月の住居費は平均1万7739円とされています。"
+        },
+        {
+          "japanese": "すなわち",
+          "romaji": "すなわち",
+          "meaning": "tức là , nói cách khác",
+          "example": "仮に月9万円の住宅ローン返済がある場合には、平均的な住居費との差額分、すなわち約7万円の追加負担が生じることになります。"
+        },
+        {
+          "japanese": "もともと",
+          "romaji": "もともと",
+          "meaning": "Vốn dĩ, ban đầu (Trạng thái sẵn có)",
+          "example": "もともとの計画を変更する。"
+        },
+        {
+          "japanese": "もっとも",
+          "romaji": "もっとも",
+          "meaning": "Tuy nhiên , Dẫu vậy (Không phủ định hoàn toàn câu trước, mà: 👉 “Nói vậy thôi, nhưng cần hiểu cho đúng…”)",
+          "example": "もっとも、これはあくまで平均値を基にした試算であり、実際には生活水準や個々の年金受給額などによって結果は変わります。"
+        },
+        {
+          "japanese": "あくまで",
+          "romaji": "あくまで",
+          "meaning": "chỉ là, thuần túy là (nhấn mạnh giới hạn)",
+          "example": "もっとも、これはあくまで平均値を基にした試算であり、実際には生活水準や個々の年金受給額などによって結果は変わります。"
+        },
+        {
+          "japanese": "Aのように（Bできない , Bしにくい）",
+          "romaji": "Aのように（Bできない , Bしにくい）",
+          "meaning": "không giống A, nên B không thể , khó thực hiện",
+          "example": "特に注意したいのは、住宅ローンは支出削減が難しい固定費である点です。食費や娯楽費のように調整しにくいため、家計への影響が長期にわたって続く可能性があります。"
+        },
+        {
+          "japanese": "〜わけではない",
+          "romaji": "〜わけではない",
+          "meaning": "Không hẳn là…, không phải cứ … là …",
+          "example": "育休を数ヶ月取っても、収入がゼロになるわけではない"
+        },
+        {
+          "japanese": "とはかぎらない",
+          "romaji": "とはかぎらない",
+          "meaning": "Không nhất thiết là…, không phải lúc nào cũng…",
+          "example": "まず知っておきたいのは、育休中であってもすぐに無収入になるとはかぎらないという点です。"
         }
       ]
     },
@@ -1208,6 +1376,174 @@
           "romaji": "おぎなう",
           "meaning": "Bù đắp",
           "example": "つまり、平均的な高齢夫婦世帯でも、年金収入だけでは生活費をまかなえず、不足分を貯蓄で補う構造となっている点が重要です。"
+        },
+        {
+          "japanese": "するようにな",
+          "romaji": "するようにな",
+          "meaning": "Quy định, hiện tượng tự nhiên dẫn đến thay đổi, Hay dùng trong: mô tả hệ thống, thay đổi xã hội, business, báo cáo",
+          "example": "駅なかに店が出店するようになった。"
+        }
+      ]
+    },
+    {
+      "id": "w260401",
+      "name": "📅 W260401 (01/04/2026)",
+      "words": [
+        {
+          "japanese": "前向きに考えます",
+          "romaji": "まえむきにかんがえます",
+          "meaning": "Chưa quyết + khả năng thấp",
+          "example": "社内で前向きに考えさせていただきます。"
+        },
+        {
+          "japanese": "可視化",
+          "romaji": "かしか",
+          "meaning": "làm cho nhìn thấy được, dễ theo dõi, minh bạch hóa",
+          "example": "明日金曜日にご説明しますが、来期からUDT殿における資材費低減活動の可視化並びに促進を目的として上記を推進します。"
+        },
+        {
+          "japanese": "促進",
+          "romaji": "そくしん",
+          "meaning": "thúc đẩy, đẩy nhanh, khuyến khích phát triển",
+          "example": "尚、この３指標の管理,記入促進はいすゞは澤本さんにお願い。UDTの窓口（購買部門）をご任命願います。"
+        },
+        {
+          "japanese": "精度",
+          "romaji": "せいど",
+          "meaning": "Độ chính xác , Độ tin cậy của kết quả",
+          "example": "予実管理の精度向上を図る。"
+        },
+        {
+          "japanese": "推察",
+          "romaji": "すいさつ",
+          "meaning": "Đánh giá , nhận định , suy xét trên cơ sở hiện trạng",
+          "example": "乖離の要因は需要変動によるものと推察しています。"
+        },
+        {
+          "japanese": "乖離",
+          "romaji": "かいり",
+          "meaning": "Chênh lệch , Sai lệch , Lệch nhau",
+          "example": "乖離を可視化することで、予実管理の精度向上を図ります。"
+        },
+        {
+          "japanese": "推進",
+          "romaji": "すいしん",
+          "meaning": "Thúc đẩy một việc gì đó tiến lên một cách có tổ chức, có trách nhiệm và liên tục",
+          "example": "また、本活動はいすゞで行っている推進体制同様に購買内のリソースを使い完結することを考えています。"
+        },
+        {
+          "japanese": "〜における",
+          "romaji": "〜における",
+          "meaning": "trong , đối với , thuộc về (ngữ cảnh học thuật, thống kê)",
+          "example": "総務省統計局の同調査では、65歳以上の夫婦のみの無職世帯における1ヶ月の住居費は平均1万7739円とされています。"
+        },
+        {
+          "japanese": "すなわち",
+          "romaji": "すなわち",
+          "meaning": "tức là , nói cách khác",
+          "example": "仮に月9万円の住宅ローン返済がある場合には、平均的な住居費との差額分、すなわち約7万円の追加負担が生じることになります。"
+        },
+        {
+          "japanese": "もともと",
+          "romaji": "もともと",
+          "meaning": "Vốn dĩ, ban đầu (Trạng thái sẵn có)",
+          "example": "もともとの計画を変更する。"
+        },
+        {
+          "japanese": "もっとも",
+          "romaji": "もっとも",
+          "meaning": "Tuy nhiên , Dẫu vậy (Không phủ định hoàn toàn câu trước, mà: 👉 “Nói vậy thôi, nhưng cần hiểu cho đúng…”)",
+          "example": "もっとも、これはあくまで平均値を基にした試算であり、実際には生活水準や個々の年金受給額などによって結果は変わります。"
+        },
+        {
+          "japanese": "あくまで",
+          "romaji": "あくまで",
+          "meaning": "chỉ là, thuần túy là (nhấn mạnh giới hạn)",
+          "example": "もっとも、これはあくまで平均値を基にした試算であり、実際には生活水準や個々の年金受給額などによって結果は変わります。"
+        },
+        {
+          "japanese": "図る",
+          "romaji": "はかる",
+          "meaning": "Nhằm,đặt mục tiêu để đạt được, nỗ lực thực hiện, thúc đẩy để đạt tới một trạng thái nào đó",
+          "example": "乖離を可視化することで、予実管理の精度向上を図ります。"
+        },
+        {
+          "japanese": "目安",
+          "romaji": "めやす",
+          "meaning": "mốc tham khảo , tiêu chuẩn ước chừng , chỉ số để căn cứ",
+          "example": "老後資金2000万円という水準はひとつの目安とされていますが、住宅ローンが残っている場合には前提が異なります。"
+        },
+        {
+          "japanese": "補填　補てん",
+          "romaji": "ほてん",
+          "meaning": "dùng tiền,tài sản khác để bù phần thiếu hụt đã phát sinh.",
+          "example": "年金収入では不足する生活費を補てんする。"
+        },
+        {
+          "japanese": "取り崩し",
+          "romaji": "とりくずし",
+          "meaning": "rút dần tiền đã tích lũy (tiết kiệm, tài sản) để chi tiêu",
+          "example": "しかし、そこに住宅ローンという固定支出が加わると、資金の取り崩しペースが大きく変わります。"
+        },
+        {
+          "japanese": "Aのように（Bできない , Bしにくい）",
+          "romaji": "Aのように（Bできない , Bしにくい）",
+          "meaning": "không giống A, nên B không thể , khó thực hiện",
+          "example": "特に注意したいのは、住宅ローンは支出削減が難しい固定費である点です。食費や娯楽費のように調整しにくいため、家計への影響が長期にわたって続く可能性があります。"
+        },
+        {
+          "japanese": "生じる",
+          "romaji": "しょうじる",
+          "meaning": "phát sinh , nảy sinh , xảy ra một cách tự nhiên (không do chủ ý trực tiếp)",
+          "example": "65歳以上の夫婦のみの無職世帯では、平均的にも月4万円程度の赤字が生じており、老後は貯蓄の取り崩しを前提とした家計構造となっています。"
+        },
+        {
+          "japanese": "支障",
+          "romaji": "ししょう",
+          "meaning": "trở ngại, ảnh hưởng tiêu cực",
+          "example": "特に、息子さんが数ヶ月の育休を取ると聞くと、「収入はどうなるのか」「生活に支障は出ないのか」と不安に感じるのは自然なことです。"
+        },
+        {
+          "japanese": "〜わけではない",
+          "romaji": "〜わけではない",
+          "meaning": "Không hẳn là…, không phải cứ … là …",
+          "example": "育休を数ヶ月取っても、収入がゼロになるわけではない"
+        },
+        {
+          "japanese": "とはかぎらない",
+          "romaji": "とはかぎらない",
+          "meaning": "Không nhất thiết là…, không phải lúc nào cũng…",
+          "example": "まず知っておきたいのは、育休中であってもすぐに無収入になるとはかぎらないという点です。"
+        },
+        {
+          "japanese": "行き詰まる",
+          "romaji": "いきつまる",
+          "meaning": "bế tắc, không xoay xở được",
+          "example": "このように、育休中も一定の収入が見込めるため、数ヶ月休むからといっても、すぐに生活費に行き詰まるとはかぎりません。"
+        },
+        {
+          "japanese": "通算",
+          "romaji": "つうさん",
+          "meaning": "tính gộp tổng cộng toàn bộ, không phân biệt liên tục hay gián đoạn",
+          "example": "給付額は、休業開始から通算180日までは休業前賃金の67％、180日を超えると50％が目安です。"
+        },
+        {
+          "japanese": "おおむね",
+          "romaji": "おおむね",
+          "meaning": "nhìn chung / khoảng / xấp xỉ",
+          "example": "既存の給付と合わせて給付率80％となり、手取りでおおむね10割相当とされています。"
+        },
+        {
+          "japanese": "和らげる",
+          "romaji": "やわらける",
+          "meaning": "làm dịu đi / làm giảm bớt / làm nhẹ lại",
+          "example": "この制度は夫婦で育休を取りやすくすることを目的としており、生活費への不安を和らげる仕組みとして注目されています。"
+        },
+        {
+          "japanese": "下支えする",
+          "romaji": "したざさえする",
+          "meaning": "chống đỡ từ phía dưới / giữ cho không bị tụt mạnh",
+          "example": "育休中は健康保険料や厚生年金保険料が免除されるため、手取りを下支えする効果がありますが、住民税は別です。"
         }
       ]
     }
