@@ -176,6 +176,30 @@
           "romaji": "したざさえする",
           "meaning": "chống đỡ từ phía dưới / giữ cho không bị tụt mạnh",
           "example": "育休中は健康保険料や厚生年金保険料が免除されるため、手取りを下支えする効果がありますが、住民税は別です。"
+        },
+        {
+          "japanese": "上向き",
+          "romaji": "うわむき",
+          "meaning": "Hướng lên, chiều hướng tốt lên, tiến triển theo hướng tích cực,",
+          "example": "ようやく景気が上向きになってきた"
+        },
+        {
+          "japanese": "保障",
+          "romaji": "ほしょう",
+          "meaning": "bảo đảm , bảo hộ , đảm bảo quyền lợi",
+          "example": "そうですか。一番安いのですと、保障　の期間が10年になりますが。"
+        },
+        {
+          "japanese": "蓄え",
+          "romaji": "たくわえ",
+          "meaning": "tiền tích lũy, khoản để dành",
+          "example": "旦那は本当にやりすぎなくらい子育てをしてくれており、収入を気にする必要ないほどに蓄えを持ってから育休にふたりとも入ったので、問題はありませんでした。"
+        },
+        {
+          "japanese": "下落",
+          "romaji": "げらく",
+          "meaning": "giảm , sụt giảm , đi xuống",
+          "example": "株価下落は「終盤に近づきつつある」ことを示す証拠が増えていると指摘した。"
         }
       ]
     },
@@ -356,6 +380,24 @@
           "romaji": "あいだがら",
           "meaning": "Mối quan hệ, quan hệ giữa người với người",
           "example": "私と木村さんは親しい間柄。"
+        },
+        {
+          "japanese": "素養",
+          "romaji": "そよう",
+          "meaning": "Nền tảng sẵn có , tư chất , tố chất , kiến thức – kỹ năng cơ bản được tích lũy từ trước",
+          "example": "私には絵の素養がない。"
+        },
+        {
+          "japanese": "人柄",
+          "romaji": "ひとがら",
+          "meaning": "Nhân cách, tính cách",
+          "example": "兄はハンサムではないが、人柄はいい。"
+        },
+        {
+          "japanese": "率いる",
+          "romaji": "ひきいる",
+          "meaning": "lãnh đạo, đứng đầu (rất hay dùng trong báo chí)",
+          "example": "マイケル・ウィルソン氏が率いるチームは、リセッション（景気後退）や利上げを伴わなかった過去の「成長懸念」の事例を挙げ、株価下落は「終盤に近づきつつある」ことを示す証拠が増えていると指摘した。"
         }
       ]
     },
@@ -482,6 +524,42 @@
           "romaji": "はかる",
           "meaning": "Nhằm,đặt mục tiêu để đạt được, nỗ lực thực hiện, thúc đẩy để đạt tới một trạng thái nào đó",
           "example": "乖離を可視化することで、予実管理の精度向上を図ります。"
+        },
+        {
+          "japanese": "視点",
+          "romaji": "してん",
+          "meaning": "Góc nhìn , quan điểm , cách nhìn nhận vấn đề",
+          "example": "竹田先生は、独自の視点から鋭い意見を言う。"
+        },
+        {
+          "japanese": "視野",
+          "romaji": "しや",
+          "meaning": "Tầm nhìn",
+          "example": "留学の経験によって、視野が広がった。"
+        },
+        {
+          "japanese": "在り方",
+          "romaji": "ありかた",
+          "meaning": "cách nên tồn tại , thiết kế đúng đắn",
+          "example": "この制度の在り方に、疑問を呈した医師に話を聞いた"
+        },
+        {
+          "japanese": "踏み出す",
+          "romaji": "ふみだす",
+          "meaning": "bước ra, bước tới (ẩn dụ cho quyết định khó khăn)",
+          "example": "「若い世代が治療に踏み出しやすくなり、結果的に妊娠数が増えたのは明らかにプラスです」と田中院長は評価する。"
+        },
+        {
+          "japanese": "問題視する",
+          "romaji": "もんだいしする",
+          "meaning": "coi là vấn đề , xem đó là vấn đề , đặt vấn đề",
+          "example": "そのこと自体は制度上の話だが、田中院長が問題視するのは、その運用の実態だ。"
+        },
+        {
+          "japanese": "迫られる",
+          "romaji": "せまられる",
+          "meaning": "bị dồn ép bởi hoàn cảnh, không thể tránh, phải đưa ra quyết định,hành động khó khăn",
+          "example": "体外受精に進むのは大きな決断を迫られる"
         }
       ]
     },
@@ -530,6 +608,12 @@
           "romaji": "いきつまる",
           "meaning": "bế tắc, không xoay xở được",
           "example": "このように、育休中も一定の収入が見込めるため、数ヶ月休むからといっても、すぐに生活費に行き詰まるとはかぎりません。"
+        },
+        {
+          "japanese": "脅威",
+          "romaji": "きょうい",
+          "meaning": "mối đe dọa",
+          "example": "ただし、依然として米金融当局による利上げが株式にとって脅威だという。"
         }
       ]
     },
@@ -650,6 +734,30 @@
           "romaji": "やわらける",
           "meaning": "làm dịu đi / làm giảm bớt / làm nhẹ lại",
           "example": "この制度は夫婦で育休を取りやすくすることを目的としており、生活費への不安を和らげる仕組みとして注目されています。"
+        },
+        {
+          "japanese": "皆無",
+          "romaji": "かいむ",
+          "meaning": "hoàn toàn không có (0%)",
+          "example": "アンケートの結果、ストレスを感じていない人は皆無だった。"
+        },
+        {
+          "japanese": "おおよそ",
+          "romaji": "おおよそ",
+          "meaning": "ước chừng, xấp xỉ",
+          "example": "厚生労働省は試算ツールも案内しており、休業前の賃金をもとにおおよその受給額を確認できます。"
+        },
+        {
+          "japanese": "頻繁",
+          "romaji": "ひんぱん",
+          "meaning": "Xảy ra liên tục trong thời gian ngắn",
+          "example": "同じトラブルが頻繁に発生しています。"
+        },
+        {
+          "japanese": "知り尽くしている",
+          "romaji": "しりつくしている",
+          "meaning": "biết rất tường tận, hiểu rõ toàn bộ, không còn gì chưa biết",
+          "example": "それを骨の髄まで知り尽くしているからこそ、こうした患者さんに出会うたび、やり切れない理不尽さを覚えます」と問題提起した。"
         }
       ]
     },
@@ -992,6 +1100,36 @@
           "romaji": "とうけい",
           "meaning": "Thống kê",
           "example": "本記事では、住宅ローン月9万円のケースについて、公的統計をもとに家計への影響を整理します。"
+        },
+        {
+          "japanese": "大手",
+          "romaji": "おおて",
+          "meaning": "Công ty , tập đoàn lớn, có tên tuổi",
+          "example": "彼は大手に就職した"
+        },
+        {
+          "japanese": "形勢",
+          "romaji": "けいせい",
+          "meaning": "Tình hình, thế cục, cục diện, diễn biến (đang xảy ra và có xu hướng thay đổi)",
+          "example": "今回の選挙はでは、本田氏の形勢が不利とされている。"
+        },
+        {
+          "japanese": "浮上している",
+          "romaji": "ふじょうしている",
+          "meaning": "đang nổi lên, được nhìn thấy dần",
+          "example": "現場では制度運用をめぐる新たなゆがみも浮上している。"
+        },
+        {
+          "japanese": "画期的",
+          "romaji": "かっきてき",
+          "meaning": "mang tính đột phá, đánh dấu kỷ nguyên mới",
+          "example": "少子化対策の画期的な転換点とされ、若い世代の不妊治療へのハードルは確実に下がった。"
+        },
+        {
+          "japanese": "転換点",
+          "romaji": "てんかんてん",
+          "meaning": "điểm chuyển hướng , bước ngoặt",
+          "example": "少子化対策の画期的な転換点とされ、若い世代の不妊治療へのハードルは確実に下がった。"
         }
       ]
     },
@@ -1106,6 +1244,54 @@
           "romaji": "とはかぎらない",
           "meaning": "Không nhất thiết là…, không phải lúc nào cũng…",
           "example": "まず知っておきたいのは、育休中であってもすぐに無収入になるとはかぎらないという点です。"
+        },
+        {
+          "japanese": "経る",
+          "romaji": "へる",
+          "meaning": "trải qua , thông qua một giai đoạn",
+          "example": "給付金は申請を経て支給されるため、毎月の給料のように同じ感覚で入るとはかぎりません。"
+        },
+        {
+          "japanese": "依然として",
+          "romaji": "いぜんとして",
+          "meaning": "vẫn còn MẶC DÙ ai đó có thể nghĩ rằng nó đã hoặc nên thay đổi",
+          "example": "景気の先行きは依然として不透明"
+        },
+        {
+          "japanese": "差し掛かる",
+          "romaji": "さしかける",
+          "meaning": "bắt đầu chạm tới , bước vào một giai đoạn nào đó",
+          "example": "S&P500の調整は終盤に差し掛かっている可能性がある一方、利上げリスクは依然として残っている。"
+        },
+        {
+          "japanese": "疑問を呈する",
+          "romaji": "ぎもんをていする",
+          "meaning": "đặt nghi vấn",
+          "example": "医師が疑問を呈した"
+        },
+        {
+          "japanese": "状態を呈する",
+          "romaji": "じょうたいをていする",
+          "meaning": "thể hiện trạng thái",
+          "example": "異常な状態を呈している"
+        },
+        {
+          "japanese": "～と題する",
+          "romaji": "とだいする",
+          "meaning": "mang tiêu đề là ~ (rất báo chí)",
+          "example": "「外国籍の生活保護の方が体外受精を無料で行う現実」と題したブログを公開。"
+        },
+        {
+          "japanese": "議論を呼ぶ",
+          "romaji": "ぎろんをよぶ",
+          "meaning": "gây ra tranh luận (cụm cố định)",
+          "example": "この内容がネット上で、大きな議論を呼んだ。"
+        },
+        {
+          "japanese": "骨の髄まで",
+          "romaji": "ほね の ずい まで",
+          "meaning": "đến mức sâu nhất có thể, thấm thía hoàn toàn, từ tận đáy lòng , từ trải nghiệm sâu sắc",
+          "example": "それを骨の髄まで知り尽くしているからこそ、こうした患者さんに出会うたび、やり切れない理不尽さを覚えます」と問題提起した。"
         }
       ]
     },
@@ -1178,6 +1364,18 @@
           "romaji": "ありきたり",
           "meaning": "Quen, nhàm, tầm thường, hơi chê",
           "example": "それは、ありきたりの言葉では表現できないほど、美しかった。"
+        },
+        {
+          "japanese": "なじみ",
+          "romaji": "なじみ",
+          "meaning": "Sự quen thuộc , quen thân , quen dần và hòa hợp",
+          "example": "ここはなじみの居酒屋です。"
+        },
+        {
+          "japanese": "本性",
+          "romaji": "ほんしょう",
+          "meaning": "Bản tính thật , bản chất thật bên trong của một người",
+          "example": "人の本性を見抜くことは難しい。"
         }
       ]
     },
@@ -1544,6 +1742,210 @@
           "romaji": "したざさえする",
           "meaning": "chống đỡ từ phía dưới / giữ cho không bị tụt mạnh",
           "example": "育休中は健康保険料や厚生年金保険料が免除されるため、手取りを下支えする効果がありますが、住民税は別です。"
+        }
+      ]
+    },
+    {
+      "id": "w260402",
+      "name": "📅 W260402 (02/04/2026)",
+      "words": [
+        {
+          "japanese": "上向き",
+          "romaji": "うわむき",
+          "meaning": "Hướng lên, chiều hướng tốt lên, tiến triển theo hướng tích cực,",
+          "example": "ようやく景気が上向きになってきた"
+        },
+        {
+          "japanese": "大手",
+          "romaji": "おおて",
+          "meaning": "Công ty , tập đoàn lớn, có tên tuổi",
+          "example": "彼は大手に就職した"
+        },
+        {
+          "japanese": "皆無",
+          "romaji": "かいむ",
+          "meaning": "hoàn toàn không có (0%)",
+          "example": "アンケートの結果、ストレスを感じていない人は皆無だった。"
+        },
+        {
+          "japanese": "形勢",
+          "romaji": "けいせい",
+          "meaning": "Tình hình, thế cục, cục diện, diễn biến (đang xảy ra và có xu hướng thay đổi)",
+          "example": "今回の選挙はでは、本田氏の形勢が不利とされている。"
+        },
+        {
+          "japanese": "視点",
+          "romaji": "してん",
+          "meaning": "Góc nhìn , quan điểm , cách nhìn nhận vấn đề",
+          "example": "竹田先生は、独自の視点から鋭い意見を言う。"
+        },
+        {
+          "japanese": "視野",
+          "romaji": "しや",
+          "meaning": "Tầm nhìn",
+          "example": "留学の経験によって、視野が広がった。"
+        },
+        {
+          "japanese": "おおよそ",
+          "romaji": "おおよそ",
+          "meaning": "ước chừng, xấp xỉ",
+          "example": "厚生労働省は試算ツールも案内しており、休業前の賃金をもとにおおよその受給額を確認できます。"
+        },
+        {
+          "japanese": "保障",
+          "romaji": "ほしょう",
+          "meaning": "bảo đảm , bảo hộ , đảm bảo quyền lợi",
+          "example": "そうですか。一番安いのですと、保障　の期間が10年になりますが。"
+        },
+        {
+          "japanese": "経る",
+          "romaji": "へる",
+          "meaning": "trải qua , thông qua một giai đoạn",
+          "example": "給付金は申請を経て支給されるため、毎月の給料のように同じ感覚で入るとはかぎりません。"
+        },
+        {
+          "japanese": "蓄え",
+          "romaji": "たくわえ",
+          "meaning": "tiền tích lũy, khoản để dành",
+          "example": "旦那は本当にやりすぎなくらい子育てをしてくれており、収入を気にする必要ないほどに蓄えを持ってから育休にふたりとも入ったので、問題はありませんでした。"
+        },
+        {
+          "japanese": "素養",
+          "romaji": "そよう",
+          "meaning": "Nền tảng sẵn có , tư chất , tố chất , kiến thức – kỹ năng cơ bản được tích lũy từ trước",
+          "example": "私には絵の素養がない。"
+        },
+        {
+          "japanese": "なじみ",
+          "romaji": "なじみ",
+          "meaning": "Sự quen thuộc , quen thân , quen dần và hòa hợp",
+          "example": "ここはなじみの居酒屋です。"
+        },
+        {
+          "japanese": "人柄",
+          "romaji": "ひとがら",
+          "meaning": "Nhân cách, tính cách",
+          "example": "兄はハンサムではないが、人柄はいい。"
+        },
+        {
+          "japanese": "本性",
+          "romaji": "ほんしょう",
+          "meaning": "Bản tính thật , bản chất thật bên trong của một người",
+          "example": "人の本性を見抜くことは難しい。"
+        },
+        {
+          "japanese": "依然として",
+          "romaji": "いぜんとして",
+          "meaning": "vẫn còn MẶC DÙ ai đó có thể nghĩ rằng nó đã hoặc nên thay đổi",
+          "example": "景気の先行きは依然として不透明"
+        },
+        {
+          "japanese": "脅威",
+          "romaji": "きょうい",
+          "meaning": "mối đe dọa",
+          "example": "ただし、依然として米金融当局による利上げが株式にとって脅威だという。"
+        },
+        {
+          "japanese": "差し掛かる",
+          "romaji": "さしかける",
+          "meaning": "bắt đầu chạm tới , bước vào một giai đoạn nào đó",
+          "example": "S&P500の調整は終盤に差し掛かっている可能性がある一方、利上げリスクは依然として残っている。"
+        },
+        {
+          "japanese": "率いる",
+          "romaji": "ひきいる",
+          "meaning": "lãnh đạo, đứng đầu (rất hay dùng trong báo chí)",
+          "example": "マイケル・ウィルソン氏が率いるチームは、リセッション（景気後退）や利上げを伴わなかった過去の「成長懸念」の事例を挙げ、株価下落は「終盤に近づきつつある」ことを示す証拠が増えていると指摘した。"
+        },
+        {
+          "japanese": "下落",
+          "romaji": "げらく",
+          "meaning": "giảm , sụt giảm , đi xuống",
+          "example": "株価下落は「終盤に近づきつつある」ことを示す証拠が増えていると指摘した。"
+        },
+        {
+          "japanese": "在り方",
+          "romaji": "ありかた",
+          "meaning": "cách nên tồn tại , thiết kế đúng đắn",
+          "example": "この制度の在り方に、疑問を呈した医師に話を聞いた"
+        },
+        {
+          "japanese": "疑問を呈する",
+          "romaji": "ぎもんをていする",
+          "meaning": "đặt nghi vấn",
+          "example": "医師が疑問を呈した"
+        },
+        {
+          "japanese": "状態を呈する",
+          "romaji": "じょうたいをていする",
+          "meaning": "thể hiện trạng thái",
+          "example": "異常な状態を呈している"
+        },
+        {
+          "japanese": "浮上している",
+          "romaji": "ふじょうしている",
+          "meaning": "đang nổi lên, được nhìn thấy dần",
+          "example": "現場では制度運用をめぐる新たなゆがみも浮上している。"
+        },
+        {
+          "japanese": "～と題する",
+          "romaji": "とだいする",
+          "meaning": "mang tiêu đề là ~ (rất báo chí)",
+          "example": "「外国籍の生活保護の方が体外受精を無料で行う現実」と題したブログを公開。"
+        },
+        {
+          "japanese": "議論を呼ぶ",
+          "romaji": "ぎろんをよぶ",
+          "meaning": "gây ra tranh luận (cụm cố định)",
+          "example": "この内容がネット上で、大きな議論を呼んだ。"
+        },
+        {
+          "japanese": "頻繁",
+          "romaji": "ひんぱん",
+          "meaning": "Xảy ra liên tục trong thời gian ngắn",
+          "example": "同じトラブルが頻繁に発生しています。"
+        },
+        {
+          "japanese": "骨の髄まで",
+          "romaji": "ほね の ずい まで",
+          "meaning": "đến mức sâu nhất có thể, thấm thía hoàn toàn, từ tận đáy lòng , từ trải nghiệm sâu sắc",
+          "example": "それを骨の髄まで知り尽くしているからこそ、こうした患者さんに出会うたび、やり切れない理不尽さを覚えます」と問題提起した。"
+        },
+        {
+          "japanese": "知り尽くしている",
+          "romaji": "しりつくしている",
+          "meaning": "biết rất tường tận, hiểu rõ toàn bộ, không còn gì chưa biết",
+          "example": "それを骨の髄まで知り尽くしているからこそ、こうした患者さんに出会うたび、やり切れない理不尽さを覚えます」と問題提起した。"
+        },
+        {
+          "japanese": "踏み出す",
+          "romaji": "ふみだす",
+          "meaning": "bước ra, bước tới (ẩn dụ cho quyết định khó khăn)",
+          "example": "「若い世代が治療に踏み出しやすくなり、結果的に妊娠数が増えたのは明らかにプラスです」と田中院長は評価する。"
+        },
+        {
+          "japanese": "画期的",
+          "romaji": "かっきてき",
+          "meaning": "mang tính đột phá, đánh dấu kỷ nguyên mới",
+          "example": "少子化対策の画期的な転換点とされ、若い世代の不妊治療へのハードルは確実に下がった。"
+        },
+        {
+          "japanese": "転換点",
+          "romaji": "てんかんてん",
+          "meaning": "điểm chuyển hướng , bước ngoặt",
+          "example": "少子化対策の画期的な転換点とされ、若い世代の不妊治療へのハードルは確実に下がった。"
+        },
+        {
+          "japanese": "問題視する",
+          "romaji": "もんだいしする",
+          "meaning": "coi là vấn đề , xem đó là vấn đề , đặt vấn đề",
+          "example": "そのこと自体は制度上の話だが、田中院長が問題視するのは、その運用の実態だ。"
+        },
+        {
+          "japanese": "迫られる",
+          "romaji": "せまられる",
+          "meaning": "bị dồn ép bởi hoàn cảnh, không thể tránh, phải đưa ra quyết định,hành động khó khăn",
+          "example": "体外受精に進むのは大きな決断を迫られる"
         }
       ]
     }
