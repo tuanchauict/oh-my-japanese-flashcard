@@ -200,6 +200,30 @@
           "romaji": "げらく",
           "meaning": "giảm , sụt giảm , đi xuống",
           "example": "株価下落は「終盤に近づきつつある」ことを示す証拠が増えていると指摘した。"
+        },
+        {
+          "japanese": "費用対効果",
+          "romaji": "",
+          "meaning": "hiệu quả so với chi phí (cost-effectiveness)",
+          "example": "制度の余波…43歳以上は費用対効果が見込めないのか？"
+        },
+        {
+          "japanese": "激減",
+          "romaji": "げきげん",
+          "meaning": "giảm mạnh, giảm đột ngột",
+          "example": "43歳以上の方は激減しました。"
+        },
+        {
+          "japanese": "元本割れ",
+          "romaji": "がんぽんわれ",
+          "meaning": "lỗ vốn, mất một phần tiền gốc",
+          "example": "個人向け国債と定期預金は、どちらも元本割れすることなく安心してお金を預けられるメリットがあります。"
+        },
+        {
+          "japanese": "組み入れる",
+          "romaji": "くみいれる",
+          "meaning": "đưa vào như một bộ phận cấu thành, gộp vào bên trong để cùng vận hành",
+          "example": "定期預金では3年以上の長期預金になると、利子を元本に組み入れて運用する「複利」を選べる場合が多くあります。"
         }
       ]
     },
@@ -284,6 +308,42 @@
           "romaji": "せいど",
           "meaning": "Độ chính xác , Độ tin cậy của kết quả",
           "example": "予実管理の精度向上を図る。"
+        },
+        {
+          "japanese": "照合",
+          "romaji": "しょうごう",
+          "meaning": "đối chiếu, so khớp hai (hoặc nhiều) nguồn thông tin để xác nhận có trùng khớp hay không",
+          "example": "営業部の山川ですが、実は伝票とデータを照合したんですけど、違っているんです。"
+        },
+        {
+          "japanese": "完結させる",
+          "romaji": "かんけつ",
+          "meaning": "xử lý trọn gói",
+          "example": "生活保護の方は、自治体が指定した公的病院に集約して、そこで全て完結させるのです。"
+        },
+        {
+          "japanese": "盛り込む",
+          "romaji": "もりこむ",
+          "meaning": "đưa thêm một nội dung vào trong cái đã có sẵn (đặc biệt là luật, kế hoạch, văn bản)",
+          "example": "入管難民法改正案に盛り込まれた在留手続き手数料の上限引き上げ"
+        },
+        {
+          "japanese": "通達",
+          "romaji": "つうたつ",
+          "meaning": "thông báo chính thức nội bộ",
+          "example": "え、先週通達が来て差し替えたんですだけど、その時、打ち間違えちゃったのかな。どの部分ですか？"
+        },
+        {
+          "japanese": "打ち間違える",
+          "romaji": "うちまちがえる",
+          "meaning": "gõ nhầm",
+          "example": "え、先週通達が来て差し替えたんですだけど、その時、打ち間違えちゃったのかな。どの部分ですか？"
+        },
+        {
+          "japanese": "差し替える",
+          "romaji": "さしかえる",
+          "meaning": "thay thế cái cũ bằng cái mới (đã chuẩn bị sẵn) , Không phải “sửa tại chỗ”, mà là thay nguyên bản.",
+          "example": "古い電池を新しい電池に差し替える"
         }
       ]
     },
@@ -560,6 +620,30 @@
           "romaji": "せまられる",
           "meaning": "bị dồn ép bởi hoàn cảnh, không thể tránh, phải đưa ra quyết định,hành động khó khăn",
           "example": "体外受精に進むのは大きな決断を迫られる"
+        },
+        {
+          "japanese": "乗り越える",
+          "romaji": "のりこえる",
+          "meaning": "vượt qua khó khăn, trở ngại, thử thách, cả về:",
+          "example": "切羽詰まる状況が多々ある中で、いくら努力しても乗り越えられず、治療を断念する夫婦も多い。"
+        },
+        {
+          "japanese": "撲滅する",
+          "romaji": "ぼくめつ",
+          "meaning": "xóa sổ",
+          "example": "すれば、税金を使った生活保護ビジネスは撲滅できます」"
+        },
+        {
+          "japanese": "勘案する",
+          "romaji": "かんあんする",
+          "meaning": "cân nhắc nhiều yếu tố một cách tổng hợp để quyết định",
+          "example": "今後の物価上昇などを総合的に勘案し、上限額を定めた"
+        },
+        {
+          "japanese": "重視する",
+          "romaji": "じゅうしする",
+          "meaning": "coi trọng, đặt nặng, ưu tiên xem là quan trọng",
+          "example": "個人向け国債と定期預金は、どちらも元本割れせず、安全性を重視したい人に向いている商品です。"
         }
       ]
     },
@@ -614,6 +698,24 @@
           "romaji": "きょうい",
           "meaning": "mối đe dọa",
           "example": "ただし、依然として米金融当局による利上げが株式にとって脅威だという。"
+        },
+        {
+          "japanese": "余波",
+          "romaji": "よは",
+          "meaning": "tác động gián tiếp, hậu quả không lường hết ban đầu",
+          "example": "制度の余波…43歳以上は費用対効果が見込めないのか？"
+        },
+        {
+          "japanese": "ゆがみ",
+          "romaji": "ゆがみ",
+          "meaning": "sự méo mó, lệch lạc trong hệ thống, cấu trúc hoặc cách vận hành",
+          "example": "一方で、制度には別のゆがみも感じている。"
+        },
+        {
+          "japanese": "矛盾",
+          "romaji": "むじゅん",
+          "meaning": "mâu thuẫn, trái ngược logic, không nhất quán",
+          "example": "この矛盾をどう説明するのでしょうか"
         }
       ]
     },
@@ -758,6 +860,36 @@
           "romaji": "しりつくしている",
           "meaning": "biết rất tường tận, hiểu rõ toàn bộ, không còn gì chưa biết",
           "example": "それを骨の髄まで知り尽くしているからこそ、こうした患者さんに出会うたび、やり切れない理不尽さを覚えます」と問題提起した。"
+        },
+        {
+          "japanese": "濁る",
+          "romaji": "にごる",
+          "meaning": "Nghĩa đen (vật lý) trở nên đục, không còn trong. Nghĩa bóng trở nên mập mờ, né tránh, không nói rõ",
+          "example": "質問に対して回答が濁る"
+        },
+        {
+          "japanese": "真剣",
+          "romaji": "しんけん",
+          "meaning": "nghiêm túc, thật sự, rất nghiêm chỉnh",
+          "example": "誰も真剣に議論しようとしない"
+        },
+        {
+          "japanese": "諦めて行く",
+          "romaji": "しめていく",
+          "meaning": "từ bỏ rồi rời đi",
+          "example": "みんな諦めて行きました。"
+        },
+        {
+          "japanese": "あり得ない",
+          "romaji": "ありえない",
+          "meaning": "không thể chấp nhận được , không thể xảy ra",
+          "example": "国民皆保険のはずの、保険診療を受けられないなんて、"
+        },
+        {
+          "japanese": "響く",
+          "romaji": "ひびく",
+          "meaning": "vang lên, lan tỏa",
+          "example": "不妊治療の保険適用から丸4年。医療現場の最前線に立つ医師の言葉は、重く響いている。"
         }
       ]
     },
@@ -1130,6 +1262,18 @@
           "romaji": "てんかんてん",
           "meaning": "điểm chuyển hướng , bước ngoặt",
           "example": "少子化対策の画期的な転換点とされ、若い世代の不妊治療へのハードルは確実に下がった。"
+        },
+        {
+          "japanese": "相次ぐ",
+          "romaji": "あいつぐ",
+          "meaning": "xảy ra liên tiếp, nối tiếp nhau không ngừng",
+          "example": "一部の外国籍の生活保護受給者が、最初から体外受精を受けるケースが相次いでいること"
+        },
+        {
+          "japanese": "自治体",
+          "romaji": "じちたい",
+          "meaning": "Chính quyền địa phương",
+          "example": "生活保護の方は、自治体が指定した公的病院に集約して、そこで全て完結させるのです。"
         }
       ]
     },
@@ -1292,6 +1436,30 @@
           "romaji": "ほね の ずい まで",
           "meaning": "đến mức sâu nhất có thể, thấm thía hoàn toàn, từ tận đáy lòng , từ trải nghiệm sâu sắc",
           "example": "それを骨の髄まで知り尽くしているからこそ、こうした患者さんに出会うたび、やり切れない理不尽さを覚えます」と問題提起した。"
+        },
+        {
+          "japanese": "言及する",
+          "romaji": "げんきゅうする",
+          "meaning": "đề cập",
+          "example": "制度設計や政策判断の在り方について、国の責任にも言及した。"
+        },
+        {
+          "japanese": "AありきでBを決める",
+          "romaji": "AありきでBを決める",
+          "meaning": "Lấy A làm tiền đề rồi quyết định B. Nhưng 99% trường hợp, ～ありき mang sắc thái phê phán.",
+          "example": "保険適用化ありきで、穴だらけの制度設計に決めてしまった政治の理不尽"
+        },
+        {
+          "japanese": "Aは～ではないとしつつ、B",
+          "romaji": "Aは～ではないとしつつ、B",
+          "meaning": "Thừa nhận A, nhưng chuyển sang B",
+          "example": "生活保護受給者の医療費については、窓口負担を求めることは現実的ではないとしつつ、こう提案する。"
+        },
+        {
+          "japanese": "に当たり",
+          "romaji": "にあたり",
+          "meaning": "nhân dịp , trong quá trình , khi tiến hành một việc quan trọng",
+          "example": "上限引き上げに当たり、試算した審査の実費も明らかにした。"
         }
       ]
     },
@@ -1946,6 +2114,180 @@
           "romaji": "せまられる",
           "meaning": "bị dồn ép bởi hoàn cảnh, không thể tránh, phải đưa ra quyết định,hành động khó khăn",
           "example": "体外受精に進むのは大きな決断を迫られる"
+        }
+      ]
+    },
+    {
+      "id": "w202603",
+      "name": "📅 W202603",
+      "words": [
+        {
+          "japanese": "乗り越える",
+          "romaji": "のりこえる",
+          "meaning": "vượt qua khó khăn, trở ngại, thử thách, cả về:",
+          "example": "切羽詰まる状況が多々ある中で、いくら努力しても乗り越えられず、治療を断念する夫婦も多い。"
+        },
+        {
+          "japanese": "言及する",
+          "romaji": "げんきゅうする",
+          "meaning": "đề cập",
+          "example": "制度設計や政策判断の在り方について、国の責任にも言及した。"
+        },
+        {
+          "japanese": "AありきでBを決める",
+          "romaji": "AありきでBを決める",
+          "meaning": "Lấy A làm tiền đề rồi quyết định B. Nhưng 99% trường hợp, ～ありき mang sắc thái phê phán.",
+          "example": "保険適用化ありきで、穴だらけの制度設計に決めてしまった政治の理不尽"
+        },
+        {
+          "japanese": "相次ぐ",
+          "romaji": "あいつぐ",
+          "meaning": "xảy ra liên tiếp, nối tiếp nhau không ngừng",
+          "example": "一部の外国籍の生活保護受給者が、最初から体外受精を受けるケースが相次いでいること"
+        },
+        {
+          "japanese": "濁る",
+          "romaji": "にごる",
+          "meaning": "Nghĩa đen (vật lý) trở nên đục, không còn trong. Nghĩa bóng trở nên mập mờ, né tránh, không nói rõ",
+          "example": "質問に対して回答が濁る"
+        },
+        {
+          "japanese": "真剣",
+          "romaji": "しんけん",
+          "meaning": "nghiêm túc, thật sự, rất nghiêm chỉnh",
+          "example": "誰も真剣に議論しようとしない"
+        },
+        {
+          "japanese": "照合",
+          "romaji": "しょうごう",
+          "meaning": "đối chiếu, so khớp hai (hoặc nhiều) nguồn thông tin để xác nhận có trùng khớp hay không",
+          "example": "営業部の山川ですが、実は伝票とデータを照合したんですけど、違っているんです。"
+        },
+        {
+          "japanese": "余波",
+          "romaji": "よは",
+          "meaning": "tác động gián tiếp, hậu quả không lường hết ban đầu",
+          "example": "制度の余波…43歳以上は費用対効果が見込めないのか？"
+        },
+        {
+          "japanese": "費用対効果",
+          "romaji": "",
+          "meaning": "hiệu quả so với chi phí (cost-effectiveness)",
+          "example": "制度の余波…43歳以上は費用対効果が見込めないのか？"
+        },
+        {
+          "japanese": "ゆがみ",
+          "romaji": "ゆがみ",
+          "meaning": "sự méo mó, lệch lạc trong hệ thống, cấu trúc hoặc cách vận hành",
+          "example": "一方で、制度には別のゆがみも感じている。"
+        },
+        {
+          "japanese": "激減",
+          "romaji": "げきげん",
+          "meaning": "giảm mạnh, giảm đột ngột",
+          "example": "43歳以上の方は激減しました。"
+        },
+        {
+          "japanese": "諦めて行く",
+          "romaji": "しめていく",
+          "meaning": "từ bỏ rồi rời đi",
+          "example": "みんな諦めて行きました。"
+        },
+        {
+          "japanese": "あり得ない",
+          "romaji": "ありえない",
+          "meaning": "không thể chấp nhận được , không thể xảy ra",
+          "example": "国民皆保険のはずの、保険診療を受けられないなんて、"
+        },
+        {
+          "japanese": "矛盾",
+          "romaji": "むじゅん",
+          "meaning": "mâu thuẫn, trái ngược logic, không nhất quán",
+          "example": "この矛盾をどう説明するのでしょうか"
+        },
+        {
+          "japanese": "Aは～ではないとしつつ、B",
+          "romaji": "Aは～ではないとしつつ、B",
+          "meaning": "Thừa nhận A, nhưng chuyển sang B",
+          "example": "生活保護受給者の医療費については、窓口負担を求めることは現実的ではないとしつつ、こう提案する。"
+        },
+        {
+          "japanese": "自治体",
+          "romaji": "じちたい",
+          "meaning": "Chính quyền địa phương",
+          "example": "生活保護の方は、自治体が指定した公的病院に集約して、そこで全て完結させるのです。"
+        },
+        {
+          "japanese": "撲滅する",
+          "romaji": "ぼくめつ",
+          "meaning": "xóa sổ",
+          "example": "すれば、税金を使った生活保護ビジネスは撲滅できます」"
+        },
+        {
+          "japanese": "完結させる",
+          "romaji": "かんけつ",
+          "meaning": "xử lý trọn gói",
+          "example": "生活保護の方は、自治体が指定した公的病院に集約して、そこで全て完結させるのです。"
+        },
+        {
+          "japanese": "響く",
+          "romaji": "ひびく",
+          "meaning": "vang lên, lan tỏa",
+          "example": "不妊治療の保険適用から丸4年。医療現場の最前線に立つ医師の言葉は、重く響いている。"
+        },
+        {
+          "japanese": "盛り込む",
+          "romaji": "もりこむ",
+          "meaning": "đưa thêm một nội dung vào trong cái đã có sẵn (đặc biệt là luật, kế hoạch, văn bản)",
+          "example": "入管難民法改正案に盛り込まれた在留手続き手数料の上限引き上げ"
+        },
+        {
+          "japanese": "に当たり",
+          "romaji": "にあたり",
+          "meaning": "nhân dịp , trong quá trình , khi tiến hành một việc quan trọng",
+          "example": "上限引き上げに当たり、試算した審査の実費も明らかにした。"
+        },
+        {
+          "japanese": "勘案する",
+          "romaji": "かんあんする",
+          "meaning": "cân nhắc nhiều yếu tố một cách tổng hợp để quyết định",
+          "example": "今後の物価上昇などを総合的に勘案し、上限額を定めた"
+        },
+        {
+          "japanese": "元本割れ",
+          "romaji": "がんぽんわれ",
+          "meaning": "lỗ vốn, mất một phần tiền gốc",
+          "example": "個人向け国債と定期預金は、どちらも元本割れすることなく安心してお金を預けられるメリットがあります。"
+        },
+        {
+          "japanese": "重視する",
+          "romaji": "じゅうしする",
+          "meaning": "coi trọng, đặt nặng, ưu tiên xem là quan trọng",
+          "example": "個人向け国債と定期預金は、どちらも元本割れせず、安全性を重視したい人に向いている商品です。"
+        },
+        {
+          "japanese": "組み入れる",
+          "romaji": "くみいれる",
+          "meaning": "đưa vào như một bộ phận cấu thành, gộp vào bên trong để cùng vận hành",
+          "example": "定期預金では3年以上の長期預金になると、利子を元本に組み入れて運用する「複利」を選べる場合が多くあります。"
+        },
+        {
+          "japanese": "通達",
+          "romaji": "つうたつ",
+          "meaning": "thông báo chính thức nội bộ",
+          "example": "え、先週通達が来て差し替えたんですだけど、その時、打ち間違えちゃったのかな。どの部分ですか？"
+        },
+        {
+          "japanese": "打ち間違える",
+          "romaji": "うちまちがえる",
+          "meaning": "gõ nhầm",
+          "example": "え、先週通達が来て差し替えたんですだけど、その時、打ち間違えちゃったのかな。どの部分ですか？"
+        },
+        {
+          "japanese": "差し替える",
+          "romaji": "さしかえる",
+          "meaning": "thay thế cái cũ bằng cái mới (đã chuẩn bị sẵn) , Không phải “sửa tại chỗ”, mà là thay nguyên bản.",
+          "example": "古い電池を新しい電池に差し替える"
         }
       ]
     }
